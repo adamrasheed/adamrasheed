@@ -1,4 +1,9 @@
-name: Your New Jekyll Site
+name: Adam Rasheed
+description: Front-end Developer
+
+email: adamrasheed91@gmail.com
+
+
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
