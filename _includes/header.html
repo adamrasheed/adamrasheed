@@ -1,6 +1,17 @@
-<header>
-    <a href="" class="" id="logo">
-        <h1 class="logo__title">hi</h1>
-        <span class="logo__desc">bye</span>
-    </a>
+<header class="header">
+    <div class="container header__container">
+
+        <a href="{{ site.url }}/" class="header__logo logo" id="logo">
+            <h1 class="logo__title">{{ site.name }}</h1>
+            <span class="logo__desc">{{ site.description }}</span>
+        </a>
+
+        <nav class="site-menu">
+            {% for link in site.pages %}
+                <li class="site-menu__item">
+                    <a href="{{ link.url }}" class="site-menu__link">{{ link.title }}</a>
+                </li>
+            {% endfor %}
+        </nav>
+    </div>
 </header>

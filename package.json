@@ -6,17 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
+  "author": "Adam Rasheed",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.8",
-    "gulp-sass": "^2.1.0",
-    "browser-sync": "^1.3.7",
-    "gulp-autoprefixer": "1.0.0"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "browser-sync": "^2.18.13",
+    "gulp-autoprefixer": "4.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "https://github.com/adamrasheed/adamrasheed.git"
   },
   "keywords": [
     "jekyll",
@@ -24,8 +24,5 @@
     "sass",
     "browsersync"
   ],
-  "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
-  },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://github.com/adamrasheed/adamrasheed"
 }

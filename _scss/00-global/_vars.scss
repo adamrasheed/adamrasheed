@@ -1,0 +1,43 @@
+//  VARS
+
+// Text
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-heading: -apple-system-headline;
+
+$color-text: #000000;
+$color-text-light: hsla(0, 100%, 0%, 0.32);
+
+$font-size-base: 16px;
+$font-size-large: 1.25rem;
+$font-size-small: .875rem;
+
+$line-height-body: 1.4;
+$line-height-heading: 1.2;
+
+$container-size: 832px;
+$half: 384px;
+
+// Transition
+$transition: (
+    short: all .15s ease-in-out,
+    med: all .25s ease-in-out,
+    long: all .3s ease-in-out
+);
+
+// Social
+$brands: (
+    Twitter: #1da1f2,
+    Linkedin: #0077b5,
+    Github: #333,
+    Instagram: #c13584,
+    Dribbble: #ea4c89,
+    Youtube: #ff0000
+);
+
+// Media
+$media-phone-large:   'only screen and (min-width: 360px)';
+$media-tablet-small:  'only screen and (min-width: 420px)';
+$media-tablet:        'only screen and (min-width: 620px)';
+$media-desktop-small: 'only screen and (min-width: 920px)';
+$media-desktop:       'only screen and (min-width: 1440px)';
+$media-desktop-large: 'only screen and (min-width: 1920px)';

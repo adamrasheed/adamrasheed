@@ -1,19 +1,19 @@
-- name: Twitter
+- Twitter:
   icon:
   link: https://twitter.com/ARasheedPhoto
 
-- name: Instagram
+- Instagram:
   icon:
   link: https://www.instagram.com/hashtagadam/
 
-- name: Youtube
+- Youtube:
   icon:
   link: http://bit.ly/SketchVids
 
-- name: Github
+- Github:
   icon:
   link: https://github.com/adamrasheed
 
-- name: Dribbble
+- Dribbble:
   icon:
   link: https://dribbble.com/adamrasheed

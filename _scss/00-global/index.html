@@ -1,0 +1,28 @@
+---
+layout: default
+title: Adam Rasheed
+---
+
+{% include modules/hero.html %}
+
+<section class="preview blog-preview">
+    <div class="container">
+        <h4 class="preview-title">Blog Articles</h4>
+
+        <div class="preview-content preview-posts">
+            {% for post in site.posts %}
+            <div class="preview-post">
+                <h2 class="preview-post__title">
+                    <a href="{{ post.url }}" class="preview-post__link">{{ post.title }}</a>
+                </h2>
+
+                <div class="preview-post__meta">
+                    <span class="preview-post__date">{{ post.date | date: '%B %d, %Y' }}</span>
+                    <span class="preview-post__length">X minute read</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
