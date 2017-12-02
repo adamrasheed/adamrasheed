@@ -1,0 +1,51 @@
+.hero{
+
+    padding: 2rem 0;
+
+    &__title, &__body{
+        max-width: 516px;
+    }
+
+    &__title{
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 2.25rem;
+        margin-bottom: .5rem;
+        font: -apple-system-headline;
+    }
+
+    &__body{
+        margin-bottom: 1rem;
+
+        & > p {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media #{$media-tablet}{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    @media #{$media-desktop-small}{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+
+        &__title{
+            font-size: 3.5rem;
+            line-height: 4rem;
+            margin-bottom: 1rem;
+            max-width: 640px;
+        }
+    }
+
+    @media #{$media-desktop}{
+        margin-top: 15vh;
+        margin-bottom: 35vh;
+
+        &__title{
+            font-size: 4rem;
+            line-height: 1;
+        }
+    }
+}

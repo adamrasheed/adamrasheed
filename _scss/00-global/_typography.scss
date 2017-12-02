@@ -1,8 +1,17 @@
+body{
+    text-rendering: optimizeLegibility;
+}
 h1, h2, h3, h4, h5 {
     font-weight: 800;
 }
 
 h2{
     font-size: 1.5rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
+}
+
+
+p {
+    font-size: $font-size-body;
+    line-height: $line-height-paragraph;
 }

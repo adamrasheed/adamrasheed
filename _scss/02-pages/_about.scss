@@ -1,0 +1,17 @@
+.about{
+
+    &__img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 13px;
+    }
+
+    &__title{
+        margin-bottom: 9px;
+    }
+    &__bio{
+        p {
+            margin-bottom: 16px;
+        }
+    }
+}

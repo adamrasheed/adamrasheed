@@ -1,0 +1,25 @@
+.social{
+    list-style: none;
+
+    &__item{
+        display: inline-block;
+    }
+
+    &__icon{
+        color: $color-text;
+        font-size: $font-size-large;
+        margin: 0 1rem;
+        transition: map-get($transition, short );
+    }
+
+    @media #{$media-tablet}{
+        margin: 0 0 0 2rem;
+    }
+}
+
+@each $social, $brand in $brands {
+
+  .social__icon--#{$social}:hover {
+    color: $brand;
+  }
+}

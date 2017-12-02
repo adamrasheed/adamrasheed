@@ -6,131 +6,14 @@
     '00-global/utils',
 
     '01-modules/header',
+    '01-modules/hero',
     '01-modules/footer',
+    '01-modules/social',
+    '01-modules/preview-posts',
+    '01-modules/contact',
 
+    '02-pages/page',
     '02-pages/home',
     '02-pages/about',
     '02-pages/case-study',
     '02-pages/blog';
-
-.hero{
-
-    padding: 2rem 0;
-
-    &__title, &__body{
-        max-width: 516px;
-    }
-
-    &__title{
-        font-size: 2rem;
-        font-weight: 800;
-        line-height: 2.25rem;
-        margin-bottom: .5rem;
-    }
-
-    &__body{
-        margin-bottom: 1rem;
-
-        & > p {
-            margin-bottom: 1rem;
-        }
-    }
-}
-
-.preview-posts{
-
-    @media #{$media-tablet}{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 8.6875rem;
-    }
-}
-
-.preview-post{
-    margin-bottom: 25px;
-
-    &__link{
-        @extend %title;
-    }
-    &__title{
-        line-height: 32px;
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-
-    &__meta{
-        font-size: $font-size-small;
-        font-weight: 300;
-        letter-spacing: 0.05em;
-        font-variant: small-caps;
-    }
-
-    &__date{
-        margin-right: 2rem;
-    }
-
-    @media #{$media-tablet}{
-        flex: 50%;
-        max-width: 50%;
-        height: 4.25rem;
-
-        display: flex;
-        flex-direction: column;
-
-        &__title{
-            margin-bottom: auto;
-        }
-    }
-}
-
-.contact-section{}
-
-.contact{
-    &__container{
-        padding: 2rem 1rem;
-    }
-
-    &__heading{
-        margin-bottom: 0.4375rem;;
-    }
-
-    &__body{
-        max-width: $half;
-        margin: 0;
-    }
-
-    @media #{$media-tablet}{
-        margin-bottom: 9rem;
-    }
-}
-
-.footer__social{
-    list-style: none;
-}
-
-.social{
-    list-style: none;
-
-    &__item{
-        display: inline-block;
-    }
-
-    &__icon{
-        color: $color-text;
-        font-size: $font-size-large;
-        margin: 0 1rem;
-        transition: map-get($transition, short );
-    }
-
-    @media #{$media-tablet}{
-        margin: 0 0 0 2rem;
-    }
-}
-
-@each $social, $brand in $brands {
-
-  .social__icon--#{$social}:hover {
-    color: $brand;
-  }
-}

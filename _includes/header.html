@@ -7,7 +7,8 @@
         </a>
 
         <nav class="site-menu">
-            {% for link in site.pages %}
+            {% assign pages = site.pages %}
+            {% for link in pages | sort:"order" %}
                 <li class="site-menu__item">
                     <a href="{{ link.url }}" class="site-menu__link">{{ link.title }}</a>
                 </li>
