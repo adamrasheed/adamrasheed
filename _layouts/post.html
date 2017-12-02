@@ -1,9 +1,41 @@
----
-layout: default
----
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
 
-<div class="post">
-{{ content }}
-</div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+    
+    {% include header.html %}
+    <main class="blog-posts">
+        <article class="post">
+            <div class="breadcrumbs">
+                <a href="{{site.url}}" class="breadcrumb">Home</a>
+                <a href="{{site.url}}/{{ site.pages[1].title | slugify }}.html" class="breadcrumb">{{ site.pages[1].title }}</a>
+                <span class="breadcrumb">{{page.title}}</span>
+            </div>
+            <h2 class="post__title">{{ page.title }}</h2>
+            <span class="meta post__meta">{{ page.date | date_to_string }}</span>
+             {{ content }}
+        </article>
+        <aside class="sidebar">
+            <h4 class="preview-title preview-title--small sidebar__title">Other Posts</h4>
+            <ul class="sidebar__posts">
+                {% for post in site.posts %}
+                    <li class="sidebar__post">
+                        <a href="{{sidebar.url}}" class="sidebar__post-link">{{post.title}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
+    </main>
+    {% include footer.html %}
+</body>
+

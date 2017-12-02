@@ -1,0 +1,29 @@
+.breadcrumbs{
+    max-width: $container-size;
+    margin: 0rem auto 1rem;
+    font-size: $font-size-small;
+
+    &--outer{
+        padding: 0 1rem;
+    }
+}
+.breadcrumb{
+    display: inline-block;
+    margin-right: .5rem;
+    color: $color-text;
+    text-decoration: none;
+
+    &:after{
+        content: '»';
+        display: inline-block;
+        margin-left: .5rem;
+    }
+
+    &:last-child:after{
+       content: none;
+    }
+}
+
+a.breadcrumb:hover{
+    text-decoration: underline;
+}

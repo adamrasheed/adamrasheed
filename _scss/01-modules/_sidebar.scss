@@ -1,0 +1,32 @@
+.sidebar{
+
+    padding: 0 1rem;
+    flex: 1;
+
+    &__title{
+        margin-bottom: 1.25rem;
+        font-weight: 500;
+
+    }
+    &__post{
+        text-decoration: none;
+        font-weight: 500;
+        margin-bottom: 1.25rem;
+    }
+
+    &__post-link{
+        color: $color-text;
+        line-height: 1.4375rem;
+        text-decoration: none;
+    }
+
+    @media #{$media-tablet-small}{
+        max-width: 11rem;
+        flex: 100%;
+    }
+}
+
+.post + .sidebar {
+    margin-left: 9rem;
+    margin-top: 2rem;
+}
