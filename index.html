@@ -5,37 +5,4 @@ title: Adam Rasheed
 
 {% include modules/hero.html %}
 {% include modules/blog-preview.html %}
-
-<section class="preview blog-preview">
-    <div class="container">
-        <h4 class="preview-title">Blog Articles</h4>
-
-        <div class="preview-content preview-posts">
-            {% for post in site.posts %}
-            <div class="preview-post">
-                <h2 class="preview-post__title">
-                    <a href="{{ post.url }}" class="preview-post__link">{{ post.title }}</a>
-                </h2>
-
-                <div class="preview-post__meta">
-                    <span class="preview-post__date">{{ post.date | date: '%B %d, %Y' }}</span>
-                    <span class="preview-post__length">X minute read</span>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-    </div>
-</section>
-
-<section class="section contact">
-    <div class="container contact__container">
-        <h2 class="contact__heading">Let's Talk</h2>
-        {% assign social = site.data.social %}
-        <div class="small contact__body">
-            <p>You can best reach me through <a class="contanct-link" href="mailto:{{ site.email }}" target="_blank" rel="noopener">email</a>.</p>
-            <p>Alternatively, DM on <a class="contanct-link contact-link--twitter" href="{{ social[0].link }}" target="_blank" rel="noopener">twitter</a>, check out my design work on <a class="contanct-link contact-link--dribbble" href="{{ social[4].link }}" target="_blank" rel="noopener">Dribbble</a>, peep my code on my <a class="contanct-link contact-link--github" href="{{ social[3].link }}" target="_blank" rel="noopener">Github profile</a>, or see what I’m eating on my <a class="contanct-link contact-link--instagram" href="{{ social[1].link }}" target="_blank" rel="noopener">Instagram</a>.</p>
-            <p>Oh also, you can read/download my <a class="contanct-link" href="{{ site.resume }}" target="_blank" rel="noopener">Resumé</a> here.</p>
-        </div>
-    </div>
-</section>
+{% include modules/contact.html %}

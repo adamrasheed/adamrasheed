@@ -1,6 +1,7 @@
 .about{
 
     &__img{
+        display: block;
         max-width: 100%;
         height: auto;
         margin-bottom: 13px;
@@ -12,6 +13,48 @@
     &__bio{
         p {
             margin-bottom: 16px;
+        }
+        margin-bottom: 3rem;
+    }
+
+    @media #{$media-tablet-small}{
+
+        &__img {
+            margin-bottom: 2rem;
+        }
+
+        &__bio{
+            margin-bottom: 0;
+        }
+
+        &__container{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 4rem;
+        }
+        &__body, &__links{}
+
+        &__body{
+            flex: 50%;
+            max-width: 50%;
+        }
+        &__links{
+            padding-left: 1rem;
+            flex: 1;
+        }
+    }
+
+    @media #{$media-tablet}{
+        &__img{
+            max-width: $container-size;
+            margin: 0 auto 3rem;
+        }
+    }
+
+    @media #{$media-desktop-small}{
+        &__container{
+            margin-bottom: 8rem;
         }
     }
 }

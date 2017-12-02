@@ -11,6 +11,7 @@ $font-size-base: 16px;
 $font-size-body: 14px;
 $font-size-large: 1.25rem;
 $font-size-small: .875rem;
+$font-size-extra-small: .625rem;
 
 $line-height-paragraph: 24px;
 $line-height-body: 1.4;
@@ -38,7 +39,7 @@ $brands: (
 
 // Media
 $media-phone-large:   'only screen and (min-width: 360px)';
-$media-tablet-small:  'only screen and (min-width: 420px)';
+$media-tablet-small:  'only screen and (min-width: 480px)';
 $media-tablet:        'only screen and (min-width: 620px)';
 $media-desktop-small: 'only screen and (min-width: 920px)';
 $media-desktop:       'only screen and (min-width: 1440px)';

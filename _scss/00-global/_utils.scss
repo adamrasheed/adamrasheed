@@ -39,7 +39,18 @@
 		margin-bottom: .25rem;
         margin-left: 1rem;
         font-variant: small-caps;
-	}
+    }
+
+    &--small{
+        font-size: $font-size-extra-small;
+
+        &:after{
+            height: 1px;
+            width: 48px;
+            margin-left: .75rem;
+            margin-bottom: .125rem;
+        }
+    }
 }
 
 .small{
