@@ -1,5 +1,28 @@
+.posts{
+    @media #{$media-tablet}{
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        align-items: flex-start;
+
+        & > .post {
+            flex: 50%;
+            max-width: 50%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            height: 20rem;
+
+            .post__title{
+                margin-bottom: auto;
+            }
+        }
+    }
+}
+
 .posts .post{
-    padding: 0;
 
     &__title{
         text-decoration: none;
@@ -12,13 +35,20 @@
         color: $color-text;
     }
 
-    @media #{$media-tablet}{
-        padding: 1rem 0;
+    &__read-more{
+        display: block;
+        text-align: right;
+    }
 
+    @media #{$media-tablet}{
+        margin-bottom: 3.625rem;
         &__title{
             text-decoration: none;
             font-size: 1.75rem;
             line-height: 2.5rem;
+        }
+        &__excerpt{
+            min-height: 7.5rem;
         }
     }
 }

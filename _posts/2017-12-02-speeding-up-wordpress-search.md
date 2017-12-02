@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "Speeding Up Wordpress Search"
-date:   2014-12-02 08:00:03
+title:  How to Speed up Search on Wordpress site sites with 1,000+ pages
+date:   2017-12-02 08:00:03
 categories: wordpress
-excerpt_separator: [more]
+excerpt: Wordpress sites can grow really fast, and making sure your search bar can handle large volumes of data can be quite a challenge. In this post, I'll give some tips on how to make your wordpress search bar work in large-scale sites.
 ---
 
-Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.
-[more] Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.
 
 
 ## Default Search only really Works for Small Brochures Sites

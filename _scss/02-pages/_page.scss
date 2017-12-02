@@ -2,7 +2,8 @@
     padding: 0 1rem;
     max-width: $container-size;
     margin: 1rem auto;
-    font-weight: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
 
     @media #{$media-tablet}{
         margin: 2rem auto 1.825rem;

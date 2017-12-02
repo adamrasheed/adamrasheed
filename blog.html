@@ -4,7 +4,7 @@ title: Blog
 order: 3
 ---
 <h1 class="page-title">{{page.title}}</h1>
-<div class="container">
+<div class="container container--no-pad">
     <ul class="posts">
         {% for post in site.posts %}
         <div class="post">
@@ -14,8 +14,9 @@ order: 3
             <div class="post__meta">
                 <span>{{ post.date | date: '%B %d, %Y' }}</span>
             </div>
-            <div class="post__excerpt">{{ post.excerpt | remove: '
-            <p>' | remove: '</p>' }}</div>
+            <div class="paragraph post__excerpt">
+                {{ post.excerpt | strip_html |truncatewords: 45 }}
+            </div>
         </div>
         {% endfor %}
     </ul>

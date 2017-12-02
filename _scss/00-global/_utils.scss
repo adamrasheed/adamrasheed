@@ -2,6 +2,10 @@
     max-width: $container-size;
     margin: 0 auto;
     padding: 0 1rem;
+
+    &--no-pad{
+        padding: 0;
+    }
 }
 
 %title{

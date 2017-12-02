@@ -3,7 +3,7 @@
         <h4 class="preview-title">Blog Articles</h4>
 
         <div class="preview-content preview-posts">
-            {% for post in site.posts %}
+            {% for post in site.posts | limit: 2 %}
             <div class="preview-post">
                 <h2 class="preview-post__title">
                     <a href="{{ post.url }}" class="preview-post__link">{{ post.title }}</a>
@@ -11,7 +11,9 @@
 
                 <div class="preview-post__meta">
                     <span class="preview-post__date">{{ post.date | date: '%B %d, %Y' }}</span>
-                    <span class="preview-post__length">X minute read</span>
+                    <span class="preview-post__length" title="Estimated read time">
+                        {% include modules/blog-preview.html %}
+                    </span>
                 </div>
             </div>
             {% endfor %}

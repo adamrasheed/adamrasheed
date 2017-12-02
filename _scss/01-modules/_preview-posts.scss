@@ -17,7 +17,7 @@
     &__title{
         line-height: 32px;
         font-size: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 1.125rem;
     }
 
     &__meta{
@@ -25,6 +25,7 @@
         font-weight: 300;
         letter-spacing: 0.05em;
         font-variant: small-caps;
+        text-transform: lowercase;
     }
 
     &__date{
@@ -34,11 +35,18 @@
     @media #{$media-tablet}{
         flex: 50%;
         max-width: 50%;
-        height: 4.25rem;
+
+        min-height: 6.25rem;
 
         display: flex;
         flex-direction: column;
 
+        &:nth-of-type(odd){
+            padding-right: 1rem;
+        }
+        &:nth-of-type(even){
+            padding-left: 1rem;
+        }
         &__title{
             margin-bottom: auto;
         }

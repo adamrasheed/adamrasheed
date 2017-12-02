@@ -12,25 +12,25 @@
 
 </head>
 <body>
-    
     {% include header.html %}
     <main class="blog-posts">
         <article class="post">
             <div class="breadcrumbs">
-                <a href="{{site.url}}" class="breadcrumb">Home</a>
-                <a href="{{site.url}}/{{ site.pages[1].title | slugify }}.html" class="breadcrumb">{{ site.pages[1].title }}</a>
+                <a href="/" class="breadcrumb">Home</a>
+                <a href="/{{ site.pages[1].title | slugify }}.html" class="breadcrumb">{{ site.pages[1].title }}</a>
                 <span class="breadcrumb">{{page.title}}</span>
             </div>
             <h2 class="post__title">{{ page.title }}</h2>
             <span class="meta post__meta">{{ page.date | date_to_string }}</span>
              {{ content }}
         </article>
+
         <aside class="sidebar">
             <h4 class="preview-title preview-title--small sidebar__title">Other Posts</h4>
             <ul class="sidebar__posts">
-                {% for post in site.posts %}
+                {% for post in site.related_posts %}
                     <li class="sidebar__post">
-                        <a href="{{sidebar.url}}" class="sidebar__post-link">{{post.title}}</a>
+                        <a href="" class="sidebar__post-link">{{post.title}}</a>
                     </li>
                 {% endfor %}
             </ul>

@@ -15,3 +15,12 @@ p {
     font-size: $font-size-body;
     line-height: $line-height-paragraph;
 }
+
+p > a {
+    color: $color-link;
+}
+
+.paragraph{
+    font-size: $font-size-body;
+    line-height: $line-height-paragraph;
+}
