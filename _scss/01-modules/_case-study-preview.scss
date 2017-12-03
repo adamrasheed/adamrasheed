@@ -1,0 +1,22 @@
+.case-study-preview{
+    &__img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    &__title{
+        @extend %title;
+        margin-bottom: .25rem;
+    }
+
+    &__link{
+        @extend %title;
+    }
+
+    &__tag{
+        @extend %small;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}

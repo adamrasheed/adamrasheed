@@ -27,6 +27,15 @@
     }
 }
 
+%small {
+    font-size: $font-size-small;
+    line-height: 1rem;
+    font-variant-caps: all-small-caps;
+    font-weight: 400;
+    letter-spacing: .05em;
+}
+
+
 .preview-title{
     font-variant: small-caps;
     font-variant-caps: all-small-caps;

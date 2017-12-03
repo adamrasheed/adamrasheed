@@ -10,4 +10,5 @@ url: https://adamrasheed.com
 
 markdown: redcarpet
 highlighter: pygments # or rouge or null
+include: ['case-studies']
 exclude: ["node_modules", "gulpfile.js", "package.json"]
