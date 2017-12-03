@@ -1,4 +1,13 @@
+section.section-case-studies{
+    margin-bottom: 4rem;
+
+    .preview-header{
+        margin-bottom: 1rem;
+    }
+}
 .case-study-preview{
+    margin-bottom: 3rem;
+
     &__img{
         max-width: 100%;
         height: auto;
@@ -7,16 +16,62 @@
 
     &__title{
         @extend %title;
-        margin-bottom: .25rem;
+        margin: 0 0 1rem;
     }
 
     &__link{
         @extend %title;
     }
 
+    &__excerpt{
+        margin-bottom: 1rem;
+    }
+
     &__tag{
         @extend %small;
-        display: inline-block;
-        margin-right: 1rem;
+        display: block;
+        margin: 0 0 1rem;
+
+        &:last-of-type{
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @media #{$media-tablet}{
+        margin-bottom: 0rem;
+        @supports(display: grid) and (not(display: -ms-grid)) {
+            &__content{
+                display: grid;
+                grid-template-columns: 1fr  1fr;
+                grid-template-rows: 1fr 1fr 2fr;
+                grid-template-areas:
+                    "main side"
+                    "tags side"
+                    "cta side";
+            }
+
+            &__title{
+                grid-area: main;
+                align-self: start;
+                font-size: 1.5rem;
+                margin: 1.5rem 0 0
+            }
+
+            &__tags{
+                grid-area: tags;
+                align-self: start;
+            }
+
+            &__cta{
+                grid-area: cta;
+                align-self: start;
+            }
+
+            &__body{
+                grid-area: side;
+                grid-column: 2/2;
+                margin: 1.0625rem 0 0.25rem;
+            }
+        }
     }
 }

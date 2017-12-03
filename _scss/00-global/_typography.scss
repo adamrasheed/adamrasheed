@@ -24,3 +24,46 @@ p > a {
     font-size: $font-size-body;
     line-height: $line-height-paragraph;
 }
+
+.case-study, .post {
+    h2 {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+        margin-bottom: .25rem;
+    }
+    p + h2, p +h3, p + h4, ul + h2, ul + h3, ul + h4 {
+        margin-top: 1.625rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    h1 + ul, h2 + ul {
+        margin-top: 1rem;
+    }
+
+    ul {
+        padding-left: 0.5rem;
+    }
+
+    p + ul {
+        margin-bottom: 1.5rem;
+    }
+
+    ul > li{
+        margin-bottom: 1rem;
+        line-height: 1;
+        font-size: $font-size-small;
+        &:before{
+            content: '—';
+            margin-right: 0.75rem;
+        }
+    }
+}

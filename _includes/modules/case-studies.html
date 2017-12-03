@@ -1,0 +1,26 @@
+{% for study in site.pages %} {% if study.layout == 'case_study'%}
+<div class="case-study-preview">
+    <a href="{{study.url}}" class="case-study-preview__link">
+        <img src="{{study.image}}" alt="" class="case-study-preview__img">
+    </a>
+    <div class="case-study-preview__content">
+        <h3 class="case-study-preview__title">
+            <a href="{{study.url}}" class="case-study-preview__link title-link">
+                {{study.title}}
+            </a>
+        </h3>
+        <ul class="case-study-preview__tags">
+            {% for tag in study.tags %}
+            <li class="case-study-preview__tag">{{tag}}</li>
+            {% endfor %}
+        </ul>
+
+        <div class="case-study-preview__body">
+            <h4 class="case-study-preview__tagline">{{study.tagline}}</h4>
+            <p class="case-study-preview__excerpt">{{study.excerpt}}</p>
+        </div>
+
+        <a href="{{study.url}}" class="btn btn--secondary case-study-preview__cta">View Case Study</a>
+    </div>
+</div>
+{% endif %} {% endfor%}

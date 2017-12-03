@@ -4,20 +4,8 @@ title: Case Studies
 order: 2
 ---
 <h1 class="page-title">{{page.title}}</h1>
-<div class="container">
-     {% for study in site.pages %} {% if study.layout == 'case_study'%}
-    <div class="case-study-preview">
-        <img src="{{study.image}}" alt="" class="case-study-preview__img">
-        <h3 class="case-study-preview__title">
-            <a href="{{study.url}}" class="case-study-preview__link title-link">
-                {{study.title}}
-            </a>
-        </h3>
-        <ul class="case-study-preview__tags">
-            {% for tag in study.tags %}
-            <li class="case-study-preview__tag">{{tag}}</li>
-            {% endfor %}
-        </ul>
+<section class="section-case-studies">
+    <div class="container">
+        {% include modules/case-studies.html %}
     </div>
-    {% endif %} {% endfor%}
-</div>
+</section>

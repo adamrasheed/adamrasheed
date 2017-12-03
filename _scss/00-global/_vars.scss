@@ -7,6 +7,8 @@ $font-family-heading: -apple-system-headline;
 $color-text: #000000;
 $color-text-light: hsla(0, 100%, 0%, 0.32);
 $color-link: #3498db;
+$color-btn-secondary: #EAEAEA;
+$color-bg-light: rgba(239, 240, 241, 0.57);
 
 $font-size-base: 16px;
 $font-size-body: 14px;
@@ -19,6 +21,7 @@ $line-height-body: 1.4;
 $line-height-heading: 1.2;
 
 $container-size: 832px;
+$container-size-small: 512px;
 $half: 384px;
 
 // Transition

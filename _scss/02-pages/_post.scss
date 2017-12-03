@@ -21,9 +21,8 @@
 
     &__meta{
         display: block;
-        margin: 11px 0 1rem;
-        font-size: $font-size-extra-small;
-        color: $color-text-light;
+        margin: 1rem 0;
+        @extend %small;
     }
 
     h2{
@@ -32,11 +31,16 @@
         margin-bottom: .75rem;
     }
 
-    p + h2, p +h3, p + h4 {
-        margin-top: 1.625rem;
-    }
+    @media #{$media-tablet}{
+        &__title{
+            font-size: 1.75rem;
+            line-height: 2.5rem;
+            margin-bottom: 1rem;
+        }
 
-    p {
-        margin-bottom: 1rem;
+        h2{
+            line-height: 1.75rem;
+            margin-bottom: .125rem;
+        }
     }
 }

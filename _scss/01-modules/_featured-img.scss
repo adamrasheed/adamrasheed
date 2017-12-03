@@ -1,0 +1,11 @@
+.featured-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 13px;
+
+    @media #{$media-tablet}{
+        max-width: $container-size;
+        margin: 0 auto 3rem;
+    }
+}
