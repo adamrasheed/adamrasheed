@@ -8,16 +8,16 @@
 
         <nav class="site-menu">
                 <li class="site-menu__item">
-                    <a href="/{{ site.pages[0].title | slugify }}.html" class="site-menu__link{% if page.url == '/{{ site.pages[0].title | slugify }}.html' %} active{% endif %}">{{ site.pages[0].title }}</a>
+                    <a href="/about.html" class="site-menu__link{% if page.url == '/{{ site.pages[0].title | slugify }}.html' %} active{% endif %}">about</a>
                 </li>
                 <li class="site-menu__item">
                     <a 
-                        href="/{{ site.pages[2].title | slugify }}.html"
+                        href="/case-studies.html"
                         class="site-menu__link{% if page.url == "/{{ site.pages[2].title | slugify }}.html" %} active{% endif %}"
-                    >{{ site.pages[2].title }}</a>
+                    >Case Studies</a>
                 </li>
                 <li class="site-menu__item">
-                    <a href="{{ site.pages[1].title | slugify }}.html" class="site-menu__link">{{ site.pages[1].title }}</a>
+                    <a href="/blog.html" class="site-menu__link">Blog</a>
                 </li>
 
                 {% if page.url == "/{{ site.pages[0].title | slugify }}.html" %}

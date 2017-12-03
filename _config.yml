@@ -1,5 +1,6 @@
 name: Adam Rasheed
 description: Front-end Developer
+image: /assets/Adam-Rasheed-Pano-web@2x.jpg
 tagline: I’m a Front-end Developer based in Southern California.
 
 email: adamrasheed91@gmail.com
@@ -12,3 +13,6 @@ markdown: redcarpet
 highlighter: pygments # or rouge or null
 include: ['case-studies']
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+plugins:
+  - jekyll-sitemap

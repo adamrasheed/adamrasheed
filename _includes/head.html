@@ -1,0 +1,38 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+        {%if page.title %}
+            {{ page.title }}
+        {% else %}
+            {{ site.name }} | {{ site.description }}
+        {% endif %}
+    </title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- OG -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.image }}" />
+    <meta property="og:site_name" content="{{site.name}} | {{site.description}}">
+    <meta property="article:publisher" content="https://www.facebook.com/AdamAhmedRasheed" />
+    <meta property="article:author" content="https://www.facebook.com/AdamAhmedRasheed" />
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+        content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description"
+            content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:site" content="@arasheedphoto" />
+    <meta name="twitter:creator" content="@arasheedphoto">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
