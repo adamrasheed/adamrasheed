@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Shopify Vs. WooCommerce vs. Magento
+title:  Shopify vs. WooCommerce vs. Magento - Which One Should You Pick?
 date:   2017-12-01 08:00:03
 categories: Shopify
 excerpt: When working on eCommerce projects for clients, it can be a daunting task to figure out which platform to go with. With most of them being so great, it's hard to choose.

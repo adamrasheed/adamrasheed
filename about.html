@@ -5,7 +5,15 @@ order: 1
 ---
 <h1 class="page-title">{{page.title}}</h1>
 <picture class="about__img">
-    <img src="https://picsum.photos/800/400" alt="" class="about__img">
+    <img
+        sizes="(max-width: 1800px) 100vw, 1800px"
+        srcset="assets/Adam-Rasheed-Pano-web_2x_ivteyj_c_scale,w_160.jpg 160w,
+            assets/Adam-Rasheed-Pano-web_2x_ivteyj_c_scale,w_812.jpg 812w, assets/Adam-Rasheed-Pano-web_2x_ivteyj_c_scale,w_1209.jpg 1209w, assets/Adam-Rasheed-Pano-web_2x_ivteyj_c_scale,w_1511.jpg 1511w,
+            assets/Adam-Rasheed-Pano-web_2x_ivteyj_c_scale,w_1755.jpg 1755w,
+            assets/Adam-Rasheed-Pano-web_2x_ivteyj_c_scale,w_1800.jpg 1800w"
+        src="assets/Adam-Rasheed-Pano-web_2x_ivteyj_c_scale,w_1800.jpg"
+        alt="Adam Rasheed"
+        class="about__img">
 </picture>
 
 <div class="container about__container">
