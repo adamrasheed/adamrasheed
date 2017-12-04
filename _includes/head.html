@@ -10,17 +10,20 @@
     </title>
     <meta name="viewport" content="width=device-width">
 
+    <!-- SEO -->
+    <meta name="description" content="{% if site.seo_desc %}{{ site.seo_desc}}{% else %}{{site.name}} - {{site.description}}{% endif %}">
+
     <!-- OG -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:title" content="{%if page.title %}{{ page.title }} | {{site.name}}{% else %}{{ site.name }}{% endif %}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:image" content="{{ site.url }}{{ site.image }}" />
     <meta property="og:site_name" content="{{site.name}} | {{site.description}}">
     <meta property="article:publisher" content="https://www.facebook.com/AdamAhmedRasheed" />
     <meta property="article:author" content="https://www.facebook.com/AdamAhmedRasheed" />
     <meta property="article:published_time" content="{{ page.date }}" />
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.seo_desc }}{% endif %}">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />

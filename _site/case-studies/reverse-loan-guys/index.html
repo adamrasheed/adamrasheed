@@ -10,17 +10,20 @@
     </title>
     <meta name="viewport" content="width=device-width">
 
+    <!-- SEO -->
+    <meta name="description" content="Adam Rasheed is a front-end developer based in Southern California who loves working in Wordpress, Shopify and React. He also loves doing UI/UX design in Sketch in Figma. Need some help on your next project? Let‘s talk!">
+
     <!-- OG -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Reverse Loan Guys">
+    <meta property="og:title" content="Reverse Loan Guys | Adam Rasheed">
     <meta property="og:url" content="https://adamrasheed.com/case-studies/reverse-loan-guys/">
     <meta property="og:image" content="https://adamrasheed.com/assets/Adam-Rasheed-Pano-web@2x.jpg" />
     <meta property="og:site_name" content="Adam Rasheed | Front-end Developer">
     <meta property="article:publisher" content="https://www.facebook.com/AdamAhmedRasheed" />
     <meta property="article:author" content="https://www.facebook.com/AdamAhmedRasheed" />
     <meta property="article:published_time" content="" />
-    <meta property="og:description" content="Front-end Developer">
+    <meta property="og:description" content="Adam Rasheed is a front-end developer based in Southern California who loves working in Wordpress, Shopify and React. He also loves doing UI/UX design in Sketch in Figma. Need some help on your next project? Let‘s talk!">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -110,7 +113,7 @@
 
 <p><strong>The Mixin I Created for The Bullets</strong></p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">mixin</span> <span class="n">features</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mixin</span> <span class="n">features</span>
     <span class="p">.</span><span class="nf">sml</span><span class="p">.</span><span class="nf">med</span><span class="o">--</span><span class="n">col</span><span class="o">-</span><span class="mi">6</span><span class="p">.</span><span class="nf">lrg</span><span class="o">--</span><span class="n">col</span><span class="o">-</span><span class="mi">6</span><span class="p">.</span><span class="nf">features__info</span>
         <span class="n">block</span>
 
@@ -119,10 +122,9 @@
 
 <span class="n">mixin</span> <span class="n">featureImg</span><span class="p">(</span><span class="n">imgUrl</span><span class="p">)</span>
     <span class="n">img</span><span class="p">.</span><span class="nf">sml</span><span class="p">.</span><span class="nf">med</span><span class="o">--</span><span class="n">col</span><span class="o">-</span><span class="mi">2</span><span class="p">.</span><span class="nf">lrg</span><span class="o">--</span><span class="n">col</span><span class="o">-</span><span class="mi">6</span><span class="p">.</span><span class="nf">feature__img</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="n">imgUrl</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="p">.</span><span class="nf">row</span><span class="p">.</span><span class="nf">features__row</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nf">row</span><span class="p">.</span><span class="nf">features__row</span>
     <span class="o">+</span><span class="n">featureImg</span><span class="p">(</span><span class="s1">'img/benefits-img-1.png'</span><span class="p">)</span>
     <span class="o">+</span><span class="n">features</span>
         <span class="o">+</span><span class="n">feature</span><span class="p">(</span><span class="s1">'A reverse mortgage makes the equity in your home available to you any time you need it'</span><span class="p">)</span>
@@ -132,8 +134,7 @@
         <span class="o">+</span><span class="n">feature</span><span class="p">(</span><span class="s1">'Reverse mortgages are non-recourse loans. So you never have to worry about the balance of the loan exceeding the value of your home'</span><span class="p">)</span>
 
         <span class="o">+</span><span class="n">feature</span><span class="p">(</span><span class="s1">'Minimal qualifying'</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>I also used SCSS (compiled into minified and autoprefixe CSS) and jquery (which was also minfied)</p>
 

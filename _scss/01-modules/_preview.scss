@@ -34,6 +34,18 @@
             margin-bottom: .125rem;
         }
     }
+
+    &--extra-small{
+        font-size: $font-size-extra-small;
+        font-weight: 600;
+
+        &:after{
+            height: 1px;
+            width: 40px;
+            margin-left: .75rem;
+            margin-bottom: .2rem;
+        }
+    }
 }
 
 .preview-more{

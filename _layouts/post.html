@@ -12,11 +12,12 @@
             </div>
             <h1 class="post__title">{{ page.title }}</h1>
             <span class="meta post__meta">{{ page.date | date: "%B %e, %Y" }}</span>
-             {{ content }}
+            <p>{{page.excerpt}}</p>
+            {{ content }}
         </article>
 
         <aside class="sidebar">
-            <h4 class="preview-title preview-title--small sidebar__title">Other Posts</h4>
+            <h4 class="preview-title preview-title--extra-small sidebar__title">Other Posts</h4>
             <ul class="sidebar__posts">
                 {% for post in site.related_posts %}
                     <li class="sidebar__post">
