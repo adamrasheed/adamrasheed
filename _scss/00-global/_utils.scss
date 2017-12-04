@@ -47,3 +47,25 @@
         margin-bottom: 7px;
     }
 }
+
+.case-study, .post {
+    figure{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 0;
+        }
+    }
+
+    figcaption{
+        font-size: $font-size-extra-small;
+        line-height: 1;
+        font-style: italic;
+        text-align: center;
+    }
+
+}

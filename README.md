@@ -10,4 +10,10 @@ During development, I'm running gulp as a build tool to do the following:
 - Compile SCSS to minified CSS
 - Transpile ES6 javascript into es2014 javascript
 
-Check out the site at: https://adamrsheed.com
+Check out the site at: https://adamrasheed.com
+
+Some features of the site:
+
+- Portfolio Case Studies
+- Blog Articles
+- Rad About me page

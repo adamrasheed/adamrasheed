@@ -3,18 +3,20 @@
 // Text
 $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-heading: -apple-system-headline;
+$font-family-code: monospace;
 
 $color-text: #000000;
 $color-text-light: hsla(0, 100%, 0%, 0.32);
 $color-link: #3498db;
 $color-btn-secondary: #EAEAEA;
 $color-bg-light: rgba(239, 240, 241, 0.57);
+$color-bg-extra-light: rgba(245, 246, 248, 0.6);
 
 $font-size-base: 16px;
 $font-size-body: 14px;
 $font-size-large: 1.25rem;
 $font-size-small: .875rem;
-$font-size-extra-small: .625rem;
+$font-size-extra-small: .75rem;
 
 $line-height-paragraph: 24px;
 $line-height-body: 1.4;

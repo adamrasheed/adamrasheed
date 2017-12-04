@@ -30,6 +30,10 @@ p > a {
     color: $color-link;
 }
 
+strong{
+    font-weight: bold;
+}
+
 .paragraph{
     font-size: $font-size-body;
     line-height: $line-height-paragraph;
@@ -38,8 +42,8 @@ p > a {
 .case-study, .post {
     h2 {
         font-size: 1.25rem;
-        line-height: 1.5rem;
-        margin-bottom: .5rem;
+        line-height: 1.75rem;
+        margin-bottom: .25rem;
     }
 
     h3 {
@@ -47,7 +51,15 @@ p > a {
         line-height: 1.25rem;
         margin-bottom: .25rem;
     }
-    p + h2, p +h3, p + h4, ul + h2, ul + h3, ul + h4 {
+    p + h2,
+    p +h3,
+    p + h4,
+    ul + h2,
+    ul + h3,
+    ul + h4,
+    code + h2,
+    code + h3,
+    code + h4 {
         margin-top: 1.625rem;
     }
 
@@ -55,8 +67,25 @@ p > a {
         margin-bottom: 1rem;
     }
 
-    h1 + ul, h2 + ul {
+    h1 + ul,
+    h2 + ul,
+    h3 + ul,
+    h1 + code,
+    h2 + code,
+    h3 + code,
+    h4+ code,
+    h1 + .highlighter-rouge,
+    h2 + .highlighter-rouge,
+    h3 + .highlighter-rouge,
+    h4 + .highlighter-rouge {
         margin-top: 1rem;
+    }
+
+    .highlighter-rouge + h1,
+    .highlighter-rouge + h2,
+    .highlighter-rouge + h3,
+    .highlighter-rouge + h4 {
+        margin-top: 1.5rem;
     }
 
     ul {
@@ -76,4 +105,31 @@ p > a {
             margin-right: 0.75rem;
         }
     }
+
+
+    hr {
+        display: block;
+        max-width: 4rem;
+        height: 1px;
+        background: $color-text;
+        margin: 2rem auto;
+    }
+
+    p + hr {
+        margin: 2rem auto 2rem;
+    }
+}
+
+.highlighter-rouge {
+    display: block;
+    padding: .75rem 1rem;
+    overflow: scroll;
+    background: $color-bg-extra-light;
+    margin-bottom: 1rem;
+}
+
+code {
+    font-size: $font-size-small;
+    font-family: $font-family-code;
+    margin-bottom: 1rem;
 }
