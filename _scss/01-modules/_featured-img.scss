@@ -4,7 +4,7 @@
     height: auto;
     margin-bottom: 13px;
 
-    @media #{$media-tablet}{
+    @media #{$media-container-size}{
         max-width: $container-size;
         margin: 0 auto 3rem;
     }

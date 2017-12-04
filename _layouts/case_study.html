@@ -11,7 +11,19 @@
         </div>
         <article class="case-study__content">
             <h1 class="page-title">{{ page.title }}</h1>
-            <img src="{{page.image}}" alt="" class="featured-img">
+            <img
+                sizes="100%"
+                src="{{page.image}}"
+                srcset="
+                    {{page.image | remove: ".png"}}_w_440.png 440w,
+                    {{page.image | remove: ".png"}}_w_609.png 609w,
+                    {{page.image | remove: ".png"}}_w_880.png 880w,
+                    {{page.image | remove: ".png"}}_w_986.png 986w,
+                    {{page.image | remove: ".png"}}_w_1449.png 1449w,
+                    {{page.image | remove: ".png"}}_w_1480.png 1480w"
+                alt="{{page.title}}"
+                class="featured-img"
+            >
             <div class="container container--small">
                  {{ content }}
             </div>

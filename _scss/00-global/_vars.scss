@@ -44,9 +44,10 @@ $brands: (
 );
 
 // Media
-$media-phone-large:   'only screen and (min-width: 360px)';
-$media-tablet-small:  'only screen and (min-width: 480px)';
-$media-tablet:        'only screen and (min-width: 620px)';
-$media-desktop-small: 'only screen and (min-width: 920px)';
-$media-desktop:       'only screen and (min-width: 1440px)';
-$media-desktop-large: 'only screen and (min-width: 1920px)';
+$media-phone-large:    'only screen and (min-width: 360px)';
+$media-tablet-small:   'only screen and (min-width: 480px)';
+$media-tablet:         'only screen and (min-width: 620px)';
+$media-container-size: 'only screen and (min-width: $container-size)';
+$media-desktop-small:  'only screen and (min-width: 920px)';
+$media-desktop:        'only screen and (min-width: 1440px)';
+$media-desktop-large:  'only screen and (min-width: 1920px)';

@@ -1,7 +1,7 @@
 ---
 layout: case_study
 title: Flexrake® - Custom Shopify Site
-image: '/assets/flexrake-case-study-cover@2x.png'
+image: '/assets/flexrake-case-study-cover.png'
 tagline: Creating Delightful eCommerce Experiences with Custom Shopify Themes
 excerpt: I partenered with a gardening tool manufacturer in Los Angeles to create a online shopping experience using fresh, yet approachable designs for their baby coomer audience.
 tags: [UI Design, Custom Shopify Theme Development]
