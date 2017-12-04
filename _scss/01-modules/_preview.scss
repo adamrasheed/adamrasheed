@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 1.125rem 0 0.875rem;
 }
 
 .preview-title{
     font-variant: small-caps;
     font-variant-caps: all-small-caps;
-    margin-bottom: 1rem;
     letter-spacing: .08em;
     font-size: $font-size-small;
     
