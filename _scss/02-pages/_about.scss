@@ -52,11 +52,18 @@
             margin: 0 auto 2.8rem;
             transform: translateY(1px);
         }
+        &__container{
+            margin-bottom: map-get($section-spacer, small );
+        }
     }
 
     @media #{$media-desktop-small}{
         &__container{
-            margin-bottom: 8rem;
+            margin-bottom: map-get($section-spacer, medium );
         }
+    }
+
+    @media #{$media-desktop-small}{
+        margin-bottom: map-get($section-spacer, large );
     }
 }

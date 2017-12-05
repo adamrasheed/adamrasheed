@@ -20,6 +20,11 @@ h2{
     line-height: 2rem;
 }
 
+h3{
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+}
+
 
 p {
     font-size: $font-size-body;
@@ -104,9 +109,12 @@ em{
         margin-bottom: 1rem;
         line-height: 1;
         font-size: $font-size-small;
+        padding-left: 1.5rem;
+
         &:before{
             content: '—';
-            margin-right: 0.75rem;
+            display: block;
+            transform: translate(-1.5rem, 0.75rem);
         }
     }
 

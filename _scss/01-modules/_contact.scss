@@ -16,6 +16,14 @@
     }
 
     @media #{$media-tablet}{
-        margin-bottom: 9rem;
+        margin-bottom: map-get($section-spacer, medium );
+
+        &__container{
+            padding: 0 1rem 1rem;
+        }
+    }
+
+    @media #{$media-desktop-small}{
+        margin-bottom: map-get($section-spacer, large );
     }
 }

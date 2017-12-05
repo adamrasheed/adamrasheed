@@ -37,13 +37,18 @@ section.section-case-studies{
         }
     }
 
+    &__tagline{
+        margin-bottom: .125rem;
+    }
+
     @media #{$media-tablet}{
         margin-bottom: 0rem;
+        margin-bottom: map-get($section-spacer, small);
         @supports(display: grid) and (not(display: -ms-grid)) {
             &__content{
                 display: grid;
                 grid-template-columns: 1fr  1fr;
-                grid-template-rows: 1fr 1fr 2fr;
+                grid-template-rows: auto auto auto;
                 grid-template-areas:
                     "main side"
                     "tags side"
@@ -54,7 +59,7 @@ section.section-case-studies{
                 grid-area: main;
                 align-self: start;
                 font-size: 1.5rem;
-                margin: 1rem 0 0
+                margin: 1rem 0 1.5rem;
             }
 
             &__tags{
@@ -70,8 +75,16 @@ section.section-case-studies{
             &__body{
                 grid-area: side;
                 grid-column: 2/2;
-                margin: 1.25rem 0 0.25rem;
+                margin: 0.825rem 0 0.25rem;
             }
         }
+    }
+
+    @media #{$media-desktop-small}{
+        margin-bottom: map-get($section-spacer, medium);
+    }
+
+    @media #{$media-desktop-small}{
+        margin-bottom: map-get($section-spacer, large);
     }
 }

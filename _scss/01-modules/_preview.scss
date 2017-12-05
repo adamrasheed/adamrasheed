@@ -62,3 +62,17 @@
         margin-left: .25rem;
     }
 }
+
+.blog-preview{
+    @media #{$media-tablet}{
+        margin-bottom: map-get($section-spacer, small);
+    }
+
+    @media #{$media-desktop-small}{
+        margin-bottom: map-get($section-spacer, medium);
+    }
+
+    @media #{$media-desktop}{
+        margin-bottom: map-get($section-spacer, large);
+    }
+}

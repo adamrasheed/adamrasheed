@@ -26,11 +26,18 @@ $container-size: 832px;
 $container-size-small: 512px;
 $half: 384px;
 
+
+$section-spacer: (
+    small: 6rem,
+    medium:   7rem,
+    large:   8rem
+);
+
 // Transition
 $transition: (
     short: all .15s ease-in-out,
-    med: all .25s ease-in-out,
-    long: all .3s ease-in-out
+    medium: all .25s ease-in-out,
+    large: all .3s ease-in-out
 );
 
 // Social

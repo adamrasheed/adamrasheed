@@ -6,20 +6,13 @@ categories: wordpress
 excerpt: Wordpress sites can grow really fast, and making sure your search bar can handle large volumes of data can be quite a challenge. In this post, I'll give some tips on how to make your wordpress search bar work in large-scale sites.
 ---
 
-Wordpress sites can grow really fast, and making sure your search bar can handle large volumes of data can be quite a challenge. In this post, I'll give some tips on how to make your wordpress search bar work in large-scale sites.
+## Why Wordpress Sites Slow Down as They Grow
+As your website grows beyond a typical site with a handful of pages to the like of 1,000+ or even 10,000+ pages, your site will inevitably slow down due to a couple of reasons which include: a mishmash of spaghetti code that started to pile up as your code was getting fixed, and Your site having to query through thousands is not millions of lines of the databse.
 
+## What if You have a site with 100k+ pages?
+If you take on client work, you may one day get a client that has a 100k+ page wordpress site that needs to be optimized. Funny thing, that's exactly what happened to me. Now, if you have a well-coded theme and are one a good host like <a href="https://m.do.co/c/73cb4550a3de" target="_blank" rel="noopener">DigitalOcean</a> (use this link and get $10 credit for free) there shouldn't be too much of a problem in the trouble happens with the search bar on your site.
 
-## As Your Site Grows, Everything Starts to Slow Down
-How to create a different
-
-## What if You have a site with 50k+ pages?
-Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.
-
-
-## Why Wordpress Sites Slow Down with Scale
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor.
-
-Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+With a site of this scale, wordpress literally has to query through millions of rows in your database to retrieve a specific page your user search for. Luckily, there's a fix to drastically speed up the search function on your site.
 
 ## How to Fix The Problem and Speed Up Your Search
 Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
