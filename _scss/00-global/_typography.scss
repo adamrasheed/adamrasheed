@@ -31,7 +31,7 @@ p {
     line-height: $line-height-paragraph;
 }
 
-p > a {
+p > a, .post a, {
     color: $color-link;
 }
 
@@ -76,9 +76,9 @@ em{
         margin-bottom: 1rem;
     }
 
-    h1 + ul,
-    h2 + ul,
-    h3 + ul,
+    // h1 + ul,
+    // h2 + ul,
+    // h3 + ul,
     h1 + code,
     h2 + code,
     h3 + code,
@@ -88,6 +88,10 @@ em{
     h3 + .highlighter-rouge,
     h4 + .highlighter-rouge {
         margin-top: 1rem;
+    }
+
+    h4 + ul {
+        margin-top: .5rem;
     }
 
     .highlighter-rouge + h1,
@@ -102,6 +106,7 @@ em{
     }
 
     p + ul {
+        margin-top: -.5rem;
         margin-bottom: 1.5rem;
     }
 
@@ -133,11 +138,16 @@ em{
 }
 
 .highlighter-rouge {
-    display: block;
-    padding: .75rem 1rem;
-    overflow: scroll;
+    padding: .15rem .25rem;
+    // overflow: scroll;
     background: $color-bg-extra-light;
     margin-bottom: 1rem;
+}
+
+pre {
+    display: block;
+    overflow: scroll;
+    padding: .75rem 1rem;
 }
 
 code {

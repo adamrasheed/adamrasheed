@@ -4,8 +4,14 @@
     font-size: $font-size-small;
     line-height: 1.25rem;
 
+    color: $color-text;
+
     &--outer{
         padding: 0 1rem;
+    }
+
+    & > .breadcrumb {
+        color: $color-text;
     }
 }
 .breadcrumb{

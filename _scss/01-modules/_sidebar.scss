@@ -21,12 +21,33 @@
     }
 
     @media #{$media-tablet-small}{
+        max-width: 24rem;
+    }
+
+    @media #{$media-tablet}{
         max-width: 11rem;
+        flex: 100%;
+    }
+
+    @media #{$media-desktop}{
+        max-width: 16rem;
         flex: 100%;
     }
 }
 
 .post + .sidebar {
-    margin-left: 9rem;
-    margin-top: 2rem;
+    margin: 0 0 4rem;
+
+    @media #{$media-tablet}{
+        margin: 2rem 0 0 3rem;
+    }
+
+    @media #{$media-desktop-small}{
+        margin: 2rem 0 0 9rem;
+    }
+
+    @media #{$media-desktop}{
+        margin: 2rem 0 0 6rem;
+    }
 }
+
