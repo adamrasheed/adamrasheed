@@ -5,10 +5,13 @@ $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, 
 $font-family-heading: -apple-system-headline;
 $font-family-code: monospace;
 
-$color-text: #000000;
-$color-text-light: hsla(0, 100%, 0%, 0.32);
-$color-link: #3498db;
-$color-btn-secondary: #EAEAEA;
+$color-text:       #000000;
+$color-text-light: hsl(204, 2%, 72%);
+$color-link:       #3498db;
+
+$color-btn-secondary:       hsl(204, 10%, 96%);
+$color-btn-secondary-hover: hsl(204, 10%, 92%);
+
 $color-bg-light: rgba(239, 240, 241, 0.57);
 $color-bg-extra-light: rgba(245, 246, 248, 0.6);
 
@@ -35,7 +38,7 @@ $section-spacer: (
 
 // Transition
 $transition: (
-    short: all .15s ease-in-out,
+    short: all .10s ease-in-out,
     medium: all .25s ease-in-out,
     large: all .3s ease-in-out
 );

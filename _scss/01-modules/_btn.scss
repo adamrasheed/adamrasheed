@@ -10,6 +10,11 @@
     text-align: center;
     display: block;
     max-width: 10rem;
+    transition: map-get($transition, short );
+
+    &:hover, &:focus{
+        background: $color-btn-secondary-hover;
+    }
 
     &--primary{
         background: #ffe47a;

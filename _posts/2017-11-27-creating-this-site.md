@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Creating This Site | Just Freaking Ship
+title:  Creating This Site | Just F***ing Ship
 date:   2017-11-27 08:00:03
 categories: general
-excerpt: I've been delaying creating my own personal site that's separate from my site I have for small business client work, so I finally made something.
+excerpt: I've been delaying creating my own personal site that's separate from my site I have for small business client work, so I finally made something. Here's how I made it.
 ---
 
 ## My Primary Goals
@@ -14,10 +14,13 @@ While I have a site to market myself to small business clients, I've been lookin
 Since I'm a developer, I wanted to showcase my techincal ability in making this site, but I also wanted to easily create new case studies and blog articles without putting effort into having to maintain different image sizes, go into the code, etc. I originally chose <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener">Gatsby</a> a React-based front-end framework (even React's Offical Docs site uses it!), but I was having some trouble setting up GraphQL (something it uses instead of APIs).
 
 ## Current Tech Stack
-For this site, I wanted to launch quickly more than I wanted to get the tech stack just right and humblebrag about using the latest javascript-heavy front-end. So, with speed in mind, I used the following:
+For this site, I wanted to launch quickly more than I wanted to get the tech stack just right and humblebrag about using the latest javascript-heavy front-end. So, with a fast launch date in mind, I used the following:
 
 ### Jekyll Static Site
 For this current iteration of the site, I used ol-faithful, Jekyll, a static-site generator I've been using for a few years. Jekylls perfect for sites where clients don't need to go in and change content all too often, and it's also great for any small side projects you maybe working on. For instance, I used Jekyll to create <a href="//occreative.co/" target="_blank" rel="noopener">OC Creative</a>
+
+### Gulp Build Tool to Compile SASS
+I used Gulp, another tried-and-true build tool, to preprocess and minify my SCSS to minified CSS as well as implement Browsersync so I could look at what I'm coding in real-time. While lately I've been using plain NPM scripts as a build tool that processes my code and even Webpack for JS module bundling, I saw ShakyShane's <a href="https://github.com/shakyShane/jekyll-gulp-sass-browser-sync" target="_blank" rel="noopener">jekyll-gulp-sass-browser-sync</a> Jekyll StarterKit. This alone saves me an hour of setting up a Gulpfile with Jekyll. I simply cloned this repo and I was off to the races. If you want to quickly spin up a jekyll site and want to use SASS, I highly recommend using this repo.
 
 ### Deployed and Hosted Through Netlify
 <a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a> was the answer to my prayers. It deploy and hosts your code through git pushes. It even has build commands so you can keep your github repo nice and clean, and build a "dist" or in the case of Jekll "_site" folder when you push your code to deploy. Set up if super easy: all you need to do it connect your github account to Netlify and choose the repo you want to use.
@@ -42,3 +45,9 @@ I want to rely less on third-party services for deploying as I'd like to learn h
 
 ## Conclusion
 While its not exactly what I wanted to use, I'm happy that I wwas able to quickly launch my site using Jekyll, Gulp, and Netlify. I want to make a lot of changes to this site in early 2018, but in the meantime, I'm going to flesh out some more case studies and write a couple of more blog articles. So stay tuned!
+
+#### Useful Links
+
+- <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener">GatsbyJS</a>
+- <a href="https://github.com/shakyShane/jekyll-gulp-sass-browser-sync" target="_blank" rel="noopener">Jekyll, Gulp, Sass, Browsersync StarterKit</a>
+- <a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a>

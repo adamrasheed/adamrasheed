@@ -59,7 +59,7 @@ The bigger challenge, however was effectively migrating the products from the ol
 Migrating 200+ SKUs from Magento to Shopify one product at a time would've been a tedious task. That's where my excel skills came in handy. I exported the magento products to a csv file, then converted into a (link: https://help.shopify.com/manual/products/import-export#csv-files name: Shopify-friendly popup: yes) 
 
 ## Outcome
--The end result was a fully responsive website that was designed from the ground up to help Flexrake® increase its revenue all while making its day-to-day sales operations much easier.
+The end result was a fully responsive website that was designed from the ground up to help Flexrake® increase its revenue all while making its day-to-day sales operations much easier.
 
 
 ## Next Steps

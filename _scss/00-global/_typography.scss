@@ -135,6 +135,13 @@ em{
     p + hr {
         margin: 2rem auto 2rem;
     }
+
+    @media #{$media-tablet}{
+        h2{
+            line-height: 1.75rem;
+            margin-bottom: .25rem;
+        }
+    }
 }
 
 .highlighter-rouge {
