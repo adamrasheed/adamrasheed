@@ -2,7 +2,8 @@ body{
     text-rendering: optimizeLegibility;
 }
 h1, h2, h3, h4, h5 {
-    font-weight: 800;
+    font-weight: 700;
+    font: $font-family-heading;
 }
 
 .mega{
@@ -15,14 +16,20 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+h1 {
+    font: -apple-system-headline;
+}
+
 h2{
     font-size: 1.5rem;
     line-height: 2rem;
+    font: $font-family-subheading;
 }
 
 h3{
     font-size: 1.125rem;
     line-height: 1.25rem;
+    font: $font-family-subheading;
 }
 
 

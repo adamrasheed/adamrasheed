@@ -14,7 +14,7 @@
 	&:after{
 		content: '';
 		display: inline-block;
-		width: 64px;
+		width: 32px;
 		height: 2px;
 		background: $color-text;
 		margin-bottom: .25rem;
@@ -44,6 +44,13 @@
             width: 40px;
             margin-left: .75rem;
             margin-bottom: .2rem;
+        }
+    }
+
+    @media #{$media-tablet}{
+        &:after{
+            width: 64px;
+            margin-left: 1rem;
         }
     }
 }

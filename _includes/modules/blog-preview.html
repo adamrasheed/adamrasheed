@@ -16,7 +16,7 @@
                 <div class="preview-post__meta">
                     <span class="preview-post__date">{{ post.date | date: '%B %d, %Y' }}</span>
                     <span class="preview-post__length" title="Estimated read time">
-                         {% assign words = post.content | size%} {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180 }} Min {% endif
+                         {% assign words = post.content | number_of_words %} {% if words < 360 %} 1 min {% else %} {{ words | divided_by: 180 }} Min {% endif
                             %} Read
                     </span>
                 </div>

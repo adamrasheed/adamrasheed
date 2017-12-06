@@ -13,7 +13,12 @@ order: 3
                 <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
             </h2>
             <div class="post__meta">
-                <span class="post__date">{{ post.date | date: '%B %e, %Y' }}</span>
+                <span class="post__date">{{ post.date | date: '%B&nbsp;%e, %Y' }}</span>
+                <span class="post__length" title="Estimated read time">
+                    {% assign words = post.content | number_of_words %} {% if words
+                    < 360 %} 1 min {% else %} {{ words | divided_by: 180
+                        }} Min {% endif %} Read
+                </span>
             </div>
             <div class="paragraph post__excerpt">
                 {{ post.excerpt | strip_html |truncatewords: 45 }}

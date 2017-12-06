@@ -15,14 +15,25 @@
     max-width: 32rem;
 
     &__title{
-    line-height: 29px;
-    font-size: 20px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 0;
+        font-family: $font-family-heading;
     }
 
     &__meta{
         display: block;
         margin: 1rem 0;
         @extend %small;
+    }
+
+    &__date, &__length{
+        margin-right: 1rem;
+        display: inline-block;
+    }
+
+    h1 {
+        font-family: $font-family-heading 20px 29px;
     }
 
     h2{

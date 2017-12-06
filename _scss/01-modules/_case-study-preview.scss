@@ -16,6 +16,7 @@ section.section-case-studies{
 
     &__title{
         @extend %title;
+        font: $font-family-subheading;
         margin: 0 0 1rem;
     }
 
@@ -39,6 +40,7 @@ section.section-case-studies{
 
     &__tagline{
         margin-bottom: .125rem;
+        font: $font-family-small-subheading;
     }
 
     @media #{$media-tablet}{
