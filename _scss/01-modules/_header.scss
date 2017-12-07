@@ -40,7 +40,7 @@
 .site-menu{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
     align-items: center;
 
@@ -48,6 +48,7 @@
         display: inline-block;
         padding: .5rem .825rem;
         text-align: center;
+        flex: 50%;
     }
 
     &__link{
@@ -71,10 +72,21 @@
 
     @media #{$media-tablet}{
         display: block;
+        flex: 1 0 auto;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-flow: row nowrap;
 
         &__item{
             padding: 0;
             margin-left: 1rem;
+            flex: auto;
         }
+    }
+
+    @media #{$media-desktop-small}{
+        flex: 0 1 auto;
     }
 }
