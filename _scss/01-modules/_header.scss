@@ -88,5 +88,9 @@
 
     @media #{$media-desktop-small}{
         flex: 0 1 auto;
+
+        &__item{
+            margin-left: 1.5rem;
+        }
     }
 }

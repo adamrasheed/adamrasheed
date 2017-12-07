@@ -5,6 +5,10 @@
     font-weight: 500;
     font-size: 1.25rem;
 
+    &--no-pad{
+        padding: 0;
+    }
+
     @media #{$media-tablet}{
         margin: 2rem auto;
     }
