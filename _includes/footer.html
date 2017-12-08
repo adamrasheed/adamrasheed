@@ -3,6 +3,9 @@
         <div class="footer__credit">
             {{ site.name }} &copy; {{ site.time | date: "%Y" }}
         </div>
+        <div class="footer__source">
+            <a href="https://github.com/adamrasheed/adamrasheed" class="small">Source Code</a>
+        </div>
         <div class="social footer__social">
             {% for social in site.data.social %}
                 <li class="social__item">

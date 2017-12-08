@@ -52,6 +52,10 @@
             width: 64px;
             margin-left: 1rem;
         }
+
+        &--extra-small:after{
+            width: 32px;
+        }
     }
 }
 
@@ -78,14 +82,15 @@
 
 .blog-preview{
     @media #{$media-tablet}{
-        margin-bottom: map-get($section-spacer, small);
+        // margin-bottom: map-get($section-spacer, small);
+        margin-bottom: 5rem;
     }
 
     @media #{$media-desktop-small}{
-        margin-bottom: map-get($section-spacer, medium);
+        // margin-bottom: map-get($section-spacer, medium);
     }
 
     @media #{$media-desktop}{
-        margin-bottom: map-get($section-spacer, large);
+        // margin-bottom: map-get($section-spacer, large);
     }
 }

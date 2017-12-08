@@ -6,10 +6,24 @@
         font-size: $font-size-small;
     }
 
+    &__source{
+        font-size: $font-size-body;
+        flex: 100%;
+        text-align: center;
+        margin: 0 0 1.5rem;
+        & > a {
+            color: $color-text;
+        }
+    }
+
     @media #{$media-tablet}{
         &__credit{
         margin-bottom: 0;
-    }
+        }
+        &__source{
+            margin: 0 auto 0 1rem;
+            flex: 0 1 auto;
+        }
     }
 }
 .footer__container{

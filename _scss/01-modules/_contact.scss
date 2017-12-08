@@ -24,6 +24,6 @@
     }
 
     @media #{$media-desktop-small}{
-        margin-bottom: map-get($section-spacer, large );
+        // margin-bottom: map-get($section-spacer, large );
     }
 }

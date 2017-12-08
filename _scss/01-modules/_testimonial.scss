@@ -1,0 +1,33 @@
+.testimonial{
+    margin-bottom: 2rem;
+    background: $color-bg-light;
+    padding: 0.825rem 1rem 1rem;
+
+    &__body{
+        font-size: $font-size-base;
+        line-height: 1.75rem;
+        margin-bottom: 0.25rem !important;
+        font-style: italic;
+    }
+
+    &__name, &__company{
+        font-size: $font-size-body;
+        margin-bottom: 0 !important;
+        font-variant-caps: all-small-caps;
+        letter-spacing: .05em;
+    }
+
+    &__name{
+        display: inline-block;
+
+        &:after{
+            content: '|';
+            display: inline-block;
+            margin:  0 .5rem;
+        }
+    }
+
+    &__company{
+        color: $color-text !important;
+    }
+}

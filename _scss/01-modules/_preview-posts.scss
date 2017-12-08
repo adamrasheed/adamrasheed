@@ -16,7 +16,7 @@
     &__title{
         line-height: 32px;
         font-size: 20px;
-        margin-bottom: 1.125rem;
+        margin-bottom: 0.325rem;
     }
 
     &__meta{
@@ -29,6 +29,12 @@
 
     &__date{
         margin-right: 2rem;
+    }
+
+    @media #{$media-tablet}{
+        &__title{
+            // margin-bottom: 1.325rem;
+        }
     }
 
     @media #{$media-tablet}{
@@ -46,6 +52,12 @@
         &:nth-of-type(even){
             padding-left: 1rem;
         }
+        &__title{
+            // margin-bottom: auto;
+        }
+    }
+
+    @media #{$media-desktop-small}{
         &__title{
             margin-bottom: auto;
         }
