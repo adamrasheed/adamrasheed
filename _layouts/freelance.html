@@ -5,13 +5,9 @@
 <body>
     {% include header.html %}
     <main>
-        <div class="breadcrumbs breadcrumbs--outer">
-            <a href="/" class="breadcrumb">Home</a>
-            <span class="breadcrumb">{{page.title}}</span>
-        </div>
         <h1 class="page-title">{{ page.title }}</h1>
         <div class="container container--no-pad">
-            <article class="post post--freelance">
+            <article class="post post--freelance pt-0">
                 {{ content }}
             </article>
         </div>

@@ -5,11 +5,6 @@
     {% include header.html %}
     <main class="blog-posts">
         <article class="post">
-            <div class="breadcrumbs">
-                <a href="/" class="breadcrumb">Home</a>
-                <a href="/blog" class="breadcrumb">Blog</a>
-                <span class="breadcrumb">{{page.title}}</span>
-            </div>
             <h1 class="post__title">{{ page.title }}</h1>
             <span class="meta post__meta">{{ page.date | date: "%B&nbsp;%e, %Y" }}</span>
             <p>{{page.excerpt}}</p>

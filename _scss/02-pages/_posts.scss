@@ -4,6 +4,7 @@
         justify-content: flex-start;
         flex-flow: row wrap;
         align-items: flex-start;
+        margin-top: -1rem;
 
         & > .post {
             flex: 50%;
@@ -24,10 +25,6 @@
 
 .posts .post{
 
-    &:nth-of-type(1), &:nth-of-type(2){
-        margin-top: -1rem;
-    }
-
     &__title{
         text-decoration: none;
         font-size: 1.25rem;
@@ -45,12 +42,23 @@
     }
 
     @media #{$media-tablet}{
-        margin-bottom: 3.625rem;
+        padding: 0 1rem 2rem;
+
+        margin-bottom: 1.625rem;
+
         &__title{
             text-decoration: none;
             font-size: 1.75rem;
             line-height: 2.5rem;
         }
+        &__excerpt{
+            min-height: 9rem;
+            height: auto;
+            overflow: auto;
+        }
+    }
+
+    @media #{$media-desktop-small}{
         &__excerpt{
             min-height: 7.5rem;
         }

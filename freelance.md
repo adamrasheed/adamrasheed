@@ -14,7 +14,7 @@ been working a lot with agencies like
 - **Effective Communcation.** Seriously, I'll make sure to understand the needs of the project before taking it on and keep you in the loop throughout the whole project.
 - **Looking at the underlying business goals at hand.** A lot of times, what the clients really need isn't what they originally come to your agency for. That‘s where having some solid conversation with them is useful.
 
-## Some Things I can help you with:
+## Things I can help you with:
 - **Holy Trinity:** HTML, CSS, Javascript. All the things I utilized to build rad MySpace pages in 2006.
 
 - **Wordpress:** This includes custom themes and large-scale migration and optimization work. PHP and I have become very good friends.

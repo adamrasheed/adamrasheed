@@ -1,7 +1,7 @@
 .blog-posts{
     max-width: $container-size;
     margin: 0 auto;
-    
+
     @media #{$media-tablet}{
         display: flex;
         justify-content: flex-start;
@@ -10,8 +10,8 @@
 }
 
 .post{
-    margin-bottom: 2rem;
-    padding: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem 1rem;
     max-width: 32rem;
 
     &__title{
@@ -43,10 +43,15 @@
     }
 
     @media #{$media-tablet}{
+        padding: 1rem;
         &__title{
             font-size: 1.75rem;
             line-height: 2.5rem;
             margin-bottom: 1rem;
         }
+    }
+
+    @media #{$media-desktop-small}{
+        margin-bottom: 2rem;
     }
 }
