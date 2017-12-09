@@ -8,19 +8,19 @@
 
         <nav class="site-menu">
                 <li class="site-menu__item">
-                    <a href="/about" class="site-menu__link{% if page.url == '/{{ site.pages[0].title | slugify }}' %} active{% endif %}">about</a>
+                    <a href="/about" class="site-menu__link{% if page.title == 'About' %} site-menu__link--active{% endif %}">about</a>
                 </li>
                 <li class="site-menu__item">
                     <a 
                         href="/case-studies"
-                        class="site-menu__link{% if page.url == "/{{ site.pages[2].title | slugify }}" %} active{% endif %}"
+                        class="site-menu__link{% if page.title == 'Case Studies' %} site-menu__link--active{% endif %}{% if page.layout == 'case_study' %} site-menu__link--active{% endif %}"
                     >Case Studies</a>
                 </li>
                 <li class="site-menu__item">
-                    <a href="/blog" class="site-menu__link">Blog</a>
+                    <a href="/blog" class="site-menu__link{% if page.layout == 'post' %} site-menu__link--active{% endif %}{% if page.title == 'Blog' %} site-menu__link--active{% endif %}">Blog</a>
                 </li>
                 <li class="site-menu__item">
-                <a href="/freelance" class="site-menu__link">Freelance</a>
+                <a href="/freelance" class="site-menu__link{% if page.title == 'Freelance' %} site-menu__link--active{% endif %}">Freelance</a>
                 </li>
         </nav>
     </div>
