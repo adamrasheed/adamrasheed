@@ -64,8 +64,8 @@ em{
 
     h3 {
         font-size: 1.125rem;
-        line-height: 1.25rem;
-        margin-bottom: .25rem;
+        line-height: 1.5rem;
+        margin-bottom: .125rem;
     }
     p + h2,
     p +h3,
@@ -77,6 +77,10 @@ em{
     code + h3,
     code + h4 {
         margin-top: 1.625rem;
+    }
+
+    p + h4 {
+        margin-top: 1.325rem;
     }
 
     p {
@@ -110,6 +114,7 @@ em{
 
     ul {
         padding-left: 1.75rem;
+        padding-right: 1.75rem;
     }
 
     p + ul {
@@ -119,7 +124,7 @@ em{
 
     ul > li{
         margin-bottom: 1rem;
-        line-height: 1;
+        // line-height: 1;
         font-size: $font-size-small;
         // padding-left: 1rem;
         position: relative;
@@ -130,7 +135,7 @@ em{
             content: '—';
             display: block;
             padding: 0;
-            top: -1px;
+            top: -2px;
             left: -1.5rem;
         }
     }

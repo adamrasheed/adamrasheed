@@ -15,4 +15,4 @@ markdown: kramdown
 highlighter: rouge # or rouge or null
 include: ['case-studies']
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-permalink: /:categories/:title/
+permalink: /:title/
