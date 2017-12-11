@@ -17,3 +17,12 @@ Some features of the site:
 - Portfolio Case Studies
 - Blog Articles
 - Rad About me page
+- Freelance Info
+
+
+### Features/Content Coming Up:
+
+- Lazy-loaded Images (blure to full-res via Medium)
+- Lazy loaded content (fading in elements as you scroll down)
+- FontAwesome 5 Icons
+- New Case Study
