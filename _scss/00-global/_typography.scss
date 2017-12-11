@@ -38,8 +38,14 @@ p {
     line-height: $line-height-paragraph;
 }
 
-p > a, .post a, {
-    color: $color-link;
+p > a, .post > a, {
+    color: $color-text;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 strong{

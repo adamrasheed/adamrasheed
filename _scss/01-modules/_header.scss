@@ -15,8 +15,19 @@
         letter-spacing: .05em;
         color: $color-text;
         display: inline-block;
+    }
 
-        &:after{
+    &__desc{
+        display: block;
+        transform: translateY(-2px);
+        color: $color-text;
+        font-size: $font-size-extra-small;
+        text-align: center;
+        margin: .5rem auto 0;
+    }
+
+    @media #{$media-phone-large}{
+        &__title:after{
             content: '';
             height: 1rem;
             width: 1px;
@@ -24,12 +35,10 @@
             background: $color-text;
             margin: 0 4px 0 6px;
         }
-    }
 
-    &__desc{
-        display: inline-block;
-        transform: translateY(-2px);
-        color: $color-text;
+        &__desc{
+            display: inline-block;
+        }
     }
 
     @media #{$media-tablet}{
@@ -39,10 +48,13 @@
 
 .site-menu{
 
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    border-left: 1px solid $color-text-light;
+    border-right: 1px solid $color-text-light;
 
     &__item{
         display: inline-block;
@@ -73,6 +85,7 @@
     @media #{$media-tablet}{
         display: block;
         flex: 1 0 auto;
+        border: none;
 
         display: flex;
         justify-content: flex-end;
