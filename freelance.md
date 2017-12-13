@@ -33,6 +33,13 @@ been working a lot with agencies like
 - **ES7:** Im currently learning Async Await to replace fetch (the way I currently hook into APIs).
 
 {% include modules/testimonial.html
+    testimonial="I had the pleasure of working with Adam on a recent webdesign project. From the initial call, I was able to quickly tell that he would be the right person for the job. He is knowledgeable, professional and has a passion for what his work.  Adam is dependable and fun to work with!  Despite our busy schedules, he would be accessible as needed and delivered a great product.  I look forward to future collaboration!"
+    name="Jayna Patel"
+    company="ePublishing"
+    link="https://www.epublishing.com/"
+%}
+
+{% include modules/testimonial.html
     testimonial="Adam was enthusiastic, a clear communicator, and a quick worker. Highly recommend him for Front End / UX projects. "
     name="Abby Sutton"
     company="Dot Dash"
