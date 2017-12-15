@@ -7,9 +7,10 @@ $font-family-subheading: -apple-system-subheadline, BlinkMacSystemFont, "Segoe U
 $font-family-small-subheading: -apple-system-short-subheadline, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $font-family-code: monospace;
 
-$color-text:       #000000;
-$color-text-light: hsl(204, 2%, 72%);
-$color-link:       #3498db;
+$color-text:            #000000;
+$color-text-light:      hsl(204, 2%, 72%);
+$color-text-extra-light:hsl(220, 13%, 91%);
+$color-link:            #3498db;
 
 $color-btn-secondary:       hsl(204, 10%, 96%);
 $color-btn-secondary-hover: hsl(204, 10%, 92%);

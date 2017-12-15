@@ -1,12 +1,14 @@
 .header__container{
     @extend %split;
     padding: 1.625rem 1rem 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .logo{
     text-decoration: none;
     color: $color-text;
-    margin-bottom: 1rem;
 
     &__title{
         font-size: $font-size-large;
@@ -22,8 +24,8 @@
         transform: translateY(-2px);
         color: $color-text;
         font-size: $font-size-extra-small;
-        text-align: center;
-        margin: .5rem auto 0;
+        text-align: left;
+        margin: .25rem auto 0;
     }
 
     @media #{$media-phone-large}{
@@ -47,7 +49,7 @@
 }
 
 .site-menu{
-
+    display: none;
     white-space: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -80,6 +82,10 @@
         &--active{
             color: $color-text;
         }
+    }
+
+    &--mobile{
+        display: none;
     }
 
     @media #{$media-tablet}{

@@ -6,6 +6,10 @@
             <span class="logo__desc">{{ site.description }}</span>
         </a>
 
+        <div id="burger" class="burger">
+            <span></span>
+        </div>
+
         <nav class="site-menu">
                 <li class="site-menu__item">
                     <a href="/about" class="site-menu__link{% if page.title == 'About' %} site-menu__link--active{% endif %}">about</a>
@@ -22,6 +26,25 @@
                 <li class="site-menu__item">
                 <a href="/freelance" class="site-menu__link{% if page.title == 'Freelance' %} site-menu__link--active{% endif %}">Freelance</a>
                 </li>
+        </nav>
+
+        <nav class="mobile-menu">
+            <h4 class="preview-title mobile-menu__title">Menu</h4>
+            <li class="mobile-menu__item">
+                <a href="/about" class="site-menu__link mobile-menu__link{% if page.title == 'About' %} site-menu__link--active{% endif %}">about</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="/case-studies" class="site-menu__link mobile-menu__link{% if page.title == 'Case Studies' %} site-menu__link--active{% endif %}{% if page.layout == 'case_study' %} site-menu__link--active{% endif %}">Case Studies</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="/blog" class="site-menu__link mobile-menu__link{% if page.layout == 'post' %} site-menu__link--active{% endif %}{% if page.title == 'Blog' %} site-menu__link--active{% endif %}">Blog</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="/freelance" class="site-menu__link mobile-menu__link{% if page.title == 'Freelance' %} site-menu__link--active{% endif %}">Freelance</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="mailto:{{site.email}}" class="site-menu__link mobile-menu__link" target="_blank" rel=""noopener>Email Me </a>
+            </li>
         </nav>
     </div>
 </header>

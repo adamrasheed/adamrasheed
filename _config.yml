@@ -7,8 +7,9 @@ tagline: I’m a Front-end Developer based in Southern California.
 
 email: adamrasheed91@gmail.com
 resume: https://www.dropbox.com/s/55xlzhq0tq63bn8/Adam-Rasheed-CV-Dev-2017.pdf?dl=0
-
 url: https://adamrasheed.com
+
+##copy
 
 
 markdown: kramdown
@@ -16,3 +17,11 @@ highlighter: rouge # or rouge or null
 include: ['case-studies']
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: /:title/
+
+plugins:
+  - jekyll-sitemap
+
+## Jekyll Assets Config
+sources:
+  - scripts
+  - assets
