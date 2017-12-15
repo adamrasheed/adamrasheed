@@ -38,7 +38,7 @@ p {
     line-height: $line-height-paragraph;
 }
 
-p > a, .post > a, {
+p > a, p > span > a, .post > a {
     color: $color-text;
     font-weight: bold;
     text-decoration: none;
