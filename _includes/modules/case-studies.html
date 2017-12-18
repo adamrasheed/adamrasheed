@@ -3,7 +3,8 @@
     <a href="{{study.url}}" class="case-study-preview__link">
         <img
             sizes="100%"
-            srcset="
+            data-src="{{study.image | remove: ".png"}}_w_440.png"
+            data-srcset="
                 {{study.image | remove: ".png"}}_w_440.png 440w,
                 {{study.image | remove: ".png"}}_w_609.png 609w,
                 {{study.image | remove: ".png"}}_w_727.png 727w,
@@ -14,10 +15,8 @@
                 {{study.image | remove: ".png"}}_w_1181.png 1181w,
                 {{study.image | remove: ".png"}}_w_1363.png 1363w,
                 {{study.image | remove: ".png"}}_w_1480.png 1480w"
-
-            src="{{study.image | remove: ".png"}}_w_440.png"
             alt="{{study.title}}"
-            class="case-study-preview__img">
+            class="lazyload blur-up case-study-preview__img">
     </a>
     <div class="case-study-preview__content">
         <h3 class="case-study-preview__title">

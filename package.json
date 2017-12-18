@@ -24,5 +24,8 @@
     "sass",
     "browsersync"
   ],
-  "homepage": "https://github.com/adamrasheed/adamrasheed"
+  "homepage": "https://github.com/adamrasheed/adamrasheed",
+  "dependencies": {
+    "lazysizes": "^4.0.1"
+  }
 }
