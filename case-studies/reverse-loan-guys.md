@@ -52,7 +52,7 @@ mixin featureImg(imgUrl)
         +feature('Minimal qualifying')
 ```
 
-I also used SCSS (compiled into minified and autoprefixe CSS) and jquery (which was also minfied)
+I also used SCSS (compiled into minified and autoprefixed CSS) and jquery (which was also minified)
 
 
 ## Beyond Development - Setting up Marketing
@@ -61,6 +61,6 @@ In addition to design and development of the landing page and website, I also se
 ---
 
 ## Conclusion
-This project was a great oppurutinty to work on and gave me solid exposure for creating projects in the financial niche. It also gave me an oppurtunity to strengthen my skills in static site generation.
+This project was a great opporutinty to work on and gave me solid exposure for creating projects in the financial niche. It also gave me an oppurtunity to strengthen my skills in static site generation.
 
 Check out the live site <a href="http://reverseloanguys.com" target="_blank" rel="noopener">here</a>.
