@@ -26,7 +26,7 @@ I used Gulp, another tried-and-true build tool, to preprocess and minify my SCSS
 <a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a> was the answer to my prayers. It deploy and hosts your code through git pushes. It even has build commands so you can keep your github repo nice and clean, and build a "dist" or in the case of Jekll "_site" folder when you push your code to deploy. Set up if super easy: all you need to do it connect your github account to Netlify and choose the repo you want to use.
 
 ## Future Goals for This Site
-This iteration of the site is solid. Besides a few tweaks (peformance, improved design, new icon set), it's a solid step to help my showcase my work and start blogging more regularly. However, I don't want this to be a premanent iteration. Here are some things I want to implement on this site:
+This iteration of the site is solid. Besides a few tweaks (peformance, improved design, new icon set), it's a solid step to help my showcase my work and start blogging more regularly. However, I don't want this to be a premanent iteration. Below are some things I want to implement on this site. You can also check out the <a href="https://trello.com/b/aJBVs9pE" target="_blank" rel="noopener">Trello Board</a> I created organize the future improvements and blog posts for this site.
 
 ### Improved Design
 The design currently is only one color and have little to no design elements in the whole site. Eventually, I want to revisit my Figma file nad tweak the design to be a little less *minimalist*.
