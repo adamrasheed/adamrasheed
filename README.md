@@ -26,3 +26,4 @@ Some features of the site:
 - Lazy loaded content (fading in elements as you scroll down)
 - FontAwesome 5 Icons
 - New Case Study
+- **Migrating to a WordPress Backend and a React/Gatsby Front-end**

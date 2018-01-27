@@ -3,9 +3,11 @@ description: Front-end Developer
 
 seo_desc: Adam Rasheed is a front-end developer based in Southern California who loves working in Wordpress, Shopify and React. He also loves doing UI/UX design in Sketch in Figma. Need some help on your next project? Let‘s talk!
 image: /assets/Adam-Rasheed-Pano-web@2x.jpg
-tagline: I’m a Front-end Developer based in Southern California.
-specialize: I specialize in Custom Wordpress and Shopify projects.
-career: Currently living off scrap near the subway.
+
+# Hero Content
+tagline: I’m a Front-end Developer based in <br>San Diego, CA.
+specialize: I specialize in Custom Wordpress and Shopify projects and am learning React.
+career: Currently working as a Shopify Developer at <a href="https://www.blenderseyewear.com/" target="_blank" rel="nofollow noopener">Blenders</a>.
 
 email: adamrasheed91@gmail.com
 resume: https://www.dropbox.com/s/55xlzhq0tq63bn8/Adam-Rasheed-CV-Dev-2017.pdf?dl=0
