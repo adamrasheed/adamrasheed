@@ -2,7 +2,7 @@ adamrasheed
 =============================
 
 ## My Personal Front-end Development Website
-This site uses a jekyll to build a static site.
+This site uses Jekyll to build a static site.
 
 During development, I'm running gulp as a build tool to do the following:
 
