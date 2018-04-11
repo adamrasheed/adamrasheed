@@ -10,7 +10,7 @@
             {% for social in site.data.social %}
                 <li class="social__item">
                     <a href="{{ social.link }}" class="social__link" target="_blank" rel="noopener">
-                        <i class="social__icon social__icon--{{ social.name }} {{ social.icon }}"></i>
+                        <i class="social__icon social__icon--{{ social.name }} fab fa-{{social.icon}}"></i>
                     </a>
                 </li>
             {% endfor %}
