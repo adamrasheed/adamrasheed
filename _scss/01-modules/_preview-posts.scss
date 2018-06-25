@@ -32,12 +32,6 @@
     }
 
     @media #{$media-tablet}{
-        &__title{
-            // margin-bottom: 1.325rem;
-        }
-    }
-
-    @media #{$media-tablet}{
         flex: 50%;
         max-width: 50%;
 
@@ -51,9 +45,6 @@
         }
         &:nth-of-type(even){
             padding-left: 1rem;
-        }
-        &__title{
-            // margin-bottom: auto;
         }
     }
 

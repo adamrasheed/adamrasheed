@@ -34,7 +34,6 @@
             align-items: flex-start;
             margin-bottom: 4rem;
         }
-        &__body, &__links{}
 
         &__body{
             flex: 50%;
@@ -48,23 +47,11 @@
 
     @media #{$media-tablet}{
         &__img{
+            width: 100%;
             max-width: $container-size;
             margin: 0 auto 2.8rem;
             transform: translateY(1px);
         }
-        &__container{
-            // margin-bottom: map-get($section-spacer, small );
-        }
-    }
-
-    @media #{$media-desktop-small}{
-        &__container{
-            // margin-bottom: map-get($section-spacer, medium );
-        }
-    }
-
-    @media #{$media-desktop-small}{
-        // margin-bottom: map-get($section-spacer, large );
     }
 }
 

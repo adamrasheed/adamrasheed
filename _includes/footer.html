@@ -6,15 +6,15 @@
         <div class="footer__source">
             <a href="https://github.com/adamrasheed/adamrasheed" class="small">Source Code</a>
         </div>
-        <div class="social footer__social">
+        <ul class="social footer__social">
             {% for social in site.data.social %}
-                <li class="social__item">
-                    <a href="{{ social.link }}" class="social__link" target="_blank" rel="noopener">
-                        <i class="social__icon social__icon--{{ social.name }} fab fa-{{social.icon}}"></i>
-                    </a>
-                </li>
+            <li class="social__item">
+                <a href="{{ social.link }}" class="social__link" target="_blank" rel="noopener" aria-label="{{social.name }}">
+                    <i class="social__icon social__icon--{{ social.name }} fab fa-{{social.icon}}"></i>
+                </a>
+            </li>
             {% endfor %}
-        </div>
+        </ul>
     </div>
 </footer>
 
