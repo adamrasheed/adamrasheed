@@ -65,8 +65,39 @@ const menuToggle = () => {
     });
 }
 
+const lazyimages = document.querySelectorAll('.js-lazy-scroll');
+const lazyimageClasses = {
+  fadeOut: "u-not-loaded",
+  fadedIn: "u-fade-in"
+};
+
+const obeserverOptions = {
+    root: null,
+    rootMargin: '4px',
+    threshold: 0.4
+}
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        let element = entry.target;
+        if (entry.intersectionRatio > 0) {
+            console.log('in the view');
+            element.classList.add(lazyimageClasses.fadedIn);
+            observer.unobserve(entry.target);
+        } else {
+            console.log('out of view');
+            element.classList.add(lazyimageClasses.fadeOut);
+
+        }
+    });
+}, obeserverOptions);
+
+
 // Doc ready yo
 document.addEventListener('DOMContentLoaded', function(){
     // console.log('loaded');
     menuToggle();
+    lazyimages.forEach(image => {
+        observer.observe(image);
+    })
 });

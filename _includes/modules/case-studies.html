@@ -1,5 +1,5 @@
 {% for study in site.pages %} {% if study.layout == 'case_study'%}
-<div class="case-study-preview">
+<div class="js-lazy-scroll case-study-preview">
     <a href="{{study.url}}" class="case-study-preview__link">
         <img
             sizes="auto"
@@ -8,11 +8,9 @@
                 {{study.image | remove: ".png"}}_w_440.png 440w,
                 {{study.image | remove: ".png"}}_w_609.png 609w,
                 {{study.image | remove: ".png"}}_w_757.png 757w,
-                {{study.image | remove: ".png"}}_w_880.png 880w,
                 {{study.image | remove: ".png"}}_w_986.png 986w,
                 {{study.image | remove: ".png"}}_w_1087.png 1087w,
                 {{study.image | remove: ".png"}}_w_1181.png 1181w,
-                {{study.image | remove: ".png"}}_w_1363.png 1363w,
                 {{study.image | remove: ".png"}}_w_1480.png 1480w"
             alt="{{study.title}}"
             class="lazyload blur-up case-study-preview__img">

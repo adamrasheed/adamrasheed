@@ -135,7 +135,7 @@
 
 // Slide
 
-@keyframes fadeIne{
+@keyframes fadeIn{
     0% {
         transform: translateY(-50%);
         opacity: 0;
@@ -165,12 +165,33 @@
 }
 
 .blur-up {
-		-webkit-filter: blur(5px);
-		filter: blur(5px);
-		transition: filter 250ms ease-in-out, -webkit-filter 250ms ease-in-out;
-	}
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    transition: filter 250ms ease-in-out, -webkit-filter 250ms ease-in-out;
+}
 
-	.blur-up.lazyloaded {
-		-webkit-filter: blur(0);
-		filter: blur(0);
-	}
+.blur-up.lazyloaded {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+.u-not-loaded {
+    opacity: 0;
+    transform: translateY(4rem);
+    transition: transform 0.5s ease-in-out;
+    img {
+        opacity: 0;
+        transition: all 0.15s ease-in-out;
+    }
+    
+    
+    &.u-fade-in {
+        opacity: 1;
+        transform: translateY(0);
+        img {
+            opacity: 1;
+        }
+    }
+}
+
+
