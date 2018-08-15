@@ -41,6 +41,7 @@ const enableScroll = () => {
 
 const menuToggle = () => {
     burger.addEventListener('click', function() {
+        console.log('clicked');
 
         let open = 'mobile-menu--open';
         let menuToggle = 'burger--open'
@@ -95,7 +96,7 @@ const observer = new IntersectionObserver(entries => {
 
 // Doc ready yo
 document.addEventListener('DOMContentLoaded', function(){
-    // console.log('loaded');
+    console.log('loaded');
     menuToggle();
     lazyimages.forEach(image => {
         observer.observe(image);
