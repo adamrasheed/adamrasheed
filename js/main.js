@@ -93,10 +93,11 @@ const observer = new IntersectionObserver(entries => {
     });
 }, obeserverOptions);
 
-
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 // Doc ready yo
 document.addEventListener('DOMContentLoaded', function(){
     console.log('loaded');
+    console.log(isSafari);
     menuToggle();
     lazyimages.forEach(image => {
         observer.observe(image);
