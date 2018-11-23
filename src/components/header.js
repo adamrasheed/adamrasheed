@@ -1,18 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 
 import Navigation from './Navigation'
 import MobileNav from './MobileNav';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, jobTitle }) => (
   <header className="header">
     <div className="container header__container">
       <a href="/" className="header__logo logo" id="logo">
         <h1 className="logo__title">{ siteTitle }</h1>
-        <div className="logo__desc">
-          I’m a Front-end Developer based in <br/>
-          San Diego, CA 🏖
-        </div>
+        <div className="logo__desc">{ jobTitle }</div>
       </a>
 
       <div id="burger" className="burger" js-burger>

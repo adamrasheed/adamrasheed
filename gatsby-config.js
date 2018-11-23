@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Adam Rasheed',
+    jobTitle: `Front-end Developer`,
     siteUrl: `https://adamrasheed.com`,
     tagLine: `I’m a Front-end Developer based in <br>San Diego, CA 🏖.`,
     specialize: `I specialize in Custom Wordpress and Shopify projects and am learning React.`,

@@ -18,13 +18,11 @@ const MobileNav = () => (
             <Link to="site-menu__link" className="site-menu__link" activeClassName="site-menu__link--active">Freelance</Link>
         </li>
         <li className="mobile-menu__item">
-            <Link to="site-menu__link" className="site-menu__link" activeClassName="site-menu__link--active">Email Me</Link>
             <a
             href="mailto:{{site.email}}"
             className="site-menu__link mobile-menu__link"
             target="_blank"
-            rel=""
-            noopener
+            rel="noopener noreferrer"
             >
             Email Me{' '}
             </a>

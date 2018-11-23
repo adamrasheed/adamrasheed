@@ -711,7 +711,7 @@
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "6261281da6dfc5d70d76f9b749fa02a1",
+      "version": "e88409870154a113b075a975ab62e53e",
       "pluginOptions": {
         "plugins": []
       },
@@ -787,7 +787,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "1b515302045ad3360c6666042c9310e0",
+        "contentDigest": "43f639b0a26a9d95b9a1022398cff3d5",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -895,6 +895,7 @@
     "Site": {
       "siteMetadata": {
         "title": "Adam Rasheed",
+        "jobTitle": "Front-end Developer",
         "siteUrl": "https://adamrasheed.com",
         "tagLine": "I’m a Front-end Developer based in <br>San Diego, CA 🏖.",
         "specialize": "I specialize in Custom Wordpress and Shopify projects and am learning React.",
@@ -911,12 +912,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-23T06:31:09.923Z",
+      "buildTime": "2018-11-23T21:06:22.779Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "c539444c26817a737bcbdde6c99eb5c0",
+        "contentDigest": "377bc4900251ab6e633f6457b98ca9ad",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -926,7 +927,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fcbd68fb20bd1114b750c0107a6dc622",
+        "contentDigest": "fd7019a244c5d43d8f8be6d9a2ff0a2c",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -938,7 +939,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-23T06:31:13.775Z",
+      "accessTime": "2018-11-23T21:06:26.338Z",
       "changeTime": "2018-11-23T05:22:40.368Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -956,11 +957,11 @@
       "blksize": 4096,
       "ino": 12886265220,
       "blocks": 0,
-      "atimeMs": 1542954673775.0496,
+      "atimeMs": 1543007186337.967,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.5725,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-23T06:31:13.775Z",
+      "atime": "2018-11-23T21:06:26.338Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.368Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -985,7 +986,7 @@
       "size": 21212,
       "prettySize": "21.2 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-23T06:31:13.775Z",
+      "accessTime": "2018-11-23T21:03:25.077Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1003,11 +1004,11 @@
       "blksize": 4096,
       "ino": 12886265222,
       "blocks": 48,
-      "atimeMs": 1542954673775.3044,
+      "atimeMs": 1543007005077.4768,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.4724,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-23T06:31:13.775Z",
+      "atime": "2018-11-23T21:03:25.077Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1042,7 +1043,7 @@
       "size": 167273,
       "prettySize": "167 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-23T06:31:13.775Z",
+      "accessTime": "2018-11-23T21:03:42.193Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1060,11 +1061,11 @@
       "blksize": 4096,
       "ino": 12886265221,
       "blocks": 328,
-      "atimeMs": 1542954673775.2888,
+      "atimeMs": 1543007022192.9495,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.1519,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-23T06:31:13.775Z",
+      "atime": "2018-11-23T21:03:42.193Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1158,15 +1159,77 @@
         "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
         "owner": "internal-data-bridge"
       }
+    },
+    "SitePage /about/": {
+      "jsonName": "about-f34",
+      "internalComponentName": "ComponentAbout",
+      "path": "/about/",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js",
+      "componentChunkName": "component---src-pages-about-js",
+      "context": {},
+      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a96a98d4f74ff507146b8394454db21e",
+        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /case-studies/": {
+      "jsonName": "case-studies-693",
+      "internalComponentName": "ComponentCaseStudies",
+      "path": "/case-studies/",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js",
+      "componentChunkName": "component---src-pages-case-studies-js",
+      "context": {},
+      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js",
+      "id": "SitePage /case-studies/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b85217e6260020d74b59d254dc86016f",
+        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /freelance/": {
+      "jsonName": "freelance-945",
+      "internalComponentName": "ComponentFreelance",
+      "path": "/freelance/",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js",
+      "componentChunkName": "component---src-pages-freelance-js",
+      "context": {},
+      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js",
+      "id": "SitePage /freelance/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c752257705d29ab001861c4bef20a3cd",
+        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
+        "owner": "internal-data-bridge"
+      }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "09f805dc6f5f6608d22acb387b9f476a"
+    "PLUGINS_HASH": "4ec23c454ed0d63a377b35ba819aab69"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
+        "/",
+        "/about/",
         "sq--src-components-layout-js"
       ],
       "e6f6c424-ea76-521f-889e-86be627c86ef": [
@@ -1181,11 +1244,14 @@
   "jsonDataPaths": {
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-layout-js": 755544856,
-    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
+    "sq--src-components-layout-js": 474889264,
+    "index": "825/path---index-6a9-aoh9rMyCPKGomPZD99masuzmkqk",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
     "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-image-js": 2011440971
+    "sq--src-components-image-js": 2011440971,
+    "about-f34": "308/path---about-f-34-4c2-sdN0rGOtbKRmcHzCm69D45QD4Dc",
+    "case-studies-693": "995/path---case-studies-693-009-NZuapzHg3X9TaN1iIixfv1W23E",
+    "freelance-945": "83/path---freelance-945-bca-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
     "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/dev-404-page.js": {
@@ -1197,15 +1263,35 @@
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js": {
-      "query": "",
+      "query": "query SiteMeta {\n  site {\n    siteMetadata {\n      tagLine\n      specialize\n      career\n    }\n  }\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js": {
       "query": "",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js"
+    },
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js": {
+      "query": "query SiteTagline {\n  site {\n    siteMetadata {\n      tagLine\n    }\n  }\n}\n",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js"
+    },
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js": {
+      "query": "",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js"
+    },
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js": {
+      "query": "",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js"
     }
   },
   "staticQueryComponents": {
+    "sq--src-components-layout-js": {
+      "name": "SiteTitleQuery",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/layout.js",
+      "id": "sq--src-components-layout-js",
+      "jsonName": "sq--src-components-layout-js",
+      "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n      jobTitle\n    }\n  }\n}\n",
+      "hash": 474889264
+    },
     "sq--src-components-image-js": {
       "name": "usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/image.js",
@@ -1213,14 +1299,6 @@
       "jsonName": "sq--src-components-image-js",
       "query": "query usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "hash": 2011440971
-    },
-    "sq--src-components-layout-js": {
-      "name": "SiteTitleQuery",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/layout.js",
-      "id": "sq--src-components-layout-js",
-      "jsonName": "sq--src-components-layout-js",
-      "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n}\n",
-      "hash": 755544856
     }
   }
 }
