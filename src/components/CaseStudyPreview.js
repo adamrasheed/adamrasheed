@@ -10,7 +10,7 @@ const CaseStudyPreview = (props) => (
 
         <div className="case-study-preview__content">
             <h3 className="case-study-preview__title">
-                <a href="{{study.url}}" className="case-study-preview__link title-link">{props.title}</a>
+                <Link to={props.slug} className="case-study-preview__link title-link">{props.title}</Link>
             </h3>
             <ul className="case-study-preview__tags">
                 {props.tags.map((tag, i)=>(
@@ -19,11 +19,11 @@ const CaseStudyPreview = (props) => (
             </ul>
 
             <div className="case-study-preview__body">
-                <h4 className="case-study-preview__tagline">Tagline</h4>
-                <p className="case-study-preview__excerpt">Case Study Excerpt Goes Here</p>
+                <h4 className="case-study-preview__tagline">{props.subtitle}</h4>
+                <p className="case-study-preview__excerpt">{props.teaser}</p>
             </div>
 
-            <Link to="/" className="btn btn--secondary case-study-preview__cta">View Case Study</Link>
+            <Link to={props.slug} className="btn btn--secondary case-study-preview__cta">View Case Study</Link>
         </div>
     </div>
 )

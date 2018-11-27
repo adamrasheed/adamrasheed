@@ -19,6 +19,9 @@ const IndexPage = ({ data }) => (
         <CaseStudyPreview
           key={node.wordpress_id}
           title={node.title}
+          slug={node.slug}
+          subtitle={node.acf.subtitle}
+          teaser={node.acf.teaser}
           tags={node.tags}
           img={ node.featured_media ? ( node.featured_media.localFile.childImageSharp.fluid.src ) : ''}
         />
@@ -51,6 +54,10 @@ export const query = graphql`
           wordpress_id
           modified
           content
+          acf {
+            subtitle
+            teaser
+          }
           featured_media {
             alt_text
             localFile {
