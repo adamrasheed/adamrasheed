@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} jobTitle={data.site.siteMetadata.jobTitle}/>
         <div
           style={{
             margin: '0 auto',

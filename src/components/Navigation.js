@@ -1,47 +1,41 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
-const Navigation = () => (
-  <nav className="site-menu">
+import { API } from '../EndPoint';
+
+console.log(API.pages);
+
+
+const Navigation = ({data}) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        wordpressWpApiMenusMenusItems(slug: {eq: "main-menu"}) {
+          items {
+            wordpress_id
+            title
+            url
+            object_id
+            object
+            object_slug
+            type_label
+          }
+        }
+      }
+    `}
+  render={data=>(
+    <nav className="site-menu">
     <ul className="site-menu__list">
-      <li className="site-menu__item">
-        <Link
-          to="/about"
-          className="site-menu__link"
-          activeClassName="site-menu__link--active"
-        >
-          About
-        </Link>
-      </li>
-      <li className="site-menu__item">
-        <Link
-          to="/case-studies"
-          className="site-menu__link"
-          activeClassName="site-menu__link--active"
-        >
-          Case Studies
-        </Link>
-      </li>
-      <li className="site-menu__item">
-        <Link
-          to="/blog"
-          className="site-menu__link"
-          activeClassName="site-menu__link--active"
-        >
-          Blog
-        </Link>
-      </li>
-      <li className="site-menu__item">
-        <Link
-          to="/freelance/"
-          className="site-menu__link"
-          activeClassName="site-menu__link--active"
-        >
-          Freelance
-        </Link>
-      </li>
+      {data.wordpressWpApiMenusMenusItems.items.map((item) =>(
+        <li className="site-menu__item" key={ item.wordpress_id}>
+          <Link to={item.object_slug} className="site-menu__link" activeClassName="site-menu__link--active">{item.title}</Link>
+        </li>
+      ))}
     </ul>
   </nav>
+  )}
+  />
 )
 
 export default Navigation

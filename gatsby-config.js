@@ -40,5 +40,15 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `http://192.241.220.143/`,
+        protocol: `http`,
+        hostingWPCOM: false,
+        userACF: true,
+        concurrentRequests: 10,
+      }
+    }
   ],
 }

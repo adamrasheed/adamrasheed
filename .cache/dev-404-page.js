@@ -44,9 +44,7 @@ class Dev404Page extends React.Component {
         </p>
         {this.props.custom404 ? (
           <p>
-            <button onClick={this.showCustom404}>
-              Preview custom 404 page
-            </button>
+            <button onClick={this.showCustom404}>Preview custom 404 page</button>
           </p>
         ) : (
           <p>

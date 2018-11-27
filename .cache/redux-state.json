@@ -7,22 +7,22 @@
       "component": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/dev-404-page.js",
       "componentChunkName": "component---cache-dev-404-page-js",
       "context": {},
-      "pluginCreator___NODE": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
-      "pluginCreatorId": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bce11d14b23b9b7e9739350b96132637",
-        "description": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+        "contentDigest": "80016bc00347cb903a112420f54eb23a",
+        "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
     },
-    "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5": {
+    "Plugin dev-404-page": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby/dist/internal-plugins/dev-404-page",
-      "id": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+      "id": "Plugin dev-404-page",
       "name": "dev-404-page",
       "version": "1.0.0",
       "pluginOptions": {
@@ -50,14 +50,14 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "80743da96154c3318b743edc52a8429f",
+        "contentDigest": "297db85538fe2b651f65ec1ee4b00661",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "1fc32581-893a-55e8-8927-bcd667e2b700": {
+    "Plugin load-babel-config": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby/dist/internal-plugins/load-babel-config",
-      "id": "1fc32581-893a-55e8-8927-bcd667e2b700",
+      "id": "Plugin load-babel-config",
       "name": "load-babel-config",
       "version": "1.0.0",
       "pluginOptions": {
@@ -85,14 +85,14 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "afa5161ebdec6c157d2d94d69f034837",
+        "contentDigest": "fda79fa8aaf65bbc1206a03560c864ca",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "a5079d69-ba80-53dc-82f9-0f440bd5448c": {
+    "Plugin internal-data-bridge": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
-      "id": "a5079d69-ba80-53dc-82f9-0f440bd5448c",
+      "id": "Plugin internal-data-bridge",
       "name": "internal-data-bridge",
       "version": "1.0.0",
       "pluginOptions": {
@@ -121,14 +121,14 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "48f0c72dbecaf5bbefd5325cfca6a207",
+        "contentDigest": "4501d1afb2bd36fd1835f3b734bc412a",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "f795702c-a3b8-5a88-88ee-5d06019d44fa": {
+    "Plugin prod-404": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby/dist/internal-plugins/prod-404",
-      "id": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "id": "Plugin prod-404",
       "name": "prod-404",
       "version": "1.0.0",
       "pluginOptions": {
@@ -156,14 +156,14 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "2b9d979711e4f4333efb98af1fe7862a",
+        "contentDigest": "94144d8490f99a44f3352d4f5854993a",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "84dad27f-1d44-51fc-ac56-4db2e5222995": {
+    "Plugin query-runner": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby/dist/internal-plugins/query-runner",
-      "id": "84dad27f-1d44-51fc-ac56-4db2e5222995",
+      "id": "Plugin query-runner",
       "name": "query-runner",
       "version": "1.0.0",
       "pluginOptions": {
@@ -191,16 +191,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "a392f649f328a382e88fc8bdcf775d71",
+        "contentDigest": "c556319024126bfccbd95f7d2e8768ca",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "1943ff2f-9c0c-558d-8d0c-006603e8106a": {
+    "Plugin gatsby-plugin-react-helmet": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-plugin-react-helmet",
-      "id": "1943ff2f-9c0c-558d-8d0c-006603e8106a",
+      "id": "Plugin gatsby-plugin-react-helmet",
       "name": "gatsby-plugin-react-helmet",
-      "version": "3.0.2",
+      "version": "3.0.0",
       "pluginOptions": {
         "plugins": []
       },
@@ -213,7 +213,7 @@
       "packageJson": {
         "name": "gatsby-plugin-react-helmet",
         "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
-        "version": "3.0.2",
+        "version": "3.0.0",
         "main": "index.js",
         "keywords": [
           "gatsby",
@@ -231,7 +231,10 @@
           "noscript",
           "style"
         ],
-        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -247,10 +250,6 @@
           {
             "name": "@babel/core",
             "version": "^7.0.0"
-          },
-          {
-            "name": "babel-preset-gatsby-package",
-            "version": "^0.1.2"
           },
           {
             "name": "cross-env",
@@ -273,16 +272,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f9b30776bdb44b3c4aa4890ecdf361d1",
+        "contentDigest": "67e274c3b2bcecac5e10815c249cd3bd",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "95ece486-97d4-5f4e-bb5d-f1b7dd813389": {
+    "Plugin gatsby-source-filesystem": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-source-filesystem",
-      "id": "95ece486-97d4-5f4e-bb5d-f1b7dd813389",
+      "id": "Plugin gatsby-source-filesystem",
       "name": "gatsby-source-filesystem",
-      "version": "2.0.8",
+      "version": "2.0.4",
       "pluginOptions": {
         "plugins": [],
         "name": "images",
@@ -298,12 +297,15 @@
       "packageJson": {
         "name": "gatsby-source-filesystem",
         "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
-        "version": "2.0.8",
+        "version": "2.0.4",
         "keywords": [
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -321,10 +323,6 @@
           {
             "name": "chokidar",
             "version": "^1.7.0"
-          },
-          {
-            "name": "file-type",
-            "version": "^10.2.0"
           },
           {
             "name": "fs-extra",
@@ -345,10 +343,6 @@
           {
             "name": "pretty-bytes",
             "version": "^4.0.2"
-          },
-          {
-            "name": "read-chunk",
-            "version": "^3.0.0"
           },
           {
             "name": "slash",
@@ -373,10 +367,6 @@
             "version": "^7.0.0"
           },
           {
-            "name": "babel-preset-gatsby-package",
-            "version": "^0.1.2"
-          },
-          {
             "name": "cross-env",
             "version": "^5.1.4"
           }
@@ -393,16 +383,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "1e2020e0949abaa7691b8a05e521f960",
+        "contentDigest": "3990bb3e31a6b82fb53f09446cc18ace",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "da3d06eb-685e-5c77-ae1d-750eb6a2e4a9": {
+    "Plugin gatsby-transformer-sharp": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-transformer-sharp",
-      "id": "da3d06eb-685e-5c77-ae1d-750eb6a2e4a9",
+      "id": "Plugin gatsby-transformer-sharp",
       "name": "gatsby-transformer-sharp",
-      "version": "2.1.8",
+      "version": "2.1.4",
       "pluginOptions": {
         "plugins": []
       },
@@ -417,14 +407,17 @@
       "packageJson": {
         "name": "gatsby-transformer-sharp",
         "description": "Gatsby transformer plugin for images using Sharp",
-        "version": "2.1.8",
+        "version": "2.1.4",
         "keywords": [
           "gatsby",
           "gatsby-plugin",
           "image",
           "sharp"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -449,7 +442,7 @@
           },
           {
             "name": "sharp",
-            "version": "^0.21.0"
+            "version": "^0.20.2"
           }
         ],
         "devDependencies": [
@@ -462,10 +455,6 @@
             "version": "^7.0.0"
           },
           {
-            "name": "babel-preset-gatsby-package",
-            "version": "^0.1.2"
-          },
-          {
             "name": "cross-env",
             "version": "^5.1.4"
           }
@@ -473,7 +462,7 @@
         "peerDependencies": [
           {
             "name": "gatsby",
-            "version": "^2.0.33"
+            "version": ">2.0.0-alpha"
           },
           {
             "name": "gatsby-plugin-sharp",
@@ -486,29 +475,27 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "120d2fed1d055538d1d6fab79731820d",
+        "contentDigest": "a0c29ec6f5f10b30d4d99efa9d6c7698",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "84d6154d-4241-556c-a679-cc8339cac100": {
+    "Plugin gatsby-plugin-sharp": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-plugin-sharp",
-      "id": "84d6154d-4241-556c-a679-cc8339cac100",
+      "id": "Plugin gatsby-plugin-sharp",
       "name": "gatsby-plugin-sharp",
-      "version": "2.0.13",
+      "version": "2.0.7",
       "pluginOptions": {
         "plugins": []
       },
-      "nodeAPIs": [
-        "onPreInit"
-      ],
+      "nodeAPIs": [],
       "browserAPIs": [],
       "ssrAPIs": [],
       "pluginFilepath": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-plugin-sharp",
       "packageJson": {
         "name": "gatsby-plugin-sharp",
         "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
-        "version": "2.0.13",
+        "version": "2.0.7",
         "main": "index.js",
         "keywords": [
           "gatsby",
@@ -516,7 +503,10 @@
           "image",
           "sharp"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -534,10 +524,6 @@
           {
             "name": "fs-exists-cached",
             "version": "^1.0.0"
-          },
-          {
-            "name": "fs-extra",
-            "version": "^7.0.0"
           },
           {
             "name": "imagemin",
@@ -577,7 +563,7 @@
           },
           {
             "name": "sharp",
-            "version": "^0.21.0"
+            "version": "^0.20.2"
           },
           {
             "name": "svgo",
@@ -592,10 +578,6 @@
           {
             "name": "@babel/core",
             "version": "^7.0.0"
-          },
-          {
-            "name": "babel-preset-gatsby-package",
-            "version": "^0.1.2"
           },
           {
             "name": "cross-env",
@@ -614,16 +596,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "c30f8afc8d2f6eabe5e81da24c573958",
+        "contentDigest": "0bd88aab5de2ee648f9e5fc9ad3d87eb",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "112c12f8-b222-509b-abe0-dfe93a905df9": {
+    "Plugin gatsby-plugin-manifest": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-plugin-manifest",
-      "id": "112c12f8-b222-509b-abe0-dfe93a905df9",
+      "id": "Plugin gatsby-plugin-manifest",
       "name": "gatsby-plugin-manifest",
-      "version": "2.0.10",
+      "version": "2.0.5",
       "pluginOptions": {
         "plugins": [],
         "name": "gatsby-starter-default",
@@ -645,7 +627,7 @@
       "packageJson": {
         "name": "gatsby-plugin-manifest",
         "description": "Gatsby plugin which adds a manifest.webmanifest to make sites progressive web apps",
-        "version": "2.0.10",
+        "version": "2.0.5",
         "main": "index.js",
         "keywords": [
           "gatsby",
@@ -656,7 +638,10 @@
           "progressive-web-app",
           "pwa"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -669,7 +654,117 @@
           },
           {
             "name": "sharp",
-            "version": "^0.21.0"
+            "version": "^0.20.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f24dfe4333dcc7d3f939ca43f33b866e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-wordpress": {
+      "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-source-wordpress",
+      "id": "Plugin gatsby-source-wordpress",
+      "name": "gatsby-source-wordpress",
+      "version": "3.0.14",
+      "pluginOptions": {
+        "plugins": [],
+        "baseUrl": "http://192.241.220.143/",
+        "protocol": "http",
+        "hostingWPCOM": false,
+        "userACF": true,
+        "concurrentRequests": 10
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-source-wordpress",
+      "packageJson": {
+        "name": "gatsby-source-wordpress",
+        "description": "Gatsby source plugin for building websites using the Wordpress CMS as a data source.",
+        "version": "3.0.14",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "gatsby-source-plugin"
+        ],
+        "author": {
+          "name": "Sebastien Fichot",
+          "email": "fichot.sebastien@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "axios",
+            "version": "^0.18.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.6"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "deep-map",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "deep-map-keys",
+            "version": "^1.2.0"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.8"
+          },
+          {
+            "name": "json-stringify-safe",
+            "version": "^5.0.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "minimatch",
+            "version": "^3.0.4"
+          },
+          {
+            "name": "qs",
+            "version": "^6.4.0"
           }
         ],
         "devDependencies": [
@@ -702,16 +797,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "9f0a04596baec542d15310a301ff9ead",
+        "contentDigest": "4ba2ea0f0db5185de9cc2bdc5ae7137f",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
+    "Plugin default-site-plugin": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed",
-      "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "e88409870154a113b075a975ab62e53e",
+      "version": "19ea1180b0734447f46a52afc26b53df",
       "pluginOptions": {
         "plugins": []
       },
@@ -758,6 +853,10 @@
             "version": "^2.0.4"
           },
           {
+            "name": "gatsby-source-wordpress",
+            "version": "^3.0.14"
+          },
+          {
             "name": "gatsby-transformer-sharp",
             "version": "^2.1.4"
           },
@@ -787,16 +886,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "43f639b0a26a9d95b9a1022398cff3d5",
+        "contentDigest": "77c4c60c2ac6ed7ee8b58a13b1401d2b",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "11d0329e-9e7a-514a-91c2-f75918189357": {
+    "Plugin gatsby-plugin-page-creator": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-plugin-page-creator",
-      "id": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "id": "Plugin gatsby-plugin-page-creator",
       "name": "gatsby-plugin-page-creator",
-      "version": "2.0.4",
+      "version": "2.0.1",
       "pluginOptions": {
         "plugins": [],
         "path": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages",
@@ -811,13 +910,16 @@
       "packageJson": {
         "name": "gatsby-plugin-page-creator",
         "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
-        "version": "2.0.4",
+        "version": "2.0.1",
         "main": "index.js",
         "keywords": [
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -845,10 +947,6 @@
             "version": "^4.17.10"
           },
           {
-            "name": "micromatch",
-            "version": "^3.1.10"
-          },
-          {
             "name": "parse-filepath",
             "version": "^1.0.1"
           },
@@ -867,10 +965,6 @@
             "version": "^7.0.0"
           },
           {
-            "name": "babel-preset-gatsby-package",
-            "version": "^0.1.2"
-          },
-          {
             "name": "cross-env",
             "version": "^5.0.5"
           }
@@ -887,7 +981,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "52536b786010f1fab4fee08a93881823",
+        "contentDigest": "f285570695eb7bc2a0fe2510ad30704f",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -912,12 +1006,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-23T21:06:22.779Z",
+      "buildTime": "2018-11-27T07:19:58.580Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "377bc4900251ab6e633f6457b98ca9ad",
+        "contentDigest": "80875a168cd94ac5cad17d4a6976a9fa",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -927,7 +1021,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fd7019a244c5d43d8f8be6d9a2ff0a2c",
+        "contentDigest": "b4442e2bbc2463cc865479b417e0ddcf",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -939,7 +1033,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-23T21:06:26.338Z",
+      "accessTime": "2018-11-27T07:20:02.796Z",
       "changeTime": "2018-11-23T05:22:40.368Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -957,11 +1051,11 @@
       "blksize": 4096,
       "ino": 12886265220,
       "blocks": 0,
-      "atimeMs": 1543007186337.967,
+      "atimeMs": 1543303202795.8188,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.5725,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-23T21:06:26.338Z",
+      "atime": "2018-11-27T07:20:02.796Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.368Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -986,7 +1080,7 @@
       "size": 21212,
       "prettySize": "21.2 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-23T21:03:25.077Z",
+      "accessTime": "2018-11-23T06:53:35.323Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1004,11 +1098,11 @@
       "blksize": 4096,
       "ino": 12886265222,
       "blocks": 48,
-      "atimeMs": 1543007005077.4768,
+      "atimeMs": 1542956015323.4294,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.4724,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-23T21:03:25.077Z",
+      "atime": "2018-11-23T06:53:35.323Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1043,7 +1137,7 @@
       "size": 167273,
       "prettySize": "167 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-23T21:03:42.193Z",
+      "accessTime": "2018-11-23T06:53:35.323Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1061,11 +1155,11 @@
       "blksize": 4096,
       "ino": 12886265221,
       "blocks": 328,
-      "atimeMs": 1543007022192.9495,
+      "atimeMs": 1542956015323.3867,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.1519,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-23T21:03:42.193Z",
+      "atime": "2018-11-23T06:53:35.323Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1080,6 +1174,1801 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "583ed48e-4261-5704-9604-9f3878be098d": {
+      "name": "Adam Rasheed Backend",
+      "description": "Just another WordPress site",
+      "url": "http://192.241.220.143",
+      "home": "http://192.241.220.143",
+      "id": "583ed48e-4261-5704-9604-9f3878be098d",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__site_metadata",
+        "contentDigest": "c5fc677e22f9a3e175bb1156beae19ff",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "c15b8429-268a-5c1a-b4c5-d8c1e5ccedd2": {
+      "wordpress_id": 19,
+      "id": "c15b8429-268a-5c1a-b4c5-d8c1e5ccedd2",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_posts",
+        "contentDigest": "b961807ee4c657bbae30765f74b858bd",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "6c5762dd-162c-55f8-85cb-a993c7c65384": {
+      "wordpress_id": 17,
+      "id": "6c5762dd-162c-55f8-85cb-a993c7c65384",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_posts",
+        "contentDigest": "3664c39c1fdb07a40fe31c67228bb407",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "b3494e3b-341d-5739-a8f8-96ba615d9b9e": {
+      "wordpress_id": 12,
+      "id": "b3494e3b-341d-5739-a8f8-96ba615d9b9e",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_posts",
+        "contentDigest": "3caff00f36a9eb694b8d5038b519ece0",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "5215461d-62a0-5072-b708-e3d7e658fa62": {
+      "wordpress_id": 34,
+      "id": "5215461d-62a0-5072-b708-e3d7e658fa62",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_pages",
+        "contentDigest": "860695520d20e55d1257469725e81196",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "51cd485e-7e54-5180-8499-ea040e04d59e": {
+      "wordpress_id": 24,
+      "id": "51cd485e-7e54-5180-8499-ea040e04d59e",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_pages",
+        "contentDigest": "395e983d5cc558c752c703789d7779f2",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "e0155b9b-8dab-5692-9e66-25b76cd922e7": {
+      "wordpress_id": 21,
+      "acf": {
+        "subtitle": "Creating Delightful eCommerce Experiences with Custom Shopify Themes",
+        "teaser": "I partenered with a gardening tool manufacturer in Los Angeles to create a online shopping experience using fresh, yet approachable designs for their baby coomer audience."
+      },
+      "id": "e0155b9b-8dab-5692-9e66-25b76cd922e7",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_case_studies",
+        "contentDigest": "737cf3e72516f1679b61dda0b303a417",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "d8ca5946-b591-5369-bf3b-f21683231194": {
+      "wordpress_id": 31,
+      "acf": {
+        "company": "ePublishing",
+        "company_link": "https://www.epublishing.com/"
+      },
+      "id": "d8ca5946-b591-5369-bf3b-f21683231194",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_testimonials",
+        "contentDigest": "d47be572b2f7b40e141d5b9c1e1aee84",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "fe8f80a7-968d-5d84-a16f-36ba78d27b94": {
+      "wordpress_id": 30,
+      "acf": {
+        "company": "Dot Dash",
+        "company_link": "https://dotdash.io/"
+      },
+      "id": "fe8f80a7-968d-5d84-a16f-36ba78d27b94",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_testimonials",
+        "contentDigest": "955920eb9bf4c649499974ee7576d763",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "01599f72-5009-585d-82ac-3308fee77ce6": {
+      "wordpress_id": 1,
+      "id": "01599f72-5009-585d-82ac-3308fee77ce6",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_categories",
+        "contentDigest": "6e64e97a69f9498e6dff305340136f07",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "69ad0262-1e58-5a25-98fd-c85525c61f7c": {
+      "wordpress_id": 1,
+      "id": "69ad0262-1e58-5a25-98fd-c85525c61f7c",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_users",
+        "contentDigest": "21a06503aee93e571a57177737a39038",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "9bf79726-b4ae-5b46-970e-6251a63bdaf7": {
+      "wordpress_id": 19,
+      "date": "2017-12-03T04:51:45.000Z",
+      "guid": "http://192.241.220.143/?p=19",
+      "modified": "2018-08-15T04:52:22.000Z",
+      "slug": "how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages",
+      "status": "publish",
+      "type": "post",
+      "link": "http://192.241.220.143/how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages/",
+      "title": "How to Speed up Search on WordPress site sites with 1,000+ pages",
+      "content": "<p>WordPress sites can grow really fast, and making sure your search bar can handle large volumes of data can be quite a challenge. In this post, I&#8217;ll give some tips on how to make your wordpress search bar work in large-scale sites.</p>\n<h2 id=\"why-wordpress-sites-slow-down-as-they-grow\">Why WordPress Sites Slow Down as They Grow</h2>\n<p>As your website grows beyond a typical site with a handful of pages to the like of 1,000+ or even 10,000+ pages, your site will inevitably slow down due to a couple of reasons which include: a mishmash of spaghetti code that started to pile up as your code was getting fixed, and Your site having to query through thousands is not millions of lines of the databse.</p>\n<h2 id=\"what-if-you-have-a-site-with-100k-pages\">What if You have a site with 100k+ pages?</h2>\n<p>If you take on client work, you may one day get a client that has a 100k+ page wordpress site that needs to be optimized. Funny thing, that’s exactly what happened to me. Now, if you have a well-coded theme and are one a good host like <a href=\"https://m.do.co/c/73cb4550a3de\" target=\"_blank\" rel=\"noopener\">DigitalOcean</a> (use this link and get $10 credit for free) there shouldn’t be too much of a problem in the trouble happens with the search bar on your site.</p>\n<p>With a site of this scale, wordpress literally has to query through millions of rows in your database to retrieve a specific page your user search for. Luckily, there’s a fix to drastically speed up the search function on your site.</p>\n<h2 id=\"how-to-fix-the-problem-and-speed-up-your-search\">How to Fix The Problem and Speed Up Your Search</h2>\n<p>While wordpress has some great functionalities baked right in, you need to make sure you’re optimizing as much as you can when scaling up. Besides making sure you have a good host, your theme is well-coded, and you’re using a CDN, you should look improving/outsourcing some of the functionality of your site. For the sake of this post, we’re going to talk about using elasticsearch to drastically speed up the search functionality of your site.</p>\n<h3 id=\"elastic-search-can-speed-up-queries\">Elastic Search Can Speed Up Queries</h3>\n<p>Elasticsearch is an open-source, highly scalable search engine that you can use in a variety of applications. The main difference between elasticsearch and a typical wordpress search functionality is that elasticsearch is <em>blazing-fast</em> even at extremely large-scale.</p>\n<h3 id=\"use-elasticpress-plugin\">Use ElasticPress Plugin</h3>\n<p>As with a lot of other solutions, there’s a wordpress plugin for elastic search as well, and it’s called <a href=\"https://www.elasticpress.io/\" target=\"_blank\" rel=\"noopener\">ElasticPress</a>. While I was working on a large scale wordpress project, Tate Lucas of <a href=\"https://dotdash.io/\" target=\"_blank\" rel=\"noopener\">Dot Dash</a> told me about it and implimented into the project. Later that month I spoke at a local Wordcamp, and met Vasken Hauri, the VP of engineering at <a href=\"https://dotdash.io/\" target=\"_blank\" rel=\"noopener\">10Up</a>, the company that created ElasticPress, and spoke with him about it. Since this experience, I’ve been a huge fan of it. (Also, big shout out to Tate: Thanks for bringing me on for hte project! It was great working with you!)</p>\n<p>Simply put, Elasticpress uses <code class=\"highlighter-rouge\">WP_Query</code> to fetch info from elasticsearch instead of the normal MySQL databse it would look at. More simply put, ElasticPress replaces your default wordpress search engine with a better one.</p>\n<h3 id=\"use-search-as-a-service-to-host-your-data\">Use Search as a Service to Host Your Data</h3>\n<p>Now that you’ve got a way to index your searches in a faster method, you need somewhere to store it. This is where a Search as a Service like <a href=\"http://www.searchly.com/\" target=\"_blank\" rel=\"noopener\">Searchly</a> comes in. It powers the backend of your ElasticPress plugin, and even offers analytics, which can be a very powerful tool to help you determine how to better present your data and even better market your product or service. You wouldn’t want to have your cache hosted on the same server your website is on as that would substantially slow down your site (especially if you’re on a shared host).</p>\n<h2 id=\"conclusion\">Conclusion</h2>\n<p>If you’re working on a large-scale wordpress project. Elasticpress and a good Search as a Service tool like are invaluable options to speeding up your search and keeping your users happy.</p>\n<h4 id=\"useful-links\">Useful Links</h4>\n<ul>\n<li><a href=\"https://github.com/elastic/elasticsearch\" target=\"_blank\" rel=\"noopener\">Elastic Search</a></li>\n<li><a href=\"https://www.elasticpress.io/\" target=\"_blank\" rel=\"noopener\">ElasticPress</a></li>\n<li><a href=\"http://www.searchly.com/\" target=\"_blank\" rel=\"noopener\">Searchly</a></li>\n<li><a href=\"https://m.do.co/c/73cb4550a3de\" target=\"_blank\" rel=\"noopener\">DigitalOcean Hosting</a></li>\n</ul>\n",
+      "excerpt": "<p>WordPress sites can grow really fast, and making sure your search bar can handle large volumes of data can be quite a challenge. In this post, I&#8217;ll give some tips on how to make your wordpress search bar work in large-scale sites. Why WordPress Sites Slow Down as They Grow As your website grows beyond [&hellip;]</p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/19"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=19"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/19/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 20,
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/19/revisions/20"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=19"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/categories?post=19"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags?post=19"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "9bf79726-b4ae-5b46-970e-6251a63bdaf7",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "95451475ea4383aaaf854de71cd410ac",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "0714f11d-f51c-581b-9efc-1f7f6af5ee7b": {
+      "wordpress_id": 17,
+      "date": "2017-12-01T04:49:43.000Z",
+      "guid": "http://192.241.220.143/?p=17",
+      "modified": "2018-08-15T04:50:40.000Z",
+      "slug": "shopify-vs-woocommerce-vs-magento",
+      "status": "publish",
+      "type": "post",
+      "link": "http://192.241.220.143/shopify-vs-woocommerce-vs-magento/",
+      "title": "Shopify vs. WooCommerce vs. Magento &#8211; Which One Should You Pick?",
+      "content": "<p>When working on eCommerce projects for clients, it can be a daunting task to figure out which platform to go with. With most of them being so great, it&#8217;s hard to choose.</p>\n<h2 id=\"determine-your-clients-underlying-business-needs\">Determine Your Client’s Underlying Business Needs</h2>\n<p>Before you dive right into the technical details of the projects, you should determine the underlying business goals of your client’s project.</p>\n<p><em>Why</em> do they need this website? Why are they starting now instead of a year ago or a year from now? Is a competitor of there’s doign the same and they want to catch up? Or do they want to keep innovating and figuring out new ways of standing out in the marketplace? These types of questions will help you in creating the right solution for your client.</p>\n<h2 id=\"figure-out-how-they-work-on-maintaining-the-site\">Figure Out how they work on maintaining The Site</h2>\n<p>Look at how your client currently uses either their existing site or other software so you can provide a solution that improves their workflows and not only makes them more money, but cuts down on man-hours spent on tedious tasks that can be automated.</p>\n<h4 id=\"if-your-client-has-an-existing-site\">If Your Client has an Existing Site</h4>\n<p>If your client already has an exisintg eCommerce site (maybe a super old version of Magento underneath a third-party theme), note down how they use that certain CMS, what they like aobut it, what they put up with, essentially, have them user test their current way of maintaing their site.</p>\n<h4 id=\"if-they-dont-have-a-site\">If They Don’t have a Site</h4>\n<p>If they don’t have an existing site, take a look at how they do other stuff around the office, how they manage emails, etc.</p>\n<h3 id=\"find-out-how-they-process-orders\">Find Out How They Process Orders</h3>\n<p>If you can see how your client is currently processing orders, and then tie it together with the processing for the eCommerce store you’re creating, you can save your client a <strong>lot</strong> of headache and money.</p>\n<p>I had a client during the summer of 2017 where I found out they were processing millions of dollars with pink sheets, which were walked over to the desk of the bookkeeper. I was brought on to redesign their online store from an old Magento site to something new and easy-to-use, both for the website visitors, as well as my client. So, having found out about their current way of processing and that they weren’t too tech savy, I suggested we go with shopify, which has a very easy-t-use admin panel, and the ability to create invoices for offline orders. No more writing down credit-card numbers on paper!!</p>\n<h3 id=\"find-out-how-much-maintenance-work-your-client-can-do\">Find Out How Much Maintenance Work Your Client Can Do</h3>\n<p>It’s up to your client to be honest with how much website maintenance work they’re gonna be taking on. Are they comfortable with updating their CMS every so often? Or do the want a “set it and forget it” solution? If they’re comfortable with something more technical, I’d suggest WooCommerce or Magento, but if they want something much more easy to use, I suggest Shopify.</p>\n<h3 id=\"deciding-between-control-and-user-experience\">Deciding Between Control and User Experience</h3>\n<p>The client needs are not the only thing you should be looking at when deciding on an eCommere platform, you should look at your ability and available time as a developer as well.</p>\n<h4 id=\"magento-and-woocommerce\">Magento and WooCommerce</h4>\n<p>Magento and WooCommerce are both open sources platforms that let you go into the backend and give you full control of the payment processing, customer account handling, etc. This can be very powerful, but very dangerous (If you don’t know what you’re doing, you can create some serious problems in payment processing side).</p>\n<p>Additionally, since they’re open source, there isn’t much support your can get outside of forums and stackoverflow. Having said that, the communities for both of these platforms are qutie extensive, and you can find solutions for your problems if you look around more.</p>\n<h4 id=\"shopify\">Shopify</h4>\n<p>Alternatively, Shopify has an amazing platform where you use liquid to call on certain object, leaving the backedn completely untouched. This is a great option for front-end developers like myself, who want to focus on the design and interaction, but it leaves the ability of the platform lacking.</p>\n<p>For instance, you can’t natively create custom fields or post types of even post categories in Shopify. You achieve those things either through paying an additional sum for bloard third-part apps, or not at all.</p>\n<p>However, should you fall into pitfalls, Shopify has a support team you can contact, and in addition, most apps have live chat support as well.</p>\n<h2 id=\"conclusion\">Conclusion</h2>\n<p>WooCommerce, Magento, and Shopify are all great platforms and all fit well into the ecosystem. Here are my final thoughts on each:</p>\n<ul>\n<li><strong>Magento:</strong> Built form the ground-up around eCommerce, Magento is one ofthe most powerful platforms for creating an eCommere store that can scale up to enterprise levels. You have near unlimited control of how you want to develop the site, and it’s defintely the most powerful platform of the three I mentioned.</li>\n<li><strong>WooCommerce:</strong> WooCommerce is an open source wordpress plugin that adds eCommerce functionality to WordPress sites, and is a great option to use if you’re already familiar with developing in WordPress. I’m personally not a fan of WooCommerce as it <em>hacks</em>WordPress to be an eCommerce site, but is a solid option nevertheless.</li>\n<li><strong>Shopify:</strong> Shopify is a great platform that gives you a lot of control without having to deal with the backend side of things. This is what I specialize in as most of my clients don’t needs esterprise-level control (Which Shopify Plus would be great for).</li>\n</ul>\n<p>Ultimately, the CMS/Platform you should use depends on your clients needs and your ability as a developer.</p>\n",
+      "excerpt": "<p>When working on eCommerce projects for clients, it can be a daunting task to figure out which platform to go with. With most of them being so great, it&#8217;s hard to choose. Determine Your Client’s Underlying Business Needs Before you dive right into the technical details of the projects, you should determine the underlying business [&hellip;]</p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/17"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=17"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/17/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 18,
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/17/revisions/18"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=17"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/categories?post=17"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags?post=17"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "0714f11d-f51c-581b-9efc-1f7f6af5ee7b",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "cd9c7793346809d5649d508bffbfe7d8",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "fab2273f-880b-523b-83e5-af28122c4b82": {
+      "wordpress_id": 12,
+      "date": "2017-11-27T04:33:25.000Z",
+      "guid": "http://192.241.220.143/?p=12",
+      "modified": "2018-08-15T04:34:41.000Z",
+      "slug": "creating-this-site",
+      "status": "publish",
+      "type": "post",
+      "link": "http://192.241.220.143/creating-this-site/",
+      "title": "Creating This Site | Just F***ing Ship",
+      "content": "<p>I&#8217;ve been delaying creating my own personal site that&#8217;s separate from my site I have for small business client work, so I finally made something. Here&#8217;s how I made it.</p>\n<h2 id=\"my-primary-goals\">My Primary Goals</h2>\n<p>While I have a site to market myself to small business clients, I’ve been looking to join an agency or product team in-house, and wanted to showcase my technical chops. So I thought the best way to do that would be two methods: case studies and blog articles where I showcase my experience and share progress on things that I’m learning. So, I created this site.</p>\n<h2 id=\"choosing-a-front-end-framework-that-didnt-get-in-the-way-of-content\">Choosing a Front-end Framework that didn’t get in the way of content</h2>\n<p>Since I’m a developer, I wanted to showcase my techincal ability in making this site, but I also wanted to easily create new case studies and blog articles without putting effort into having to maintain different image sizes, go into the code, etc. I originally chose <a href=\"https://www.gatsbyjs.org/\" target=\"_blank\" rel=\"noopener\">Gatsby</a> a React-based front-end framework (even React’s Offical Docs site uses it!), but I was having some trouble setting up GraphQL (something it uses instead of APIs).</p>\n<h2 id=\"current-tech-stack\">Current Tech Stack</h2>\n<p>For this site, I wanted to launch quickly more than I wanted to get the tech stack just right and humblebrag about using the latest javascript-heavy front-end. So, with a fast launch date in mind, I used the following:</p>\n<h3 id=\"jekyll-static-site\">Jekyll Static Site</h3>\n<p>For this current iteration of the site, I used ol-faithful, Jekyll, a static-site generator I’ve been using for a few years. Jekylls perfect for sites where clients don’t need to go in and change content all too often, and it’s also great for any small side projects you maybe working on. For instance, I used Jekyll to create <a href=\"https://occreative.co/\" target=\"_blank\" rel=\"noopener\">OC Creative</a></p>\n<h3 id=\"gulp-build-tool-to-compile-sass\">Gulp Build Tool to Compile SASS</h3>\n<p>I used Gulp, another tried-and-true build tool, to preprocess and minify my SCSS to minified CSS as well as implement Browsersync so I could look at what I’m coding in real-time. While lately I’ve been using plain NPM scripts as a build tool that processes my code and even Webpack for JS module bundling, I saw ShakyShane’s <a href=\"https://github.com/shakyShane/jekyll-gulp-sass-browser-sync\" target=\"_blank\" rel=\"noopener\">jekyll-gulp-sass-browser-sync</a> Jekyll StarterKit. This alone saves me an hour of setting up a Gulpfile with Jekyll. I simply cloned this repo and I was off to the races. If you want to quickly spin up a jekyll site and want to use SASS, I highly recommend using this repo.</p>\n<h3 id=\"deployed-and-hosted-through-netlify\">Deployed and Hosted Through Netlify</h3>\n<p><a href=\"https://netlify.com/\" target=\"_blank\" rel=\"noopener\">Netlify</a> was the answer to my prayers. It deploy and hosts your code through git pushes. It even has build commands so you can keep your github repo nice and clean, and build a “dist” or in the case of Jekll “_site” folder when you push your code to deploy. Set up if super easy: all you need to do it connect your github account to Netlify and choose the repo you want to use.</p>\n<h2 id=\"future-goals-for-this-site\">Future Goals for This Site</h2>\n<p>This iteration of the site is solid. Besides a few tweaks (peformance, improved design, new icon set), it’s a solid step to help my showcase my work and start blogging more regularly. However, I don’t want this to be a premanent iteration. Below are some things I want to implement on this site. You can also check out the <a href=\"https://trello.com/b/aJBVs9pE\" target=\"_blank\" rel=\"noopener\">Trello Board</a> I created organize the future improvements and blog posts for this site.</p>\n<h3 id=\"improved-design\">Improved Design</h3>\n<p>The design currently is only one color and have little to no design elements in the whole site. Eventually, I want to revisit my Figma file nad tweak the design to be a little less <em>minimalist</em>.</p>\n<h3 id=\"react-front-end\">React Front-end</h3>\n<p>I want to utilize React for a couple of reasons: 1) so I can showcase that I have worked with and shipped react projects before, 2) so I add a lot more interactivty into the site without having the page reload, and 3) speed up the site quite a bit. I’ll most likely use Gatsby once I get the hang of GraphQL, as I haven’t seen anything faster and with a lot of web app capabilities baked in.</p>\n<h3 id=\"wordpress-background\">WordPress Background</h3>\n<p>For a portfolio/blog such as this, WordPress really is the best solution for a backend because of it’s amazing authoring side. It’s built around creating content, and that’s exactly what I’m doing in this site. Plus, WordPress now has a REST API which I can hook up to the React front-end. Nice!</p>\n<h3 id=\"hosted-on-a-vps\">Hosted on a VPS</h3>\n<p>I want to eventually start hosting on a VPS like DigitalOcean, where I host a couple of other sites. In addition to amazing speed, I’ll be able to have complete control over the server environment (which I’ll also get to learn how to do!).</p>\n<h4 id=\"deploy-through-scripts\">Deploy through scripts</h4>\n<p>I want to rely less on third-party services for deploying as I’d like to learn how to do it the proper way. Main benfits would of course be that I’ll be more hire-able, and that I’ll be able to precisely control the deploy conditions I want;</p>\n<h2 id=\"conclusion\">Conclusion</h2>\n<p>While its not exactly what I wanted to use, I’m happy that I wwas able to quickly launch my site using Jekyll, Gulp, and Netlify. I want to make a lot of changes to this site in early 2018, but in the meantime, I’m going to flesh out some more case studies and write a couple of more blog articles. So stay tuned!</p>\n<h4 id=\"useful-links\">Useful Links</h4>\n<ul>\n<li><a href=\"https://www.gatsbyjs.org/\" target=\"_blank\" rel=\"noopener\">GatsbyJS</a></li>\n<li><a href=\"https://github.com/shakyShane/jekyll-gulp-sass-browser-sync\" target=\"_blank\" rel=\"noopener\">Jekyll, Gulp, Sass, Browsersync StarterKit</a></li>\n<li><a href=\"https://netlify.com/\" target=\"_blank\" rel=\"noopener\">Netlify</a></li>\n</ul>\n",
+      "excerpt": "<p>I&#8217;ve been delaying creating my own personal site that&#8217;s separate from my site I have for small business client work, so I finally made something. Here&#8217;s how I made it. My Primary Goals While I have a site to market myself to small business clients, I’ve been looking to join an agency or product team [&hellip;]</p>\n",
+      "comment_status": "open",
+      "ping_status": "open",
+      "sticky": false,
+      "template": "",
+      "format": "standard",
+      "meta": [],
+      "tags": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/12"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=12"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/12/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 13,
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts/12/revisions/13"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=12"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/categories?post=12"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags?post=12"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "fab2273f-880b-523b-83e5-af28122c4b82",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "categories___NODE": [
+        "f24b5a9e-ed37-56c1-978a-9c95dbc988a9"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__POST",
+        "contentDigest": "1b5080c5497f1adc5cf87ec2f6fb48f1",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "eac0bdfd-bda0-569c-8e4e-7f73b6e91e9a": {
+      "wordpress_id": 34,
+      "date": "2018-08-15T06:53:02.000Z",
+      "guid": "http://192.241.220.143/?page_id=34",
+      "modified": "2018-08-15T06:53:02.000Z",
+      "slug": "about",
+      "status": "publish",
+      "type": "page",
+      "link": "http://192.241.220.143/about/",
+      "title": "About",
+      "content": "",
+      "excerpt": "",
+      "wordpress_parent": 0,
+      "menu_order": 0,
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/34"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=34"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/34/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 35,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/34/revisions/35"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=34"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "eac0bdfd-bda0-569c-8e4e-7f73b6e91e9a",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__PAGE",
+        "contentDigest": "85f74033e6dfc7e669c3b1707dfc59c7",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "1d924fe9-005b-5b5e-98b4-d9a0304115f9": {
+      "wordpress_id": 24,
+      "date": "2018-08-15T05:52:20.000Z",
+      "guid": "http://192.241.220.143/?page_id=24",
+      "modified": "2018-08-15T06:43:47.000Z",
+      "slug": "freelance",
+      "status": "publish",
+      "type": "page",
+      "link": "http://192.241.220.143/freelance/",
+      "title": "Freelance",
+      "content": "<h2 id=\"need-some-help-on-a-project-lets-talk\">Need some help on a Project? Let’s talk.</h2>\n<p>For the last 5 years, I’ve been running a small <a href=\"https://creatix.io/\" target=\"_blank\" rel=\"noopener nofollow\">design/development consultancy</a> where I work with small business to help them increase their revenue. Lately, I’ve been working a lot with agencies like <a href=\"https://www.epublishing.com/\" target=\"_blank\" rel=\"noopener\">ePublishing</a> and<a href=\"https://dotdash.io/\" target=\"_blank\" rel=\"noopener nofollow\">Dot Dash</a> to help with their projects. I’d love to work with your’s too!</p>\n<h2 id=\"things-im-good-at\">Things I’m Good at:</h2>\n<ul>\n<li><strong>Effective Communcation.</strong> Seriously, I’ll make sure to understand the needs of the project before taking it on and keep you in the loop throughout the whole project.</li>\n<li><strong>Looking at the underlying business goals at hand.</strong> A lot of times, what the clients really need isn’t what they originally come to your agency for. That‘s where having some solid conversation with them is useful.</li>\n</ul>\n<h2 id=\"things-i-can-help-you-with\">Things I can help you with:</h2>\n<ul>\n<li><strong>Holy Trinity:</strong> HTML, CSS, Javascript. All the things I utilized to build rad MySpace pages in 2006.</li>\n<li><strong>WordPress:</strong> This includes custom themes and large-scale migration and optimization work. PHP and I have become very good friends.</li>\n<li><strong>Shopify:</strong> I started doing custom shopify themes this year, (my favorite on being <a href=\"https://adamrasheed.com/case-studies/flexrake\">Flexrake</a>), and I’m in love with liquid.</li>\n<li><strong>Large-Scale CSS Architecture:</strong> Have a large project you need to make sure doesn’t go awry or have an older site you need to retrofit to into a fully-responsive progressive web app that works on all devices regardless of data speed? I can help using the powers of SCSS and BEM.</li>\n</ul>\n<h2 id=\"things-im-learning\">Things I’m Learning:</h2>\n<ul>\n<li><strong>React:</strong> I’ve been dabbling in small react projects, and recently have started a portfolio piece that uses React in the frontend and hooks up to a wordpress backend through WP’s REST API.</li>\n<li><strong>Progressive Web Apps (PWAs):</strong> I’m learning how important it is to make projects accessible to not only those with disabilities or impairments, but also those without access to high-speed internet or flagship phones. I’m currently learning how to retrofit my past projects into progressive web apps.</li>\n<li><strong>ES7:</strong> Im currently learning Async Await to replace fetch (the way I currently hook into APIs).</li>\n</ul>\n",
+      "excerpt": "<p>Need some help on a Project? Let’s talk. For the last 5 years, I’ve been running a small design/development consultancy where I work with small business to help them increase their revenue. Lately, I’ve been working a lot with agencies like ePublishing andDot Dash to help with their projects. I’d love to work with your’s too! Things I’m Good at: [&hellip;]</p>\n",
+      "wordpress_parent": 0,
+      "menu_order": 0,
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/24"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=24"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 3,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/24/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 33,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/24/revisions/33"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=24"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "1d924fe9-005b-5b5e-98b4-d9a0304115f9",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__PAGE",
+        "contentDigest": "8eb3e56261ba59dfbddf10300e475f9c",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "4c40d440-ed7f-58f1-98b0-5aac80b03f4e": {
+      "wordpress_id": 21,
+      "date": "2018-08-15T05:48:30.000Z",
+      "guid": "http://192.241.220.143/?post_type=case_studies&#038;p=21",
+      "modified": "2018-11-27T07:18:24.000Z",
+      "slug": "flexrake",
+      "status": "publish",
+      "type": "case_studies",
+      "link": "http://192.241.220.143/case_studies/flexrake/",
+      "title": "Flexrake",
+      "content": "<p>testing</p>\n",
+      "template": "",
+      "meta": [],
+      "acf": {
+        "subtitle": "Creating Delightful eCommerce Experiences with Custom Shopify Themes",
+        "teaser": "I partenered with a gardening tool manufacturer in Los Angeles to create a online shopping experience using fresh, yet approachable designs for their baby coomer audience."
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/case_studies/21"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/case_studies"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/case_studies"
+          }
+        ],
+        "wp_featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/media/54"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=21"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags?post=21"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "4c40d440-ed7f-58f1-98b0-5aac80b03f4e",
+      "tags___NODE": [
+        "052e5749-9865-5f8b-8e7f-830ebe467c86",
+        "b0ff0cfd-2e4e-571e-a521-e4b4b52f31f5",
+        "523491d5-4c21-5c07-a1b5-7f04a6c69e96"
+      ],
+      "featured_media___NODE": "2ec42945-5747-5084-8ce6-27095a3662df",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_case_studies",
+        "contentDigest": "b8169c0d319f023baa5e147d21404aa1",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "8f81c398-b1ef-5ed3-905a-630a1dd8ad16": {
+      "wordpress_id": 31,
+      "date": "2018-08-15T06:42:32.000Z",
+      "guid": "http://192.241.220.143/?post_type=testimonials&#038;p=31",
+      "modified": "2018-08-15T06:43:02.000Z",
+      "slug": "jayna-patel",
+      "status": "publish",
+      "type": "testimonials",
+      "link": "http://192.241.220.143/testimonials/jayna-patel/",
+      "title": "Jayna Patel",
+      "content": "<p>I had the pleasure of working with Adam on a recent webdesign project. From the initial call, I was able to quickly tell that he would be the right person for the job. He is knowledgeable, professional and has a passion for what his work. Adam is dependable and fun to work with! Despite our busy schedules, he would be accessible as needed and delivered a great product. I look forward to future collaboration!</p>\n",
+      "template": "",
+      "acf": {
+        "company": "ePublishing",
+        "company_link": "https://www.epublishing.com/"
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/testimonials/31"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/testimonials"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/testimonials"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=31"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "8f81c398-b1ef-5ed3-905a-630a1dd8ad16",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_testimonials",
+        "contentDigest": "76533fe87290bb42f6237439f57ba2ce",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "72776ede-b8ce-535c-a895-092d5316d523": {
+      "wordpress_id": 30,
+      "date": "2018-08-15T06:42:01.000Z",
+      "guid": "http://192.241.220.143/?post_type=testimonials&#038;p=30",
+      "modified": "2018-08-15T06:42:49.000Z",
+      "slug": "abby-sutton",
+      "status": "publish",
+      "type": "testimonials",
+      "link": "http://192.241.220.143/testimonials/abby-sutton/",
+      "title": "Abby Sutton",
+      "content": "<p>Adam was enthusiastic, a clear communicator, and a quick worker. Highly recommend him for Front End / UX projects.</p>\n",
+      "template": "",
+      "acf": {
+        "company": "Dot Dash",
+        "company_link": "https://dotdash.io/"
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/testimonials/30"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/testimonials"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/testimonials"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=30"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "72776ede-b8ce-535c-a895-092d5316d523",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_testimonials",
+        "contentDigest": "3058922a433d16435b4e2a09081126d1",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "a2d1aa19-233b-5acb-b193-a8f8dbfb3e80": {
+      "wordpress_id": "post",
+      "description": "",
+      "hierarchical": false,
+      "name": "Posts",
+      "slug": "post",
+      "taxonomies": [
+        "category",
+        "post_tag"
+      ],
+      "rest_base": "posts",
+      "_links": {
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "a2d1aa19-233b-5acb-b193-a8f8dbfb3e80",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_types",
+        "contentDigest": "624536a847eb41340ad159026fe569d9",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "c8b09b7f-356c-5009-981d-86669dcbafcc": {
+      "wordpress_id": "page",
+      "description": "",
+      "hierarchical": true,
+      "name": "Pages",
+      "slug": "page",
+      "taxonomies": [],
+      "rest_base": "pages",
+      "_links": {
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "c8b09b7f-356c-5009-981d-86669dcbafcc",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_types",
+        "contentDigest": "f603bcbfe8ef03ad38c39032dc13474f",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "b69811c2-484a-5b8c-9c5a-d0da3737bf18": {
+      "wordpress_id": "attachment",
+      "description": "",
+      "hierarchical": false,
+      "name": "Media",
+      "slug": "attachment",
+      "taxonomies": [],
+      "rest_base": "media",
+      "_links": {
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "b69811c2-484a-5b8c-9c5a-d0da3737bf18",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_types",
+        "contentDigest": "c19e1eafa4a5030646f39ccf264cea17",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "4d09c210-3110-5a1f-8df9-9e6750e1e599": {
+      "wordpress_id": "case_studies",
+      "description": "",
+      "hierarchical": false,
+      "name": "Case Studies",
+      "slug": "case_studies",
+      "taxonomies": [
+        "post_tag"
+      ],
+      "rest_base": "case_studies",
+      "_links": {
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/case_studies"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "4d09c210-3110-5a1f-8df9-9e6750e1e599",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_types",
+        "contentDigest": "d48ce1c7f648a54c23fe697842a168d3",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "e457895c-02d4-566f-b420-e8bc9b28a62f": {
+      "wordpress_id": "testimonials",
+      "description": "",
+      "hierarchical": false,
+      "name": "Testimonials",
+      "slug": "testimonials",
+      "taxonomies": [],
+      "rest_base": "testimonials",
+      "_links": {
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/testimonials"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "e457895c-02d4-566f-b420-e8bc9b28a62f",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_types",
+        "contentDigest": "fd561a82ba92059e562b06fc6a4e3f5f",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "59223e42-064c-537b-b2f6-e7a534391e19": {
+      "wordpress_id": "publish",
+      "name": "Published",
+      "public": true,
+      "queryable": true,
+      "slug": "publish",
+      "_links": {
+        "archives": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts"
+          }
+        ]
+      },
+      "id": "59223e42-064c-537b-b2f6-e7a534391e19",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_statuses",
+        "contentDigest": "298e6cc1f6bee3c155925522d7888c5b",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "caf4e364-5082-5e2f-8520-d98910e399e5": {
+      "wordpress_id": "acf-disabled",
+      "name": "Inactive",
+      "public": true,
+      "queryable": true,
+      "slug": "acf-disabled",
+      "_links": {
+        "archives": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts?status=acf-disabled"
+          }
+        ]
+      },
+      "id": "caf4e364-5082-5e2f-8520-d98910e399e5",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_statuses",
+        "contentDigest": "197556e725595aa513292f1ee962b5f1",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844": {
+      "wordpress_id": "category",
+      "name": "Categories",
+      "slug": "category",
+      "description": "",
+      "types": [
+        "post"
+      ],
+      "hierarchical": true,
+      "rest_base": "categories",
+      "_links": {
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/taxonomies"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/categories"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_taxonomies",
+        "contentDigest": "c0808ea74f0826d0746ecea74523164c",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "92aef5e8-a969-590e-8788-9b65d3c78cce": {
+      "wordpress_id": "post_tag",
+      "name": "Tags",
+      "slug": "post_tag",
+      "description": "",
+      "types": [
+        "post",
+        "case_studies"
+      ],
+      "hierarchical": false,
+      "rest_base": "tags",
+      "_links": {
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/taxonomies"
+          }
+        ],
+        "wp_items": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "92aef5e8-a969-590e-8788-9b65d3c78cce",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_taxonomies",
+        "contentDigest": "ec32c578e115859a6303a9f9575efea6",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "f24b5a9e-ed37-56c1-978a-9c95dbc988a9": {
+      "wordpress_id": 1,
+      "count": 3,
+      "description": "",
+      "link": "http://192.241.220.143/category/uncategorized/",
+      "name": "Uncategorized",
+      "slug": "uncategorized",
+      "wordpress_parent": 0,
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/categories/1"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/categories"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/taxonomies/category"
+          }
+        ],
+        "wp_post_type": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts?categories=1"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "f24b5a9e-ed37-56c1-978a-9c95dbc988a9",
+      "taxonomy___NODE": "a5a9ef9b-18e6-5a52-bce8-ed8b7aa25844",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__CATEGORY",
+        "contentDigest": "47bdefddff12164906282b2d9b9ca122",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "052e5749-9865-5f8b-8e7f-830ebe467c86": {
+      "wordpress_id": 3,
+      "count": 2,
+      "description": "",
+      "link": "http://192.241.220.143/tag/custom-shopify-theme-development/",
+      "name": "Custom Shopify Theme Development",
+      "slug": "custom-shopify-theme-development",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags/3"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp_post_type": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts?tags=3"
+          },
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/case_studies?tags=3"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "052e5749-9865-5f8b-8e7f-830ebe467c86",
+      "taxonomy___NODE": "92aef5e8-a969-590e-8788-9b65d3c78cce",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__TAG",
+        "contentDigest": "a417ae4575d86d107e5b9049d5eeb56b",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "523491d5-4c21-5c07-a1b5-7f04a6c69e96": {
+      "wordpress_id": 2,
+      "count": 2,
+      "description": "",
+      "link": "http://192.241.220.143/tag/ui-design/",
+      "name": "UI Design",
+      "slug": "ui-design",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags/2"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp_post_type": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts?tags=2"
+          },
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/case_studies?tags=2"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "523491d5-4c21-5c07-a1b5-7f04a6c69e96",
+      "taxonomy___NODE": "92aef5e8-a969-590e-8788-9b65d3c78cce",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__TAG",
+        "contentDigest": "00cc4324007e70996103f172333b20b5",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "c018acb4-c710-5329-9423-762fa8ea4a48": {
+      "wordpress_id": 1,
+      "name": "adamrasheed",
+      "url": "",
+      "description": "",
+      "link": "http://192.241.220.143/author/adamrasheed/",
+      "slug": "adamrasheed",
+      "avatar_urls": {
+        "wordpress_24": "http://0.gravatar.com/avatar/3198f72ba84da89b235595bbf1aa6c3c?s=24&d=mm&r=g",
+        "wordpress_48": "http://0.gravatar.com/avatar/3198f72ba84da89b235595bbf1aa6c3c?s=48&d=mm&r=g",
+        "wordpress_96": "http://0.gravatar.com/avatar/3198f72ba84da89b235595bbf1aa6c3c?s=96&d=mm&r=g"
+      },
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/users"
+          }
+        ]
+      },
+      "id": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "all_authored_entities___NODE": [
+        "9bf79726-b4ae-5b46-970e-6251a63bdaf7",
+        "0714f11d-f51c-581b-9efc-1f7f6af5ee7b",
+        "fab2273f-880b-523b-83e5-af28122c4b82",
+        "54fcd5ff-093b-594e-9cfc-219a434391bb",
+        "eac0bdfd-bda0-569c-8e4e-7f73b6e91e9a",
+        "1d924fe9-005b-5b5e-98b4-d9a0304115f9",
+        "2ec42945-5747-5084-8ce6-27095a3662df"
+      ],
+      "authored_wordpress__POST___NODE": [
+        "9bf79726-b4ae-5b46-970e-6251a63bdaf7",
+        "0714f11d-f51c-581b-9efc-1f7f6af5ee7b",
+        "fab2273f-880b-523b-83e5-af28122c4b82"
+      ],
+      "authored_wordpress__PAGE___NODE": [
+        "54fcd5ff-093b-594e-9cfc-219a434391bb",
+        "eac0bdfd-bda0-569c-8e4e-7f73b6e91e9a",
+        "1d924fe9-005b-5b5e-98b4-d9a0304115f9"
+      ],
+      "authored_wordpress__wp_media___NODE": [
+        "2ec42945-5747-5084-8ce6-27095a3662df"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_users",
+        "contentDigest": "aeda151c1f2f90fad04e9a46cc589b3a",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "038ece9f-326d-5bb0-8f17-1bb72ce06c57": {
+      "wordpress_id": "acf",
+      "options": {
+        "title": "Front-end Developer",
+        "tagline": "I’m a Front-end Developer based in <br>San Diego, CA 🏖.",
+        "specialization": "I specialize in Custom Wordpress and Shopify projects and am currently learning React.",
+        "career": "<p>Currently working as a Front-end Developer at <a href=\"https://www.bvaccel.com/\" target=\"_blank\" rel=\"nofollow noopener\">BVAccel</a>. Previously at <a href=\"https://www.blenderseyewear.com/\" target=\"_blank\" rel=\"nofollow noopener\">Blenders</a>.</p>\n"
+      },
+      "id": "038ece9f-326d-5bb0-8f17-1bb72ce06c57",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_options",
+        "contentDigest": "38379fdb7b6cacf7391c273e3e628590",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "ee360c98-5643-5937-83b7-bcd4633c9a4f": {
+      "wordpress_id": 46,
+      "id": "ee360c98-5643-5937-83b7-bcd4633c9a4f",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_pages",
+        "contentDigest": "7129190602fea4f15a9073c772eaac48",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "54fcd5ff-093b-594e-9cfc-219a434391bb": {
+      "wordpress_id": 46,
+      "date": "2018-11-27T04:37:13.000Z",
+      "guid": "http://192.241.220.143/?page_id=46",
+      "modified": "2018-11-27T04:37:13.000Z",
+      "slug": "blog",
+      "status": "publish",
+      "type": "page",
+      "link": "http://192.241.220.143/blog/",
+      "title": "Blog",
+      "content": "",
+      "excerpt": "",
+      "wordpress_parent": 0,
+      "menu_order": 0,
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/46"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=46"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/46/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 47,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/46/revisions/47"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=46"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "54fcd5ff-093b-594e-9cfc-219a434391bb",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__PAGE",
+        "contentDigest": "4ab67207c2472c42fd3363e5c202d0d0",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "e1bf21c6-d2b6-5dfa-b09e-b2bd7159ee9c": {
+      "wordpress_id": 49,
+      "acf": {
+        "subtitle": "Subtitle Goes Here",
+        "teaser": ""
+      },
+      "id": "e1bf21c6-d2b6-5dfa-b09e-b2bd7159ee9c",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_case_studies",
+        "contentDigest": "68e5fa8e2ebb887f41280e770dd250b5",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "26cb490d-428f-5ad0-bc3c-8980d52b363b": {
+      "term_id": 4,
+      "name": "Main Menu",
+      "slug": "main-menu",
+      "term_group": 0,
+      "term_taxonomy_id": 4,
+      "taxonomy": "nav_menu",
+      "description": "",
+      "wordpress_parent": 0,
+      "count": 3,
+      "filter": "raw",
+      "wordpress_id": 4,
+      "meta": {
+        "links": {
+          "collection": "http://192.241.220.143/wp-json/wp-api-menus/v2/menus/",
+          "self": "http://192.241.220.143/wp-json/wp-api-menus/v2/menus/4"
+        }
+      },
+      "id": "26cb490d-428f-5ad0-bc3c-8980d52b363b",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_api_menus_menus",
+        "contentDigest": "3f31d8d9c13153fc2c17f0a28941c676",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "8d1b3837-e377-53ea-aa25-75422f85606f": {
+      "wordpress_id": 4,
+      "name": "Main Menu",
+      "slug": "main-menu",
+      "description": "",
+      "count": 3,
+      "items": [
+        {
+          "wordpress_id": 51,
+          "order": 1,
+          "wordpress_parent": 0,
+          "title": "About",
+          "url": "http://192.241.220.143/about/",
+          "attr": "",
+          "target": "",
+          "classes": "",
+          "xfn": "",
+          "description": "",
+          "object_id": 34,
+          "object": "page",
+          "object_slug": "about",
+          "type": "post_type",
+          "type_label": "Page"
+        },
+        {
+          "wordpress_id": 52,
+          "order": 2,
+          "wordpress_parent": 0,
+          "title": "Blog",
+          "url": "http://192.241.220.143/blog/",
+          "attr": "",
+          "target": "",
+          "classes": "",
+          "xfn": "",
+          "description": "",
+          "object_id": 46,
+          "object": "page",
+          "object_slug": "blog",
+          "type": "post_type",
+          "type_label": "Page"
+        },
+        {
+          "wordpress_id": 53,
+          "order": 3,
+          "wordpress_parent": 0,
+          "title": "Freelance",
+          "url": "http://192.241.220.143/freelance/",
+          "attr": "",
+          "target": "",
+          "classes": "",
+          "xfn": "",
+          "description": "",
+          "object_id": 24,
+          "object": "page",
+          "object_slug": "freelance",
+          "type": "post_type",
+          "type_label": "Page"
+        }
+      ],
+      "meta": {
+        "links": {
+          "collection": "http://192.241.220.143/wp-json/wp/v2/menus/",
+          "self": "http://192.241.220.143/wp-json/wp/v2/menus/4"
+        }
+      },
+      "id": "8d1b3837-e377-53ea-aa25-75422f85606f",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_api_menus_menus_items",
+        "contentDigest": "7aa5fb1972f686fb85ae025a79925640",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "e3f24d77-5412-5e73-bdb6-53f1a7936f6c": {
+      "wordpress_id": 49,
+      "date": "2018-11-27T05:16:13.000Z",
+      "guid": "http://192.241.220.143/?post_type=case_studies&#038;p=49",
+      "modified": "2018-11-27T05:16:46.000Z",
+      "slug": "kona-deep-water",
+      "status": "publish",
+      "type": "case_studies",
+      "link": "http://192.241.220.143/case_studies/kona-deep-water/",
+      "title": "Kona Deep Water",
+      "content": "<p>Testing Kona Deep Water</p>\n",
+      "template": "",
+      "meta": [],
+      "acf": {
+        "subtitle": "Subtitle Goes Here",
+        "teaser": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/case_studies/49"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/case_studies"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/case_studies"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=49"
+          }
+        ],
+        "wp_term": [
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags?post=49"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "e3f24d77-5412-5e73-bdb6-53f1a7936f6c",
+      "tags___NODE": [
+        "052e5749-9865-5f8b-8e7f-830ebe467c86",
+        "523491d5-4c21-5c07-a1b5-7f04a6c69e96"
+      ],
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_case_studies",
+        "contentDigest": "80302751d9196f8e4aa2c2de98fb2ddc",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "8ab4fbd5-ad82-55ed-8b61-91d0d023a0db": {
+      "wordpress_id": 4,
+      "label": "Primary",
+      "meta": {
+        "links": {
+          "collection": "http://192.241.220.143/wp-json/wp/v2/menu-locations/",
+          "self": "http://192.241.220.143/wp-json/wp/v2/menu-locations/menu-1"
+        }
+      },
+      "id": "8ab4fbd5-ad82-55ed-8b61-91d0d023a0db",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_api_menus_menu_locations",
+        "contentDigest": "e4881b4c76c3399bb864bfda30a1b7de",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "dbc78977-fb87-54f5-b3d2-5b7db83841ce": {
+      "id": "dbc78977-fb87-54f5-b3d2-5b7db83841ce",
+      "children": [
+        "2068ac50-ba39-55d2-adda-7d93fd26c0c5"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "5273dcf95b1547ef4574ec3fdd356a09",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"http://192.241.220.143/wp-content/uploads/2018/08/flexrake-case-study-cover.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMMATIC__",
+      "absolutePath": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/gatsby-source-filesystem/56cbd3ec1acfe8c3d768ea2c7db92d2f.png",
+      "relativePath": ".cache/gatsby-source-filesystem/56cbd3ec1acfe8c3d768ea2c7db92d2f.png",
+      "extension": "png",
+      "size": 1412166,
+      "prettySize": "1.41 MB",
+      "modifiedTime": "2018-11-27T07:20:07.852Z",
+      "accessTime": "2018-11-27T07:20:07.152Z",
+      "changeTime": "2018-11-27T07:20:07.856Z",
+      "birthTime": "2018-11-27T07:20:07.152Z",
+      "root": "/",
+      "dir": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/gatsby-source-filesystem",
+      "base": "56cbd3ec1acfe8c3d768ea2c7db92d2f.png",
+      "ext": ".png",
+      "name": "56cbd3ec1acfe8c3d768ea2c7db92d2f",
+      "relativeDirectory": ".cache/gatsby-source-filesystem",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12886805725,
+      "blocks": 2760,
+      "atimeMs": 1543303207152.3354,
+      "mtimeMs": 1543303207851.8247,
+      "ctimeMs": 1543303207856.4275,
+      "birthtimeMs": 1543303207152.3354,
+      "atime": "2018-11-27T07:20:07.152Z",
+      "mtime": "2018-11-27T07:20:07.852Z",
+      "ctime": "2018-11-27T07:20:07.856Z",
+      "birthtime": "2018-11-27T07:20:07.152Z"
+    },
+    "2068ac50-ba39-55d2-adda-7d93fd26c0c5": {
+      "id": "2068ac50-ba39-55d2-adda-7d93fd26c0c5",
+      "children": [],
+      "parent": "dbc78977-fb87-54f5-b3d2-5b7db83841ce",
+      "internal": {
+        "contentDigest": "5273dcf95b1547ef4574ec3fdd356a09",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "1d8c8c3c-088d-50f4-a2de-0588fbc91b26": {
+      "wordpress_id": 54,
+      "id": "1d8c8c3c-088d-50f4-a2de-0588fbc91b26",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_media",
+        "contentDigest": "40f28d54e1ae5bbc7cb5a85f3ed1de75",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "2ec42945-5747-5084-8ce6-27095a3662df": {
+      "wordpress_id": 54,
+      "date": "2018-11-27T07:17:25.000Z",
+      "modified": "2018-11-27T07:17:39.000Z",
+      "slug": "flexrake-case-study-cover",
+      "status": "inherit",
+      "type": "attachment",
+      "link": "http://192.241.220.143/case_studies/flexrake/flexrake-case-study-cover/",
+      "title": "flexrake-case-study-cover",
+      "comment_status": "open",
+      "ping_status": "closed",
+      "template": "",
+      "meta": [],
+      "description": "<p class=\"attachment\"><a href='http://192.241.220.143/wp-content/uploads/2018/08/flexrake-case-study-cover.png'><img width=\"300\" height=\"150\" src=\"http://192.241.220.143/wp-content/uploads/2018/08/flexrake-case-study-cover-300x150.png\" class=\"attachment-medium size-medium\" alt=\"Flexrake Website Case Study\" srcset=\"http://192.241.220.143/wp-content/uploads/2018/08/flexrake-case-study-cover-300x150.png 300w, http://192.241.220.143/wp-content/uploads/2018/08/flexrake-case-study-cover-768x384.png 768w, http://192.241.220.143/wp-content/uploads/2018/08/flexrake-case-study-cover-1024x512.png 1024w, http://192.241.220.143/wp-content/uploads/2018/08/flexrake-case-study-cover.png 1600w\" sizes=\"(max-width: 300px) 100vw, 300px\" /></a></p>\n",
+      "caption": "",
+      "alt_text": "Flexrake Website Case Study",
+      "media_type": "image",
+      "mime_type": "image/png",
+      "media_details": {
+        "width": 1600,
+        "height": 800,
+        "file": "2018/08/flexrake-case-study-cover.png",
+        "image_meta": {
+          "aperture": "0",
+          "credit": "",
+          "camera": "",
+          "caption": "",
+          "created_timestamp": "0",
+          "copyright": "",
+          "focal_length": "0",
+          "iso": "0",
+          "shutter_speed": "0",
+          "title": "",
+          "orientation": "0",
+          "keywords": []
+        }
+      },
+      "post": 21,
+      "source_url": "http://192.241.220.143/wp-content/uploads/2018/08/flexrake-case-study-cover.png",
+      "_links": {
+        "self": [
+          {
+            "attributes": [],
+            "href": "http://192.241.220.143/wp-json/wp/v2/media/54"
+          }
+        ],
+        "collection": [
+          {
+            "attributes": [],
+            "href": "http://192.241.220.143/wp-json/wp/v2/media"
+          }
+        ],
+        "about": [
+          {
+            "attributes": [],
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/attachment"
+          }
+        ],
+        "author": [
+          {
+            "attributes": {
+              "embeddable": true
+            },
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "attributes": {
+              "embeddable": true
+            },
+            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=54"
+          }
+        ]
+      },
+      "id": "2ec42945-5747-5084-8ce6-27095a3662df",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "guid___NODE": "2ec42945-5747-5084-8ce6-27095a3662df",
+      "localFile___NODE": "dbc78977-fb87-54f5-b3d2-5b7db83841ce",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__wp_media",
+        "contentDigest": "54f01b8ad0c10f155d8425c8a0cd8220",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
+    "b0ff0cfd-2e4e-571e-a521-e4b4b52f31f5": {
+      "wordpress_id": 5,
+      "count": 1,
+      "description": "",
+      "link": "http://192.241.220.143/tag/magento-to-shopify-migration/",
+      "name": "Magento to Shopify Migration",
+      "slug": "magento-to-shopify-migration",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags/5"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp_post_type": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/posts?tags=5"
+          },
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/case_studies?tags=5"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "b0ff0cfd-2e4e-571e-a521-e4b4b52f31f5",
+      "taxonomy___NODE": "92aef5e8-a969-590e-8788-9b65d3c78cce",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__TAG",
+        "contentDigest": "d85758da311ea6b55ba6412e61e5b1a6",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
     "SitePage /404/": {
       "jsonName": "404-22d",
       "internalComponentName": "Component404",
@@ -1087,76 +2976,16 @@
       "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
-      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js",
       "id": "SitePage /404/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "06f27220deb76ca26ddb60432d6a1e45",
-        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /": {
-      "jsonName": "index",
-      "internalComponentName": "ComponentIndex",
-      "path": "/",
-      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js",
-      "componentChunkName": "component---src-pages-index-js",
-      "context": {},
-      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
-      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js",
-      "id": "SitePage /",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "28552c17a7648cfd4b99054ea7589b3c",
-        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /page-2/": {
-      "jsonName": "page-2-fbc",
-      "internalComponentName": "ComponentPage2",
-      "path": "/page-2/",
-      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js",
-      "componentChunkName": "component---src-pages-page-2-js",
-      "context": {},
-      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
-      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js",
-      "id": "SitePage /page-2/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "752ca842192ce58bf747d8aeb2bfd4a8",
-        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /404.html": {
-      "jsonName": "404-html-516",
-      "internalComponentName": "Component404Html",
-      "path": "/404.html",
-      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
-      "context": {},
-      "pluginCreator___NODE": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
-      "pluginCreatorId": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js",
-      "id": "SitePage /404.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "44e794faad8554878b8b4c1965bfcca7",
-        "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+        "contentDigest": "03597a545e9672b05a0d436e3fb00148",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -1167,16 +2996,16 @@
       "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js",
       "componentChunkName": "component---src-pages-about-js",
       "context": {},
-      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
-      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js",
       "id": "SitePage /about/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a96a98d4f74ff507146b8394454db21e",
-        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
+        "contentDigest": "566387a8833a7c06ded46b6ceb638f18",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -1187,16 +3016,16 @@
       "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js",
       "componentChunkName": "component---src-pages-case-studies-js",
       "context": {},
-      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
-      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js",
       "id": "SitePage /case-studies/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b85217e6260020d74b59d254dc86016f",
-        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
+        "contentDigest": "935eacd87b081f560f9b09a01a3cce38",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -1207,28 +3036,87 @@
       "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js",
       "componentChunkName": "component---src-pages-freelance-js",
       "context": {},
-      "pluginCreator___NODE": "11d0329e-9e7a-514a-91c2-f75918189357",
-      "pluginCreatorId": "11d0329e-9e7a-514a-91c2-f75918189357",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js",
       "id": "SitePage /freelance/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c752257705d29ab001861c4bef20a3cd",
-        "description": "11d0329e-9e7a-514a-91c2-f75918189357",
+        "contentDigest": "d26300ecc887fee10f3a375e6a27a1ee",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c72cc6f79b5a0b9ae04eb3d99c596b46",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /page-2/": {
+      "jsonName": "page-2-fbc",
+      "internalComponentName": "ComponentPage2",
+      "path": "/page-2/",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js",
+      "componentChunkName": "component---src-pages-page-2-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js",
+      "id": "SitePage /page-2/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c67bdfacd964771f3476530c46e9236a",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "jsonName": "404-html-516",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c612690569d3df30769fc12720efa3be",
+        "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "4ec23c454ed0d63a377b35ba819aab69"
+    "PLUGINS_HASH": "ccd557ee84c40536b9262746b8a6b49f"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
-        "/",
         "/about/",
         "sq--src-components-layout-js"
       ],
@@ -1237,21 +3125,52 @@
       ],
       "38268517-0878-508b-a6cc-108670da0408": [
         "sq--src-components-image-js"
+      ],
+      "e0155b9b-8dab-5692-9e66-25b76cd922e7": [],
+      "26cb490d-428f-5ad0-bc3c-8980d52b363b": [],
+      "8d1b3837-e377-53ea-aa25-75422f85606f": [
+        "sq--src-components-navigation-js"
+      ],
+      "052e5749-9865-5f8b-8e7f-830ebe467c86": [
+        "/"
+      ],
+      "523491d5-4c21-5c07-a1b5-7f04a6c69e96": [
+        "/"
+      ],
+      "b0ff0cfd-2e4e-571e-a521-e4b4b52f31f5": [
+        "/"
+      ],
+      "2ec42945-5747-5084-8ce6-27095a3662df": [
+        "/"
+      ],
+      "dbc78977-fb87-54f5-b3d2-5b7db83841ce": [
+        "/"
+      ],
+      "2068ac50-ba39-55d2-adda-7d93fd26c0c5": [
+        "/"
       ]
     },
-    "connections": {}
+    "connections": {
+      "wordpress__wp_case_studies": [
+        "/"
+      ],
+      "wordpress__acf_options": [
+        "/"
+      ]
+    }
   },
   "jsonDataPaths": {
-    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
-    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
     "sq--src-components-layout-js": 474889264,
-    "index": "825/path---index-6a9-aoh9rMyCPKGomPZD99masuzmkqk",
-    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-image-js": 2011440971,
     "about-f34": "308/path---about-f-34-4c2-sdN0rGOtbKRmcHzCm69D45QD4Dc",
+    "index": "56/path---index-6a9-dewuyTLrQKIbRvAXhLObeZ8T9Q",
     "case-studies-693": "995/path---case-studies-693-009-NZuapzHg3X9TaN1iIixfv1W23E",
-    "freelance-945": "83/path---freelance-945-bca-NZuapzHg3X9TaN1iIixfv1W23E"
+    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
+    "freelance-945": "83/path---freelance-945-bca-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
+    "sq--src-components-image-js": 2011440971,
+    "sq--src-components-navigation-js": 2250443616
   },
   "components": {
     "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/dev-404-page.js": {
@@ -1261,14 +3180,6 @@
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js": {
       "query": "",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js"
-    },
-    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js": {
-      "query": "query SiteMeta {\n  site {\n    siteMetadata {\n      tagLine\n      specialize\n      career\n    }\n  }\n}\n",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js"
-    },
-    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js": {
-      "query": "",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js": {
       "query": "query SiteTagline {\n  site {\n    siteMetadata {\n      tagLine\n    }\n  }\n}\n",
@@ -1281,9 +3192,25 @@
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js": {
       "query": "",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js"
+    },
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js": {
+      "query": "query usersAdamrasheedDocumentsWebsitesAdamrasheedSrcPagesIndexJs1913149671 {\n  allWordpressAcfOptions {\n    edges {\n      node {\n        id\n        options {\n          title\n          tagline\n          specialization\n          career\n        }\n      }\n    }\n  }\n  allWordpressWpCaseStudies {\n    edges {\n      node {\n        title\n        slug\n        wordpress_id\n        modified\n        content\n        featured_media {\n          alt_text\n          localFile {\n            childImageSharp {\n              id\n              fluid(maxWidth: 1600) {\n                src\n              }\n            }\n          }\n        }\n        tags {\n          wordpress_id\n          name\n        }\n      }\n    }\n  }\n}\n",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js"
+    },
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js": {
+      "query": "",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js"
     }
   },
   "staticQueryComponents": {
+    "sq--src-components-image-js": {
+      "name": "usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/image.js",
+      "id": "sq--src-components-image-js",
+      "jsonName": "sq--src-components-image-js",
+      "query": "query usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "hash": 2011440971
+    },
     "sq--src-components-layout-js": {
       "name": "SiteTitleQuery",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/layout.js",
@@ -1292,13 +3219,13 @@
       "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n      jobTitle\n    }\n  }\n}\n",
       "hash": 474889264
     },
-    "sq--src-components-image-js": {
-      "name": "usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/image.js",
-      "id": "sq--src-components-image-js",
-      "jsonName": "sq--src-components-image-js",
-      "query": "query usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
-      "hash": 2011440971
+    "sq--src-components-navigation-js": {
+      "name": "usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsNavigationJs2250443616",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/Navigation.js",
+      "id": "sq--src-components-navigation-js",
+      "jsonName": "sq--src-components-navigation-js",
+      "query": "query usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsNavigationJs2250443616 {\n  wordpressWpApiMenusMenusItems(slug: {eq: \"main-menu\"}) {\n    items {\n      wordpress_id\n      title\n      url\n      object_id\n      object\n      object_slug\n      type_label\n    }\n  }\n}\n",
+      "hash": 2250443616
     }
   }
 }

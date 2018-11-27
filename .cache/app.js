@@ -6,12 +6,11 @@ import { hot } from "react-hot-loader"
 import socketIo from "./socketIo"
 import emitter from "./emitter"
 import { apiRunner, apiRunnerAsync } from "./api-runner-browser"
-import loader, { setApiRunnerForLoader } from "./loader"
+import loader from "./loader"
 import syncRequires from "./sync-requires"
 import pages from "./pages.json"
 
 window.___emitter = emitter
-setApiRunnerForLoader(apiRunner)
 
 // Let the site/plugins run code very early.
 apiRunnerAsync(`onClientEntry`).then(() => {

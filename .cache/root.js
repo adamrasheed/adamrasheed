@@ -13,21 +13,34 @@ import loader from "./loader"
 import JSONStore from "./json-store"
 import EnsureResources from "./ensure-resources"
 
-import { reportError, clearError } from "./error-overlay-handler"
+import * as ErrorOverlay from "react-error-overlay"
+
+// Report runtime errors
+ErrorOverlay.startReportingRuntimeErrors({
+  onError: () => {},
+  filename: `/commons.js`,
+})
+ErrorOverlay.setEditorHandler(errorLocation =>
+  window.fetch(
+    `/__open-stack-frame-in-editor?fileName=` +
+      window.encodeURIComponent(errorLocation.fileName) +
+      `&lineNumber=` +
+      window.encodeURIComponent(errorLocation.lineNumber || 1)
+  )
+)
 
 if (window.__webpack_hot_middleware_reporter__ !== undefined) {
-  const overlayErrorID = `webpack`
   // Report build errors
   window.__webpack_hot_middleware_reporter__.useCustomOverlay({
     showProblems(type, obj) {
       if (type !== `errors`) {
-        clearError(overlayErrorID)
+        ErrorOverlay.dismissBuildError()
         return
       }
-      reportError(overlayErrorID, obj[0])
+      ErrorOverlay.reportBuildError(obj[0])
     },
     clear() {
-      clearError(overlayErrorID)
+      ErrorOverlay.dismissBuildError()
     },
   })
 }
