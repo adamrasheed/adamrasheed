@@ -15,9 +15,34 @@
         "path": "/404/"
     },
     {
+        "componentChunkName": "component---src-pages-post-js",
+        "jsonName": "post-b25",
+        "path": "/Post/"
+    },
+    {
+        "componentChunkName": "component---src-pages-posts-js",
+        "jsonName": "posts-5aa",
+        "path": "/Posts/"
+    },
+    {
+        "componentChunkName": "component---src-pages-page-js",
+        "jsonName": "about-46b",
+        "path": "/about"
+    },
+    {
         "componentChunkName": "component---src-pages-about-js",
         "jsonName": "about-f34",
         "path": "/about/"
+    },
+    {
+        "componentChunkName": "component---src-pages-page-js",
+        "jsonName": "blog-126",
+        "path": "/blog"
+    },
+    {
+        "componentChunkName": "component---src-pages-page-js",
+        "jsonName": "case-studies-baf",
+        "path": "/case-studies"
     },
     {
         "componentChunkName": "component---src-pages-case-studies-js",
@@ -25,9 +50,29 @@
         "path": "/case-studies/"
     },
     {
+        "componentChunkName": "component---src-pages-case-study-js",
+        "jsonName": "case-studies-flexrake-667",
+        "path": "/case-studies/flexrake"
+    },
+    {
+        "componentChunkName": "component---src-pages-case-study-js",
+        "jsonName": "case-studies-kona-deep-water-0a4",
+        "path": "/case-studies/kona-deep-water"
+    },
+    {
+        "componentChunkName": "component---src-pages-case-study-js",
+        "jsonName": "case-study-778",
+        "path": "/case-study/"
+    },
+    {
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-page-js",
+        "jsonName": "freelance-96b",
+        "path": "/freelance"
     },
     {
         "componentChunkName": "component---src-pages-freelance-js",
@@ -38,5 +83,10 @@
         "componentChunkName": "component---src-pages-page-2-js",
         "jsonName": "page-2-fbc",
         "path": "/page-2/"
+    },
+    {
+        "componentChunkName": "component---src-pages-page-js",
+        "jsonName": "page-8a1",
+        "path": "/page/"
     }
 ]

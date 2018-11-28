@@ -2,15 +2,10 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticQuery, graphql } from 'gatsby';
 
-import { API } from '../EndPoint';
-
-console.log(API.pages);
-
-
 const Navigation = ({data}) => (
   <StaticQuery
     query={graphql`
-      query {
+      query NavigationQuery{
         wordpressWpApiMenusMenusItems(slug: {eq: "main-menu"}) {
           items {
             wordpress_id

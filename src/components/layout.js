@@ -10,10 +10,12 @@ const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
-        site {
-          siteMetadata {
+        wordpressSiteMetadata {
+          name
+        }
+        wordpressAcfOptions {
+          options {
             title
-            jobTitle
           }
         }
       }
@@ -21,16 +23,14 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
-          jobtitle={data.site.siteMetadata.jobTitle}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Adam Rasheed is a front-end develoepr based in San Diego, California. He specializes in cusotm Shopify theme development and custom WordPress theme development' },
+            { name: 'keywords', content: 'front-end developer, shopify developer' },
           ]}
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} jobTitle={data.site.siteMetadata.jobTitle}/>
+        <Header siteTitle={data.wordpressSiteMetadata.name} jobTitle={data.wordpressAcfOptions.options.title}/>
         <div
           style={{
             margin: '0 auto',

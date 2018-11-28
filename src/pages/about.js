@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 const AboutPage = ({ data }) => (
   <Layout>
-    <h1>About</h1>
+    <h1 className="page-title">About</h1>
     <img src="" alt="" />
     <div className="container about__container">
       <div className="about__body">

@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 
 export const query = graphql`
- query {
+ query HeroQuery{
     allWordpressAcfOptions {
       edges {
         node {
@@ -46,7 +46,7 @@ export const query = graphql`
         }
       }
     }
-    allWordpressWpCaseStudies {
+    allWordpressWpCaseStudies(limit: 2){
       edges {
         node {
           title
