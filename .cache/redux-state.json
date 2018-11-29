@@ -1055,12 +1055,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-29T06:59:26.283Z",
+      "buildTime": "2018-11-29T15:45:23.093Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "106722078a9f97fd52a0acae953a76a5",
+        "contentDigest": "149757c471b8b3d3aa7b81e101eb7234",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1070,7 +1070,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "cf995a227057089451dbd12bb8845245",
+        "contentDigest": "ae22b16f0c089d52527a79c283b7b023",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1082,7 +1082,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-29T06:59:30.238Z",
+      "accessTime": "2018-11-29T15:45:27.355Z",
       "changeTime": "2018-11-23T05:22:40.368Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1100,11 +1100,11 @@
       "blksize": 4096,
       "ino": 12886265220,
       "blocks": 0,
-      "atimeMs": 1543474770238.196,
+      "atimeMs": 1543506327354.6106,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.5725,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-29T06:59:30.238Z",
+      "atime": "2018-11-29T15:45:27.355Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.368Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -3763,7 +3763,8 @@
         "sq--src-components-image-js"
       ],
       "8d1b3837-e377-53ea-aa25-75422f85606f": [
-        "sq--src-components-navigation-js"
+        "sq--src-components-navigation-js",
+        "sq--src-components-mobile-nav-js"
       ],
       "eac0bdfd-bda0-569c-8e4e-7f73b6e91e9a": [
         "/about",
@@ -3866,7 +3867,8 @@
     "case-studies-kona-deep-water-0a4": "87/path---case-studies-kona-deep-water-0-a-4-e1d-5mjEhK5qYPqhYWLbT2IeH79RwY",
     "case-studies-flexrake-667": "731/path---case-studies-flexrake-667-f61-313VegqMJNWYqLJSxvJn4N0OQA",
     "case-study-96f": "701/path---case-study-96-f-1f7-NZuapzHg3X9TaN1iIixfv1W23E",
-    "case-studies-baf": "436/path---case-studies-baf-491-1KEE8f2sdsOfhBU3jb6mAisBv0"
+    "case-studies-baf": "436/path---case-studies-baf-491-1KEE8f2sdsOfhBU3jb6mAisBv0",
+    "sq--src-components-mobile-nav-js": 651775633
   },
   "components": {
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js": {
@@ -3938,6 +3940,14 @@
       "jsonName": "sq--src-components-navigation-js",
       "query": "query NavigationQuery {\n  wordpressWpApiMenusMenusItems(slug: {eq: \"main-menu\"}) {\n    items {\n      wordpress_id\n      title\n      url\n      object_id\n      object\n      object_slug\n      type_label\n    }\n  }\n}\n",
       "hash": 4069908935
+    },
+    "sq--src-components-mobile-nav-js": {
+      "name": "MobileNavigationQuery",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/MobileNav.js",
+      "id": "sq--src-components-mobile-nav-js",
+      "jsonName": "sq--src-components-mobile-nav-js",
+      "query": "query MobileNavigationQuery {\n  wordpressWpApiMenusMenusItems(slug: {eq: \"main-menu\"}) {\n    items {\n      wordpress_id\n      title\n      object_id\n      object\n      object_slug\n    }\n  }\n}\n",
+      "hash": 651775633
     }
   }
 }
