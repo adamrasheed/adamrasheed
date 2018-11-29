@@ -806,7 +806,7 @@
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "689376c0b81b542359d4d1250a76f635",
+      "version": "01faf318910fa9333ef9372be5c5a526",
       "pluginOptions": {
         "plugins": []
       },
@@ -826,6 +826,30 @@
         "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
+          {
+            "name": "@fortawesome/fontawesome-svg-core",
+            "version": "^1.2.8"
+          },
+          {
+            "name": "@fortawesome/free-brands-svg-icons",
+            "version": "^5.5.0"
+          },
+          {
+            "name": "@fortawesome/free-solid-svg-icons",
+            "version": "^5.5.0"
+          },
+          {
+            "name": "@fortawesome/pro-light-svg-icons",
+            "version": "^5.5.0"
+          },
+          {
+            "name": "@fortawesome/pro-regular-svg-icons",
+            "version": "^5.5.0"
+          },
+          {
+            "name": "@fortawesome/react-fontawesome",
+            "version": "^0.1.3"
+          },
           {
             "name": "gatsby",
             "version": "^2.0.19"
@@ -863,6 +887,14 @@
             "version": "^2.1.4"
           },
           {
+            "name": "i",
+            "version": "^0.3.6"
+          },
+          {
+            "name": "npm",
+            "version": "^6.4.1"
+          },
+          {
             "name": "react",
             "version": "^16.5.1"
           },
@@ -888,7 +920,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3a6c726a1899eb41099c15da31b699bb",
+        "contentDigest": "33fc7e20b4d38dbfd10e1f71c6ae74de",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -996,24 +1028,39 @@
         "tagLine": "I’m a Front-end Developer based in <br>San Diego, CA 🏖.",
         "specialize": "I specialize in Custom Wordpress and Shopify projects and am learning React.",
         "career": "Currently working as a Front-end Developer at <a href=\"https://www.bvaccel.com/\" target=\"_blank\" rel=\"nofollow noopener\">BVAccel</a>. Previously at <a href=\"https://www.blenderseyewear.com/\" target=\"_blank\" rel=\"nofollow noopener\">Blenders</a>.",
-        "social": {
-          "twitter": "https://twitter.com/ARasheedPhoto",
-          "instagram": "https://www.instagram.com/hashtagadam/",
-          "github": "https://github.com/adamrasheed",
-          "dribbble": "https://dribbble.com/adamrasheed",
-          "youtube": "http://bit.ly/SketchVids"
-        }
+        "social": [
+          {
+            "account": "twitter",
+            "url": "https://twitter.com/ARasheedPhoto"
+          },
+          {
+            "account": "instagram",
+            "url": "https://www.instagram.com/hashtagadam/"
+          },
+          {
+            "account": "github",
+            "url": "https://github.com/adamrasheed"
+          },
+          {
+            "account": "dribbble",
+            "url": "https://dribbble.com/adamrasheed"
+          },
+          {
+            "account": "youtube",
+            "url": "http://bit.ly/SketchVids"
+          }
+        ]
       },
       "port": "8000",
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-28T08:07:12.580Z",
+      "buildTime": "2018-11-29T05:25:12.115Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f08270f395c33e2073fca22ec0afe0a8",
+        "contentDigest": "595b79025984d627e4313d48db9e8577",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1023,7 +1070,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0c95e1d474e3fa44122c26460de304f0",
+        "contentDigest": "37324524c79afc022ddd5e3b43b1420f",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1035,7 +1082,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-28T08:07:16.529Z",
+      "accessTime": "2018-11-29T05:25:15.798Z",
       "changeTime": "2018-11-23T05:22:40.368Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1053,11 +1100,11 @@
       "blksize": 4096,
       "ino": 12886265220,
       "blocks": 0,
-      "atimeMs": 1543392436528.8093,
+      "atimeMs": 1543469115798.3337,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.5725,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-28T08:07:16.529Z",
+      "atime": "2018-11-29T05:25:15.798Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.368Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1082,7 +1129,7 @@
       "size": 21212,
       "prettySize": "21.2 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-28T07:14:33.064Z",
+      "accessTime": "2018-11-29T05:14:16.351Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1100,11 +1147,11 @@
       "blksize": 4096,
       "ino": 12886265222,
       "blocks": 48,
-      "atimeMs": 1543389273063.7593,
+      "atimeMs": 1543468456351.3975,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.4724,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-28T07:14:33.064Z",
+      "atime": "2018-11-29T05:14:16.351Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1139,7 +1186,7 @@
       "size": 167273,
       "prettySize": "167 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-28T07:21:21.832Z",
+      "accessTime": "2018-11-29T05:23:33.842Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1157,11 +1204,11 @@
       "blksize": 4096,
       "ino": 12886265221,
       "blocks": 328,
-      "atimeMs": 1543389681831.6958,
+      "atimeMs": 1543469013842.2505,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.1519,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-28T07:21:21.832Z",
+      "atime": "2018-11-29T05:23:33.842Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1195,10 +1242,10 @@
       "extension": "jpg",
       "size": 542045,
       "prettySize": "542 kB",
-      "modifiedTime": "2018-11-28T07:22:37.535Z",
-      "accessTime": "2018-11-28T07:22:35.431Z",
-      "changeTime": "2018-11-28T07:22:37.663Z",
-      "birthTime": "2018-11-28T07:22:35.431Z",
+      "modifiedTime": "2018-11-29T05:25:21.606Z",
+      "accessTime": "2018-11-29T05:25:21.331Z",
+      "changeTime": "2018-11-29T05:25:21.613Z",
+      "birthTime": "2018-11-29T05:25:21.331Z",
       "root": "/",
       "dir": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/gatsby-source-filesystem",
       "base": "eeb2a4a8e41fdabf3f9d7de7b224cee4.jpg",
@@ -1212,16 +1259,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 12886864002,
-      "blocks": 1080,
-      "atimeMs": 1543389755430.945,
-      "mtimeMs": 1543389757535.172,
-      "ctimeMs": 1543389757662.7798,
-      "birthtimeMs": 1543389755430.945,
-      "atime": "2018-11-28T07:22:35.431Z",
-      "mtime": "2018-11-28T07:22:37.535Z",
-      "ctime": "2018-11-28T07:22:37.663Z",
-      "birthtime": "2018-11-28T07:22:35.431Z"
+      "ino": 12886931678,
+      "blocks": 1064,
+      "atimeMs": 1543469121330.6128,
+      "mtimeMs": 1543469121605.7961,
+      "ctimeMs": 1543469121612.719,
+      "birthtimeMs": 1543469121330.6128,
+      "atime": "2018-11-29T05:25:21.331Z",
+      "mtime": "2018-11-29T05:25:21.606Z",
+      "ctime": "2018-11-29T05:25:21.613Z",
+      "birthtime": "2018-11-29T05:25:21.331Z"
     },
     "d21abaa6-dba1-5055-a221-aab24d6a1de1": {
       "id": "d21abaa6-dba1-5055-a221-aab24d6a1de1",
@@ -1252,10 +1299,10 @@
       "extension": "png",
       "size": 1412166,
       "prettySize": "1.41 MB",
-      "modifiedTime": "2018-11-28T07:22:39.179Z",
-      "accessTime": "2018-11-28T07:22:35.433Z",
-      "changeTime": "2018-11-28T07:22:39.181Z",
-      "birthTime": "2018-11-28T07:22:35.433Z",
+      "modifiedTime": "2018-11-29T05:25:21.854Z",
+      "accessTime": "2018-11-29T05:25:21.331Z",
+      "changeTime": "2018-11-29T05:25:21.856Z",
+      "birthTime": "2018-11-29T05:25:21.331Z",
       "root": "/",
       "dir": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/gatsby-source-filesystem",
       "base": "56cbd3ec1acfe8c3d768ea2c7db92d2f.png",
@@ -1269,16 +1316,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 12886864003,
-      "blocks": 4152,
-      "atimeMs": 1543389755433.2393,
-      "mtimeMs": 1543389759178.6912,
-      "ctimeMs": 1543389759180.9731,
-      "birthtimeMs": 1543389755433.2393,
-      "atime": "2018-11-28T07:22:35.433Z",
-      "mtime": "2018-11-28T07:22:39.179Z",
-      "ctime": "2018-11-28T07:22:39.181Z",
-      "birthtime": "2018-11-28T07:22:35.433Z"
+      "ino": 12886931679,
+      "blocks": 2760,
+      "atimeMs": 1543469121330.968,
+      "mtimeMs": 1543469121853.922,
+      "ctimeMs": 1543469121856.127,
+      "birthtimeMs": 1543469121330.968,
+      "atime": "2018-11-29T05:25:21.331Z",
+      "mtime": "2018-11-29T05:25:21.854Z",
+      "ctime": "2018-11-29T05:25:21.856Z",
+      "birthtime": "2018-11-29T05:25:21.331Z"
     },
     "2068ac50-ba39-55d2-adda-7d93fd26c0c5": {
       "id": "2068ac50-ba39-55d2-adda-7d93fd26c0c5",
@@ -1291,7 +1338,7 @@
       }
     },
     "583ed48e-4261-5704-9604-9f3878be098d": {
-      "name": "Adam Rasheed Backend",
+      "name": "Adam Rasheed",
       "description": "Just another WordPress site",
       "url": "http://192.241.220.143",
       "home": "http://192.241.220.143",
@@ -1300,7 +1347,7 @@
       "parent": null,
       "internal": {
         "type": "wordpress__site_metadata",
-        "contentDigest": "c5fc677e22f9a3e175bb1156beae19ff",
+        "contentDigest": "00d12f19fc40165789c42fed9e05d8ac",
         "owner": "gatsby-source-wordpress"
       }
     },
@@ -1337,6 +1384,17 @@
         "owner": "gatsby-source-wordpress"
       }
     },
+    "b1aec8d9-63f9-581c-ba40-8821e9ed1606": {
+      "wordpress_id": 61,
+      "id": "b1aec8d9-63f9-581c-ba40-8821e9ed1606",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__acf_pages",
+        "contentDigest": "8225ac3075bf2f402837c27378f8df73",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
     "ee360c98-5643-5937-83b7-bcd4633c9a4f": {
       "wordpress_id": 46,
       "id": "ee360c98-5643-5937-83b7-bcd4633c9a4f",
@@ -1350,12 +1408,43 @@
     },
     "5215461d-62a0-5072-b708-e3d7e658fa62": {
       "wordpress_id": 34,
+      "acf": {
+        "talks": [
+          {
+            "title": "Design for Entrepreneurs",
+            "url": "http://csufentrepreneurship.com/tag/csufentrepeneur/",
+            "description": "CSUSF Center for Entrepreneurship"
+          },
+          {
+            "title": "Sketch Live Training",
+            "url": "https://www.sitepoint.com/a-live-lesson-on-ui-design-with-sketch/",
+            "description": "Exclusive training for Sitepoint.com"
+          },
+          {
+            "title": " Using WordPress as a Backend for Your React Project ",
+            "url": "https://www.slideshare.net/AdamRasheed3/using-wordpress-as-a-backend-for-your-react-project",
+            "description": "San Diego WordCamp 2018"
+          }
+        ],
+        "education": [
+          {
+            "title": "UI Design in Sketch Course",
+            "url": "https://www.sitepoint.com/designing-custom-icons-in-sketch-3/",
+            "description": "Exclusive course for sitepoint.com"
+          },
+          {
+            "title": "SketchVids",
+            "url": "http://bit.ly/SketchVids",
+            "description": "YouTube channel"
+          }
+        ]
+      },
       "id": "5215461d-62a0-5072-b708-e3d7e658fa62",
       "children": [],
       "parent": null,
       "internal": {
         "type": "wordpress__acf_pages",
-        "contentDigest": "860695520d20e55d1257469725e81196",
+        "contentDigest": "722aba7e1d49aee94a544f6c4aca9438",
         "owner": "gatsby-source-wordpress"
       }
     },
@@ -1918,6 +2007,87 @@
         "owner": "gatsby-source-wordpress"
       }
     },
+    "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4": {
+      "wordpress_id": 61,
+      "date": "2018-11-28T08:06:30.000Z",
+      "guid": "http://192.241.220.143/?page_id=61",
+      "modified": "2018-11-29T03:01:30.000Z",
+      "slug": "case-studies",
+      "status": "publish",
+      "type": "page",
+      "link": "http://192.241.220.143/case-studies/",
+      "title": "Case Studies",
+      "content": "",
+      "excerpt": "",
+      "wordpress_parent": 0,
+      "menu_order": 0,
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "template": "page-case-studies.php",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/61"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=61"
+          }
+        ],
+        "version_history": [
+          {
+            "count": 1,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/61/revisions"
+          }
+        ],
+        "predecessor_version": [
+          {
+            "wordpress_id": 62,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/61/revisions/62"
+          }
+        ],
+        "wp_attachment": [
+          {
+            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=61"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "id": "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4",
+      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "type": "wordpress__PAGE",
+        "contentDigest": "372dee82cf4ae7ec94ae71e9af7542b9",
+        "owner": "gatsby-source-wordpress"
+      }
+    },
     "54fcd5ff-093b-594e-9cfc-219a434391bb": {
       "wordpress_id": 46,
       "date": "2018-11-27T04:37:13.000Z",
@@ -2003,20 +2173,51 @@
       "wordpress_id": 34,
       "date": "2018-08-15T06:53:02.000Z",
       "guid": "http://192.241.220.143/?page_id=34",
-      "modified": "2018-11-28T04:54:50.000Z",
+      "modified": "2018-11-29T03:11:48.000Z",
       "slug": "about",
       "status": "publish",
       "type": "page",
       "link": "http://192.241.220.143/about/",
       "title": "About",
-      "content": "<p>Adam Rasheed is a San-Diego based front-end developer who creates well-designed websites and e-commerce stores. A data nerd at heart, Adam majored in Economics at CSUSB, and has used his data-analysis powers mainly for good. Like many of his generation, he was drawn to coding and design originally as an angsty teen trying to make his MySpace page look cool–but not too cool.</p>\n<p>Since those days he has been pretty busy both in-house and as a freelancer, and with his YouTube channel where he teaches people how to use Sketch. He has a variety of experience such as creating custom WordPress themes, UI design, and speaks fluent HTML, CSS, javascript, PHP, and Liquid. (note from editor: one could also add<br />\nsarcasm to that list)</p>\n<p>Adam’s loves to tackle a challenge head-on by analyzing it and coming up with a plan to solve the needs of his clients that makes sense for their big-picture goals. Most recently, he’s working at <a href=\"http://bvaccel.com\">BVAccel</a> as a Front-end Developer in sunny San Diego, and previously, he was a Lead Shopify Developer at <a href=\"https://blenderseyewear.com\">Blenders Eyewear</a>. He’s also taking on select freelance projects. Does your product team<br />\nneed a hand bringing your designs to life? Learn how how you can <a href=\"http://192.241.220.143/freelance/\">hire Adam</a></p>\n<p>Words by <a href=\"https://www.linkedin.com/in/justcallmealyson/\">Alyson Ben-Yehuda</a></p>\n",
+      "content": "<p>Adam Rasheed is a San-Diego based front-end developer who creates well-designed websites and e-commerce stores. A data nerd at heart, Adam majored in Economics at CSUSB, and has used his data-analysis powers mainly for good. Like many of his generation, he was drawn to coding and design originally as an angsty teen trying to make his MySpace page look cool–but not too cool.</p>\n<p>Since those days he has been pretty busy both in-house and as a freelancer, and with his YouTube channel where he teaches people how to use Sketch. He has a variety of experience such as creating custom WordPress themes, UI design, and speaks fluent HTML, CSS, JavaScript, PHP, and Liquid. (note from editor: one could also add<br />\nsarcasm to that list)</p>\n<p>Adam’s loves to tackle a challenge head-on by analyzing it and coming up with a plan to solve the needs of his clients that makes sense for their big-picture goals. Most recently, he’s working at <a href=\"http://bvaccel.com\">BVAccel</a> as a Front-end Developer in sunny San Diego, and previously, he was a Lead Shopify Developer at <a href=\"https://blenderseyewear.com\">Blenders Eyewear</a>. He’s also taking on select freelance projects. Does your product team<br />\nneed a hand bringing your designs to life? Learn how how you can <a href=\"http://192.241.220.143/freelance/\">hire Adam</a></p>\n<p>Words by <a href=\"https://www.linkedin.com/in/justcallmealyson/\">Alyson Ben-Yehuda</a></p>\n",
       "excerpt": "<p>Adam Rasheed is a San-Diego based front-end developer who creates well-designed websites and e-commerce stores. A data nerd at heart, Adam majored in Economics at CSUSB, and has used his data-analysis powers mainly for good. Like many of his generation, he was drawn to coding and design originally as an angsty teen trying to make [&hellip;]</p>\n",
       "wordpress_parent": 0,
       "menu_order": 0,
       "comment_status": "closed",
       "ping_status": "closed",
-      "template": "",
+      "template": "page-about.php",
       "meta": [],
+      "acf": {
+        "talks": [
+          {
+            "title": "Design for Entrepreneurs",
+            "url": "http://csufentrepreneurship.com/tag/csufentrepeneur/",
+            "description": "CSUSF Center for Entrepreneurship"
+          },
+          {
+            "title": "Sketch Live Training",
+            "url": "https://www.sitepoint.com/a-live-lesson-on-ui-design-with-sketch/",
+            "description": "Exclusive training for Sitepoint.com"
+          },
+          {
+            "title": " Using WordPress as a Backend for Your React Project ",
+            "url": "https://www.slideshare.net/AdamRasheed3/using-wordpress-as-a-backend-for-your-react-project",
+            "description": "San Diego WordCamp 2018"
+          }
+        ],
+        "education": [
+          {
+            "title": "UI Design in Sketch Course",
+            "url": "https://www.sitepoint.com/designing-custom-icons-in-sketch-3/",
+            "description": "Exclusive course for sitepoint.com"
+          },
+          {
+            "title": "SketchVids",
+            "url": "http://bit.ly/SketchVids",
+            "description": "YouTube channel"
+          }
+        ]
+      },
       "_links": {
         "self": [
           {
@@ -2047,14 +2248,14 @@
         ],
         "version_history": [
           {
-            "count": 4,
+            "count": 6,
             "href": "http://192.241.220.143/wp-json/wp/v2/pages/34/revisions"
           }
         ],
         "predecessor_version": [
           {
-            "wordpress_id": 58,
-            "href": "http://192.241.220.143/wp-json/wp/v2/pages/34/revisions/58"
+            "wordpress_id": 76,
+            "href": "http://192.241.220.143/wp-json/wp/v2/pages/34/revisions/76"
           }
         ],
         "wp_featuredmedia": [
@@ -2083,7 +2284,7 @@
       "parent": null,
       "internal": {
         "type": "wordpress__PAGE",
-        "contentDigest": "b81a3d2e2920e446a224ed7e6651b18b",
+        "contentDigest": "7d9056d5326925e5ae07e5ba675f5876",
         "owner": "gatsby-source-wordpress"
       }
     },
@@ -2091,7 +2292,7 @@
       "wordpress_id": 24,
       "date": "2018-08-15T05:52:20.000Z",
       "guid": "http://192.241.220.143/?page_id=24",
-      "modified": "2018-08-15T06:43:47.000Z",
+      "modified": "2018-11-29T03:02:01.000Z",
       "slug": "freelance",
       "status": "publish",
       "type": "page",
@@ -2103,7 +2304,7 @@
       "menu_order": 0,
       "comment_status": "closed",
       "ping_status": "closed",
-      "template": "",
+      "template": "page-freelance.php",
       "meta": [],
       "_links": {
         "self": [
@@ -2164,7 +2365,7 @@
       "parent": null,
       "internal": {
         "type": "wordpress__PAGE",
-        "contentDigest": "8eb3e56261ba59dfbddf10300e475f9c",
+        "contentDigest": "db33d07c90ff12203e1f71b7b91e111e",
         "owner": "gatsby-source-wordpress"
       }
     },
@@ -3188,96 +3389,26 @@
         "owner": "gatsby-source-wordpress"
       }
     },
-    "b1aec8d9-63f9-581c-ba40-8821e9ed1606": {
-      "wordpress_id": 61,
-      "id": "b1aec8d9-63f9-581c-ba40-8821e9ed1606",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "type": "wordpress__acf_pages",
-        "contentDigest": "8225ac3075bf2f402837c27378f8df73",
-        "owner": "gatsby-source-wordpress"
-      }
-    },
-    "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4": {
-      "wordpress_id": 61,
-      "date": "2018-11-28T08:06:30.000Z",
-      "guid": "http://192.241.220.143/?page_id=61",
-      "modified": "2018-11-28T08:06:30.000Z",
-      "slug": "case-studies",
-      "status": "publish",
-      "type": "page",
-      "link": "http://192.241.220.143/case-studies/",
-      "title": "Case Studies",
-      "content": "",
-      "excerpt": "",
-      "wordpress_parent": 0,
-      "menu_order": 0,
-      "comment_status": "closed",
-      "ping_status": "closed",
-      "template": "",
-      "meta": [],
-      "_links": {
-        "self": [
-          {
-            "href": "http://192.241.220.143/wp-json/wp/v2/pages/61"
-          }
-        ],
-        "collection": [
-          {
-            "href": "http://192.241.220.143/wp-json/wp/v2/pages"
-          }
-        ],
-        "about": [
-          {
-            "href": "http://192.241.220.143/wp-json/wp/v2/types/page"
-          }
-        ],
-        "author": [
-          {
-            "embeddable": true,
-            "href": "http://192.241.220.143/wp-json/wp/v2/users/1"
-          }
-        ],
-        "replies": [
-          {
-            "embeddable": true,
-            "href": "http://192.241.220.143/wp-json/wp/v2/comments?post=61"
-          }
-        ],
-        "version_history": [
-          {
-            "count": 1,
-            "href": "http://192.241.220.143/wp-json/wp/v2/pages/61/revisions"
-          }
-        ],
-        "predecessor_version": [
-          {
-            "wordpress_id": 62,
-            "href": "http://192.241.220.143/wp-json/wp/v2/pages/61/revisions/62"
-          }
-        ],
-        "wp_attachment": [
-          {
-            "href": "http://192.241.220.143/wp-json/wp/v2/media?parent=61"
-          }
-        ],
-        "curies": [
-          {
-            "name": "wp",
-            "href": "https://api.w.org/{rel}",
-            "templated": true
-          }
-        ]
+    "SitePage /case-studies": {
+      "jsonName": "case-studies-baf",
+      "internalComponentName": "ComponentCaseStudies",
+      "path": "/case-studies",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
+      "componentChunkName": "component---src-pages-page-js",
+      "context": {
+        "slug": "case-studies"
       },
-      "id": "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4",
-      "author___NODE": "c018acb4-c710-5329-9423-762fa8ea4a48",
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
+      "id": "SitePage /case-studies",
+      "parent": "SOURCE",
       "children": [],
-      "parent": null,
       "internal": {
-        "type": "wordpress__PAGE",
-        "contentDigest": "886c1499a313ada60d80475a8a0a3fc3",
-        "owner": "gatsby-source-wordpress"
+        "type": "SitePage",
+        "contentDigest": "ca823a442f9db7e361243b58c9540ca8",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
       }
     },
     "SitePage /blog": {
@@ -3306,20 +3437,20 @@
       "jsonName": "about-46b",
       "internalComponentName": "ComponentAbout",
       "path": "/about",
-      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
-      "componentChunkName": "component---src-pages-page-js",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js",
+      "componentChunkName": "component---src-pages-about-js",
       "context": {
         "slug": "about"
       },
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js",
       "id": "SitePage /about",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "faa166ddf72c6e79734fec5dc7362dc0",
+        "contentDigest": "c3a854f1ef45e87f7c1f4d936c50e462",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -3342,28 +3473,6 @@
       "internal": {
         "type": "SitePage",
         "contentDigest": "aa2e505532886dcae8cfc37063855264",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /case-studies": {
-      "jsonName": "case-studies-baf",
-      "internalComponentName": "ComponentCaseStudies",
-      "path": "/case-studies",
-      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
-      "componentChunkName": "component---src-pages-page-js",
-      "context": {
-        "slug": "case-studies"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
-      "id": "SitePage /case-studies",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "ca823a442f9db7e361243b58c9540ca8",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -3635,21 +3744,51 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "1179fd5a3b8886b77d0d9f6443b822f5"
+    "PLUGINS_HASH": "2780da65809dfcd98cbdf155a1971ee8"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
-        "/about/"
+        "sq--src-components-layout-js"
       ],
-      "8d1b3837-e377-53ea-aa25-75422f85606f": [
-        "sq--src-components-navigation-js"
+      "038ece9f-326d-5bb0-8f17-1bb72ce06c57": [
+        "/about",
+        "/about/",
+        "sq--src-components-layout-js"
       ],
       "e6f6c424-ea76-521f-889e-86be627c86ef": [
         "sq--src-components-image-js"
       ],
       "38268517-0878-508b-a6cc-108670da0408": [
         "sq--src-components-image-js"
+      ],
+      "8d1b3837-e377-53ea-aa25-75422f85606f": [
+        "sq--src-components-navigation-js"
+      ],
+      "eac0bdfd-bda0-569c-8e4e-7f73b6e91e9a": [
+        "/about",
+        "/about/"
+      ],
+      "f5e141aa-c671-503d-98cc-a4e9f8941306": [
+        "/about",
+        "/about/"
+      ],
+      "494dcc45-b424-5c72-a0a2-4d155a36893b": [
+        "/about",
+        "/about/"
+      ],
+      "d21abaa6-dba1-5055-a221-aab24d6a1de1": [
+        "/about",
+        "/about/"
+      ],
+      "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4": [
+        "/case-studies"
+      ],
+      "54fcd5ff-093b-594e-9cfc-219a434391bb": [
+        "/blog"
+      ],
+      "1d924fe9-005b-5b5e-98b4-d9a0304115f9": [
+        "/freelance"
       ],
       "052e5749-9865-5f8b-8e7f-830ebe467c86": [
         "/"
@@ -3668,43 +3807,21 @@
       ],
       "b0ff0cfd-2e4e-571e-a521-e4b4b52f31f5": [
         "/"
-      ],
-      "4c40d440-ed7f-58f1-98b0-5aac80b03f4e": [],
-      "fab2273f-880b-523b-83e5-af28122c4b82": [],
-      "54fcd5ff-093b-594e-9cfc-219a434391bb": [
-        "/blog"
-      ],
-      "eac0bdfd-bda0-569c-8e4e-7f73b6e91e9a": [
-        "/about"
-      ],
-      "1d924fe9-005b-5b5e-98b4-d9a0304115f9": [
-        "/freelance"
-      ],
-      "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4": [
-        "/case-studies"
-      ],
-      "038ece9f-326d-5bb0-8f17-1bb72ce06c57": [
-        "/",
-        "sq--src-components-layout-js"
-      ],
-      "583ed48e-4261-5704-9604-9f3878be098d": [
-        "/",
-        "sq--src-components-layout-js"
       ]
     },
     "connections": {
-      "wordpress__wp_case_studies": [
+      "wordpress__acf_options": [
         "/"
       ],
-      "wordpress__acf_options": [
+      "wordpress__wp_case_studies": [
         "/"
       ]
     }
   },
   "jsonDataPaths": {
-    "blog-126": "688/path---blog-126-783-vZlgQQpIkldJojHKw4WWkm8npcw",
-    "about-46b": "162/path---about-46-b-819-43kh116giZ3rIAdjhxV7PF277E",
-    "freelance-96b": "466/path---freelance-96-b-289-kMMPKdUHziBy2GYWFjVc6ZoDRdk",
+    "blog-126": "748/path---blog-126-783-goQawkx0G7gIUbcQUZ2eDfr2sU4",
+    "about-46b": "265/path---about-46-b-819-PyRzv5luQYsM0GI4HthTNbfIA",
+    "freelance-96b": "640/path---freelance-96-b-289-StdCctTkLT4YI9dUCL6aLsA0",
     "kona-deep-water-899": "246/path---kona-deep-water-899-7cc-5mjEhK5qYPqhYWLbT2IeH79RwY",
     "flexrake-9e9": "839/path---flexrake-9-e-9-7f2-313VegqMJNWYqLJSxvJn4N0OQA",
     "how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-154": "79/path---how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-154-420-cBmyBernL6YQA9reRcArDlZI0HU",
@@ -3712,14 +3829,14 @@
     "creating-this-site-277": "834/path---creating-this-site-277-68b-F6n4IyD835RZK8bEoZjDYo5ENTk",
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
-    "about-f34": "308/path---about-f-34-4c2-sdN0rGOtbKRmcHzCm69D45QD4Dc",
+    "about-f34": "812/path---about-f-34-4c2-16DStM1bl8KuU5vueYZnMWnC98",
     "case-studies-693": "995/path---case-studies-693-009-NZuapzHg3X9TaN1iIixfv1W23E",
     "index": "869/path---index-6a9-Rh73hORusNeXuxqY2Zy3AKwMD4U",
     "freelance-945": "83/path---freelance-945-bca-NZuapzHg3X9TaN1iIixfv1W23E",
     "page-8a1": "496/path---page-8-a-1-a94-Zl0AfVdSz4DwT9NKwIHtZ6z4vAY",
     "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-layout-js": 2453378567,
+    "sq--src-components-layout-js": 1215746604,
     "sq--src-components-navigation-js": 4069908935,
     "sq--src-components-image-js": 2011440971,
     "posts-5aa": "316/path---posts-5-aa-ae4-NZuapzHg3X9TaN1iIixfv1W23E",
@@ -3728,12 +3845,16 @@
     "case-studies-kona-deep-water-0a4": "87/path---case-studies-kona-deep-water-0-a-4-e1d-5mjEhK5qYPqhYWLbT2IeH79RwY",
     "case-studies-flexrake-667": "731/path---case-studies-flexrake-667-f61-313VegqMJNWYqLJSxvJn4N0OQA",
     "case-study-96f": "701/path---case-study-96-f-1f7-NZuapzHg3X9TaN1iIixfv1W23E",
-    "case-studies-baf": "711/path---case-studies-baf-491-zRS2hAW4vcSlRP1lxp3YTBWccJY"
+    "case-studies-baf": "509/path---case-studies-baf-491-xvXYf0vu4MUipIDtn2vsbBmEw"
   },
   "components": {
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js": {
-      "query": "query PageQuery(\n  $slug: String!\n) {\n  wordpressPage(slug: {eq: $slug}) {\n    id\n    title\n    slug\n    content\n  }\n}\n",
+      "query": "query PageQuery(\n  $slug: String!\n) {\n  wordpressPage(slug: {eq: $slug}) {\n    id\n    title\n    template\n    slug\n    content\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1800) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js"
+    },
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js": {
+      "query": "query AboutQuery {\n  wordpressAcfOptions {\n    options {\n      tagline\n    }\n  }\n  wordpressPage(slug: {eq: \"about\"}) {\n    id\n    title\n    template\n    slug\n    content\n    acf {\n      talks {\n        title\n        url\n        description\n      }\n      education {\n        title\n        url\n        description\n      }\n    }\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1800) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-study.js": {
       "query": "",
@@ -3746,10 +3867,6 @@
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js": {
       "query": "",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js"
-    },
-    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js": {
-      "query": "query SiteTagline {\n  site {\n    siteMetadata {\n      tagLine\n    }\n  }\n}\n",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js": {
       "query": "",
@@ -3777,6 +3894,14 @@
     }
   },
   "staticQueryComponents": {
+    "sq--src-components-layout-js": {
+      "name": "SiteTitleQuery",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/layout.js",
+      "id": "sq--src-components-layout-js",
+      "jsonName": "sq--src-components-layout-js",
+      "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n      social {\n        account\n        url\n      }\n    }\n  }\n  wordpressAcfOptions {\n    options {\n      title\n    }\n  }\n}\n",
+      "hash": 1215746604
+    },
     "sq--src-components-image-js": {
       "name": "usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/image.js",
@@ -3784,14 +3909,6 @@
       "jsonName": "sq--src-components-image-js",
       "query": "query usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "hash": 2011440971
-    },
-    "sq--src-components-layout-js": {
-      "name": "SiteTitleQuery",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/layout.js",
-      "id": "sq--src-components-layout-js",
-      "jsonName": "sq--src-components-layout-js",
-      "query": "query SiteTitleQuery {\n  wordpressSiteMetadata {\n    name\n  }\n  wordpressAcfOptions {\n    options {\n      title\n    }\n  }\n}\n",
-      "hash": 2453378567
     },
     "sq--src-components-navigation-js": {
       "name": "NavigationQuery",

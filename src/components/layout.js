@@ -4,14 +4,21 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Footer from './Footer'
 import '../styles.css';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, template }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
-        wordpressSiteMetadata {
-          name
+        site {
+          siteMetadata {
+            title
+            social {
+              account
+              url
+            }
+          }
         }
         wordpressAcfOptions {
           options {
@@ -30,17 +37,11 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.wordpressSiteMetadata.name} jobTitle={data.wordpressAcfOptions.options.title}/>
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
+        <Header siteTitle={data.site.siteMetadata.title} jobTitle={data.wordpressAcfOptions.options.title}/>
+        <div className={`main${template ? ` main--${template}`: ``}`}>
           {children}
         </div>
+        <Footer title={data.site.siteMetadata.title} social={data.site.siteMetadata.social}/>
       </>
     )}
   />

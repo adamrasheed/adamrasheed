@@ -1,7 +1,7 @@
 const path = require('path')
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
   return new Promise((resolve, reject) => {
     graphql(
       `
@@ -11,7 +11,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               node {
                 id
                 slug
-                title
+                template
               }
             }
           }
@@ -31,13 +31,26 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
 
       result.data.allWordpressPage.edges.forEach(({ node }) => {
-        createPage({
-          path: node.slug,
-          component: path.resolve('./src/pages/page.js'),
-          context: {
-            slug: node.slug,
-          },
-        })
+        console.log('page');
+
+        if (node.template == 'page-about.php') {
+          createPage({
+            path: node.slug,
+            component: path.resolve('./src/pages/about.js'),
+            context: {
+              slug: node.slug,
+            },
+          })
+        } else {
+          
+          createPage({
+            path: node.slug,
+            component: path.resolve('./src/pages/page.js'),
+            context: {
+              slug: node.slug,
+            },
+          })
+        }
       })
 
       result.data.allWordpressWpCaseStudies.edges.forEach(({ node }) => {

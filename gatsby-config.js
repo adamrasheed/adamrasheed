@@ -6,13 +6,13 @@ module.exports = {
     tagLine: `I’m a Front-end Developer based in <br>San Diego, CA 🏖.`,
     specialize: `I specialize in Custom Wordpress and Shopify projects and am learning React.`,
     career: `Currently working as a Front-end Developer at <a href="https://www.bvaccel.com/" target="_blank" rel="nofollow noopener">BVAccel</a>. Previously at <a href="https://www.blenderseyewear.com/" target="_blank" rel="nofollow noopener">Blenders</a>.`,
-    social: {
-      twitter: `https://twitter.com/ARasheedPhoto`,
-      instagram: `https://www.instagram.com/hashtagadam/`,
-      github: `https://github.com/adamrasheed`,
-      dribbble: `https://dribbble.com/adamrasheed`,
-      youtube: `http://bit.ly/SketchVids`
-    }
+    social: [
+      {account: 'twitter', url: `https://twitter.com/ARasheedPhoto`},
+      {account: 'instagram', url: `https://www.instagram.com/hashtagadam/`},
+      {account: 'github', url: `https://github.com/adamrasheed`},
+      {account: 'dribbble', url: `https://dribbble.com/adamrasheed`},
+      {account: 'youtube', url: `http://bit.ly/SketchVids`}
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
