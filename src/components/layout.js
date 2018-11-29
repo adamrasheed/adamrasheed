@@ -30,6 +30,7 @@ const Layout = ({ children, template }) => (
     render={data => (
       <>
         <Helmet
+          title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Adam Rasheed is a front-end develoepr based in San Diego, California. He specializes in cusotm Shopify theme development and custom WordPress theme development' },
             { name: 'keywords', content: 'front-end developer, shopify developer' },

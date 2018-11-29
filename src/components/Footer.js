@@ -29,6 +29,7 @@ class Footer extends React.Component {
                     <a
                       href={account.url}
                       className="social__link"
+                      target="_blank"
                       rel="noopener noreferrer"
                       title={account.account}
                     >

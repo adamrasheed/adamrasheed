@@ -806,7 +806,7 @@
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "01faf318910fa9333ef9372be5c5a526",
+      "version": "42bcbe83039bc3a6604420d718dd7684",
       "pluginOptions": {
         "plugins": []
       },
@@ -920,7 +920,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "33fc7e20b4d38dbfd10e1f71c6ae74de",
+        "contentDigest": "040c49675e5fa24d6f58af30d1130246",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1055,12 +1055,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-29T05:25:12.115Z",
+      "buildTime": "2018-11-29T06:59:26.283Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "595b79025984d627e4313d48db9e8577",
+        "contentDigest": "106722078a9f97fd52a0acae953a76a5",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1070,7 +1070,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "37324524c79afc022ddd5e3b43b1420f",
+        "contentDigest": "cf995a227057089451dbd12bb8845245",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1082,7 +1082,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-29T05:25:15.798Z",
+      "accessTime": "2018-11-29T06:59:30.238Z",
       "changeTime": "2018-11-23T05:22:40.368Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1100,11 +1100,11 @@
       "blksize": 4096,
       "ino": 12886265220,
       "blocks": 0,
-      "atimeMs": 1543469115798.3337,
+      "atimeMs": 1543474770238.196,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.5725,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-29T05:25:15.798Z",
+      "atime": "2018-11-29T06:59:30.238Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.368Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1129,7 +1129,7 @@
       "size": 21212,
       "prettySize": "21.2 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-29T05:14:16.351Z",
+      "accessTime": "2018-11-29T06:06:04.150Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1147,11 +1147,11 @@
       "blksize": 4096,
       "ino": 12886265222,
       "blocks": 48,
-      "atimeMs": 1543468456351.3975,
+      "atimeMs": 1543471564150.35,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.4724,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-29T05:14:16.351Z",
+      "atime": "2018-11-29T06:06:04.150Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1186,7 +1186,7 @@
       "size": 167273,
       "prettySize": "167 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-29T05:23:33.842Z",
+      "accessTime": "2018-11-29T06:57:05.172Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1204,11 +1204,11 @@
       "blksize": 4096,
       "ino": 12886265221,
       "blocks": 328,
-      "atimeMs": 1543469013842.2505,
+      "atimeMs": 1543474625172.3164,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.1519,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-29T05:23:33.842Z",
+      "atime": "2018-11-29T06:57:05.172Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1242,10 +1242,10 @@
       "extension": "jpg",
       "size": 542045,
       "prettySize": "542 kB",
-      "modifiedTime": "2018-11-29T05:25:21.606Z",
-      "accessTime": "2018-11-29T05:25:21.331Z",
-      "changeTime": "2018-11-29T05:25:21.613Z",
-      "birthTime": "2018-11-29T05:25:21.331Z",
+      "modifiedTime": "2018-11-29T06:59:36.164Z",
+      "accessTime": "2018-11-29T06:59:34.802Z",
+      "changeTime": "2018-11-29T06:59:36.171Z",
+      "birthTime": "2018-11-29T06:59:34.802Z",
       "root": "/",
       "dir": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/gatsby-source-filesystem",
       "base": "eeb2a4a8e41fdabf3f9d7de7b224cee4.jpg",
@@ -1259,16 +1259,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 12886931678,
-      "blocks": 1064,
-      "atimeMs": 1543469121330.6128,
-      "mtimeMs": 1543469121605.7961,
-      "ctimeMs": 1543469121612.719,
-      "birthtimeMs": 1543469121330.6128,
-      "atime": "2018-11-29T05:25:21.331Z",
-      "mtime": "2018-11-29T05:25:21.606Z",
-      "ctime": "2018-11-29T05:25:21.613Z",
-      "birthtime": "2018-11-29T05:25:21.331Z"
+      "ino": 12886940847,
+      "blocks": 1128,
+      "atimeMs": 1543474774802.12,
+      "mtimeMs": 1543474776163.882,
+      "ctimeMs": 1543474776170.6223,
+      "birthtimeMs": 1543474774802.12,
+      "atime": "2018-11-29T06:59:34.802Z",
+      "mtime": "2018-11-29T06:59:36.164Z",
+      "ctime": "2018-11-29T06:59:36.171Z",
+      "birthtime": "2018-11-29T06:59:34.802Z"
     },
     "d21abaa6-dba1-5055-a221-aab24d6a1de1": {
       "id": "d21abaa6-dba1-5055-a221-aab24d6a1de1",
@@ -1299,10 +1299,10 @@
       "extension": "png",
       "size": 1412166,
       "prettySize": "1.41 MB",
-      "modifiedTime": "2018-11-29T05:25:21.854Z",
-      "accessTime": "2018-11-29T05:25:21.331Z",
-      "changeTime": "2018-11-29T05:25:21.856Z",
-      "birthTime": "2018-11-29T05:25:21.331Z",
+      "modifiedTime": "2018-11-29T06:59:37.096Z",
+      "accessTime": "2018-11-29T06:59:34.805Z",
+      "changeTime": "2018-11-29T06:59:37.099Z",
+      "birthTime": "2018-11-29T06:59:34.805Z",
       "root": "/",
       "dir": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/gatsby-source-filesystem",
       "base": "56cbd3ec1acfe8c3d768ea2c7db92d2f.png",
@@ -1316,16 +1316,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 12886931679,
-      "blocks": 2760,
-      "atimeMs": 1543469121330.968,
-      "mtimeMs": 1543469121853.922,
-      "ctimeMs": 1543469121856.127,
-      "birthtimeMs": 1543469121330.968,
-      "atime": "2018-11-29T05:25:21.331Z",
-      "mtime": "2018-11-29T05:25:21.854Z",
-      "ctime": "2018-11-29T05:25:21.856Z",
-      "birthtime": "2018-11-29T05:25:21.331Z"
+      "ino": 12886940848,
+      "blocks": 4168,
+      "atimeMs": 1543474774804.5764,
+      "mtimeMs": 1543474777095.8682,
+      "ctimeMs": 1543474777099.37,
+      "birthtimeMs": 1543474774804.5764,
+      "atime": "2018-11-29T06:59:34.805Z",
+      "mtime": "2018-11-29T06:59:37.096Z",
+      "ctime": "2018-11-29T06:59:37.099Z",
+      "birthtime": "2018-11-29T06:59:34.805Z"
     },
     "2068ac50-ba39-55d2-adda-7d93fd26c0c5": {
       "id": "2068ac50-ba39-55d2-adda-7d93fd26c0c5",
@@ -3393,20 +3393,20 @@
       "jsonName": "case-studies-baf",
       "internalComponentName": "ComponentCaseStudies",
       "path": "/case-studies",
-      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
-      "componentChunkName": "component---src-pages-page-js",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js",
+      "componentChunkName": "component---src-pages-case-studies-js",
       "context": {
         "slug": "case-studies"
       },
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js",
       "id": "SitePage /case-studies",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ca823a442f9db7e361243b58c9540ca8",
+        "contentDigest": "a95b1fdc8ca6237bbd89a016814c0130",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -3459,20 +3459,20 @@
       "jsonName": "freelance-96b",
       "internalComponentName": "ComponentFreelance",
       "path": "/freelance",
-      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
-      "componentChunkName": "component---src-pages-page-js",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js",
+      "componentChunkName": "component---src-pages-freelance-js",
       "context": {
         "slug": "freelance"
       },
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js",
       "id": "SitePage /freelance",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "aa2e505532886dcae8cfc37063855264",
+        "contentDigest": "393d618ad40d92b63d9a745e35e4b2d8",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -3744,7 +3744,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "2780da65809dfcd98cbdf155a1971ee8"
+    "PLUGINS_HASH": "09434c311e357d63f2f7e9e9bd288c90"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -3781,47 +3781,68 @@
         "/about",
         "/about/"
       ],
-      "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4": [
-        "/case-studies"
+      "052e5749-9865-5f8b-8e7f-830ebe467c86": [
+        "/case-studies",
+        "/case-studies/",
+        "/"
+      ],
+      "523491d5-4c21-5c07-a1b5-7f04a6c69e96": [
+        "/case-studies",
+        "/case-studies/",
+        "/"
+      ],
+      "2ec42945-5747-5084-8ce6-27095a3662df": [
+        "/case-studies",
+        "/case-studies/",
+        "/"
+      ],
+      "dbc78977-fb87-54f5-b3d2-5b7db83841ce": [
+        "/case-studies",
+        "/case-studies/",
+        "/"
+      ],
+      "2068ac50-ba39-55d2-adda-7d93fd26c0c5": [
+        "/case-studies",
+        "/case-studies/",
+        "/"
+      ],
+      "b0ff0cfd-2e4e-571e-a521-e4b4b52f31f5": [
+        "/case-studies",
+        "/case-studies/",
+        "/"
       ],
       "54fcd5ff-093b-594e-9cfc-219a434391bb": [
         "/blog"
       ],
       "1d924fe9-005b-5b5e-98b4-d9a0304115f9": [
-        "/freelance"
+        "/freelance",
+        "/freelance/"
       ],
-      "052e5749-9865-5f8b-8e7f-830ebe467c86": [
-        "/"
-      ],
-      "523491d5-4c21-5c07-a1b5-7f04a6c69e96": [
-        "/"
-      ],
-      "2ec42945-5747-5084-8ce6-27095a3662df": [
-        "/"
-      ],
-      "dbc78977-fb87-54f5-b3d2-5b7db83841ce": [
-        "/"
-      ],
-      "2068ac50-ba39-55d2-adda-7d93fd26c0c5": [
-        "/"
-      ],
-      "b0ff0cfd-2e4e-571e-a521-e4b4b52f31f5": [
-        "/"
+      "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4": [
+        "/case-studies",
+        "/case-studies/"
       ]
     },
     "connections": {
+      "wordpress__POST": [
+        "/about",
+        "/about/",
+        "/"
+      ],
       "wordpress__acf_options": [
         "/"
       ],
       "wordpress__wp_case_studies": [
+        "/case-studies",
+        "/case-studies/",
         "/"
       ]
     }
   },
   "jsonDataPaths": {
     "blog-126": "748/path---blog-126-783-goQawkx0G7gIUbcQUZ2eDfr2sU4",
-    "about-46b": "265/path---about-46-b-819-PyRzv5luQYsM0GI4HthTNbfIA",
-    "freelance-96b": "640/path---freelance-96-b-289-StdCctTkLT4YI9dUCL6aLsA0",
+    "about-46b": "280/path---about-46-b-819-Oq5sFdF1iaOL9EtIwfMRWJC2ak",
+    "freelance-96b": "866/path---freelance-96-b-289-KQghXt7LGozW7Josm2F7gD6OELk",
     "kona-deep-water-899": "246/path---kona-deep-water-899-7cc-5mjEhK5qYPqhYWLbT2IeH79RwY",
     "flexrake-9e9": "839/path---flexrake-9-e-9-7f2-313VegqMJNWYqLJSxvJn4N0OQA",
     "how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-154": "79/path---how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-154-420-cBmyBernL6YQA9reRcArDlZI0HU",
@@ -3829,10 +3850,10 @@
     "creating-this-site-277": "834/path---creating-this-site-277-68b-F6n4IyD835RZK8bEoZjDYo5ENTk",
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
-    "about-f34": "812/path---about-f-34-4c2-16DStM1bl8KuU5vueYZnMWnC98",
-    "case-studies-693": "995/path---case-studies-693-009-NZuapzHg3X9TaN1iIixfv1W23E",
-    "index": "869/path---index-6a9-Rh73hORusNeXuxqY2Zy3AKwMD4U",
-    "freelance-945": "83/path---freelance-945-bca-NZuapzHg3X9TaN1iIixfv1W23E",
+    "about-f34": "44/path---about-f-34-4c2-6d3ctuzJL7Mi41rgqLZs8x2h4",
+    "case-studies-693": "379/path---case-studies-693-009-C8RUtKNpdJuv0LulBQ4IZHb4KQ",
+    "index": "595/path---index-6a9-ZwA64y8HQLc8SqY9vYY6HYWy3E",
+    "freelance-945": "608/path---freelance-945-bca-qctgqBDfBbfjy0tv8KqBDNEqDOY",
     "page-8a1": "496/path---page-8-a-1-a94-Zl0AfVdSz4DwT9NKwIHtZ6z4vAY",
     "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
@@ -3845,16 +3866,24 @@
     "case-studies-kona-deep-water-0a4": "87/path---case-studies-kona-deep-water-0-a-4-e1d-5mjEhK5qYPqhYWLbT2IeH79RwY",
     "case-studies-flexrake-667": "731/path---case-studies-flexrake-667-f61-313VegqMJNWYqLJSxvJn4N0OQA",
     "case-study-96f": "701/path---case-study-96-f-1f7-NZuapzHg3X9TaN1iIixfv1W23E",
-    "case-studies-baf": "509/path---case-studies-baf-491-xvXYf0vu4MUipIDtn2vsbBmEw"
+    "case-studies-baf": "436/path---case-studies-baf-491-1KEE8f2sdsOfhBU3jb6mAisBv0"
   },
   "components": {
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js": {
+      "query": "query CaseStudiesPage {\n  wordpressPage(slug: {eq: \"case-studies\"}) {\n    title\n  }\n  allWordpressWpCaseStudies {\n    edges {\n      node {\n        title\n        slug\n        featured_media {\n          alt_text\n          localFile {\n            childImageSharp {\n              id\n              fluid(maxWidth: 1600) {\n                ...GatsbyImageSharpFluid\n              }\n            }\n          }\n        }\n        tags {\n          name\n        }\n        acf {\n          subtitle\n          teaser\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js"
+    },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js": {
       "query": "query PageQuery(\n  $slug: String!\n) {\n  wordpressPage(slug: {eq: $slug}) {\n    id\n    title\n    template\n    slug\n    content\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1800) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js": {
-      "query": "query AboutQuery {\n  wordpressAcfOptions {\n    options {\n      tagline\n    }\n  }\n  wordpressPage(slug: {eq: \"about\"}) {\n    id\n    title\n    template\n    slug\n    content\n    acf {\n      talks {\n        title\n        url\n        description\n      }\n      education {\n        title\n        url\n        description\n      }\n    }\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1800) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "query": "query AboutQuery {\n  wordpressAcfOptions {\n    options {\n      tagline\n    }\n  }\n  allWordpressPost(limit: 2) {\n    edges {\n      node {\n        title\n        slug\n        date(formatString: \"MMMM DD, Y\")\n        content\n      }\n    }\n  }\n  wordpressPage(slug: {eq: \"about\"}) {\n    id\n    title\n    template\n    slug\n    content\n    acf {\n      talks {\n        title\n        url\n        description\n      }\n      education {\n        title\n        url\n        description\n      }\n    }\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1800) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js"
+    },
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js": {
+      "query": "query FreelancePage {\n  wordpressPage(slug: {eq: \"freelance\"}) {\n    title\n    content\n  }\n}\n",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-study.js": {
       "query": "",
@@ -3868,16 +3897,8 @@
       "query": "",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/404.js"
     },
-    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js": {
-      "query": "",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js"
-    },
-    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js": {
-      "query": "",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js"
-    },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js": {
-      "query": "query HeroQuery {\n  allWordpressAcfOptions {\n    edges {\n      node {\n        id\n        options {\n          title\n          tagline\n          specialization\n          career\n        }\n      }\n    }\n  }\n  allWordpressWpCaseStudies(limit: 2) {\n    edges {\n      node {\n        title\n        slug\n        wordpress_id\n        modified\n        content\n        acf {\n          subtitle\n          teaser\n        }\n        featured_media {\n          alt_text\n          localFile {\n            childImageSharp {\n              id\n              fluid(maxWidth: 1600) {\n                src\n              }\n            }\n          }\n        }\n        tags {\n          wordpress_id\n          name\n        }\n      }\n    }\n  }\n}\n",
+      "query": "query HeroQuery {\n  allWordpressAcfOptions {\n    edges {\n      node {\n        id\n        options {\n          title\n          tagline\n          specialization\n          career\n        }\n      }\n    }\n  }\n  allWordpressWpCaseStudies(limit: 2) {\n    edges {\n      node {\n        title\n        slug\n        wordpress_id\n        modified\n        content\n        acf {\n          subtitle\n          teaser\n        }\n        featured_media {\n          alt_text\n          localFile {\n            childImageSharp {\n              id\n              fluid(maxWidth: 1600) {\n                ...GatsbyImageSharpFluid\n              }\n            }\n          }\n        }\n        tags {\n          wordpress_id\n          name\n        }\n      }\n    }\n  }\n  allWordpressPost(limit: 2) {\n    edges {\n      node {\n        title\n        slug\n        date(formatString: \"MMMM DD, Y\")\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/index.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js": {
@@ -3894,14 +3915,6 @@
     }
   },
   "staticQueryComponents": {
-    "sq--src-components-layout-js": {
-      "name": "SiteTitleQuery",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/layout.js",
-      "id": "sq--src-components-layout-js",
-      "jsonName": "sq--src-components-layout-js",
-      "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n      social {\n        account\n        url\n      }\n    }\n  }\n  wordpressAcfOptions {\n    options {\n      title\n    }\n  }\n}\n",
-      "hash": 1215746604
-    },
     "sq--src-components-image-js": {
       "name": "usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/image.js",
@@ -3909,6 +3922,14 @@
       "jsonName": "sq--src-components-image-js",
       "query": "query usersAdamrasheedDocumentsWebsitesAdamrasheedSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "hash": 2011440971
+    },
+    "sq--src-components-layout-js": {
+      "name": "SiteTitleQuery",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/layout.js",
+      "id": "sq--src-components-layout-js",
+      "jsonName": "sq--src-components-layout-js",
+      "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n      social {\n        account\n        url\n      }\n    }\n  }\n  wordpressAcfOptions {\n    options {\n      title\n    }\n  }\n}\n",
+      "hash": 1215746604
     },
     "sq--src-components-navigation-js": {
       "name": "NavigationQuery",

@@ -31,18 +31,21 @@ exports.createPages = ({ graphql, actions }) => {
       }
 
       result.data.allWordpressPage.edges.forEach(({ node }) => {
-        console.log('page');
+        console.log('page')
 
-        if (node.template == 'page-about.php') {
+        if (node.template != '') {
+          const templateSlug = node.slug
+            .replace('.php', '')
+            .replace('page-', '')
+
           createPage({
             path: node.slug,
-            component: path.resolve('./src/pages/about.js'),
+            component: path.resolve(`./src/pages/${templateSlug}.js`),
             context: {
               slug: node.slug,
             },
           })
         } else {
-          
           createPage({
             path: node.slug,
             component: path.resolve('./src/pages/page.js'),
@@ -54,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
 
       result.data.allWordpressWpCaseStudies.edges.forEach(({ node }) => {
-        console.log(node);
+        console.log(node)
         createPage({
           path: `case-studies/${node.slug}`,
           component: path.resolve('./src/pages/case-study.js'),

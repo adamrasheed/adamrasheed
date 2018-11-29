@@ -1,30 +1,51 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import AboutInfoCategory from '../components/About/AboutInfo'
+import BlogsPreview from '../components/Blog/BlogsPreview'
 
 class AboutPage extends React.Component {
   render() {
-    const { data } = this.props;
-    return(
+    const { data } = this.props
+    return (
       <Layout>
         <h1 className="page-title">{data.wordpressPage.title}</h1>
-        { data.wordpressPage.featured_media ?  <Img className="page-image about__img" fluid={data.wordpressPage.featured_media.localFile.childImageSharp.fluid}/> : null}
+        {data.wordpressPage.featured_media ? (
+          <Img
+            className="page-image about__img"
+            fluid={
+              data.wordpressPage.featured_media.localFile.childImageSharp.fluid
+            }
+          />
+        ) : null}
         <div className="container about__container">
           <div className="about__body">
-            <h2 className="about__title" dangerouslySetInnerHTML={{
-              __html: data.wordpressAcfOptions.options.tagline
-            }}/>
-            <div className="about__bio" dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}/>
+            <h2
+              className="about__title"
+              dangerouslySetInnerHTML={{
+                __html: data.wordpressAcfOptions.options.tagline,
+              }}
+            />
+            <div
+              className="about__bio"
+              dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}
+            />
           </div>
-    
+
           <div className="about__links">
-           <AboutInfoCategory title="Talks" content={data.wordpressPage.acf.talks}/>
-           <AboutInfoCategory title="Education" content={data.wordpressPage.acf.education}/>
+            <AboutInfoCategory
+              title="Talks"
+              content={data.wordpressPage.acf.talks}
+            />
+            <AboutInfoCategory
+              title="Education"
+              content={data.wordpressPage.acf.education}
+            />
           </div>
         </div>
+        <BlogsPreview posts={data.allWordpressPost.edges} />
       </Layout>
     )
   }
@@ -33,13 +54,23 @@ class AboutPage extends React.Component {
 export default AboutPage
 
 export const query = graphql`
-  query AboutQuery{
+  query AboutQuery {
     wordpressAcfOptions {
       options {
         tagline
       }
     }
-    wordpressPage(slug: { eq: "about"}) {
+    allWordpressPost(limit: 2) {
+      edges {
+        node {
+          title
+          slug
+          date(formatString: "MMMM DD, Y")
+          content
+        }
+      }
+    }
+    wordpressPage(slug: { eq: "about" }) {
       id
       title
       template
@@ -69,4 +100,3 @@ export const query = graphql`
     }
   }
 `
-

@@ -40,7 +40,7 @@
         "path": "/blog"
     },
     {
-        "componentChunkName": "component---src-pages-page-js",
+        "componentChunkName": "component---src-pages-case-studies-js",
         "jsonName": "case-studies-baf",
         "path": "/case-studies"
     },
@@ -70,7 +70,7 @@
         "path": "/dev-404-page/"
     },
     {
-        "componentChunkName": "component---src-pages-page-js",
+        "componentChunkName": "component---src-pages-freelance-js",
         "jsonName": "freelance-96b",
         "path": "/freelance"
     },
