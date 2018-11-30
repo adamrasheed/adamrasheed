@@ -5,7 +5,9 @@ import Img from 'gatsby-image'
 const CaseStudyPreview = props => (
   <div className="case-study-preview">
     {props.image != null ? (
-      <Img fluid={props.image} className="case-study-preview__img" />
+      <Link to={props.slug}>
+        <Img fluid={props.image} className="case-study-preview__img" />
+      </Link>
     ) : null}
     <div className="case-study-preview__content">
       <h3 className="case-study-preview__title">

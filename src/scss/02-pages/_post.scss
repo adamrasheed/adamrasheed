@@ -1,57 +1,64 @@
-.blog-posts{
-    max-width: $container-size;
-    margin: 0 auto;
+.blog-posts {
+  max-width: $container-size;
+  margin: 0 auto;
 
-    @media #{$media-tablet}{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
+  @media #{$media-tablet} {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
-.post{
-    margin-bottom: 1rem;
-    padding: 0 1rem 1rem;
-    max-width: 32rem;
+.post {
+  margin-bottom: 1rem;
+  padding: 0 1rem 1rem;
+  max-width: 32rem;
 
-    &__title{
-        font-size: 1.5rem;
-        line-height: 2rem;
-        margin-bottom: 0;
-        font-family: $font-family-heading;
-    }
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+    font-family: $font-family-heading;
+  }
 
-    &__meta{
-        display: block;
-        margin: 1rem 0;
-        @extend %small;
-    }
+  &__meta {
+    display: block;
+    margin: 1rem 0;
+    @extend %small;
+  }
 
-    &__date, &__length{
-        margin-right: 1rem;
-        display: inline-block;
-    }
+  &__date,
+  &__length {
+    margin-right: 1rem;
+    display: inline-block;
+  }
 
-    h1 {
-        font-family: $font-family-heading 20px 29px;
-    }
+  h1 {
+    font-family: $font-family-heading 20px 29px;
+  }
 
-    h2{
-        font-size: $font-size-large;
-        line-height: normal;
-        margin-bottom: .75rem;
-    }
+  h2 {
+    font-size: $font-size-large;
+    line-height: normal;
+    margin-bottom: 0.75rem;
+  }
 
-    @media #{$media-tablet}{
-        padding: 1rem;
-        &__title{
-            font-size: 1.75rem;
-            line-height: 2.5rem;
-            margin-bottom: 1rem;
-        }
-    }
+  a {
+    color: $color-text;
+    font-weight: 600;
+    text-decoration: none;
+  }
 
-    @media #{$media-desktop-small}{
-        margin-bottom: 2rem;
+  @media #{$media-tablet} {
+    padding: 1rem;
+    &__title {
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+      margin-bottom: 1rem;
     }
+  }
+
+  @media #{$media-desktop-small} {
+    margin-bottom: 2rem;
+  }
 }

@@ -4,7 +4,7 @@ import React from 'react'
 import Layout from '../components/layout'
 // import Image from '../components/image';
 import Hero from '../components/Hero'
-import CaseStudyPreview from '../components/CaseStudyPreview'
+import CaseStudyPreview from '../components/CaseStudy/CaseStudyPreview'
 import BlogsPreview from '../components/Blog/BlogsPreview'
 import Contact from '../components/Contact'
 import { graphql } from 'gatsby'

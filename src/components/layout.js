@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import Footer from './Footer'
-import '../styles.css';
+import '../scss/main.scss'
 
 const Layout = ({ children, template }) => (
   <StaticQuery
@@ -32,17 +32,30 @@ const Layout = ({ children, template }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Adam Rasheed is a front-end develoepr based in San Diego, California. He specializes in cusotm Shopify theme development and custom WordPress theme development' },
-            { name: 'keywords', content: 'front-end developer, shopify developer' },
+            {
+              name: 'description',
+              content:
+                'Adam Rasheed is a front-end develoepr based in San Diego, California. He specializes in cusotm Shopify theme development and custom WordPress theme development',
+            },
+            {
+              name: 'keywords',
+              content: 'front-end developer, shopify developer',
+            },
           ]}
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} jobTitle={data.wordpressAcfOptions.options.title}/>
-        <div className={`main${template ? ` main--${template}`: ``}`}>
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          jobTitle={data.wordpressAcfOptions.options.title}
+        />
+        <div className={`main${template ? ` main--${template}` : ``}`}>
           {children}
         </div>
-        <Footer title={data.site.siteMetadata.title} social={data.site.siteMetadata.social}/>
+        <Footer
+          title={data.site.siteMetadata.title}
+          social={data.site.siteMetadata.social}
+        />
       </>
     )}
   />

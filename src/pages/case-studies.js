@@ -1,8 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import CaseStudyPreview from '../components/CaseStudyPreview'
-import { node } from 'prop-types'
+import CaseStudyPreview from '../components/CaseStudy/CaseStudyPreview'
 class FreelancePage extends React.Component {
   render() {
     const { data } = this.props

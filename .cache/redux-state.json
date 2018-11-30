@@ -1140,12 +1140,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-30T03:55:11.114Z",
+      "buildTime": "2018-11-30T23:12:04.777Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "74a463044ea2f5b6fe72a118729e8d61",
+        "contentDigest": "bcc1b24704063e00aa060af31c929af9",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1155,7 +1155,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "338aaf7dd5dbc15febaab0224534408a",
+        "contentDigest": "7a259c57c6fb4499702ee1fd3acbb73a",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1167,7 +1167,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-30T03:55:13.533Z",
+      "accessTime": "2018-11-30T23:12:08.687Z",
       "changeTime": "2018-11-23T05:22:40.368Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1185,11 +1185,11 @@
       "blksize": 4096,
       "ino": 12886265220,
       "blocks": 0,
-      "atimeMs": 1543550113532.7126,
+      "atimeMs": 1543619528686.7922,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.5725,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-30T03:55:13.533Z",
+      "atime": "2018-11-30T23:12:08.687Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.368Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -3463,14 +3463,57 @@
         "title": "Front-end Developer",
         "tagline": "I’m a Front-end Developer based in <br>San Diego, CA 🏖.",
         "specialization": "I specialize in Custom Wordpress and Shopify projects and am currently learning React.",
-        "career": "<p>Currently working as a Front-end Developer at <a href=\"https://www.bvaccel.com/\" target=\"_blank\" rel=\"nofollow noopener\">BVAccel</a>. Previously at <a href=\"https://www.blenderseyewear.com/\" target=\"_blank\" rel=\"nofollow noopener\">Blenders</a>.</p>\n"
+        "career": "<p>Currently working as a Front-end Developer at <a href=\"https://www.bvaccel.com/\" target=\"_blank\" rel=\"nofollow noopener\">BVAccel</a>. Previously at <a href=\"https://www.blenderseyewear.com/\" target=\"_blank\" rel=\"nofollow noopener\">Blenders</a>.</p>\n",
+        "email": "",
+        "social_accounts": [
+          {
+            "account": "Twitter",
+            "url": {
+              "title": "",
+              "url": "https://twitter.com/ARasheedPhoto",
+              "target": ""
+            }
+          },
+          {
+            "account": "Instagram",
+            "url": {
+              "title": "",
+              "url": "https://www.instagram.com/hashtagadam/",
+              "target": ""
+            }
+          },
+          {
+            "account": "Youtube",
+            "url": {
+              "title": "",
+              "url": "http://bit.ly/SketchVids",
+              "target": ""
+            }
+          },
+          {
+            "account": "GitHub",
+            "url": {
+              "title": "",
+              "url": "https://github.com/adamrasheed",
+              "target": ""
+            }
+          },
+          {
+            "account": "Dribbble",
+            "url": {
+              "title": "",
+              "url": "https://dribbble.com/adamrasheed",
+              "target": ""
+            }
+          }
+        ]
       },
       "id": "038ece9f-326d-5bb0-8f17-1bb72ce06c57",
       "children": [],
       "parent": null,
       "internal": {
         "type": "wordpress__acf_options",
-        "contentDigest": "38379fdb7b6cacf7391c273e3e628590",
+        "contentDigest": "41291b534ce08a751bc2b7bbbb16c339",
         "owner": "gatsby-source-wordpress"
       }
     },
@@ -4013,6 +4056,10 @@
       ],
       "f24b5a9e-ed37-56c1-978a-9c95dbc988a9": [
         "/"
+      ],
+      "54fcd5ff-093b-594e-9cfc-219a434391bb": [
+        "/blog",
+        "/blog/"
       ]
     },
     "connections": {
@@ -4020,6 +4067,8 @@
         "/about",
         "/about/",
         "/",
+        "/blog",
+        "/blog/",
         "sq--src-components-blog-post-sidebar-js"
       ],
       "wordpress__wp_case_studies": [
@@ -4046,12 +4095,12 @@
     "blog-shopify-vs-woocommerce-vs-magento-af4": "596/path---blog-shopify-vs-woocommerce-vs-magento-af-4-86e-0tEUf2VZbGwnOlBI7SxTdexmxM",
     "blog-creating-this-site-79e": "316/path---blog-creating-this-site-79-e-b92-YXk4VuPeMnd6iRfodjOswBe1nqU",
     "post-b25": "451/path---post-b-25-0aa-Zl0AfVdSz4DwT9NKwIHtZ6z4vAY",
-    "blog-126": "110/path---blog-126-783-JdH4e8XySEAyWlX0QZ8i4NcrZuw",
+    "blog-126": "157/path---blog-126-783-eHvRsqtrr1B52f92QCWyBqwY",
     "case-studies-kona-deep-water-0a4": "255/path---case-studies-kona-deep-water-0-a-4-e1d-sDM0tMWlLwpd9GTAfcDcpk932k",
     "case-studies-flexrake-667": "157/path---case-studies-flexrake-667-f61-m1XjOeyoL9VIWKeTZut8schLCfA",
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
-    "blog-f7a": "32/path---blog-f-7-a-05d-NZuapzHg3X9TaN1iIixfv1W23E",
+    "blog-f7a": "955/path---blog-f-7-a-05d-AQZHeTFfjpaUcozsSqEhAWf6k",
     "case-study-778": "125/path---case-study-778-ab1-Zl0AfVdSz4DwT9NKwIHtZ6z4vAY",
     "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
     "posts-5aa": "316/path---posts-5-aa-ae4-NZuapzHg3X9TaN1iIixfv1W23E",
@@ -4067,7 +4116,7 @@
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/blog.js": {
-      "query": "",
+      "query": "query PostsPage {\n  wordpressPage(slug: {eq: \"blog\"}) {\n    title\n  }\n  allWordpressPost {\n    edges {\n      node {\n        title\n        slug\n        excerpt\n        date(formatString: \"MMMM DD, Y\")\n      }\n    }\n  }\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/blog.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js": {
