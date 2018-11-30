@@ -22,6 +22,15 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
+          allWordpressPost {
+            edges {
+              node {
+                title
+                slug
+                date(formatString: "MMMM DD, Y")
+              }
+            }
+          }
         }
       `
     ).then(result => {
@@ -56,8 +65,17 @@ exports.createPages = ({ graphql, actions }) => {
         }
       })
 
+      result.data.allWordpressPost.edges.forEach(({ node }) => {
+        createPage({
+          path: `blog/${node.slug}`,
+          component: path.resolve('./src/pages/Post.js'),
+          context: {
+            slug: node.slug,
+          },
+        })
+      })
+
       result.data.allWordpressWpCaseStudies.edges.forEach(({ node }) => {
-        console.log(node)
         createPage({
           path: `case-studies/${node.slug}`,
           component: path.resolve('./src/pages/case-study.js'),

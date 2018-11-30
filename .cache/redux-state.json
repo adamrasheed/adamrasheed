@@ -688,6 +688,85 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-plugin-sass": {
+      "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-plugin-sass",
+      "id": "Plugin gatsby-plugin-sass",
+      "name": "gatsby-plugin-sass",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-plugin-sass",
+      "packageJson": {
+        "name": "gatsby-plugin-sass",
+        "description": "Gatsby plugin to handle scss/sass files",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "sass",
+          "scss"
+        ],
+        "author": {
+          "name": "Daniel Farrell",
+          "email": "daniel@mobelux.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "sass-loader",
+            "version": "^7.0.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "node-sass",
+            "version": "^4.9.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ec2dddc270874608ee74a103765037d2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin gatsby-source-wordpress": {
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed/node_modules/gatsby-source-wordpress",
       "id": "Plugin gatsby-source-wordpress",
@@ -806,7 +885,7 @@
       "resolve": "/Users/adamrasheed/Documents/websites/adamrasheed",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "42bcbe83039bc3a6604420d718dd7684",
+      "version": "0afad245dc17293ed271c3d116602d5c",
       "pluginOptions": {
         "plugins": []
       },
@@ -871,6 +950,10 @@
             "version": "^3.0.0"
           },
           {
+            "name": "gatsby-plugin-sass",
+            "version": "^2.0.5"
+          },
+          {
             "name": "gatsby-plugin-sharp",
             "version": "^2.0.7"
           },
@@ -889,6 +972,10 @@
           {
             "name": "i",
             "version": "^0.3.6"
+          },
+          {
+            "name": "node-sass",
+            "version": "^4.10.0"
           },
           {
             "name": "npm",
@@ -920,7 +1007,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "040c49675e5fa24d6f58af30d1130246",
+        "contentDigest": "f72a6ff5e9bd508d893987cb05a2f60c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1026,8 +1113,6 @@
         "jobTitle": "Front-end Developer",
         "siteUrl": "https://adamrasheed.com",
         "tagLine": "I’m a Front-end Developer based in <br>San Diego, CA 🏖.",
-        "specialize": "I specialize in Custom Wordpress and Shopify projects and am learning React.",
-        "career": "Currently working as a Front-end Developer at <a href=\"https://www.bvaccel.com/\" target=\"_blank\" rel=\"nofollow noopener\">BVAccel</a>. Previously at <a href=\"https://www.blenderseyewear.com/\" target=\"_blank\" rel=\"nofollow noopener\">Blenders</a>.",
         "social": [
           {
             "account": "twitter",
@@ -1055,12 +1140,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-29T15:45:23.093Z",
+      "buildTime": "2018-11-30T03:55:11.114Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "149757c471b8b3d3aa7b81e101eb7234",
+        "contentDigest": "74a463044ea2f5b6fe72a118729e8d61",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1070,7 +1155,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ae22b16f0c089d52527a79c283b7b023",
+        "contentDigest": "338aaf7dd5dbc15febaab0224534408a",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1082,7 +1167,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-29T15:45:27.355Z",
+      "accessTime": "2018-11-30T03:55:13.533Z",
       "changeTime": "2018-11-23T05:22:40.368Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1100,11 +1185,11 @@
       "blksize": 4096,
       "ino": 12886265220,
       "blocks": 0,
-      "atimeMs": 1543506327354.6106,
+      "atimeMs": 1543550113532.7126,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.5725,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-29T15:45:27.355Z",
+      "atime": "2018-11-30T03:55:13.533Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.368Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1129,7 +1214,7 @@
       "size": 21212,
       "prettySize": "21.2 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-29T06:06:04.150Z",
+      "accessTime": "2018-11-30T03:54:14.053Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1147,11 +1232,11 @@
       "blksize": 4096,
       "ino": 12886265222,
       "blocks": 48,
-      "atimeMs": 1543471564150.35,
+      "atimeMs": 1543550054052.554,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.4724,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-29T06:06:04.150Z",
+      "atime": "2018-11-30T03:54:14.053Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1186,7 +1271,7 @@
       "size": 167273,
       "prettySize": "167 kB",
       "modifiedTime": "2018-11-23T05:18:08.000Z",
-      "accessTime": "2018-11-29T06:57:05.172Z",
+      "accessTime": "2018-11-30T03:54:14.053Z",
       "changeTime": "2018-11-23T05:22:40.367Z",
       "birthTime": "2018-11-23T05:18:08.000Z",
       "root": "/",
@@ -1204,11 +1289,11 @@
       "blksize": 4096,
       "ino": 12886265221,
       "blocks": 328,
-      "atimeMs": 1543474625172.3164,
+      "atimeMs": 1543550054052.5503,
       "mtimeMs": 1542950288000,
       "ctimeMs": 1542950560367.1519,
       "birthtimeMs": 1542950288000,
-      "atime": "2018-11-29T06:57:05.172Z",
+      "atime": "2018-11-30T03:54:14.053Z",
       "mtime": "2018-11-23T05:18:08.000Z",
       "ctime": "2018-11-23T05:22:40.367Z",
       "birthtime": "2018-11-23T05:18:08.000Z"
@@ -1242,10 +1327,10 @@
       "extension": "jpg",
       "size": 542045,
       "prettySize": "542 kB",
-      "modifiedTime": "2018-11-29T06:59:36.164Z",
-      "accessTime": "2018-11-29T06:59:34.802Z",
-      "changeTime": "2018-11-29T06:59:36.171Z",
-      "birthTime": "2018-11-29T06:59:34.802Z",
+      "modifiedTime": "2018-11-30T03:55:31.721Z",
+      "accessTime": "2018-11-30T03:55:27.148Z",
+      "changeTime": "2018-11-30T03:55:31.728Z",
+      "birthTime": "2018-11-30T03:55:27.148Z",
       "root": "/",
       "dir": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/gatsby-source-filesystem",
       "base": "eeb2a4a8e41fdabf3f9d7de7b224cee4.jpg",
@@ -1259,16 +1344,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 12886940847,
-      "blocks": 1128,
-      "atimeMs": 1543474774802.12,
-      "mtimeMs": 1543474776163.882,
-      "ctimeMs": 1543474776170.6223,
-      "birthtimeMs": 1543474774802.12,
-      "atime": "2018-11-29T06:59:34.802Z",
-      "mtime": "2018-11-29T06:59:36.164Z",
-      "ctime": "2018-11-29T06:59:36.171Z",
-      "birthtime": "2018-11-29T06:59:34.802Z"
+      "ino": 12887305598,
+      "blocks": 1168,
+      "atimeMs": 1543550127148.0667,
+      "mtimeMs": 1543550131721.4417,
+      "ctimeMs": 1543550131728.1228,
+      "birthtimeMs": 1543550127148.0667,
+      "atime": "2018-11-30T03:55:27.148Z",
+      "mtime": "2018-11-30T03:55:31.721Z",
+      "ctime": "2018-11-30T03:55:31.728Z",
+      "birthtime": "2018-11-30T03:55:27.148Z"
     },
     "d21abaa6-dba1-5055-a221-aab24d6a1de1": {
       "id": "d21abaa6-dba1-5055-a221-aab24d6a1de1",
@@ -1299,10 +1384,10 @@
       "extension": "png",
       "size": 1412166,
       "prettySize": "1.41 MB",
-      "modifiedTime": "2018-11-29T06:59:37.096Z",
-      "accessTime": "2018-11-29T06:59:34.805Z",
-      "changeTime": "2018-11-29T06:59:37.099Z",
-      "birthTime": "2018-11-29T06:59:34.805Z",
+      "modifiedTime": "2018-11-30T03:55:35.824Z",
+      "accessTime": "2018-11-30T03:55:27.150Z",
+      "changeTime": "2018-11-30T03:55:35.826Z",
+      "birthTime": "2018-11-30T03:55:27.150Z",
       "root": "/",
       "dir": "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/gatsby-source-filesystem",
       "base": "56cbd3ec1acfe8c3d768ea2c7db92d2f.png",
@@ -1316,16 +1401,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 12886940848,
-      "blocks": 4168,
-      "atimeMs": 1543474774804.5764,
-      "mtimeMs": 1543474777095.8682,
-      "ctimeMs": 1543474777099.37,
-      "birthtimeMs": 1543474774804.5764,
-      "atime": "2018-11-29T06:59:34.805Z",
-      "mtime": "2018-11-29T06:59:37.096Z",
-      "ctime": "2018-11-29T06:59:37.099Z",
-      "birthtime": "2018-11-29T06:59:34.805Z"
+      "ino": 12887305599,
+      "blocks": 4104,
+      "atimeMs": 1543550127150.004,
+      "mtimeMs": 1543550135824.3992,
+      "ctimeMs": 1543550135826.4907,
+      "birthtimeMs": 1543550127150.004,
+      "atime": "2018-11-30T03:55:27.150Z",
+      "mtime": "2018-11-30T03:55:35.824Z",
+      "ctime": "2018-11-30T03:55:35.826Z",
+      "birthtime": "2018-11-30T03:55:27.150Z"
     },
     "2068ac50-ba39-55d2-adda-7d93fd26c0c5": {
       "id": "2068ac50-ba39-55d2-adda-7d93fd26c0c5",
@@ -2092,7 +2177,7 @@
       "wordpress_id": 46,
       "date": "2018-11-27T04:37:13.000Z",
       "guid": "http://192.241.220.143/?page_id=46",
-      "modified": "2018-11-27T04:37:13.000Z",
+      "modified": "2018-11-30T03:25:43.000Z",
       "slug": "blog",
       "status": "publish",
       "type": "page",
@@ -2104,7 +2189,7 @@
       "menu_order": 0,
       "comment_status": "closed",
       "ping_status": "closed",
-      "template": "",
+      "template": "page-blog.php",
       "meta": [],
       "_links": {
         "self": [
@@ -2165,7 +2250,7 @@
       "parent": null,
       "internal": {
         "type": "wordpress__PAGE",
-        "contentDigest": "4ab67207c2472c42fd3363e5c202d0d0",
+        "contentDigest": "8d8b6d35cd3a4c901199ab33b13e4daa",
         "owner": "gatsby-source-wordpress"
       }
     },
@@ -3415,20 +3500,20 @@
       "jsonName": "blog-126",
       "internalComponentName": "ComponentBlog",
       "path": "/blog",
-      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
-      "componentChunkName": "component---src-pages-page-js",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/blog.js",
+      "componentChunkName": "component---src-pages-blog-js",
       "context": {
         "slug": "blog"
       },
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/blog.js",
       "id": "SitePage /blog",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a6400373bf98968affc07404ee42e6de",
+        "contentDigest": "2e27941a114af5526eae637e1f7f3cb4",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -3473,6 +3558,72 @@
       "internal": {
         "type": "SitePage",
         "contentDigest": "393d618ad40d92b63d9a745e35e4b2d8",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages": {
+      "jsonName": "blog-how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-6f1",
+      "internalComponentName": "ComponentBlogHowToSpeedUpSearchOnWordpressSiteSitesWith1000Pages",
+      "path": "/blog/how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js",
+      "componentChunkName": "component---src-pages-post-js",
+      "context": {
+        "slug": "how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js",
+      "id": "SitePage /blog/how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "867ae3611d5de5042889aba6bcabb2bd",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/shopify-vs-woocommerce-vs-magento": {
+      "jsonName": "blog-shopify-vs-woocommerce-vs-magento-af4",
+      "internalComponentName": "ComponentBlogShopifyVsWoocommerceVsMagento",
+      "path": "/blog/shopify-vs-woocommerce-vs-magento",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js",
+      "componentChunkName": "component---src-pages-post-js",
+      "context": {
+        "slug": "shopify-vs-woocommerce-vs-magento"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js",
+      "id": "SitePage /blog/shopify-vs-woocommerce-vs-magento",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "6e71952119a6114452d63fd03a1b6bf2",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/creating-this-site": {
+      "jsonName": "blog-creating-this-site-79e",
+      "internalComponentName": "ComponentBlogCreatingThisSite",
+      "path": "/blog/creating-this-site",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js",
+      "componentChunkName": "component---src-pages-post-js",
+      "context": {
+        "slug": "creating-this-site"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js",
+      "id": "SitePage /blog/creating-this-site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "60b496e9eaf39db2a3b838fd5eba03d8",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -3557,6 +3708,26 @@
       "internal": {
         "type": "SitePage",
         "contentDigest": "566387a8833a7c06ded46b6ceb638f18",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/": {
+      "jsonName": "blog-f7a",
+      "internalComponentName": "ComponentBlog",
+      "path": "/blog/",
+      "component": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/blog.js",
+      "componentChunkName": "component---src-pages-blog-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/blog.js",
+      "id": "SitePage /blog/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d4470c327ffb6898bdd60abb08a1cdda",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -3744,7 +3915,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "09434c311e357d63f2f7e9e9bd288c90"
+    "PLUGINS_HASH": "477fa274c4b61b7f0cccb3d58e433e63"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -3763,8 +3934,8 @@
         "sq--src-components-image-js"
       ],
       "8d1b3837-e377-53ea-aa25-75422f85606f": [
-        "sq--src-components-navigation-js",
-        "sq--src-components-mobile-nav-js"
+        "sq--src-components-mobile-nav-js",
+        "sq--src-components-navigation-js"
       ],
       "eac0bdfd-bda0-569c-8e4e-7f73b6e91e9a": [
         "/about",
@@ -3782,6 +3953,10 @@
         "/about",
         "/about/"
       ],
+      "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4": [
+        "/case-studies",
+        "/case-studies/"
+      ],
       "052e5749-9865-5f8b-8e7f-830ebe467c86": [
         "/case-studies",
         "/case-studies/",
@@ -3795,89 +3970,105 @@
       "2ec42945-5747-5084-8ce6-27095a3662df": [
         "/case-studies",
         "/case-studies/",
-        "/"
+        "/",
+        "/case-studies/flexrake"
       ],
       "dbc78977-fb87-54f5-b3d2-5b7db83841ce": [
         "/case-studies",
         "/case-studies/",
-        "/"
+        "/",
+        "/case-studies/flexrake"
       ],
       "2068ac50-ba39-55d2-adda-7d93fd26c0c5": [
         "/case-studies",
         "/case-studies/",
-        "/"
+        "/",
+        "/case-studies/flexrake"
       ],
       "b0ff0cfd-2e4e-571e-a521-e4b4b52f31f5": [
         "/case-studies",
         "/case-studies/",
         "/"
       ],
-      "54fcd5ff-093b-594e-9cfc-219a434391bb": [
-        "/blog"
-      ],
       "1d924fe9-005b-5b5e-98b4-d9a0304115f9": [
         "/freelance",
         "/freelance/"
       ],
-      "2445fdf3-7bdd-5fd9-8b23-5e3605439fc4": [
-        "/case-studies",
-        "/case-studies/"
+      "9bf79726-b4ae-5b46-970e-6251a63bdaf7": [
+        "/blog/how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages"
+      ],
+      "0714f11d-f51c-581b-9efc-1f7f6af5ee7b": [
+        "/blog/shopify-vs-woocommerce-vs-magento",
+        "/"
+      ],
+      "fab2273f-880b-523b-83e5-af28122c4b82": [
+        "/blog/creating-this-site"
+      ],
+      "e3f24d77-5412-5e73-bdb6-53f1a7936f6c": [
+        "/case-studies/kona-deep-water"
+      ],
+      "4c40d440-ed7f-58f1-98b0-5aac80b03f4e": [
+        "/",
+        "/case-studies/flexrake"
+      ],
+      "f24b5a9e-ed37-56c1-978a-9c95dbc988a9": [
+        "/"
       ]
     },
     "connections": {
       "wordpress__POST": [
         "/about",
         "/about/",
-        "/"
-      ],
-      "wordpress__acf_options": [
-        "/"
+        "/",
+        "sq--src-components-blog-post-sidebar-js"
       ],
       "wordpress__wp_case_studies": [
         "/case-studies",
         "/case-studies/",
         "/"
+      ],
+      "wordpress__acf_options": [
+        "/"
       ]
     }
   },
   "jsonDataPaths": {
-    "blog-126": "748/path---blog-126-783-goQawkx0G7gIUbcQUZ2eDfr2sU4",
+    "sq--src-components-navigation-js": 4069908935,
+    "sq--src-components-layout-js": 1215746604,
+    "sq--src-components-mobile-nav-js": 651775633,
     "about-46b": "280/path---about-46-b-819-Oq5sFdF1iaOL9EtIwfMRWJC2ak",
-    "freelance-96b": "866/path---freelance-96-b-289-KQghXt7LGozW7Josm2F7gD6OELk",
-    "kona-deep-water-899": "246/path---kona-deep-water-899-7cc-5mjEhK5qYPqhYWLbT2IeH79RwY",
-    "flexrake-9e9": "839/path---flexrake-9-e-9-7f2-313VegqMJNWYqLJSxvJn4N0OQA",
-    "how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-154": "79/path---how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-154-420-cBmyBernL6YQA9reRcArDlZI0HU",
-    "shopify-vs-woocommerce-vs-magento-431": "188/path---shopify-vs-woocommerce-vs-magento-431-930-vZbm4A3b4S66BC2Pa5DapvJshGQ",
-    "creating-this-site-277": "834/path---creating-this-site-277-68b-F6n4IyD835RZK8bEoZjDYo5ENTk",
-    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
-    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
+    "sq--src-components-image-js": 2011440971,
     "about-f34": "44/path---about-f-34-4c2-6d3ctuzJL7Mi41rgqLZs8x2h4",
-    "case-studies-693": "379/path---case-studies-693-009-C8RUtKNpdJuv0LulBQ4IZHb4KQ",
-    "index": "595/path---index-6a9-ZwA64y8HQLc8SqY9vYY6HYWy3E",
+    "freelance-96b": "866/path---freelance-96-b-289-KQghXt7LGozW7Josm2F7gD6OELk",
     "freelance-945": "608/path---freelance-945-bca-qctgqBDfBbfjy0tv8KqBDNEqDOY",
     "page-8a1": "496/path---page-8-a-1-a94-Zl0AfVdSz4DwT9NKwIHtZ6z4vAY",
-    "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
-    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-layout-js": 1215746604,
-    "sq--src-components-navigation-js": 4069908935,
-    "sq--src-components-image-js": 2011440971,
-    "posts-5aa": "316/path---posts-5-aa-ae4-NZuapzHg3X9TaN1iIixfv1W23E",
+    "blog-how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-6f1": "391/path---blog-how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-6-f-1-f1c-F492r8iIUut1L5CiQMXw8Qr98Ec",
+    "blog-shopify-vs-woocommerce-vs-magento-af4": "596/path---blog-shopify-vs-woocommerce-vs-magento-af-4-86e-0tEUf2VZbGwnOlBI7SxTdexmxM",
+    "blog-creating-this-site-79e": "316/path---blog-creating-this-site-79-e-b92-YXk4VuPeMnd6iRfodjOswBe1nqU",
     "post-b25": "451/path---post-b-25-0aa-Zl0AfVdSz4DwT9NKwIHtZ6z4vAY",
-    "case-study-778": "686/path---case-study-778-ab1-NZuapzHg3X9TaN1iIixfv1W23E",
-    "case-studies-kona-deep-water-0a4": "87/path---case-studies-kona-deep-water-0-a-4-e1d-5mjEhK5qYPqhYWLbT2IeH79RwY",
-    "case-studies-flexrake-667": "731/path---case-studies-flexrake-667-f61-313VegqMJNWYqLJSxvJn4N0OQA",
-    "case-study-96f": "701/path---case-study-96-f-1f7-NZuapzHg3X9TaN1iIixfv1W23E",
+    "blog-126": "110/path---blog-126-783-JdH4e8XySEAyWlX0QZ8i4NcrZuw",
+    "case-studies-kona-deep-water-0a4": "255/path---case-studies-kona-deep-water-0-a-4-e1d-sDM0tMWlLwpd9GTAfcDcpk932k",
+    "case-studies-flexrake-667": "157/path---case-studies-flexrake-667-f61-m1XjOeyoL9VIWKeTZut8schLCfA",
+    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "blog-f7a": "32/path---blog-f-7-a-05d-NZuapzHg3X9TaN1iIixfv1W23E",
+    "case-study-778": "125/path---case-study-778-ab1-Zl0AfVdSz4DwT9NKwIHtZ6z4vAY",
+    "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
+    "posts-5aa": "316/path---posts-5-aa-ae4-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
     "case-studies-baf": "436/path---case-studies-baf-491-1KEE8f2sdsOfhBU3jb6mAisBv0",
-    "sq--src-components-mobile-nav-js": 651775633
+    "index": "595/path---index-6a9-ZwA64y8HQLc8SqY9vYY6HYWy3E",
+    "case-studies-693": "379/path---case-studies-693-009-C8RUtKNpdJuv0LulBQ4IZHb4KQ",
+    "sq--src-components-blog-post-sidebar-js": 3292989812
   },
   "components": {
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js": {
       "query": "query CaseStudiesPage {\n  wordpressPage(slug: {eq: \"case-studies\"}) {\n    title\n  }\n  allWordpressWpCaseStudies {\n    edges {\n      node {\n        title\n        slug\n        featured_media {\n          alt_text\n          localFile {\n            childImageSharp {\n              id\n              fluid(maxWidth: 1600) {\n                ...GatsbyImageSharpFluid\n              }\n            }\n          }\n        }\n        tags {\n          name\n        }\n        acf {\n          subtitle\n          teaser\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-studies.js"
     },
-    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js": {
-      "query": "query PageQuery(\n  $slug: String!\n) {\n  wordpressPage(slug: {eq: $slug}) {\n    id\n    title\n    template\n    slug\n    content\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1800) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js"
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/blog.js": {
+      "query": "",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/blog.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/about.js": {
       "query": "query AboutQuery {\n  wordpressAcfOptions {\n    options {\n      tagline\n    }\n  }\n  allWordpressPost(limit: 2) {\n    edges {\n      node {\n        title\n        slug\n        date(formatString: \"MMMM DD, Y\")\n        content\n      }\n    }\n  }\n  wordpressPage(slug: {eq: \"about\"}) {\n    id\n    title\n    template\n    slug\n    content\n    acf {\n      talks {\n        title\n        url\n        description\n      }\n      education {\n        title\n        url\n        description\n      }\n    }\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1800) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
@@ -3887,8 +4078,12 @@
       "query": "query FreelancePage {\n  wordpressPage(slug: {eq: \"freelance\"}) {\n    title\n    content\n  }\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/freelance.js"
     },
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js": {
+      "query": "query PostQuery(\n  $slug: String!\n) {\n  wordpressPost(slug: {eq: $slug}) {\n    id\n    title\n    date(formatString: \"MMMM DD, YYYY\")\n    slug\n    content\n  }\n}\n",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js"
+    },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-study.js": {
-      "query": "",
+      "query": "query CaseStudyQuery(\n  $slug: String!\n) {\n  wordpressWpCaseStudies(slug: {eq: $slug}) {\n    id\n    title\n    slug\n    acf {\n      overview {\n        overview_point\n      }\n    }\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1920) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n    content\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/case-study.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/.cache/dev-404-page.js": {
@@ -3907,9 +4102,9 @@
       "query": "",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page-2.js"
     },
-    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js": {
-      "query": "query PostQuery(\n  $slug: String!\n) {\n  wordpressPost(slug: {eq: $slug}) {\n    id\n    title\n    date(formatString: \"MMMM DD, YYYY\")\n    slug\n    content\n  }\n}\n",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Post.js"
+    "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js": {
+      "query": "query PageQuery(\n  $slug: String!\n) {\n  wordpressPage(slug: {eq: $slug}) {\n    id\n    title\n    template\n    slug\n    content\n    featured_media {\n      localFile {\n        childImageSharp {\n          fluid(maxWidth: 1800) {\n            ...GatsbyImageSharpFluid\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/page.js"
     },
     "/Users/adamrasheed/Documents/websites/adamrasheed/src/pages/Posts.js": {
       "query": "",
@@ -3933,6 +4128,14 @@
       "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n      social {\n        account\n        url\n      }\n    }\n  }\n  wordpressAcfOptions {\n    options {\n      title\n    }\n  }\n}\n",
       "hash": 1215746604
     },
+    "sq--src-components-mobile-nav-js": {
+      "name": "MobileNavigationQuery",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/MobileNav.js",
+      "id": "sq--src-components-mobile-nav-js",
+      "jsonName": "sq--src-components-mobile-nav-js",
+      "query": "query MobileNavigationQuery {\n  wordpressWpApiMenusMenusItems(slug: {eq: \"main-menu\"}) {\n    items {\n      wordpress_id\n      title\n      object_id\n      object\n      object_slug\n    }\n  }\n}\n",
+      "hash": 651775633
+    },
     "sq--src-components-navigation-js": {
       "name": "NavigationQuery",
       "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/Navigation.js",
@@ -3941,13 +4144,13 @@
       "query": "query NavigationQuery {\n  wordpressWpApiMenusMenusItems(slug: {eq: \"main-menu\"}) {\n    items {\n      wordpress_id\n      title\n      url\n      object_id\n      object\n      object_slug\n      type_label\n    }\n  }\n}\n",
       "hash": 4069908935
     },
-    "sq--src-components-mobile-nav-js": {
-      "name": "MobileNavigationQuery",
-      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/MobileNav.js",
-      "id": "sq--src-components-mobile-nav-js",
-      "jsonName": "sq--src-components-mobile-nav-js",
-      "query": "query MobileNavigationQuery {\n  wordpressWpApiMenusMenusItems(slug: {eq: \"main-menu\"}) {\n    items {\n      wordpress_id\n      title\n      object_id\n      object\n      object_slug\n    }\n  }\n}\n",
-      "hash": 651775633
+    "sq--src-components-blog-post-sidebar-js": {
+      "name": "OtherPosts",
+      "componentPath": "/Users/adamrasheed/Documents/websites/adamrasheed/src/components/Blog/PostSidebar.js",
+      "id": "sq--src-components-blog-post-sidebar-js",
+      "jsonName": "sq--src-components-blog-post-sidebar-js",
+      "query": "query OtherPosts {\n  allWordpressPost {\n    edges {\n      node {\n        title\n        slug\n      }\n    }\n  }\n}\n",
+      "hash": 3292989812
     }
   }
 }

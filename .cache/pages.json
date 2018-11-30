@@ -35,9 +35,29 @@
         "path": "/about/"
     },
     {
-        "componentChunkName": "component---src-pages-page-js",
+        "componentChunkName": "component---src-pages-blog-js",
         "jsonName": "blog-126",
         "path": "/blog"
+    },
+    {
+        "componentChunkName": "component---src-pages-blog-js",
+        "jsonName": "blog-f7a",
+        "path": "/blog/"
+    },
+    {
+        "componentChunkName": "component---src-pages-post-js",
+        "jsonName": "blog-creating-this-site-79e",
+        "path": "/blog/creating-this-site"
+    },
+    {
+        "componentChunkName": "component---src-pages-post-js",
+        "jsonName": "blog-how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages-6f1",
+        "path": "/blog/how-to-speed-up-search-on-wordpress-site-sites-with-1000-pages"
+    },
+    {
+        "componentChunkName": "component---src-pages-post-js",
+        "jsonName": "blog-shopify-vs-woocommerce-vs-magento-af4",
+        "path": "/blog/shopify-vs-woocommerce-vs-magento"
     },
     {
         "componentChunkName": "component---src-pages-case-studies-js",

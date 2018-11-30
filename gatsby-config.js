@@ -4,14 +4,12 @@ module.exports = {
     jobTitle: `Front-end Developer`,
     siteUrl: `https://adamrasheed.com`,
     tagLine: `I’m a Front-end Developer based in <br>San Diego, CA 🏖.`,
-    specialize: `I specialize in Custom Wordpress and Shopify projects and am learning React.`,
-    career: `Currently working as a Front-end Developer at <a href="https://www.bvaccel.com/" target="_blank" rel="nofollow noopener">BVAccel</a>. Previously at <a href="https://www.blenderseyewear.com/" target="_blank" rel="nofollow noopener">Blenders</a>.`,
     social: [
-      {account: 'twitter', url: `https://twitter.com/ARasheedPhoto`},
-      {account: 'instagram', url: `https://www.instagram.com/hashtagadam/`},
-      {account: 'github', url: `https://github.com/adamrasheed`},
-      {account: 'dribbble', url: `https://dribbble.com/adamrasheed`},
-      {account: 'youtube', url: `http://bit.ly/SketchVids`}
+      { account: 'twitter', url: `https://twitter.com/ARasheedPhoto` },
+      { account: 'instagram', url: `https://www.instagram.com/hashtagadam/` },
+      { account: 'github', url: `https://github.com/adamrasheed` },
+      { account: 'dribbble', url: `https://dribbble.com/adamrasheed` },
+      { account: 'youtube', url: `http://bit.ly/SketchVids` },
     ],
   },
   plugins: [
@@ -37,6 +35,7 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
@@ -48,7 +47,7 @@ module.exports = {
         hostingWPCOM: false,
         userACF: true,
         concurrentRequests: 10,
-      }
-    }
+      },
+    },
   ],
 }
