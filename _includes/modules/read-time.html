@@ -1,6 +1,0 @@
-{% assign words = post.content | size%}
-{% if words < 360 %}
-    1 min
-{% else %}
-    {{ words | divided_by:180 }} Min
-{% endif %} Read
