@@ -56,9 +56,8 @@ export const query = graphql`
       title
       slug
       acf {
-        overview {
-          overview_point
-        }
+        subtitle
+        teaser
       }
       featured_media {
         localFile {

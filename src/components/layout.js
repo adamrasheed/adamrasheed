@@ -25,6 +25,17 @@ const Layout = ({ children, template }) => (
             title
           }
         }
+        wordpressPage(slug: { eq: "about" }) {
+          featured_media {
+            localFile {
+              childImageSharp {
+                fixed(width: 1200) {
+                  src
+                }
+              }
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -35,7 +46,7 @@ const Layout = ({ children, template }) => (
             {
               name: 'description',
               content:
-                'Adam Rasheed is a front-end develoepr based in San Diego, California. He specializes in cusotm Shopify theme development and custom WordPress theme development',
+                'Adam Rasheed is a front-end develoepr based in San Diego, California. He specializes in custom Shopify theme development and custom WordPress theme development',
             },
             {
               name: 'keywords',
@@ -44,6 +55,34 @@ const Layout = ({ children, template }) => (
           ]}
         >
           <html lang="en" />
+          <meta
+            property="og:title"
+            content="Adam Rasheed | San Diego Front-end Developer"
+          />
+          {/*<!-- Twitter -->*/}
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content="m" />
+          <meta name="twitter:site" content="@arasheedphoto" />
+          <meta name="twitter:creator" content="@arasheedphoto" />
+          <meta
+            name="twitter:image:src"
+            content={
+              data.wordpressPage.featured_media.localFile.childImageSharp.fixed
+                .src
+            }
+          />
+          {/*<!-- Open Graph general (Facebook, Pinterest & Google+) -->*/}
+          <meta name="og:title" content="m" />
+          <meta
+            name="og:image"
+            content={
+              data.wordpressPage.featured_media.localFile.childImageSharp.fixed
+                .src
+            }
+          />
+          <meta name="og:url" content="https://adamrasheed.com" />
+          <meta name="og:site_name" content="Adam Rasheed" />
+          <meta name="og:type" content="website" />
         </Helmet>
         <Header
           siteTitle={data.site.siteMetadata.title}

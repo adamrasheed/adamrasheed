@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 class PostPreview extends React.Component {
   render() {
     const { props } = this
-    console.log(this.props.date)
     return (
       <div className="post">
         <h2 className="post__title">

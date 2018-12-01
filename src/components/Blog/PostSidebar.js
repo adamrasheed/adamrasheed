@@ -23,9 +23,10 @@ class PostSidebar extends React.Component {
               Other Posts
             </h4>
             <ul className="sidebar__posts">
-              {data.allWordpressPost.edges.map(({ node }) => (
+              {data.allWordpressPost.edges.map(({ node }, i) => (
                 <li className="sidebar__post">
                   <Link
+                    key={i}
                     to={`blog/${node.slug}`}
                     className="sidebar__post-link"
                     dangerouslySetInnerHTML={{ __html: node.title }}

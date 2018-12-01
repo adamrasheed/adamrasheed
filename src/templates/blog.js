@@ -10,8 +10,9 @@ class BlogsPage extends React.Component {
         <h1 className="page-title">{data.wordpressPage.title}</h1>
         <div className="container container--no-pad">
           <div className="posts">
-            {data.allWordpressPost.edges.map(({ node }) => (
+            {data.allWordpressPost.edges.map(({ node }, i) => (
               <PostPreview
+                key={i}
                 title={node.title}
                 link={`blog/${node.slug}`}
                 excerpt={node.excerpt}
