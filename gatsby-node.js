@@ -49,7 +49,7 @@ exports.createPages = ({ graphql, actions }) => {
 
           createPage({
             path: node.slug,
-            component: path.resolve(`./src/pages/${templateSlug}.js`),
+            component: path.resolve(`./src/templates/${templateSlug}.js`),
             context: {
               slug: node.slug,
             },
@@ -57,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
         } else {
           createPage({
             path: node.slug,
-            component: path.resolve('./src/pages/page.js'),
+            component: path.resolve('./src/templates/page.js'),
             context: {
               slug: node.slug,
             },
@@ -68,7 +68,7 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allWordpressPost.edges.forEach(({ node }) => {
         createPage({
           path: `blog/${node.slug}`,
-          component: path.resolve('./src/pages/Post.js'),
+          component: path.resolve('./src/templates/Post.js'),
           context: {
             slug: node.slug,
           },
@@ -78,7 +78,7 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allWordpressWpCaseStudies.edges.forEach(({ node }) => {
         createPage({
           path: `case-studies/${node.slug}`,
-          component: path.resolve('./src/pages/case-study.js'),
+          component: path.resolve('./src/templates/case-study.js'),
           context: {
             slug: node.slug,
           },
