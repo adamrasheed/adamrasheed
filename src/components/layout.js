@@ -11,18 +11,19 @@ const Layout = ({ children, template }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-            social {
-              account
-              url
-            }
-          }
+        wordpressSiteMetadata {
+          name
         }
         wordpressAcfOptions {
           options {
             title
+            tagline
+            social_accounts {
+              account
+              url {
+                url
+              }
+            }
           }
         }
         wordpressPage(slug: { eq: "about" }) {
@@ -41,12 +42,12 @@ const Layout = ({ children, template }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
+          title={data.wordpressSiteMetadata.name}
           meta={[
             {
               name: 'description',
               content:
-                'Adam Rasheed is a front-end develoepr based in San Diego, California. He specializes in custom Shopify theme development and custom WordPress theme development',
+                'Adam Rasheed is a front-end developer based in San Diego, California who specializes in custom Shopify theme development and custom WordPress theme development',
             },
             {
               name: 'keywords',
@@ -60,10 +61,21 @@ const Layout = ({ children, template }) => (
             content="Adam Rasheed | San Diego Front-end Developer"
           />
           {/*<!-- Twitter -->*/}
-          <meta name="twitter:card" content="summary" />
-          <meta name="twitter:title" content="m" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:card"
+            content={data.wordpressAcfOptions.options.tagline}
+          />
+          <meta
+            name="twitter:title"
+            content={data.wordpressSiteMetadata.name}
+          />
           <meta name="twitter:site" content="@arasheedphoto" />
           <meta name="twitter:creator" content="@arasheedphoto" />
+          <meta
+            name="twitter:description"
+            content={data.wordpressAcfOptions.options.tagline}
+          />
           <meta
             name="twitter:image:src"
             content={
@@ -85,15 +97,15 @@ const Layout = ({ children, template }) => (
           <meta name="og:type" content="website" />
         </Helmet>
         <Header
-          siteTitle={data.site.siteMetadata.title}
+          siteTitle={data.wordpressSiteMetadata.name}
           jobTitle={data.wordpressAcfOptions.options.title}
         />
         <div className={`main${template ? ` main--${template}` : ``}`}>
           {children}
         </div>
         <Footer
-          title={data.site.siteMetadata.title}
-          social={data.site.siteMetadata.social}
+          title={data.wordpressSiteMetadata.name}
+          social={data.wordpressAcfOptions.options.social_accounts}
         />
       </>
     )}

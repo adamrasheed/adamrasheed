@@ -24,22 +24,28 @@ class Footer extends React.Component {
           </div>
           <ul className="social footer__social">
             {this.props.social
-              ? this.props.social.map((account, i) => (
-                  <li className="social__item" key={i}>
-                    <a
-                      href={account.url}
-                      className="social__link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title={account.account}
-                    >
-                      <FontAwesomeIcon
-                        className="social__icon"
-                        icon={['fab', account.account]}
-                      />
-                    </a>
-                  </li>
-                ))
+              ? this.props.social.map((account, i) => {
+                  const socialHandle = account.account.toLowerCase()
+                  console.log(account)
+                  return (
+                    <li className="social__item" key={i}>
+                      <a
+                        href={account.url.url}
+                        className="social__link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={account.account}
+                      >
+                        <FontAwesomeIcon
+                          className={`social__icon social__icon--${
+                            account.account
+                          }`}
+                          icon={['fab', socialHandle]}
+                        />
+                      </a>
+                    </li>
+                  )
+                })
               : null}
           </ul>
         </div>
