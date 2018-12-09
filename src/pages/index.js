@@ -9,6 +9,8 @@ import BlogsPreview from '../components/Blog/BlogsPreview'
 import Contact from '../components/Contact'
 import { graphql } from 'gatsby'
 
+import '../scss/02-pages/home.scss'
+
 const IndexPage = ({ data }) => (
   <Layout>
     <Hero

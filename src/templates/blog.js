@@ -1,13 +1,14 @@
 import React from 'react'
 import Layout from '../components/layout'
 import PostPreview from '../components/Blog/PostPreview'
+import { PageTitle } from '../components/PageTitle'
 
 class BlogsPage extends React.Component {
   render() {
     const { data } = this.props
     return (
       <Layout>
-        <h1 className="page-title">{data.wordpressPage.title}</h1>
+        <PageTitle>{data.wordpressPage.title}</PageTitle>
         <div className="container container--no-pad">
           <div className="posts">
             {data.allWordpressPost.edges.map(({ node }, i) => (

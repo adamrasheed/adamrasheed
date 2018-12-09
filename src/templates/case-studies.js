@@ -2,12 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import CaseStudyPreview from '../components/CaseStudy/CaseStudyPreview'
+import { PageTitle } from '../components/PageTitle'
+
 class FreelancePage extends React.Component {
   render() {
     const { data } = this.props
     return (
       <Layout>
-        <h1 className="page-title">{data.wordpressPage.title}</h1>
+        <PageTitle>{data.wordpressPage.title}</PageTitle>
         <section className="section-case-studies">
           <div className="container">
             {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (

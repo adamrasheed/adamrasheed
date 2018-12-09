@@ -1,16 +1,16 @@
-.page-title{
-    padding: 0 1rem;
-    max-width: $container-size;
-    margin: 0 auto 1rem;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1rem;
+.page-title {
+  padding: 0 1rem;
+  max-width: $container-size;
+  margin: 0 auto 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
 
-    &--no-pad{
-        padding: 0;
-    }
+  &--no-pad {
+    padding: 0;
+  }
 
-    @media #{$media-tablet}{
-        margin: 0 auto 2.25rem;
-    }
+  @media #{$media-tablet} {
+    margin: 0 auto 2.25rem;
+  }
 }
