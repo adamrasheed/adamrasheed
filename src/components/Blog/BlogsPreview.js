@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
+// import styled from 'styled-components'
 
+// const BlogPreview = styled.div``
 class BlogsPreview extends React.Component {
   render() {
     return (

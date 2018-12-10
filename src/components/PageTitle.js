@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { MediaScreen, ContainerSize } from '../utils/Styles'
 import { H1 } from '../utils/Typography'

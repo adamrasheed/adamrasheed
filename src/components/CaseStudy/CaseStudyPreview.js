@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H2, H3, H4 } from '../../utils/Typography'
+import { H3 } from '../../utils/Typography'
 import { Color, MediaScreen } from '../../utils/Styles'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'

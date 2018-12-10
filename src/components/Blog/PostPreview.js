@@ -1,29 +1,43 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { MediaScreen } from '../../utils/Styles'
+import PostPreviewTitle from './PostPreviewTitle'
+import PostMeta from './PostPreviewMeta'
+import PostPreviewExcerpt from './PostPreviewExcerpt'
+const Post = styled.div`
+  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
+    flex: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 25.5rem;
+    padding: 0 1rem 2rem;
+  }
+`
 
 class PostPreview extends React.Component {
   render() {
-    const { props } = this
+    const { title, link, date, excerpt } = this.props
     return (
-      <div className="post">
-        <h2 className="post__title">
+      <Post Blog>
+        <PostPreviewTitle Blog>
           <Link
             className="post__link"
-            to={props.link}
-            dangerouslySetInnerHTML={{ __html: props.title }}
+            to={link}
+            dangerouslySetInnerHTML={{ __html: title }}
           />
-        </h2>
-        <div className="post__meta">
-          <span className="post__date">{props.date}</span>
-          <span className="post__length" title="Estimated read time">
-            {props.date}
-          </span>
+        </PostPreviewTitle>
+        <div style={{ margin: '1rem 0' }}>
+          <PostMeta date={date} />
         </div>
-        <div
-          className="paragraph post__excerpt"
-          dangerouslySetInnerHTML={{ __html: props.excerpt }}
+        <PostPreviewExcerpt
+          className="paragraph"
+          dangerouslySetInnerHTML={{ __html: excerpt }}
         />
-      </div>
+      </Post>
     )
   }
 }

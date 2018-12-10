@@ -1,7 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import styled from 'styled-components'
 import Layout from '../components/layout'
 import BlogsPreview from '../components/Blog/BlogsPreview'
 import { PageTitle } from '../components/PageTitle'
@@ -10,6 +8,8 @@ import AboutBody from '../components/About/AboutBody'
 import AboutInfoCategory from '../components/About/AboutInfo'
 import AboutImg from '../components/About/AboutImg'
 import AboutContainer from '../components/About/AboutContainer'
+
+import { H2 } from '../utils/Typography'
 
 class AboutPage extends React.Component {
   render() {
@@ -26,8 +26,8 @@ class AboutPage extends React.Component {
         ) : null}
         <AboutContainer>
           <AboutBody>
-            <h2
-              className="about__title"
+            <H2
+              style={{ marginBottom: '9px' }}
               dangerouslySetInnerHTML={{
                 __html: data.wordpressAcfOptions.options.tagline,
               }}

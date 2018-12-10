@@ -1,6 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
-import { Color, MediaScreen } from './Styles'
+import { Color } from './Styles'
 
 const font = {
   heading: `-apple-system-headline, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`,
@@ -10,7 +9,10 @@ const font = {
 }
 
 export const fontSize = {
+  base: '16px',
   body: '14px',
+  small: '0.875rem',
+  large: '1.25rem',
 }
 
 export const H1 = styled.h1`

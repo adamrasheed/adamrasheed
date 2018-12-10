@@ -4,6 +4,10 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import CaseStudyCta from '../components/CaseStudy/CaseStudyCta'
 
+import { PageTitle } from '../components/PageTitle'
+
+import '../scss/02-pages/_case-study.scss'
+
 class CaseStudy extends React.Component {
   render() {
     const { data } = this.props
@@ -11,7 +15,7 @@ class CaseStudy extends React.Component {
       <Layout>
         <main className="case-study">
           <article className="case-study__content">
-            <h1 className="page-title">{data.wordpressWpCaseStudies.title}</h1>
+            <PageTitle>{data.wordpressWpCaseStudies.title}</PageTitle>
             {data.wordpressWpCaseStudies.featured_media != null ? (
               <Img
                 className="featured-img case-study__img"

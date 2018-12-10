@@ -2,6 +2,18 @@ import React from 'react'
 import Layout from '../components/layout'
 import PostPreview from '../components/Blog/PostPreview'
 import { PageTitle } from '../components/PageTitle'
+import styled from 'styled-components'
+import { MediaScreen } from '../utils/Styles'
+
+const Posts = styled.div`
+  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-top: -1rem;
+  }
+`
 
 class BlogsPage extends React.Component {
   render() {
@@ -10,7 +22,7 @@ class BlogsPage extends React.Component {
       <Layout>
         <PageTitle>{data.wordpressPage.title}</PageTitle>
         <div className="container container--no-pad">
-          <div className="posts">
+          <Posts>
             {data.allWordpressPost.edges.map(({ node }, i) => (
               <PostPreview
                 key={i}
@@ -20,7 +32,7 @@ class BlogsPage extends React.Component {
                 date={node.date}
               />
             ))}
-          </div>
+          </Posts>
         </div>
       </Layout>
     )

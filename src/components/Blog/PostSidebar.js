@@ -1,6 +1,30 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
+import { MediaScreen } from '../../utils/Styles'
+
+import SidebarPost from './PostSidebarPost'
+import StyledLink from '../StyledLink'
+import PreviewTitle from '../PreviewTitle'
+
+const SideBar = styled.aside`
+  padding: 0 1rem;
+  flex: 1;
+  margin: 0 0 4rem;
+  @media screen and (min-width: ${MediaScreen['screen-sm-med']}) {
+    max-width: 24rem;
+  }
+  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+    max-width: 11rem;
+    margin: 2rem 0 0 3rem;
+    flex: 100%;
+  }
+
+  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
+    max-width: 16rem;
+    margin: 2rem 0 0 9rem;
+  }
+`
 class PostSidebar extends React.Component {
   render() {
     return (
@@ -18,23 +42,22 @@ class PostSidebar extends React.Component {
           }
         `}
         render={data => (
-          <aside className="sidebar">
-            <h4 className="preview-title preview-title--extra-small sidebar__title">
+          <SideBar>
+            <PreviewTitle extraSmall sidebar>
               Other Posts
-            </h4>
+            </PreviewTitle>
             <ul className="sidebar__posts">
               {data.allWordpressPost.edges.map(({ node }, i) => (
-                <li className="sidebar__post">
-                  <Link
-                    key={i}
+                <SidebarPost key={i}>
+                  <StyledLink
                     to={`blog/${node.slug}`}
                     className="sidebar__post-link"
                     dangerouslySetInnerHTML={{ __html: node.title }}
                   />
-                </li>
+                </SidebarPost>
               ))}
             </ul>
-          </aside>
+          </SideBar>
         )}
       />
     )
