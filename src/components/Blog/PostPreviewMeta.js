@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { fontSize } from '../../utils/Typography'
+import { fontSize, font } from '../../utils/Typography'
 
 const StyledPostMeta = styled.span`
+  font-family: ${font.body};
   font-size: ${fontSize.small};
   font-weight: 300;
   letter-spacing: 0.05em;

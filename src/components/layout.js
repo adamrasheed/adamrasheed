@@ -6,6 +6,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './Global/Header/Header'
 import Footer from './Footer/Footer'
 
+import '../scss/00-global/_reset.scss'
+
 // import '../scss/main.scss'
 
 const Layout = ({ children, template }) => (

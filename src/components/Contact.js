@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import Container from '../components/Container'
 import { MediaScreen, Spacer, Color } from '../utils/Styles'
-import { H2, fontSize } from '../utils//Typography'
+import { H2, P, fontSize } from '../utils//Typography'
 
 const ContactSection = styled.section`
+  margin-bottom: ${Spacer.small};
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     margin-bottom: ${Spacer.medium};
   }
@@ -28,10 +29,10 @@ class Contact extends React.Component {
         <Container>
           <H2 style={{ marginBottom: '0.4375rem' }}>Let's Talk</H2>
           <ContactBody className="small contact__body">
-            <p>
+            <P>
               You can best reach me through{' '}
               <a href="mailto:adamrasheed91@gmail.com">email</a>
-            </p>
+            </P>
           </ContactBody>
         </Container>
       </ContactSection>

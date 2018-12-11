@@ -1,8 +1,9 @@
 import styled from 'styled-components'
-import { fontSize } from '../../utils/Typography'
+import { fontSize, font } from '../../utils/Typography'
 import { Color, MediaScreen } from '../../utils/Styles'
 
 const PreviewTitle = styled.div`
+  font-family: ${font.body};
   font-variant: small-caps;
   font-variant-caps: all-small-caps;
   letter-spacing: 0.08em;

@@ -25,7 +25,11 @@ const MobileNav = props => (
     render={data => (
       <MobileMenu active={props.active}>
         <PreviewTitle style={{ padding: '2rem' }}>Menu</PreviewTitle>
-        <ul>
+        <ul
+          style={{
+            listStyle: 'none',
+          }}
+        >
           {data.wordpressWpApiMenusMenusItems.items.map(item => (
             <li
               style={{

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { fontSize, H4 } from '../utils/Typography'
+import { fontSize, H4, font } from '../utils/Typography'
 import { Color, transition } from '../utils/Styles'
 
 const PreviewHeaderContainer = styled.div`
@@ -32,6 +32,7 @@ const PreviewHeaderTitle = styled(H4)`
 
 const PreviewHeaderLink = styled(Link)`
   color: ${Color.textLight};
+  font-family: ${font.body};
   font-size: ${fontSize.extraSmall};
   font-weight: 600;
   text-transform: uppercase;

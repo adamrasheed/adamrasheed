@@ -12,16 +12,22 @@ const Post = styled.article`
   font-family: ${font.body};
   line-height: ${lineHeight.body};
 
+  h1 {
+    font-weight: 700;
+  }
+
   h2 {
     font-size: 1.25rem;
     line-height: 1.75rem;
     margin-bottom: 0.25rem;
+    font-weight: 700;
   }
 
   h3 {
     font-size: 1.125rem;
     line-height: 1.5rem;
     margin-bottom: 0.125rem;
+    font-weight: 700;
   }
 
   a {

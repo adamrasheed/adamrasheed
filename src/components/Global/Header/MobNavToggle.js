@@ -5,7 +5,7 @@ const MobileNavToggle = styled.button`
   background: none;
   display: block;
   width: 48px;
-  height: 20px;
+  height: 19px;
   display: block;
   cursor: pointer;
   border: none;

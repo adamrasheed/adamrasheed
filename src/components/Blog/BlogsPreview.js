@@ -1,14 +1,15 @@
 import React from 'react'
 import Container from '../Container'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
+import { MediaScreen, Spacer } from '../../utils/Styles'
 import PreviewPost from './PreviewPost'
 
 // import '../../scss/01-modules/preview-posts.scss'
 
 const BlogPreviewSection = styled.section`
+  margin-bottom: ${Spacer.small};
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
-    margin-bottom: 5rem;
+    margin-bottom: ${Spacer.medium};
   }
 `
 

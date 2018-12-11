@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import StyledLink from '../../Global/StyledLink'
 import { MediaScreen, Spacer } from '../../../utils/Styles'
-import { H4, fontSize } from '../../../utils/Typography'
+import { H4, P, fontSize } from '../../../utils/Typography'
 
 import ButtonLink from '../../ButtonLink'
 
@@ -104,8 +104,10 @@ const CaseStudyPreview = props => (
       </ul>
 
       <PreviewBody>
-        <H4 style={{ marginBottom: '0.125rem' }}>{props.subtitle}</H4>
-        <p style={{ marginBottom: '1rem' }}>{props.teaser}</p>
+        <H4 style={{ marginBottom: '0.125rem', lineHeight: '1.25' }}>
+          {props.subtitle}
+        </H4>
+        <P style={{ marginBottom: '1rem' }}>{props.teaser}</P>
       </PreviewBody>
 
       <PreviewCta

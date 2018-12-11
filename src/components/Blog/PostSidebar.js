@@ -51,7 +51,6 @@ class PostSidebar extends React.Component {
                 <SidebarPost key={i}>
                   <StyledLink
                     to={`blog/${node.slug}`}
-                    className="sidebar__post-link"
                     dangerouslySetInnerHTML={{ __html: node.title }}
                   />
                 </SidebarPost>
