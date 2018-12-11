@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Color } from '../../utils/Styles'
-import { P } from '../../utils//Typography'
+import { P, font } from '../../utils//Typography'
 
 import Container from '../Container'
 import HeroTitle from './HeroTitle.js'
@@ -44,7 +44,10 @@ const Hero = ({ tagline, specialize, career }) => (
         <P>
           I'm also taking on select freelance projects. Wanna see if we’d be a
           good fit? Learn more
-          <span className="ib" style={{ marginLeft: '0.35rem' }}>
+          <span
+            className="ib"
+            style={{ marginLeft: '0.35rem', fontFamily: font.body }}
+          >
             <Link to="/about">about me</Link>.
           </span>
         </P>
