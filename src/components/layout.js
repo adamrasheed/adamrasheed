@@ -7,6 +7,7 @@ import Header from './Global/Header/Header'
 import Footer from './Footer/Footer'
 
 import '../scss/00-global/_reset.scss'
+import '../scss/00-global/_global.scss'
 
 // import '../scss/main.scss'
 

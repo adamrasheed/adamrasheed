@@ -4,6 +4,7 @@ import { fontSize, font, lineHeight } from '../../utils/Typography'
 
 const AboutBody = styled.div`
   font-family: ${font.body};
+  margin-bottom: 2rem;
 
   p {
     margin-bottom: 1rem;
@@ -68,6 +69,7 @@ const AboutBody = styled.div`
   @media (min-width: ${MediaScreen['screen-sm-med']}) {
     flex: 50% 1;
     max-width: 50%;
+    margin-bottom: 0;
     h2 {
       line-height: 1.75rem;
       margin-bottom: 0.25rem;

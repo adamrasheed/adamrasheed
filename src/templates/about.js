@@ -17,10 +17,18 @@ import Container from '../components/Container'
 
 const AboutTitle = styled(H2)`
   margin-bottom: 9px !important;
+  font-weight: 700;
+  display: inline-block;
+  br {
+    display: contents;
+  }
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     /* font-size: ${fontSize.large}; */
     line-height: 1.25 !important;
     font-weight: 700;
+          br {
+            display: block;
+          }
   }
 `
 

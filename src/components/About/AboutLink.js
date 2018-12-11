@@ -6,8 +6,9 @@ import { H5, P } from '../../utils/Typography'
 const StyledAboutLink = styled.div`
   flex: 50% 1;
   max-width: 50%;
-  margin-bottom: 1.3125rem;
+  margin-bottom: 1rem;
   padding-right: 0.25rem;
+  font-weight: 600;
 
   &:first-of-type {
     padding-right: 1rem;
@@ -42,7 +43,7 @@ class AboutLink extends React.Component {
             {title}
           </a>
         </AboutLinkTitle>
-        <P>{description}</P>
+        <P small>{description}</P>
       </StyledAboutLink>
     )
   }

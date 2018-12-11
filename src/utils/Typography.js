@@ -53,6 +53,7 @@ export const H5 = styled.h5`
 export const P = styled.p`
   color: ${Color.text};
   font-family: ${font.body};
-  font-size: ${fontSize.body};
-  line-height: 24px;
+  font-size: ${props => (props.small ? fontSize.small : fontSize.body)};
+  line-height: ${props => (props.small ? '1.4' : '24px')};
+  font-weight: ${props => (props.small ? '300' : '400')};
 `

@@ -1,31 +1,39 @@
-*{box-sizing: border-box}
+@import '../00-global/vars';
 
-body{
-    font-family: $font-family;
-    font-size: $font-size-base;
-    line-height: $line-height-body;
-
-    color: $color-text;
-    padding: 0;
-    margin: 0;
-    display: flex;
-
-    min-height: 100vh;
-    flex-direction: column;
-    // overflow: hidden;
-
-    position: relative;
+* {
+  box-sizing: border-box;
 }
 
-header, footer{
-    flex: none;
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-body;
+
+  color: $color-text;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  min-height: 100vh;
+  flex-direction: column;
+
+  position: relative;
 }
 
-main{
-    flex: 1 0 auto;
+header,
+footer {
+  flex: none;
 }
 
-h1, h2, h3 ,h4 ,h5 {
-    font: $font-family-heading;
-    font-weight: 600;
+main {
+  flex: 1 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font: $font-family-heading;
+  font-weight: 600;
 }
