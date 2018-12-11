@@ -1,10 +1,14 @@
 import styled from 'styled-components'
 import { MediaScreen, Color } from '../../utils/Styles'
-import { fontSize } from '../../utils/Typography'
+import { fontSize, font, lineHeight } from '../../utils/Typography'
 
 const AboutBody = styled.div`
+  font-family: ${font.body};
+
   p {
     margin-bottom: 1rem;
+    font-size: ${fontSize.body};
+    line-height: ${lineHeight.body};
   }
 
   a {
