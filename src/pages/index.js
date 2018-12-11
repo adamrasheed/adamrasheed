@@ -9,6 +9,8 @@ import Contact from '../components/Contact'
 import Container from '../components/Container'
 import PreviewHeader from '../components/PreviewHeader'
 
+import { font } from '../utils/Typography'
+
 // import '../scss/02-pages/home.scss'
 
 const IndexPage = ({ data }) => (
@@ -21,7 +23,7 @@ const IndexPage = ({ data }) => (
       career={data.allWordpressAcfOptions.edges[0].node.options.career}
     />
 
-    <section style={{ marginBottom: '4rem' }}>
+    <section style={{ marginBottom: '4rem', fontFamily: font.body }}>
       <Container>
         <PreviewHeader title="Case Studies" link="/case-studies" />
         {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (

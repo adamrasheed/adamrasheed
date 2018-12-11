@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Color } from '../utils/Styles'
-import { fontSize } from '../utils/Typography'
+import { fontSize, font, lineHeight } from '../utils/Typography'
 
 const PostBody = styled.div`
   h2 {
@@ -32,7 +32,10 @@ const PostBody = styled.div`
 
   p {
     margin-bottom: 1rem;
+    font-family: ${font.body};
+    line-height: ${lineHeight.paragraph};
   }
+
   h1 + code,
   h2 + code,
   h3 + code,

@@ -3,8 +3,10 @@ import Layout from '../components/layout'
 import PostPreview from '../components/Blog/PostPreview'
 import PageTitle from '../components/Global/PageTitle'
 import styled from 'styled-components'
-import { MediaScreen } from '../utils/Styles'
 import Container from '../components/Container'
+
+import { MediaScreen } from '../utils/Styles'
+import { font, lineHeight } from '../utils/Typography'
 
 const Posts = styled.div`
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
@@ -13,6 +15,11 @@ const Posts = styled.div`
     flex-flow: row wrap;
     align-items: flex-start;
     margin-top: -1rem;
+  }
+
+  p {
+    font-family: ${font.body};
+    line-height: ${lineHeight.paragraph};
   }
 `
 

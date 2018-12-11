@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Color } from './Styles'
 
-const font = {
+export const font = {
   heading: `-apple-system-headline, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`,
   subheading: `-apple-system-subheadline, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`,
   smallSubheading: `-apple-system-short-subheadline, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`,

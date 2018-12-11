@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import StyledLink from '../../Global/StyledLink'
 
 import { Color, MediaScreen } from '../../../utils/Styles'
-import { H1, fontSize } from '../../../utils/Typography'
+import { H1, fontSize, font } from '../../../utils/Typography'
 
 const SiteTitle = styled(H1)`
   font-size: ${fontSize.large};
@@ -31,6 +31,8 @@ const SiteDesc = styled.div`
   display: none;
   transform: translateY(-2px);
   color: ${Color.text};
+  font-family: ${font.body};
+  line-height: 1.5;
   font-size: ${fontSize.extraSmall};
   text-align: left;
 

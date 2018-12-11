@@ -7,6 +7,8 @@ import MobileNav from './MobileNav'
 import MobNavToggle from './MobNavToggle'
 import Container from '../../Container'
 
+import { font } from '../../../utils/Typography'
+
 const HeaderContainer = styled(Container)`
   display: flex;
   flex-flow: row wrap;
@@ -14,6 +16,7 @@ const HeaderContainer = styled(Container)`
   align-items: center;
   padding: 1.625rem 1rem 1.25rem;
   position: relative;
+  font-family: ${font.body};
 `
 
 class Header extends React.Component {

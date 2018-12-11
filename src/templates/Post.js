@@ -19,6 +19,7 @@ const PostContainer = styled.main`
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 0 1rem;
   }
 `
 class PostPage extends React.Component {
@@ -29,6 +30,9 @@ class PostPage extends React.Component {
         <PostContainer>
           <Post blog>
             <PostTitle
+              style={{
+                paddingBottom: '1rem',
+              }}
               dangerouslySetInnerHTML={{
                 __html: data.wordpressPost.title,
               }}
@@ -41,6 +45,9 @@ class PostPage extends React.Component {
               }}
             />
             <PostBody
+              style={{
+                paddingTop: '1rem',
+              }}
               dangerouslySetInnerHTML={{
                 __html: data.wordpressPost.content,
               }}
