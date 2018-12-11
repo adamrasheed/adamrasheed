@@ -12,6 +12,8 @@ import AboutContainer from '../components/About/AboutContainer'
 import styled from 'styled-components'
 import { H2, fontSize } from '../utils/Typography'
 import { MediaScreen } from '../utils/Styles'
+import PreviewHeader from '../components/PreviewHeader'
+import Container from '../components/Container'
 
 const AboutTitle = styled(H2)`
   margin-bottom: 9px !important;
@@ -50,7 +52,6 @@ class AboutPage extends React.Component {
 
           <div
             style={{
-              paddingLeft: '1rem',
               flex: 1,
             }}
           >
@@ -64,7 +65,12 @@ class AboutPage extends React.Component {
             />
           </div>
         </AboutContainer>
-        <BlogsPreview posts={data.allWordpressPost.edges} />
+        <section className="preview blog-preview">
+          <Container>
+            <PreviewHeader title="Blog Articles" link="/blog" />
+            <BlogsPreview posts={data.allWordpressPost.edges} />
+          </Container>
+        </section>
       </Layout>
     )
   }

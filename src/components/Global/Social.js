@@ -35,7 +35,6 @@ const SocialIcon = styled(FontAwesomeIcon)`
 
 class Social extends React.Component {
   render() {
-    console.log(this.props.social)
     return (
       <React.Fragment>
         <ul>

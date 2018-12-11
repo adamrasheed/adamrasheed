@@ -1,11 +1,10 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
 
 import PreviewTitle from '../PreviewTitle'
 import MenuLink, { MenuLinkNative } from './MenuLink'
 import MobileMenu from './MobMenu'
-import { transition, MediaScreen, Color } from '../../../utils/Styles'
+import { Color } from '../../../utils/Styles'
 
 const MobileNav = props => (
   <StaticQuery
@@ -26,7 +25,7 @@ const MobileNav = props => (
     render={data => (
       <MobileMenu active={props.active}>
         <PreviewTitle style={{ padding: '2rem' }}>Menu</PreviewTitle>
-        <ul className="mobile-menu__list">
+        <ul>
           {data.wordpressWpApiMenusMenusItems.items.map(item => (
             <li
               style={{

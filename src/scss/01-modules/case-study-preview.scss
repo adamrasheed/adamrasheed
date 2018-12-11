@@ -85,12 +85,4 @@ section.section-case-studies {
       }
     }
   }
-
-  @media #{$media-desktop-small} {
-    // margin-bottom: map-get($section-spacer, medium);
-  }
-
-  @media #{$media-desktop-small} {
-    // margin-bottom: map-get($section-spacer, large);
-  }
 }

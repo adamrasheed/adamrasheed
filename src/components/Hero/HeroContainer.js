@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { H1 } from '../../utils/Typography'
-import { Color, MediaScreen } from '../../utils/Styles'
+import { MediaScreen } from '../../utils/Styles'
 
 const HeroContainer = styled.div`
   padding: 1rem 0 2rem;
@@ -16,7 +15,7 @@ const HeroContainer = styled.div`
   }
   @media screen and (min-width: ${MediaScreen['screen-xl']}) {
     margin-top: 5rem;
-    margin-bottom: 9rem;
+    margin-bottom: 12vh;
   }
 `
 

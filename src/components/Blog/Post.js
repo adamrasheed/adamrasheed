@@ -52,23 +52,12 @@ const Post = styled.article`
   h1 + code,
   h2 + code,
   h3 + code,
-  h4 + code,
-  h1 + .highlighter-rouge,
-  h2 + .highlighter-rouge,
-  h3 + .highlighter-rouge,
-  h4 + .highlighter-rouge {
+  h4 + code {
     margin-top: 1rem;
   }
 
   h4 + ul {
     margin-top: 0.5rem;
-  }
-
-  .highlighter-rouge + h1,
-  .highlighter-rouge + h2,
-  .highlighter-rouge + h3,
-  .highlighter-rouge + h4 {
-    margin-top: 1.5rem;
   }
 
   ul {
@@ -118,7 +107,7 @@ const Post = styled.article`
     /* padding: 1rem; */
   }
   @media screen and (min-width: ${MediaScreen['screen-lg']}) {
-    /* padding: 2rem; */
+    padding: ${props => (props.blog ? '2rem 0' : '0')};
   }
 `
 

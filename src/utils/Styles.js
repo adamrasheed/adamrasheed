@@ -4,6 +4,12 @@ export const Color = {
   textExtraLight: `hsl(220, 13%, 91%)`,
   link: `#3498db`,
   borderLight: `hsl(240, 4%, 95%)`,
+  Btn: {
+    secondary: {
+      regular: 'hsl(204, 10%, 96%)',
+      hover: 'hsl(204, 10%, 92%)',
+    },
+  },
 }
 
 export const Spacer = {

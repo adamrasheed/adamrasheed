@@ -27,13 +27,19 @@ class PostPage extends React.Component {
     return (
       <Layout>
         <PostContainer>
-          <Post>
+          <Post blog>
             <PostTitle
               dangerouslySetInnerHTML={{
                 __html: data.wordpressPost.title,
               }}
             />
-            <PostMeta date={data.wordpressPost.date} p1 />
+            <PostMeta
+              date={data.wordpressPost.date}
+              style={{
+                display: 'block',
+                paddingBottom: '1rem',
+              }}
+            />
             <PostBody
               dangerouslySetInnerHTML={{
                 __html: data.wordpressPost.content,

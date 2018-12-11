@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Color, MediaScreen } from '../utils/Styles'
+import { Color } from '../utils/Styles'
 import { fontSize } from '../utils/Typography'
 
 const PostBody = styled.div`

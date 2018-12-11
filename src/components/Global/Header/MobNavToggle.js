@@ -11,12 +11,13 @@ const MobileNavToggle = styled.button`
   border: none;
   transition: ${transition.short};
   position: fixed;
-  top: 1.825rem;
+  top: 1.875rem;
   right: 1rem;
   z-index: 999;
 
   &:focus,
-  &:active {
+  &:active,
+  &:hover {
     background: none;
   }
 

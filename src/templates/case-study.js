@@ -8,6 +8,7 @@ import CaseStudyCta from '../components/CaseStudy/CaseStudyCta'
 import PageTitle from '../components/Global/PageTitle'
 
 import '../scss/02-pages/_case-study.scss'
+import Container from '../components/Container'
 
 class CaseStudy extends React.Component {
   render() {
@@ -28,17 +29,17 @@ class CaseStudy extends React.Component {
             ) : null}
 
             {data.wordpressWpCaseStudies.acf.overview != null ? (
-              <div className="container container--small">
+              <Container>
                 <h2>Project Overview</h2>
                 <ul>
                   {data.wordpressWpCaseStudies.acf.overview.map(point => (
                     <li>{point.overview_point}</li>
                   ))}
                 </ul>
-              </div>
+              </Container>
             ) : null}
 
-            <div
+            <Container
               className="container container--smal"
               dangerouslySetInnerHTML={{
                 __html: data.wordpressWpCaseStudies.content,

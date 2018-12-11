@@ -10,6 +10,7 @@ const PreviewTitle = styled.div`
   font-size: ${props =>
     props.extraSmall || props.small ? fontSize.small : fontSize.body};
   font-weight: ${props => (props.small | props.extraSmall ? '600' : '500')};
+  flex: ${props => (props.flex100 ? '100%' : 'auto')};
 
   &:after {
     content: '';

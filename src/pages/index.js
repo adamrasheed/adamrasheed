@@ -41,6 +41,7 @@ const IndexPage = ({ data }) => (
         ))}
       </Container>
     </section>
+
     <section className="preview blog-preview">
       <Container>
         <PreviewHeader title="Blog Articles" link="/blog" />

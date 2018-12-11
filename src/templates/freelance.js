@@ -1,11 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
-import PostBody from '../components/PostBody'
 import Post from '../components/Blog/Post'
 
 class FreelancePage extends React.Component {

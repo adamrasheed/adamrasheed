@@ -1,14 +1,22 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Container from '../Container'
 import styled from 'styled-components'
 import { MediaScreen } from '../../utils/Styles'
+import PreviewPost from './PreviewPost'
 
-import '../../scss/01-modules/preview-posts.scss'
+// import '../../scss/01-modules/preview-posts.scss'
 
 const BlogPreviewSection = styled.section`
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     margin-bottom: 5rem;
+  }
+`
+
+const PreviewPosts = styled.div`
+  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 `
 
@@ -17,25 +25,16 @@ class BlogsPreview extends React.Component {
     return (
       <BlogPreviewSection>
         <Container noPadding>
-          <div className="preview-content preview-posts">
+          <PreviewPosts>
             {this.props.posts.map(({ node }, i) => (
-              <div className="preview-post" key={i}>
-                <h2 className="preview-post__title">
-                  <Link
-                    to={`blog/${node.slug}`}
-                    className="preview-post__link"
-                    dangerouslySetInnerHTML={{
-                      __html: node.title,
-                    }}
-                  />
-                </h2>
-
-                <div className="preview-post__meta">
-                  <span className="preview-post__date">{node.date}</span>
-                </div>
-              </div>
+              <PreviewPost
+                key={i}
+                title={node.title}
+                link={`blog/${node.slug}`}
+                date={node.date}
+              />
             ))}
-          </div>
+          </PreviewPosts>
         </Container>
       </BlogPreviewSection>
     )

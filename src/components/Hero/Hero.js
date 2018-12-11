@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { H1 } from '../../utils/Typography'
-import { Color, MediaScreen } from '../../utils/Styles'
+import { Color } from '../../utils/Styles'
 
 import Container from '../Container'
 import HeroTitle from './HeroTitle.js'

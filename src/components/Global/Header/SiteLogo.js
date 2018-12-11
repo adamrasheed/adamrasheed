@@ -1,6 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
 import styled from 'styled-components'
+
+import StyledLink from '../../Global/StyledLink'
 
 import { Color, MediaScreen } from '../../../utils/Styles'
 import { H1, fontSize } from '../../../utils/Typography'
@@ -26,11 +28,12 @@ const SiteTitle = styled(H1)`
 `
 
 const SiteDesc = styled.div`
-  display: block;
+  display: none;
   transform: translateY(-2px);
   color: ${Color.text};
   font-size: ${fontSize.extraSmall};
   text-align: left;
+
   margin: 0.25rem auto 0;
   text-decoration: none;
 
@@ -42,10 +45,10 @@ class SiteLogo extends React.Component {
   render() {
     const { title, desc } = this.props
     return (
-      <Link to="/">
+      <StyledLink to="/">
         <SiteTitle>{title}</SiteTitle>
         <SiteDesc>{desc}</SiteDesc>
-      </Link>
+      </StyledLink>
     )
   }
 }

@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { MediaScreen } from '../../utils/Styles'
 import AboutLink from './AboutLink'
+import PreviewTitle from '../Global/PreviewTitle'
 
 const LinkCategory = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row wrap;
   align-items: flex-start;
 
@@ -23,9 +24,9 @@ class AboutInfoCategory extends React.Component {
   render() {
     return (
       <LinkCategory>
-        <h4 className="preview-title preview-title--small link-category__title link-category__title">
+        <PreviewTitle small flex100 style={{ marginBottom: '13px' }}>
           {this.props.title}
-        </h4>
+        </PreviewTitle>
         {this.props.content
           ? this.props.content.map((talk, i) => (
               <AboutLink

@@ -1,12 +1,6 @@
 import styled from 'styled-components'
 import { ContainerSize, Color, MediaScreen } from '../utils/Styles'
 
-const theme = {
-  default: '0px',
-  noPadding: '0 1rem',
-  footer: `1.7rem 1rem`,
-}
-
 const Container = styled.div`
   max-width: ${props =>
     props.small

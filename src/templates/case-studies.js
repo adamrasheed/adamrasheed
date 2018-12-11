@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import CaseStudyPreview from '../components/CaseStudy/Preview/CaseStudyPreview'
 import PageTitle from '../components/Global/PageTitle'
+import Container from '../components/Container'
 
 class FreelancePage extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class FreelancePage extends React.Component {
       <Layout>
         <PageTitle>{data.wordpressPage.title}</PageTitle>
         <section className="section-case-studies">
-          <div className="container">
+          <Container>
             {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
               <CaseStudyPreview
                 title={node.title}
@@ -27,7 +28,7 @@ class FreelancePage extends React.Component {
                 }
               />
             ))}
-          </div>
+          </Container>
         </section>
       </Layout>
     )
