@@ -1,15 +1,8 @@
 import styled from 'styled-components'
-import { MediaScreen, Color } from '../../utils/Styles'
-import { fontSize, lineHeight } from '../../utils/Typography'
+import { Color, MediaScreen } from '../utils/Styles'
+import { fontSize } from '../utils/Typography'
 
-const Post = styled.article`
-  margin-bottom: 1rem;
-  padding: 0;
-  padding: ${props =>
-    props.freelance || props.caseStudy ? `0` : `0 1rem 1rem`};
-  max-width: ${props =>
-    props.freelance || props.caseStudy ? `unset` : `32rem`};
-
+const PostBody = styled.div`
   h2 {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -21,13 +14,6 @@ const Post = styled.article`
     line-height: 1.5rem;
     margin-bottom: 0.125rem;
   }
-
-  a {
-    color: ${Color.text};
-    text-decoration: none;
-    font-weight: 600;
-  }
-
   p + h2,
   p + h3,
   p + h4,
@@ -46,8 +32,6 @@ const Post = styled.article`
 
   p {
     margin-bottom: 1rem;
-    font-size: ${fontSize.body};
-    line-height: ${lineHeight.paragraph};
   }
   h1 + code,
   h2 + code,
@@ -113,13 +97,6 @@ const Post = styled.article`
   p + hr {
     margin: 2rem auto 2rem;
   }
-
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
-    /* padding: 1rem; */
-  }
-  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
-    /* padding: 2rem; */
-  }
 `
 
-export default Post
+export default PostBody

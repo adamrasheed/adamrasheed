@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { fontSize } from '../utils//Typography'
-import { Color, MediaScreen } from '../utils/Styles'
+import { fontSize } from '../../utils/Typography'
+import { Color, MediaScreen } from '../../utils/Styles'
 
 const PreviewTitle = styled.div`
   font-variant: small-caps;

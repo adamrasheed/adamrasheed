@@ -12,7 +12,14 @@ export const fontSize = {
   base: '16px',
   body: '14px',
   small: '0.875rem',
+  extraSmall: `0.75rem`,
   large: '1.25rem',
+}
+
+export const lineHeight = {
+  paragraph: '24px',
+  body: '1.4',
+  heading: '1.2',
 }
 
 export const H1 = styled.h1`

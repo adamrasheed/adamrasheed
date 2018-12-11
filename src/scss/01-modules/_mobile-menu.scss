@@ -1,105 +1,102 @@
-.burger{
-    width: 32px;
-    height: 20px;
+.burger {
+  width: 32px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  transition: map-get($transition, short);
+  position: fixed;
+  top: 1.825rem;
+  right: 1rem;
+  z-index: 999;
+
+  &__span {
     display: block;
-    cursor: pointer;
+    height: 2px;
+    // width: 32px;
+    background: $color-text;
     transition: map-get($transition, short);
-    position: fixed;
-    top: 1.825rem;
-    right: 1rem;
-    z-index: 999;
+    cursor: pointer;
+  }
 
-    &__span{
-        display: block;
-        height: 2px;
-        // width: 32px;
-        background: $color-text;
-        transition: map-get($transition, short);
-        cursor: pointer;
+  &__span-2 {
+    top: calc(50% - 1px);
+    position: relative;
+    width: 1rem;
+  }
+
+  &__span-1,
+  &__span-3 {
+    display: block;
+    height: 2px;
+    width: 32px;
+    background: $color-text;
+    position: absolute;
+    transition: map-get($transition, short);
+  }
+
+  &__span-1 {
+    top: 0;
+  }
+
+  &__span-3 {
+    bottom: 0;
+  }
+
+  &--open {
+    .burger__span-2 {
+      transform: scaleX(0);
     }
 
-    &__span-2{
-        top: calc(50% - 1px);
-        position: relative;
-        width: 1rem;
+    .burger__span-1 {
+      transform: rotate(45deg);
+      top: 8px;
     }
 
-    &__span-1, &__span-3{
-        display: block;
-        height: 2px;
-        width: 32px;
-        background: $color-text;
-        position: absolute;
-        transition: map-get($transition, short);
+    .burger__span-3 {
+      transform: rotate(-45deg);
+      bottom: 10px;
     }
+  }
 
-    &__span-1{
-        top: 0;
-    }
-
-    &__span-3{
-        bottom: 0;
-    }
-
-    &--open{
-        .burger__span-2{
-            // display: none;
-            transform: scaleX(0);
-        }
-
-        .burger__span-1{
-            transform: rotate(45deg);
-            top: 8px;
-        }
-
-        .burger__span-3{
-            transform: rotate(-45deg);
-            bottom: 10px;
-        }
-    }
-
-
-
-    @media #{$media-tablet}{
-        display: none;
-    }
+  @media #{$media-tablet} {
+    display: none;
+  }
 }
 
-.mobile-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: white;
-    z-index: 3;
-    // box-shadow: inset -1px 0 0 0 $color-border-light;
-    height: 100%;
-    width: 100%;
-    list-style: none;
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 3;
+  // box-shadow: inset -1px 0 0 0 $color-border-light;
+  height: 100%;
+  width: 100%;
+  list-style: none;
 
-    transition: map-get($transition, medium );
-    transform: translateX(-100%);
+  transition: map-get($transition, medium);
+  transform: translateX(-100%);
 
-    &--open{
-        transform: translateX(0);
-    }
+  &--open {
+    transform: translateX(0);
+  }
 
-    &__title{
-        @extend %title;
-        // font: $font-family-subheading;
-        padding: 2rem;
-    }
+  &__title {
+    @extend %title;
+    padding: 2rem;
+  }
 
-    &__item{
-        border-bottom: 1px solid $color-border-light;
-    }
+  &__item {
+    border-bottom: 1px solid $color-border-light;
+  }
 
-    &__link{
-        display: block;
-        padding: 1rem 2rem;
-        text-align: left;
-    }
+  &__link {
+    display: block;
+    padding: 1rem 2rem;
+    text-align: left;
+  }
 
-    @media #{$media-tablet}{
-        display: none;
-    }
+  @media #{$media-tablet} {
+    display: none;
+  }
 }

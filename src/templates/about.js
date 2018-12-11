@@ -2,14 +2,25 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import BlogsPreview from '../components/Blog/BlogsPreview'
-import { PageTitle } from '../components/PageTitle'
+import PageTitle from '../components/Global/PageTitle'
 
 import AboutBody from '../components/About/AboutBody'
 import AboutInfoCategory from '../components/About/AboutInfo'
 import AboutImg from '../components/About/AboutImg'
 import AboutContainer from '../components/About/AboutContainer'
 
-import { H2 } from '../utils/Typography'
+import styled from 'styled-components'
+import { H2, fontSize } from '../utils/Typography'
+import { MediaScreen } from '../utils/Styles'
+
+const AboutTitle = styled(H2)`
+  margin-bottom: 9px !important;
+  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+    /* font-size: ${fontSize.large}; */
+    line-height: 1.25 !important;
+    font-weight: 700;
+  }
+`
 
 class AboutPage extends React.Component {
   render() {
@@ -26,8 +37,7 @@ class AboutPage extends React.Component {
         ) : null}
         <AboutContainer>
           <AboutBody>
-            <H2
-              style={{ marginBottom: '9px' }}
+            <AboutTitle
               dangerouslySetInnerHTML={{
                 __html: data.wordpressAcfOptions.options.tagline,
               }}

@@ -1,29 +1,26 @@
-.contact-section{
-}
+.contact {
+  &__container {
+    padding: 2rem 1rem;
+  }
 
-.contact{
-    &__container{
-        padding: 2rem 1rem;
+  &__heading {
+    margin-bottom: 0.4375rem;
+  }
+
+  &__body {
+    max-width: $half;
+    margin: 0;
+  }
+
+  @media #{$media-tablet} {
+    margin-bottom: map-get($section-spacer, medium);
+
+    &__container {
+      padding: 0 1rem 1rem;
     }
+  }
 
-    &__heading{
-        margin-bottom: 0.4375rem;;
-    }
-
-    &__body{
-        max-width: $half;
-        margin: 0;
-    }
-
-    @media #{$media-tablet}{
-        margin-bottom: map-get($section-spacer, medium );
-
-        &__container{
-            padding: 0 1rem 1rem;
-        }
-    }
-
-    @media #{$media-desktop-small}{
-        // margin-bottom: map-get($section-spacer, large );
-    }
+  @media #{$media-desktop-small} {
+    // margin-bottom: map-get($section-spacer, large );
+  }
 }

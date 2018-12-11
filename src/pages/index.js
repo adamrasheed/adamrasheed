@@ -1,15 +1,15 @@
 import React from 'react'
-// import { Link } from 'gatsby'
-
-import Layout from '../components/layout'
-// import Image from '../components/image';
-import Hero from '../components/Hero'
-import CaseStudyPreview from '../components/CaseStudy/CaseStudyPreview'
-import BlogsPreview from '../components/Blog/BlogsPreview'
-import Contact from '../components/Contact'
 import { graphql } from 'gatsby'
 
-import '../scss/02-pages/home.scss'
+import Layout from '../components/layout'
+import Hero from '../components/Hero/Hero'
+import CaseStudyPreview from '../components/CaseStudy/Preview/CaseStudyPreview'
+import BlogsPreview from '../components/Blog/BlogsPreview'
+import Contact from '../components/Contact'
+import Container from '../components/Container'
+import PreviewHeader from '../components/PreviewHeader'
+
+// import '../scss/02-pages/home.scss'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -20,8 +20,10 @@ const IndexPage = ({ data }) => (
       }
       career={data.allWordpressAcfOptions.edges[0].node.options.career}
     />
-    <section className="section-case-studies">
-      <div className="container">
+
+    <section style={{ marginBottom: '4rem' }}>
+      <Container>
+        <PreviewHeader title="Case Studies" link="/case-studies" />
         {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
           <CaseStudyPreview
             title={node.title}
@@ -37,12 +39,13 @@ const IndexPage = ({ data }) => (
             }
           />
         ))}
-      </div>
+      </Container>
     </section>
     <section className="preview blog-preview">
-      <div className="container">
+      <Container>
+        <PreviewHeader title="Blog Articles" link="/blog" />
         <BlogsPreview posts={data.allWordpressPost.edges} />
-      </div>
+      </Container>
     </section>
     <Contact />
   </Layout>

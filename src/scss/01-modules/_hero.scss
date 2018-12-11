@@ -1,60 +1,60 @@
-.hero{
+.hero {
+  padding: 1rem 0 2rem;
 
-    padding: 1rem 0 2rem;
+  &__title,
+  &__body {
+    max-width: 516px;
+  }
 
-    &__title, &__body{
-        max-width: 516px;
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    font: $font-family-heading;
+  }
+
+  &__body {
+    margin-bottom: 1rem;
+
+    & > p {
+      margin-bottom: 1rem;
     }
+  }
 
-    &__title{
-        font-size: 1.5rem;
-        font-weight: 800;
-        line-height: 2rem;
-        margin-bottom: .5rem;
-        font: $font-family-heading;
+  @media #{$media-phone-large} {
+    padding: 2rem 0;
+
+    &__title {
+      font-size: 2rem;
+      line-height: 2.25rem;
     }
+  }
 
-    &__body{
-        margin-bottom: 1rem;
+  @media #{$media-tablet} {
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+  }
 
-        & > p {
-            margin-bottom: 1rem;
-        }
+  @media #{$media-desktop-small} {
+    margin-top: 6vh;
+    margin-bottom: 14vh;
+
+    &__title {
+      font-size: 3.5rem;
+      line-height: 4rem;
+      margin-bottom: 1rem;
+      max-width: 640px;
     }
+  }
 
-    @media #{$media-phone-large}{
-        padding: 2rem 0;
+  @media #{$media-desktop} {
+    margin-top: 5rem;
+    margin-bottom: 9rem;
 
-        &__title{
-            font-size: 2rem;
-            line-height: 2.25rem;
-        }
+    &__title {
+      font-size: 4rem;
+      line-height: 1;
     }
-
-    @media #{$media-tablet}{
-        margin-top: 4vh;
-        margin-bottom: 6vh;
-    }
-
-    @media #{$media-desktop-small}{
-        margin-top: 6vh;
-        margin-bottom: 14vh;
-
-        &__title{
-            font-size: 3.5rem;
-            line-height: 4rem;
-            margin-bottom: 1rem;
-            max-width: 640px;
-        }
-    }
-
-    @media #{$media-desktop}{
-        margin-top: 5rem;
-        margin-bottom: 9rem;
-
-        &__title{
-            font-size: 4rem;
-            line-height: 1;
-        }
-    }
+  }
 }

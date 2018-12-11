@@ -1,10 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import Post from '../components/Blog/Post'
 import Layout from '../components/layout'
 import CaseStudyCta from '../components/CaseStudy/CaseStudyCta'
 
-import { PageTitle } from '../components/PageTitle'
+import PageTitle from '../components/Global/PageTitle'
 
 import '../scss/02-pages/_case-study.scss'
 
@@ -14,7 +15,7 @@ class CaseStudy extends React.Component {
     return (
       <Layout>
         <main className="case-study">
-          <article className="case-study__content">
+          <Post caseStudy className="case-study__content">
             <PageTitle>{data.wordpressWpCaseStudies.title}</PageTitle>
             {data.wordpressWpCaseStudies.featured_media != null ? (
               <Img
@@ -44,7 +45,7 @@ class CaseStudy extends React.Component {
               }}
             />
             <CaseStudyCta />
-          </article>
+          </Post>
         </main>
       </Layout>
     )

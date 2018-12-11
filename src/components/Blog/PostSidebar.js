@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import { MediaScreen } from '../../utils/Styles'
 
 import SidebarPost from './PostSidebarPost'
-import StyledLink from '../StyledLink'
-import PreviewTitle from '../PreviewTitle'
+import StyledLink from '../Global/StyledLink'
+import PreviewTitle from '../Global/PreviewTitle'
 
 const SideBar = styled.aside`
   padding: 0 1rem;

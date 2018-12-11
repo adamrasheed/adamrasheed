@@ -1,9 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 import PostPreview from '../components/Blog/PostPreview'
-import { PageTitle } from '../components/PageTitle'
+import PageTitle from '../components/Global/PageTitle'
 import styled from 'styled-components'
 import { MediaScreen } from '../utils/Styles'
+import Container from '../components/Container'
 
 const Posts = styled.div`
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
@@ -21,7 +22,7 @@ class BlogsPage extends React.Component {
     return (
       <Layout>
         <PageTitle>{data.wordpressPage.title}</PageTitle>
-        <div className="container container--no-pad">
+        <Container noPadding>
           <Posts>
             {data.allWordpressPost.edges.map(({ node }, i) => (
               <PostPreview
@@ -33,7 +34,7 @@ class BlogsPage extends React.Component {
               />
             ))}
           </Posts>
-        </div>
+        </Container>
       </Layout>
     )
   }

@@ -5,8 +5,10 @@ import { MediaScreen } from '../../utils/Styles'
 import PostPreviewTitle from './PostPreviewTitle'
 import PostMeta from './PostPreviewMeta'
 import PostPreviewExcerpt from './PostPreviewExcerpt'
+
 const Post = styled.div`
-  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
+  padding: 0 1rem 2rem;
+  @media screen and (min-width: ${MediaScreen['screen-med']}) {
     flex: 50%;
     max-width: 50%;
     display: flex;

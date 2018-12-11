@@ -1,3 +1,6 @@
+@import '../00-global/vars';
+@import '../00-global/utils';
+
 .preview-posts {
   @media #{$media-tablet} {
     display: flex;

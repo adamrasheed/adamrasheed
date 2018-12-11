@@ -1,17 +1,40 @@
 import React from 'react'
+import styled from 'styled-components'
+import Container from '../components/Container'
+import { MediaScreen, Spacer, Color } from '../utils/Styles'
+import { H2, fontSize } from '../utils//Typography'
+
+const ContactSection = styled.section`
+  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+    margin-bottom: ${Spacer.medium};
+  }
+`
+const ContactBody = styled.div`
+  font-size: ${fontSize.small};
+  line-height: 20.16px;
+  p {
+    margin-bottom: 7px;
+    a {
+      color: ${Color.text};
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+`
 class Contact extends React.Component {
   render() {
     return (
-      <section className="section contact">
-        <div className="container contact__container">
-          <h2 className="contact__heading">Let's Talk</h2>
-          <div className="small contact__body" />
-          <p>
-            You can best reach me through{' '}
-            <a href="mailto:adamrasheed91@gmail.com">email</a>
-          </p>
-        </div>
-      </section>
+      <ContactSection>
+        <Container>
+          <H2 style={{ marginBottom: '0.4375rem' }}>Let's Talk</H2>
+          <ContactBody className="small contact__body">
+            <p>
+              You can best reach me through{' '}
+              <a href="mailto:adamrasheed91@gmail.com">email</a>
+            </p>
+          </ContactBody>
+        </Container>
+      </ContactSection>
     )
   }
 }

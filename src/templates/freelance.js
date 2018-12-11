@@ -1,8 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
+
 import Layout from '../components/layout'
-import { PageTitle } from '../components/PageTitle'
+import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
+import PostBody from '../components/PostBody'
+import Post from '../components/Blog/Post'
+
 class FreelancePage extends React.Component {
   render() {
     const { data } = this.props
@@ -10,7 +15,8 @@ class FreelancePage extends React.Component {
       <Layout>
         <PageTitle>{data.wordpressPage.title}</PageTitle>
         <Container>
-          <article
+          <Post
+            freelance
             className="post post--freelance"
             dangerouslySetInnerHTML={{
               __html: data.wordpressPage.content,

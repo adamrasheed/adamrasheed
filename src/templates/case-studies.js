@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import CaseStudyPreview from '../components/CaseStudy/CaseStudyPreview'
-import { PageTitle } from '../components/PageTitle'
+import CaseStudyPreview from '../components/CaseStudy/Preview/CaseStudyPreview'
+import PageTitle from '../components/Global/PageTitle'
 
 class FreelancePage extends React.Component {
   render() {

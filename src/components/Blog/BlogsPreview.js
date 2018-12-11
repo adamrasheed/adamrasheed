@@ -1,20 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import styled from 'styled-components'
+import Container from '../Container'
+import styled from 'styled-components'
+import { MediaScreen } from '../../utils/Styles'
 
-// const BlogPreview = styled.div``
+import '../../scss/01-modules/preview-posts.scss'
+
+const BlogPreviewSection = styled.section`
+  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+    margin-bottom: 5rem;
+  }
+`
+
 class BlogsPreview extends React.Component {
   render() {
     return (
-      <section className="preview blog-preview">
-        <div className="container">
-          <div className="preview-header">
-            <h4 className="preview-title">Blog Articles</h4>
-            <Link to="/blog" className="preview-more">
-              More Articles
-            </Link>
-          </div>
-
+      <BlogPreviewSection>
+        <Container noPadding>
           <div className="preview-content preview-posts">
             {this.props.posts.map(({ node }, i) => (
               <div className="preview-post" key={i}>
@@ -34,8 +36,8 @@ class BlogsPreview extends React.Component {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </Container>
+      </BlogPreviewSection>
     )
   }
 }

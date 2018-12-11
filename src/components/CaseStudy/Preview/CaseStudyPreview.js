@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H3 } from '../../utils/Typography'
-import { Color, MediaScreen } from '../../utils/Styles'
+import { H3 } from '../../../utils/Typography'
+import { Color, MediaScreen } from '../../../utils/Styles'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import StyledLink from '../../Global/StyledLink'
+
+import '../../../scss/01-modules/case-study-preview.scss'
 
 const PreviewTitle = styled(H3)`
   margin-bottom: 1rem;
@@ -14,11 +17,6 @@ const PreviewTitle = styled(H3)`
     font-size: 1.5rem;
     margin: 1rem 0 1.5rem;
   }
-`
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: ${Color.text};
 `
 
 const CaseStudyPreview = props => (

@@ -2,10 +2,12 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+
 import PostSidebar from '../components/Blog/PostSidebar'
 import Post from '../components/Blog/Post'
 import PostTitle from '../components/Blog/PostTitle'
 import PostMeta from '../components/Blog/PostPreviewMeta'
+import PostBody from '../components/PostBody'
 
 import { MediaScreen, ContainerSize } from '../utils/Styles'
 
@@ -32,7 +34,7 @@ class PostPage extends React.Component {
               }}
             />
             <PostMeta date={data.wordpressPost.date} p1 />
-            <div
+            <PostBody
               dangerouslySetInnerHTML={{
                 __html: data.wordpressPost.content,
               }}

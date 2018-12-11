@@ -1,41 +1,42 @@
-.btn{
-    font-size: $font-size-small;
-    font-weight: 500;
-    letter-spacing: .05em;
-    line-height: 1;
-    font-variant-caps: all-small-caps;
-    background: $color-btn-secondary;
-    color: $color-text;
+.btn {
+  font-size: $font-size-small;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  font-variant-caps: all-small-caps;
+  background: $color-btn-secondary;
+  color: $color-text;
+  text-decoration: none;
+  padding: 0.5rem 1rem 0.6rem;
+  text-align: center;
+  display: block;
+  max-width: 10rem;
+  transition: map-get($transition, short);
+
+  &:hover,
+  &:focus {
+    background: $color-btn-secondary-hover;
     text-decoration: none;
-    padding: .5rem 1rem .6rem;
-    text-align: center;
-    display: block;
-    max-width: 10rem;
-    transition: map-get($transition, short );
+  }
 
-    &:hover, &:focus{
-        background: $color-btn-secondary-hover;
-        text-decoration: none;
+  &--primary {
+    background: #ffe47a;
+    background: linear-gradient(10deg, #1fa2ff, #a6fff3);
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background: linear-gradient(10deg, #3fb0fc, #b2fdf2);
     }
+  }
 
-    &--primary{
-        background: #ffe47a;
-        background: linear-gradient(10deg, #1fa2ff, #a6fff3);
-        color: white;
-        font-weight: 600;
-        text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  &--secondary {
+    color: $color-text !important;
+  }
 
-        &:hover{
-            background: linear-gradient(10deg, #3fb0fc, #b2fdf2);
-        }
-    }
-
-    &--secondary{
-        color: $color-text !important;
-    }
-
-    &--small{
-        padding: .4rem .75rem .5rem;
-        max-width: 8rem;
-    }
+  &--small {
+    padding: 0.4rem 0.75rem 0.5rem;
+    max-width: 8rem;
+  }
 }
