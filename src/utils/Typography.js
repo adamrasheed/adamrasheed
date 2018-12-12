@@ -24,12 +24,14 @@ export const lineHeight = {
 
 export const H1 = styled.h1`
   font-family: ${font.heading};
+  font-weight: 700;
   color: ${Color.text};
 `
 export const H2 = styled.h2`
   color: ${Color.text};
   font-family: ${font.subheading};
   font-size: 1.5rem;
+  font-weight: 700;
   line-height: 2rem;
 `
 
@@ -37,17 +39,20 @@ export const H3 = styled.h3`
   color: red;
   font-family: ${font.subheading};
   font-size: 1.125rem;
+  font-weight: 700;
   line-height: 1.25rem;
 `
 
 export const H4 = styled.h4`
-  color: ${Color.text};
   font-family: ${font.subheading};
+  font-weight: 700;
+  color: ${Color.text};
 `
 
 export const H5 = styled.h5`
-  color: ${Color.text};
   font-family: ${font.subheading};
+  font-weight: 600;
+  color: ${Color.text};
 `
 
 export const P = styled.p`
@@ -56,4 +61,10 @@ export const P = styled.p`
   font-size: ${props => (props.small ? fontSize.small : fontSize.body)};
   line-height: ${props => (props.small ? '1.4' : '24px')};
   font-weight: ${props => (props.small ? '300' : '400')};
+
+  span {
+    font-size: ${props => (props.small ? fontSize.small : fontSize.body)};
+    line-height: ${props => (props.small ? '1.4' : '24px')};
+    font-weight: ${props => (props.small ? '300' : '400')};
+  }
 `
