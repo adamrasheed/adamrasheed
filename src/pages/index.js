@@ -16,11 +16,10 @@ import { font } from '../utils/Typography'
 const IndexPage = ({ data }) => (
   <Layout>
     <Hero
-      tagline={data.allWordpressAcfOptions.edges[0].node.options.tagline}
-      specialize={
-        data.allWordpressAcfOptions.edges[0].node.options.specialization
-      }
-      career={data.allWordpressAcfOptions.edges[0].node.options.career}
+      tagline={data.wordpressAcfOptions.options.tagline}
+      specialize={data.wordpressAcfOptions.options.specialization}
+      career={data.wordpressAcfOptions.options.career}
+      resume={data.wordpressAcfOptions.options.resume}
     />
 
     <section style={{ marginBottom: '4rem', fontFamily: font.body }}>
@@ -57,17 +56,13 @@ export default IndexPage
 
 export const query = graphql`
   query HeroQuery {
-    allWordpressAcfOptions {
-      edges {
-        node {
-          id
-          options {
-            title
-            tagline
-            specialization
-            career
-          }
-        }
+    wordpressAcfOptions {
+      options {
+        title
+        tagline
+        specialization
+        career
+        resume
       }
     }
     allWordpressWpCaseStudies(limit: 2) {

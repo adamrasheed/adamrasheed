@@ -22,7 +22,7 @@ const HeroBody = styled.div`
   }
 `
 
-const Hero = ({ tagline, specialize, career }) => (
+const Hero = ({ tagline, specialize, career, resume }) => (
   <HeroContainer className="hero">
     <Container className="container hero__container">
       <HeroTitle
@@ -51,6 +51,15 @@ const Hero = ({ tagline, specialize, career }) => (
             <Link to="/about">about me</Link>.
           </span>
         </P>
+        {resume ? (
+          <P>
+            Vetting me as a candidate? Download my{' '}
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              resumé
+            </a>
+            .
+          </P>
+        ) : null}
       </HeroBody>
     </Container>
   </HeroContainer>
