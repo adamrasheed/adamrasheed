@@ -29,7 +29,7 @@ class CaseStudy extends React.Component {
             ) : null}
 
             {data.wordpressWpCaseStudies.acf.overview != null ? (
-              <Container>
+              <Container small>
                 <h2>Project Overview</h2>
                 <ul>
                   {data.wordpressWpCaseStudies.acf.overview.map(point => (
@@ -40,7 +40,7 @@ class CaseStudy extends React.Component {
             ) : null}
 
             <Container
-              className="container container--smal"
+              small
               dangerouslySetInnerHTML={{
                 __html: data.wordpressWpCaseStudies.content,
               }}
