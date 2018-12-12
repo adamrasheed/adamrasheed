@@ -36,11 +36,14 @@ const Hero = ({ tagline, specialize, career, resume }) => (
             __html: specialize,
           }}
         />
-        <P
-          dangerouslySetInnerHTML={{
-            __html: career,
-          }}
-        />
+        {career ? (
+          <P
+            dangerouslySetInnerHTML={{
+              __html: career,
+            }}
+          />
+        ) : null}
+
         <P>
           I'm also taking on select freelance projects. Wanna see if we’d be a
           good fit? Learn more
