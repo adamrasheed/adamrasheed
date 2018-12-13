@@ -19,6 +19,11 @@ const HeroBody = styled.div`
     color: ${Color.text};
     text-decoration: none;
     font-weight: 600;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 `
 

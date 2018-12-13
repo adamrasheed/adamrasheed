@@ -67,4 +67,11 @@ export const P = styled.p`
     line-height: ${props => (props.small ? '1.4' : '24px')};
     font-weight: ${props => (props.small ? '300' : '400')};
   }
+
+  a {
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `

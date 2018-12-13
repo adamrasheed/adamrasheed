@@ -15,8 +15,12 @@ const Post = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    height: 25.5rem;
+    height: 23.25rem;
     padding: 0 1rem 2rem;
+  }
+
+  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
+    margin-bottom: 2rem;
   }
 `
 

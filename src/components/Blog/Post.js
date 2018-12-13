@@ -34,6 +34,11 @@ const Post = styled.article`
     color: ${Color.text};
     text-decoration: none;
     font-weight: 600;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 
   p + h2,
@@ -111,6 +116,9 @@ const Post = styled.article`
     margin: 2rem auto 2rem;
   }
 
+  strong {
+    font-weight: 700;
+  }
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     /* padding: 1rem; */
   }
