@@ -53,7 +53,7 @@ class PostPage extends React.Component {
               }}
             />
           </Post>
-          <PostSidebar slug={data.wordpressPost.slug} />
+          <PostSidebar otherPosts={data.allWordpressPost.edges} />
         </PostContainer>
       </Layout>
     )
@@ -70,6 +70,14 @@ export const query = graphql`
       date(formatString: "MMMM DD, YYYY")
       slug
       content
+    }
+    allWordpressPost(filter: { slug: { ne: $slug } }) {
+      edges {
+        node {
+          title
+          slug
+        }
+      }
     }
   }
 `

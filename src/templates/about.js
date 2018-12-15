@@ -11,9 +11,10 @@ import AboutContainer from '../components/About/AboutContainer'
 
 import styled from 'styled-components'
 import { H2, fontSize } from '../utils/Typography'
-import { MediaScreen } from '../utils/Styles'
+import { MediaScreen, animationValues } from '../utils/Styles'
 import PreviewHeader from '../components/PreviewHeader'
 import Container from '../components/Container'
+import { Spring } from 'react-spring'
 
 const AboutTitle = styled(H2)`
   margin-bottom: 9px !important;
@@ -37,42 +38,65 @@ class AboutPage extends React.Component {
     const { data } = this.props
     return (
       <Layout>
-        <PageTitle>{data.wordpressPage.title}</PageTitle>
-        {data.wordpressPage.featured_media ? (
-          <AboutImg
-            fluid={
-              data.wordpressPage.featured_media.localFile.childImageSharp.fluid
-            }
-          />
-        ) : null}
-        <AboutContainer>
-          <AboutBody>
-            <AboutTitle
-              dangerouslySetInnerHTML={{
-                __html: data.wordpressAcfOptions.options.tagline,
-              }}
-            />
-            <div
-              className="about__bio"
-              dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}
-            />
-          </AboutBody>
+        <PageTitle title={data.wordpressPage.title} />
 
-          <div
-            style={{
-              flex: 1,
-            }}
+        {data.wordpressPage.featured_media ? (
+          <Spring
+            config={{ delay: 250 }}
+            from={animationValues.fadeIn.start}
+            to={animationValues.fadeIn.end}
           >
-            <AboutInfoCategory
-              title="Talks"
-              content={data.wordpressPage.acf.talks}
-            />
-            <AboutInfoCategory
-              title="Education"
-              content={data.wordpressPage.acf.education}
-            />
-          </div>
-        </AboutContainer>
+            {props => (
+              <AboutImg
+                style={props}
+                fluid={
+                  data.wordpressPage.featured_media.localFile.childImageSharp
+                    .fluid
+                }
+              />
+            )}
+          </Spring>
+        ) : null}
+
+        <Spring
+          config={{ delay: 500 }}
+          from={{ opacity: 0 }}
+          to={{ opacity: 1 }}
+        >
+          {props => (
+            <AboutContainer style={props}>
+              <AboutBody>
+                <AboutTitle
+                  dangerouslySetInnerHTML={{
+                    __html: data.wordpressAcfOptions.options.tagline,
+                  }}
+                />
+                <div
+                  className="about__bio"
+                  dangerouslySetInnerHTML={{
+                    __html: data.wordpressPage.content,
+                  }}
+                />
+              </AboutBody>
+
+              <div
+                style={{
+                  flex: 1,
+                }}
+              >
+                <AboutInfoCategory
+                  title="Talks"
+                  content={data.wordpressPage.acf.talks}
+                />
+                <AboutInfoCategory
+                  title="Education"
+                  content={data.wordpressPage.acf.education}
+                />
+              </div>
+            </AboutContainer>
+          )}
+        </Spring>
+
         <section className="preview blog-preview">
           <Container>
             <PreviewHeader title="Blog Articles" link="/blog" />

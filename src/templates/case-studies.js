@@ -1,9 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import { Spring } from 'react-spring'
+
 import CaseStudyPreview from '../components/CaseStudy/Preview/CaseStudyPreview'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
+
+import { animationValues } from '../utils/Styles'
 
 class FreelancePage extends React.Component {
   render() {
@@ -14,19 +18,28 @@ class FreelancePage extends React.Component {
         <section className="section-case-studies">
           <Container>
             {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
-              <CaseStudyPreview
-                title={node.title}
-                key={i}
-                slug={`case-studies/${node.slug}`}
-                tags={node.tags}
-                subtitle={node.acf.subtitle}
-                teaser={node.acf.teaser}
-                image={
-                  node.featured_media != null
-                    ? node.featured_media.localFile.childImageSharp.fluid
-                    : null
-                }
-              />
+              <Spring
+                config={{ delay: i * 250 }}
+                from={animationValues.fadeIn.start}
+                to={animationValues.fadeIn.end}
+              >
+                {props => (
+                  <CaseStudyPreview
+                    style={props}
+                    title={node.title}
+                    key={i}
+                    slug={`case-studies/${node.slug}`}
+                    tags={node.tags}
+                    subtitle={node.acf.subtitle}
+                    teaser={node.acf.teaser}
+                    image={
+                      node.featured_media != null
+                        ? node.featured_media.localFile.childImageSharp.fluid
+                        : null
+                    }
+                  />
+                )}
+              </Spring>
             ))}
           </Container>
         </section>

@@ -12,6 +12,16 @@ export const Color = {
   },
 }
 
+export const animationValues = {
+  fadeIn: {
+    start: {
+      opacity: 0,
+      transform: `translateY(-5vh)`,
+    },
+    end: { opacity: 1, transform: `translateY(0)` },
+  },
+}
+
 export const Spacer = {
   small: '6rem',
   medium: '7rem',
@@ -21,7 +31,8 @@ export const Spacer = {
 export const MediaScreen = {
   'screen-sm': `360px`,
   'screen-sm-med': `480px`,
-  'screen-med': `768px`,
+  'screen-med': `640px`,
+  'screen-med-lg': `800px`,
   'screen-lg': `960px`,
   'screen-xl': `1440px`,
 }

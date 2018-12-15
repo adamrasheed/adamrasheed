@@ -27,6 +27,12 @@ const PreviewTitle = styled.div`
 
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     &:after {
+      width: ${props => (props.extraSmall ? '24px' : '64px')};
+      margin-left: 0.875rem;
+    }
+  }
+  @media screen and (min-width: ${MediaScreen['screen-med-lg']}) {
+    &:after {
       width: ${props => (props.extraSmall ? '32px' : '64px')};
       margin-left: 1rem;
     }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { MediaScreen } from '../../utils/Styles'
 
@@ -27,40 +26,26 @@ const SideBar = styled.aside`
 `
 class PostSidebar extends React.Component {
   render() {
-    const { slug: postSlug } = this.props
+    const { otherPosts } = this.props
+
+    console.log(otherPosts)
 
     return (
-      <StaticQuery
-        query={graphql`
-          query OtherPosts {
-            allWordpressPost {
-              edges {
-                node {
-                  title
-                  slug
-                }
-              }
-            }
-          }
-        `}
-        render={data => (
-          <SideBar>
-            <PreviewTitle extraSmall sidebar>
-              Other Posts
-            </PreviewTitle>
-            <ul className="sidebar__posts">
-              {data.allWordpressPost.edges.map(({ node }, i) => (
-                <SidebarPost key={i} hide={node.slug === postSlug}>
-                  <StyledLink
-                    to={`blog/${node.slug}`}
-                    dangerouslySetInnerHTML={{ __html: node.title }}
-                  />
-                </SidebarPost>
-              ))}
-            </ul>
-          </SideBar>
-        )}
-      />
+      <SideBar>
+        <PreviewTitle extraSmall sidebar>
+          Other Posts
+        </PreviewTitle>
+        <ul className="sidebar__posts">
+          {otherPosts.map(({ node }, i) => (
+            <SidebarPost key={i}>
+              <StyledLink
+                to={`blog/${node.slug}`}
+                dangerouslySetInnerHTML={{ __html: node.title }}
+              />
+            </SidebarPost>
+          ))}
+        </ul>
+      </SideBar>
     )
   }
 }

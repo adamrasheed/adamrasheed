@@ -8,7 +8,9 @@ import BlogsPreview from '../components/Blog/BlogsPreview'
 import Contact from '../components/Contact'
 import Container from '../components/Container'
 import PreviewHeader from '../components/PreviewHeader'
+import { Spring } from 'react-spring'
 
+import { animationValues } from '../utils/Styles'
 import { font } from '../utils/Typography'
 
 // import '../scss/02-pages/home.scss'
@@ -22,26 +24,36 @@ const IndexPage = ({ data }) => (
       resume={data.wordpressAcfOptions.options.resume}
     />
 
-    <section style={{ marginBottom: '4rem', fontFamily: font.body }}>
-      <Container>
-        <PreviewHeader title="Case Studies" link="/case-studies" />
-        {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
-          <CaseStudyPreview
-            title={node.title}
-            key={i}
-            slug={`case-studies/${node.slug}`}
-            tags={node.tags}
-            subtitle={node.acf.subtitle}
-            teaser={node.acf.teaser}
-            image={
-              node.featured_media != null
-                ? node.featured_media.localFile.childImageSharp.fluid
-                : null
-            }
-          />
-        ))}
-      </Container>
-    </section>
+    <Spring
+      config={{ delay: 500 }}
+      from={animationValues.fadeIn.start}
+      to={animationValues.fadeIn.end}
+    >
+      {props => (
+        <section
+          style={{ marginBottom: '4rem', fontFamily: font.body, ...props }}
+        >
+          <Container>
+            <PreviewHeader title="Case Studies" link="/case-studies" />
+            {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
+              <CaseStudyPreview
+                title={node.title}
+                key={i}
+                slug={`case-studies/${node.slug}`}
+                tags={node.tags}
+                subtitle={node.acf.subtitle}
+                teaser={node.acf.teaser}
+                image={
+                  node.featured_media != null
+                    ? node.featured_media.localFile.childImageSharp.fluid
+                    : null
+                }
+              />
+            ))}
+          </Container>
+        </section>
+      )}
+    </Spring>
 
     <section className="preview blog-preview">
       <Container>
@@ -49,6 +61,7 @@ const IndexPage = ({ data }) => (
         <BlogsPreview posts={data.allWordpressPost.edges} />
       </Container>
     </section>
+
     <Contact />
   </Layout>
 )
