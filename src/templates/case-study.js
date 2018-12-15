@@ -1,14 +1,17 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Overdrive from 'react-overdrive'
+import { Spring } from 'react-spring'
+
 import Img from 'gatsby-image'
 import Post from '../components/Blog/Post'
 import Layout from '../components/layout'
 import CaseStudyCta from '../components/CaseStudy/CaseStudyCta'
-import Overdrive from 'react-overdrive'
 import PageTitle from '../components/Global/PageTitle'
-
-import '../scss/02-pages/_case-study.scss'
 import Container from '../components/Container'
+
+import { animationValues } from '../utils/Styles'
+import '../scss/02-pages/_case-study.scss'
 
 class CaseStudy extends React.Component {
   render() {
@@ -31,22 +34,40 @@ class CaseStudy extends React.Component {
             ) : null}
 
             {data.wordpressWpCaseStudies.acf.overview != null ? (
-              <Container small>
-                <h2>Project Overview</h2>
-                <ul>
-                  {data.wordpressWpCaseStudies.acf.overview.map(point => (
-                    <li>{point.overview_point}</li>
-                  ))}
-                </ul>
-              </Container>
+              <Spring
+                config={{ delay: 250 }}
+                from={animationValues.fadeIn.start}
+                to={animationValues.fadeIn.end}
+              >
+                {styles => (
+                  <Container small style={styles}>
+                    <h2>Project Overview</h2>
+                    <ul>
+                      {data.wordpressWpCaseStudies.acf.overview.map(point => (
+                        <li>{point.overview_point}</li>
+                      ))}
+                    </ul>
+                  </Container>
+                )}
+              </Spring>
             ) : null}
 
-            <Container
-              small
-              dangerouslySetInnerHTML={{
-                __html: data.wordpressWpCaseStudies.content,
-              }}
-            />
+            <Spring
+              config={{ delay: 375 }}
+              from={animationValues.fadeIn.start}
+              to={animationValues.fadeIn.end}
+            >
+              {styles => (
+                <Container
+                  small
+                  style={styles}
+                  dangerouslySetInnerHTML={{
+                    __html: data.wordpressWpCaseStudies.content,
+                  }}
+                />
+              )}
+            </Spring>
+
             <CaseStudyCta />
           </Post>
         </main>

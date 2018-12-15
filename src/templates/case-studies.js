@@ -1,17 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { Spring } from 'react-spring'
 
 import CaseStudyPreview from '../components/CaseStudy/Preview/CaseStudyPreview'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-import { animationValues } from '../utils/Styles'
-
 class FreelancePage extends React.Component {
   render() {
     const { data } = this.props
+    console.log(data.allWordpressWpCaseStudies.edges)
     return (
       <Layout>
         <PageTitle title={data.wordpressPage.title} />
@@ -22,6 +20,7 @@ class FreelancePage extends React.Component {
                 title={node.title}
                 key={i}
                 slug={`case-studies/${node.slug}`}
+                imgIdSlug={node.slug}
                 tags={node.tags}
                 subtitle={node.acf.subtitle}
                 teaser={node.acf.teaser}

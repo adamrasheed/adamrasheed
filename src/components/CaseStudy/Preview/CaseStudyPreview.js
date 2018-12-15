@@ -87,7 +87,7 @@ const CaseStudyPreview = props => (
   <Preview className="case-study-preview">
     {props.image != null ? (
       <Link to={props.slug}>
-        <Overdrive id={props.slug}>
+        <Overdrive id={props.imgIdSlug}>
           <PreviewImg fluid={props.image} className="case-study-preview__img" />
         </Overdrive>
       </Link>

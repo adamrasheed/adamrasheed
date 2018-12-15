@@ -10,7 +10,6 @@ import Container from '../components/Container'
 import PreviewHeader from '../components/PreviewHeader'
 import { Spring } from 'react-spring'
 
-import { animationValues } from '../utils/Styles'
 import { font } from '../utils/Typography'
 
 // import '../scss/02-pages/home.scss'
@@ -24,11 +23,7 @@ const IndexPage = ({ data }) => (
       resume={data.wordpressAcfOptions.options.resume}
     />
 
-    <Spring
-      config={{ delay: 500 }}
-      from={animationValues.fadeIn.start}
-      to={animationValues.fadeIn.end}
-    >
+    <Spring config={{ delay: 750 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
       {props => (
         <section
           style={{ marginBottom: '4rem', fontFamily: font.body, ...props }}
@@ -37,6 +32,7 @@ const IndexPage = ({ data }) => (
             <PreviewHeader title="Case Studies" link="/case-studies" />
             {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
               <CaseStudyPreview
+                noAnimation={true}
                 title={node.title}
                 key={i}
                 slug={`case-studies/${node.slug}`}
