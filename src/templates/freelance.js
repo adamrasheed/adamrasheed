@@ -11,7 +11,7 @@ class FreelancePage extends React.Component {
     const { data } = this.props
     return (
       <Layout>
-        <PageTitle>{data.wordpressPage.title}</PageTitle>
+        <PageTitle title={data.wordpressPage.title} />
         <Container>
           <Post
             freelance

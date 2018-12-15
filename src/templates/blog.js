@@ -28,7 +28,7 @@ class BlogsPage extends React.Component {
     const { data } = this.props
     return (
       <Layout>
-        <PageTitle>{data.wordpressPage.title}</PageTitle>
+        <PageTitle title={data.wordpressPage.title} />
         <Container noPadding>
           <Posts>
             {data.allWordpressPost.edges.map(({ node }, i) => (

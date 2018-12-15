@@ -10,12 +10,12 @@ const HeroContainer = styled.div`
   }
 
   @media screen and (min-width: ${MediaScreen['screen-lg']}) {
-    margin-top: 6vh;
-    margin-bottom: 14vh;
+    margin-top: 4vh;
+    margin-bottom: 8vh;
   }
   @media screen and (min-width: ${MediaScreen['screen-xl']}) {
-    margin-top: 5rem;
-    margin-bottom: 12vh;
+    margin-top: 4rem;
+    margin-bottom: 8vh;
   }
 `
 
