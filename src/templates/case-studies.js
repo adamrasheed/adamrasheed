@@ -18,28 +18,19 @@ class FreelancePage extends React.Component {
         <section className="section-case-studies">
           <Container>
             {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
-              <Spring
-                config={{ delay: i * 250 }}
-                from={animationValues.fadeIn.start}
-                to={animationValues.fadeIn.end}
-              >
-                {props => (
-                  <CaseStudyPreview
-                    style={props}
-                    title={node.title}
-                    key={i}
-                    slug={`case-studies/${node.slug}`}
-                    tags={node.tags}
-                    subtitle={node.acf.subtitle}
-                    teaser={node.acf.teaser}
-                    image={
-                      node.featured_media != null
-                        ? node.featured_media.localFile.childImageSharp.fluid
-                        : null
-                    }
-                  />
-                )}
-              </Spring>
+              <CaseStudyPreview
+                title={node.title}
+                key={i}
+                slug={`case-studies/${node.slug}`}
+                tags={node.tags}
+                subtitle={node.acf.subtitle}
+                teaser={node.acf.teaser}
+                image={
+                  node.featured_media != null
+                    ? node.featured_media.localFile.childImageSharp.fluid
+                    : null
+                }
+              />
             ))}
           </Container>
         </section>

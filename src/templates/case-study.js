@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import Post from '../components/Blog/Post'
 import Layout from '../components/layout'
 import CaseStudyCta from '../components/CaseStudy/CaseStudyCta'
-
+import Overdrive from 'react-overdrive'
 import PageTitle from '../components/Global/PageTitle'
 
 import '../scss/02-pages/_case-study.scss'
@@ -16,16 +16,18 @@ class CaseStudy extends React.Component {
     return (
       <Layout>
         <main className="case-study">
-          <Post caseStudy className="case-study__content">
+          <Post caseStudy>
             <PageTitle>{data.wordpressWpCaseStudies.title}</PageTitle>
             {data.wordpressWpCaseStudies.featured_media != null ? (
-              <Img
-                className="featured-img case-study__img"
-                fluid={
-                  data.wordpressWpCaseStudies.featured_media.localFile
-                    .childImageSharp.fluid
-                }
-              />
+              <Overdrive to={data.wordpressWpCaseStudies.slug}>
+                <Img
+                  className="featured-img case-study__img"
+                  fluid={
+                    data.wordpressWpCaseStudies.featured_media.localFile
+                      .childImageSharp.fluid
+                  }
+                />
+              </Overdrive>
             ) : null}
 
             {data.wordpressWpCaseStudies.acf.overview != null ? (

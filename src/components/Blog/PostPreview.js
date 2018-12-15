@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
+import { Spring } from 'react-spring'
+
 import PostPreviewTitle from './PostPreviewTitle'
 import PostMeta from './PostPreviewMeta'
 import PostPreviewExcerpt from './PostPreviewExcerpt'
+
+import { MediaScreen, animationValues } from '../../utils/Styles'
 
 const Post = styled.div`
   padding: 0 1rem 2rem;
@@ -26,24 +29,32 @@ const Post = styled.div`
 
 class PostPreview extends React.Component {
   render() {
-    const { title, link, date, excerpt } = this.props
+    const { title, link, date, excerpt, delay } = this.props
     return (
-      <Post Blog>
-        <PostPreviewTitle Blog>
-          <Link
-            className="post__link"
-            to={link}
-            dangerouslySetInnerHTML={{ __html: title }}
-          />
-        </PostPreviewTitle>
-        <div style={{ margin: '1rem 0' }}>
-          <PostMeta date={date} />
-        </div>
-        <PostPreviewExcerpt
-          className="paragraph"
-          dangerouslySetInnerHTML={{ __html: excerpt }}
-        />
-      </Post>
+      <Spring
+        config={{ delay: delay }}
+        from={animationValues.fadeIn.start}
+        to={animationValues.fadeIn.end}
+      >
+        {props => (
+          <Post Blog style={props}>
+            <PostPreviewTitle Blog>
+              <Link
+                className="post__link"
+                to={link}
+                dangerouslySetInnerHTML={{ __html: title }}
+              />
+            </PostPreviewTitle>
+            <div style={{ margin: '1rem 0' }}>
+              <PostMeta date={date} />
+            </div>
+            <PostPreviewExcerpt
+              className="paragraph"
+              dangerouslySetInnerHTML={{ __html: excerpt }}
+            />
+          </Post>
+        )}
+      </Spring>
     )
   }
 }

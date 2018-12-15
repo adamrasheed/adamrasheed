@@ -1,10 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Post from '../components/Blog/Post'
 
 import Layout from '../components/layout'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
-import Post from '../components/Blog/Post'
+
+import { animationValues } from '../utils/Styles'
+import { Spring } from 'react-spring'
 
 class FreelancePage extends React.Component {
   render() {
@@ -12,15 +15,22 @@ class FreelancePage extends React.Component {
     return (
       <Layout>
         <PageTitle title={data.wordpressPage.title} />
-        <Container>
-          <Post
-            freelance
-            className="post post--freelance"
-            dangerouslySetInnerHTML={{
-              __html: data.wordpressPage.content,
-            }}
-          />
-        </Container>
+        <Spring
+          config={{ delay: 250 }}
+          from={animationValues.fadeIn.start}
+          to={animationValues.fadeIn.end}
+        >
+          {props => (
+            <Container style={props}>
+              <Post
+                freelance
+                dangerouslySetInnerHTML={{
+                  __html: data.wordpressPage.content,
+                }}
+              />
+            </Container>
+          )}
+        </Spring>
       </Layout>
     )
   }

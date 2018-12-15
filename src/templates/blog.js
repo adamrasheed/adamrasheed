@@ -38,6 +38,7 @@ class BlogsPage extends React.Component {
                 link={`blog/${node.slug}`}
                 excerpt={node.excerpt}
                 date={node.date}
+                delay={i * 250}
               />
             ))}
           </Posts>

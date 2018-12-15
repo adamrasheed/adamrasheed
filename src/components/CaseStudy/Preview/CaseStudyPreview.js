@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 import StyledLink from '../../Global/StyledLink'
 import { MediaScreen, Spacer } from '../../../utils/Styles'
 import { H4, P, fontSize } from '../../../utils/Typography'
+import Overdrive from 'react-overdrive'
 
 import ButtonLink from '../../ButtonLink'
 
@@ -86,7 +87,9 @@ const CaseStudyPreview = props => (
   <Preview className="case-study-preview">
     {props.image != null ? (
       <Link to={props.slug}>
-        <PreviewImg fluid={props.image} className="case-study-preview__img" />
+        <Overdrive id={props.slug}>
+          <PreviewImg fluid={props.image} className="case-study-preview__img" />
+        </Overdrive>
       </Link>
     ) : null}
     <PreviewContent className="case-study-preview__content">
