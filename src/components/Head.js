@@ -7,7 +7,7 @@ const fallbackMeta = {
 
 class Head extends React.Component {
   render() {
-    const { title, description, tagline, photo } = this.props
+    const { title, description, photo } = this.props
     return (
       <Helmet>
         <html lang="en" />

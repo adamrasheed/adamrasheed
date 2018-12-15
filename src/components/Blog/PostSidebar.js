@@ -27,6 +27,8 @@ const SideBar = styled.aside`
 `
 class PostSidebar extends React.Component {
   render() {
+    const { slug: postSlug } = this.props
+
     return (
       <StaticQuery
         query={graphql`
@@ -48,7 +50,7 @@ class PostSidebar extends React.Component {
             </PreviewTitle>
             <ul className="sidebar__posts">
               {data.allWordpressPost.edges.map(({ node }, i) => (
-                <SidebarPost key={i}>
+                <SidebarPost key={i} hide={node.slug === postSlug}>
                   <StyledLink
                     to={`blog/${node.slug}`}
                     dangerouslySetInnerHTML={{ __html: node.title }}

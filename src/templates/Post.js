@@ -53,7 +53,7 @@ class PostPage extends React.Component {
               }}
             />
           </Post>
-          <PostSidebar />
+          <PostSidebar slug={data.wordpressPost.slug} />
         </PostContainer>
       </Layout>
     )
