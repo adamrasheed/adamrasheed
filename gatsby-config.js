@@ -3,7 +3,6 @@ module.exports = {
     title: 'Adam Rasheed',
     jobTitle: `Front-end Developer`,
     siteUrl: `https://adamrasheed.com`,
-    tagLine: `I’m a Front-end Developer based in <br>San Diego, CA 🏖.`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
