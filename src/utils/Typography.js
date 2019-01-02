@@ -13,6 +13,7 @@ export const fontSize = {
   body: '14px',
   small: '0.875rem',
   extraSmall: `0.75rem`,
+  mediumLarge: `1.125rem`,
   large: '1.25rem',
 }
 
@@ -36,7 +37,7 @@ export const H2 = styled.h2`
 `
 
 export const H3 = styled.h3`
-  color: red;
+  color: ${Color.text};
   font-family: ${font.subheading};
   font-size: 1.125rem;
   font-weight: 700;
@@ -69,9 +70,17 @@ export const P = styled.p`
   }
 
   a {
+    color: red;
+
     &:focus,
     &:hover {
-      text-decoration: underline;
+      background: hsla(324, 100%, 47%, 1);
+      text-decoration: none;
     }
   }
+`
+
+export const A = styled.a`
+  color: ${Color.text};
+  text-decoration: ${props => (props.underline ? `underline` : 'none')};
 `

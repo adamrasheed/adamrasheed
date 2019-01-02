@@ -27,6 +27,12 @@ const Container = styled.div`
     }
     `
       : null};
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 `
 
 export default Container

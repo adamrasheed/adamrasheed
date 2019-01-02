@@ -5,10 +5,11 @@ export const Color = {
   link: `#3498db`,
   borderLight: `hsl(240, 4%, 95%)`,
   Btn: {
-    secondary: {
-      regular: 'hsl(204, 10%, 96%)',
-      hover: 'hsl(204, 10%, 92%)',
+    primary: {
+      regular: `linear-gradient(217.55deg, rgba(242, 201, 76, 0.81) -0.14%, #FF9F80 99.19%)`,
+      hover: `linear-gradient(217.55deg, rgba(242, 201, 76, 0.69) -0.14%, #FF9F80 99.19%)`,
     },
+    secondary: { regular: 'hsl(204, 10%, 96%)', hover: 'hsl(204, 10%, 92%)' },
   },
 }
 

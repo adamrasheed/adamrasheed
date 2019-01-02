@@ -12,10 +12,6 @@ const PostTitle = styled(H1)`
     line-height: 2.5rem;
     margin-bottom: 1rem;
   }
-
-  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
-    margin-bottom: 2rem;
-  }
 `
 
 export default PostTitle

@@ -10,6 +10,7 @@ import PostMeta from '../components/Blog/PostPreviewMeta'
 import PostBody from '../components/PostBody'
 
 import { MediaScreen, ContainerSize } from '../utils/Styles'
+import PostCta from '../components/Blog/PostCta'
 
 const PostContainer = styled.main`
   max-width: ${ContainerSize['container-size']};
@@ -30,30 +31,38 @@ class PostPage extends React.Component {
         <PostContainer>
           <Post blog>
             <PostTitle
-              style={{
-                paddingBottom: '1rem',
-              }}
-              dangerouslySetInnerHTML={{
-                __html: data.wordpressPost.title,
-              }}
+              dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }}
             />
             <PostMeta
               date={data.wordpressPost.date}
-              style={{
-                display: 'block',
-                paddingBottom: '1rem',
-              }}
+              style={{ display: 'block', paddingBottom: '1rem' }}
             />
             <PostBody
-              style={{
-                paddingTop: '1rem',
-              }}
-              dangerouslySetInnerHTML={{
-                __html: data.wordpressPost.content,
-              }}
+              style={{ paddingTop: '1rem' }}
+              dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
+            />
+            <PostCta
+              title={
+                data.wordpressPost.acf.cta_title
+                  ? data.wordpressPost.acf.cta_title
+                  : null
+              }
+              subtitle={
+                data.wordpressPost.acf.cta_description
+                  ? data.wordpressPost.acf.cta_description
+                  : null
+              }
+              formId={
+                data.wordpressPost.acf.convertkit_form_id
+                  ? data.wordpressPost.acf.convertkit_form_id
+                  : null
+              }
             />
           </Post>
-          <PostSidebar otherPosts={data.allWordpressPost.edges} />
+          <PostSidebar
+            otherPosts={data.allWordpressPost.edges}
+            tags={data.wordpressPost.tags ? data.wordpressPost.tags : null}
+          />
         </PostContainer>
       </Layout>
     )
@@ -70,6 +79,15 @@ export const query = graphql`
       date(formatString: "MMMM DD, YYYY")
       slug
       content
+      acf {
+        cta_title
+        cta_description
+        convertkit_form_id
+      }
+      tags {
+        name
+        id
+      }
     }
     allWordpressPost(filter: { slug: { ne: $slug } }) {
       edges {

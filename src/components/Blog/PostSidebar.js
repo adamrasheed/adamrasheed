@@ -5,6 +5,7 @@ import { MediaScreen } from '../../utils/Styles'
 import SidebarPost from './PostSidebarPost'
 import StyledLink from '../Global/StyledLink'
 import PreviewTitle from '../Global/PreviewTitle'
+import ShopifyAd from '../ShopifyAd'
 
 const SideBar = styled.aside`
   padding: 0 1rem;
@@ -14,28 +15,40 @@ const SideBar = styled.aside`
     max-width: 24rem;
   }
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
-    max-width: 11rem;
-    margin: 2rem 0 0 3rem;
+    max-width: 13rem;
+    margin: 1rem 0 0 1rem;
     flex: 100%;
+    padding: 0;
+  }
+  @media screen and (min-width: ${MediaScreen['screen-med-lg']}) {
+    margin: 2rem 0 0 3rem;
+    max-width: 16rem;
+    padding: 0 1rem;
   }
 
   @media screen and (min-width: ${MediaScreen['screen-lg']}) {
-    max-width: 16rem;
     margin: 2rem 0 0 9rem;
+  }
+`
+
+const SidebarPosts = styled.ul`
+  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+    margin-bottom: 2rem;
+  }
+  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
+    margin-bottom: 4rem;
   }
 `
 class PostSidebar extends React.Component {
   render() {
-    const { otherPosts } = this.props
-
-    console.log(otherPosts)
+    const { otherPosts, tags } = this.props
 
     return (
       <SideBar>
         <PreviewTitle extraSmall sidebar>
           Other Posts
         </PreviewTitle>
-        <ul className="sidebar__posts">
+        <SidebarPosts>
           {otherPosts.map(({ node }, i) => (
             <SidebarPost key={i}>
               <StyledLink
@@ -44,7 +57,13 @@ class PostSidebar extends React.Component {
               />
             </SidebarPost>
           ))}
-        </ul>
+        </SidebarPosts>
+        {tags
+          ? tags.map(
+              tag =>
+                tag.name === 'shopify' ? <ShopifyAd key={tag.id} /> : null
+            )
+          : null}
       </SideBar>
     )
   }
