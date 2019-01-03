@@ -18,7 +18,8 @@ const Input = styled.input`
   display: block;
   box-shadow: inset 0 0 0 1px ${Color.textLight};
   border: none;
-  font-size: ${fontSize.body};
+  font-size: ${fontSize.base};
+  line-height: 1;
   padding: 6px 10px;
   margin-bottom: 1rem;
   width: 100%;
