@@ -79,12 +79,16 @@ class Form extends Component {
     first_name: '',
     email: '',
     endPoint: ``,
-    formStatus: ``,
-    formMessage: ``,
+    formStatus: null,
+    formMessage: null,
   }
 
   componentDidMount() {
-    this.setState({ endPoint: ConvertKit(this.props.formId) })
+    this.setState({
+      endPoint: ConvertKit(this.props.formId),
+      formStatus: null,
+      formMessage: null,
+    })
   }
 
   handleSubmit = event => {
