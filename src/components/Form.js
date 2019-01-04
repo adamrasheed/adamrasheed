@@ -114,7 +114,7 @@ class Form extends Component {
             })
           : this.setState({
               formStatus: 'success',
-              formMessage: `Thanks for signing up ${
+              formMessage: `Thanks ${
                 data.subscription.subscriber.first_name
               }! Please check your email for confirmation.`,
             })
