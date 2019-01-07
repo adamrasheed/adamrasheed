@@ -70,12 +70,28 @@ export const P = styled.p`
   }
 
   a {
-    color: red;
-
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 40%;
+      width: 120%;
+      top: 60%;
+      left: -5%;
+      z-index: -1;
+      background: hsl(66, 100%, 61%);
+      opacity: 0;
+      clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+      transition: all 0.15s ease-in-out;
+    }
     &:focus,
     &:hover {
-      background: hsla(324, 100%, 47%, 1);
-      text-decoration: none;
+      text-decoration: none !important;
+      &:after {
+        color: white !important;
+        opacity: 1;
+      }
     }
   }
 `
