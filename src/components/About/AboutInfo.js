@@ -10,6 +10,7 @@ const LinkCategory = styled.div`
   flex-flow: row wrap;
   align-items: flex-start;
   margin-bottom: 1.5rem;
+
   @media (min-width: ${MediaScreen['screen-sm-med']}) {
     display: block;
     margin: 0 auto;

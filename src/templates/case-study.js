@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Overdrive from 'react-overdrive'
 import { Spring } from 'react-spring'
 
 import Img from 'gatsby-image'
@@ -22,15 +21,13 @@ class CaseStudy extends React.Component {
           <Post caseStudy>
             <PageTitle>{data.wordpressWpCaseStudies.title}</PageTitle>
             {data.wordpressWpCaseStudies.featured_media != null ? (
-              <Overdrive to={data.wordpressWpCaseStudies.slug}>
-                <Img
-                  className="featured-img case-study__img"
-                  fluid={
-                    data.wordpressWpCaseStudies.featured_media.localFile
-                      .childImageSharp.fluid
-                  }
-                />
-              </Overdrive>
+              <Img
+                className="featured-img case-study__img"
+                fluid={
+                  data.wordpressWpCaseStudies.featured_media.localFile
+                    .childImageSharp.fluid
+                }
+              />
             ) : null}
 
             {data.wordpressWpCaseStudies.acf.overview != null ? (

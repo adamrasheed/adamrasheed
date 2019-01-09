@@ -71,6 +71,7 @@ class AboutPage extends React.Component {
                     __html: data.wordpressAcfOptions.options.tagline,
                   }}
                 />
+
                 <div
                   className="about__bio"
                   dangerouslySetInnerHTML={{
@@ -79,11 +80,7 @@ class AboutPage extends React.Component {
                 />
               </AboutBody>
 
-              <div
-                style={{
-                  flex: 1,
-                }}
-              >
+              <div style={{ flex: 1 }}>
                 <AboutInfoCategory
                   title="Talks"
                   content={data.wordpressPage.acf.talks}

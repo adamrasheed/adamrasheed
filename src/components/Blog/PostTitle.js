@@ -10,7 +10,7 @@ const PostTitle = styled(H1)`
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     font-size: 1.75rem;
     line-height: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.625rem;
   }
 `
 

@@ -12,8 +12,6 @@ import { Spring } from 'react-spring'
 
 import { font } from '../utils/Typography'
 
-// import '../scss/02-pages/home.scss'
-
 const IndexPage = ({ data }) => (
   <Layout>
     <Hero

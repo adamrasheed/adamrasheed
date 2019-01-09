@@ -8,6 +8,7 @@ import { Spring } from 'react-spring'
 import Container from '../Container'
 import HeroTitle from './HeroTitle.js'
 import HeroContainer from './HeroContainer'
+import Weather from '../About/Weather'
 
 const HeroBody = styled.div`
   margin-bottom: 1rem;
@@ -48,6 +49,9 @@ const Hero = ({ tagline, specialize, career, resume }) => (
                 __html: specialize,
               }}
             />
+            {/*
+            <Weather />
+            */}
             {career ? (
               <P
                 dangerouslySetInnerHTML={{
@@ -55,7 +59,6 @@ const Hero = ({ tagline, specialize, career, resume }) => (
                 }}
               />
             ) : null}
-
             <P>
               I'm also taking on select freelance projects. Wanna see if we’d be
               a good fit? Learn more

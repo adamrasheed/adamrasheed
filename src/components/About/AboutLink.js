@@ -4,14 +4,19 @@ import { MediaScreen, Color } from '../../utils/Styles'
 import { H5, P } from '../../utils/Typography'
 
 const StyledAboutLink = styled.div`
-  flex: 50% 1;
-  max-width: 50%;
-  margin-bottom: 1rem;
-  padding-right: 0.25rem;
+  flex: 100% 1;
+  margin-bottom: 1.5rem;
   font-weight: 600;
 
   &:first-of-type {
     padding-right: 1rem;
+  }
+
+  @media (min-width: ${MediaScreen['screen-sm']}) {
+    flex: 50% 1;
+    max-width: 50%;
+    padding-right: 0.25rem;
+    margin-bottom: 1rem;
   }
 
   @media (min-width: ${MediaScreen['screen-sm-med']}) {
