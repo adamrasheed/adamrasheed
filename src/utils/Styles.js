@@ -4,6 +4,7 @@ export const Color = {
   textExtraLight: `hsl(220, 13%, 91%)`,
   link: `#3498db`,
   borderLight: `hsl(240, 4%, 95%)`,
+  accent: `hsl(66, 100%, 61%)`,
   Btn: {
     primary: {
       regular: `linear-gradient(217.55deg, rgba(242, 201, 76, 0.81) -0.14%, #FF9F80 99.19%)`,

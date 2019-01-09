@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MediaScreen, Color } from '../../utils/Styles'
-import { H5, P } from '../../utils/Typography'
+import { H5, P, A } from '../../utils/Typography'
 
 const StyledAboutLink = styled.div`
   flex: 100% 1;
@@ -36,17 +36,9 @@ class AboutLink extends React.Component {
     return (
       <StyledAboutLink>
         <AboutLinkTitle>
-          <a
-            href={url}
-            style={{
-              color: Color.text,
-              textDecoration: 'none',
-            }}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <A href={url} target="_blank" rel="noopener noreferrer">
             {title}
-          </a>
+          </A>
         </AboutLinkTitle>
         <P small>{description}</P>
       </StyledAboutLink>

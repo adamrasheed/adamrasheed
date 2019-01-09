@@ -33,6 +33,11 @@ const Container = styled.div`
     height: auto;
     display: block;
   }
+
+  a {
+    color: ${Color.text};
+    text-decoration: none;
+  }
 `
 
 export default Container

@@ -10,6 +10,32 @@ const AboutBody = styled.div`
     margin-bottom: 1rem;
     font-size: ${fontSize.body};
     line-height: ${lineHeight.body};
+
+    a {
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 40%;
+        width: 120%;
+        top: 60%;
+        left: -5%;
+        z-index: -1;
+        background: ${Color.accent};
+        opacity: 0;
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        transition: all 0.15s ease-in-out;
+      }
+      &:focus,
+      &:hover {
+        text-decoration: none !important;
+        &:after {
+          color: white !important;
+          opacity: 1;
+        }
+      }
+    }
   }
 
   a {

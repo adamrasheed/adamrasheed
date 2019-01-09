@@ -80,7 +80,7 @@ export const P = styled.p`
       top: 60%;
       left: -5%;
       z-index: -1;
-      background: hsl(66, 100%, 61%);
+      background: ${Color.accent};
       opacity: 0;
       clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
       transition: all 0.15s ease-in-out;
@@ -99,4 +99,34 @@ export const P = styled.p`
 export const A = styled.a`
   color: ${Color.text};
   text-decoration: ${props => (props.underline ? `underline` : 'none')};
+  display: ${props => (props.block ? `block` : `inherit`)};
+`
+
+export const AccentLink = styled.a`
+  position: relative;
+  color: ${Color.text};
+  display: ${props => (props.full ? `block` : `inline-block`)};
+  text-decoration: none !important;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: ${props => (props.full ? `85%` : `40%`)};
+    width: 120%;
+    bottom: ${props => (props.full ? `-20%` : `-15%`)};
+    left: -5%;
+    z-index: -1;
+    background: ${Color.accent};
+    opacity: 0;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    transition: all 0.15s ease-in-out;
+  }
+  &:focus,
+  &:hover {
+    text-decoration: none !important;
+    &:after {
+      color: white !important;
+      opacity: 1;
+    }
+  }
 `

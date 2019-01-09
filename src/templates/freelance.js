@@ -21,7 +21,7 @@ class FreelancePage extends React.Component {
           to={animationValues.fadeIn.end}
         >
           {props => (
-            <Container style={props}>
+            <Container accent style={props}>
               <Post
                 freelance
                 dangerouslySetInnerHTML={{
