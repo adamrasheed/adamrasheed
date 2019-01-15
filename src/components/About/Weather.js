@@ -30,22 +30,20 @@ class Weather extends React.Component {
     const temp = main.temp
     const currentWeather = weather[0].description
     const farenheitTemp = `${kelvintoFarenheit(temp)}˚`
-    this.addAction(weather[0].main)
+    const action = this.addAction(weather[0].main)
 
     this.setState({
       currentTemperature: farenheitTemp,
       currentWeather: currentWeather,
       location: name,
-      action: this.addAction(weather[0].main),
+      action: action,
     })
   }
 
   addAction = currentWeather => {
     if (currentWeather == `Rain`) {
-      console.log(`curled up under blankets and wishing the sun was out`)
       return `curled up under blankets and wishing the sun was out`
     }
-    console.log(`enjoying the sun`)
     return `enjoying the sun`
   }
 
