@@ -5,7 +5,7 @@ import { kelvintoFarenheit } from '../../utils/helpers'
 
 const zip = `92109`
 const APIKey = `1e61d6bb275e9c08609c58e51ec0f728`
-const endpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&APPID=${APIKey}`
+const endpoint = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&APPID=${APIKey}`
 
 class Weather extends React.Component {
   state = {
