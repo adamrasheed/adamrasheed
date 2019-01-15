@@ -49,19 +49,20 @@ const Hero = ({ tagline, specialize, career, resume }) => (
                 __html: specialize,
               }}
             />
-            {/*
             <Weather />
-            */}
-            {career ? (
-              <P
+            {/*
+              {career ? (
+                <P
                 dangerouslySetInnerHTML={{
                   __html: career,
                 }}
-              />
-            ) : null}
+                />
+                ) : null}
+              */}
             <P>
               I'm also taking on select freelance projects. Wanna see if we’d be
-              a good fit? Learn more
+              a good fit? <br />
+              Learn more
               <span
                 className="ib"
                 style={{ marginLeft: '0.35rem', fontFamily: font.body }}
@@ -69,15 +70,6 @@ const Hero = ({ tagline, specialize, career, resume }) => (
                 <Link to="/about">about me</Link>.
               </span>
             </P>
-            {resume ? (
-              <P>
-                Vetting me as a candidate? Download my{' '}
-                <a href={resume} target="_blank" rel="noopener noreferrer">
-                  resumé
-                </a>
-                .
-              </P>
-            ) : null}
           </HeroBody>
         </Container>
       </HeroContainer>

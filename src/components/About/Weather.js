@@ -11,6 +11,8 @@ class Weather extends React.Component {
   state = {
     currentTemperature: null,
     currentWeather: null,
+    action: null,
+    location: null,
   }
   getWeatherData = () => {
     console.log('getting weather')
@@ -19,18 +21,32 @@ class Weather extends React.Component {
       .get(endpoint)
       .then(resp => {
         this.prettifyWeather(resp)
+        console.log(resp.data)
       })
       .catch(error => console.log(error))
   }
 
-  prettifyWeather = ({ data: { main, weather } }) => {
+  prettifyWeather = ({ data: { main, weather, name } }) => {
     const temp = main.temp
     const currentWeather = weather[0].description
     const farenheitTemp = `${kelvintoFarenheit(temp)}˚`
+    this.addAction(weather[0].main)
+
     this.setState({
       currentTemperature: farenheitTemp,
       currentWeather: currentWeather,
+      location: name,
+      action: this.addAction(weather[0].main),
     })
+  }
+
+  addAction = currentWeather => {
+    if (currentWeather == `Rain`) {
+      console.log(`curled up under blankets and wishing the sun was out`)
+      return `curled up under blankets and wishing the sun was out`
+    }
+    console.log(`enjoying the sun`)
+    return `enjoying the sun`
   }
 
   componentDidMount() {
@@ -44,8 +60,9 @@ class Weather extends React.Component {
       <>
         {this.state.currentTemperature && (
           <P className="Weather">
-            Currently {this.state.currentTemperature} with{' '}
-            {this.state.currentWeather} in San Diego.
+            Currently {this.state.action} because its{' '}
+            {this.state.currentTemperature} with {this.state.currentWeather} in{' '}
+            {this.state.location}.
           </P>
         )}
       </>
