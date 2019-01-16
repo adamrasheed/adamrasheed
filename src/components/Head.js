@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 
 const fallbackMeta = {
   title: 'Adam Rasheed | San Diego Front-end Developer',
+  description: `Adam Rasheed is a front-end developer who specializes in custom Shopify theme development and custom WordPress theme development, and GatsbyJS Development`,
 }
 
 class Head extends React.Component {
@@ -33,9 +34,6 @@ class Head extends React.Component {
         />
         {/*<!-- Twitter -->*/}
         <meta name="twitter:card" content="summary_large_image" />
-        {description ? (
-          <meta name="twitter:card" content={description} />
-        ) : null}
 
         <meta
           name="twitter:title"
@@ -47,18 +45,17 @@ class Head extends React.Component {
         <meta name="twitter:creator" content="@arasheedphoto" />
         <meta
           name="twitter:description"
-          content={
-            description
-              ? description
-              : 'Adam Rasheed is a front-end developer based in San Diego, California who specializes in custom Shopify theme development and custom WordPress theme development'
-          }
+          content={description ? description : ''}
         />
         {photo ? <meta name="twitter:image:src" content={photo} /> : null}
 
         {/*<!-- Open Graph general (Facebook, Pinterest & Google+) -->*/}
         <meta name="og:title" content={title ? title : fallbackMeta.title} />
         {photo ? <meta name="og:image" content={photo} /> : null}
-
+        <meta
+          name="og:description"
+          content={description ? description : fallbackMeta.description}
+        />
         <meta name="og:url" content="https://adamrasheed.com" />
         <meta name="og:site_name" content="Adam Rasheed" />
         <meta name="og:type" content="website" />

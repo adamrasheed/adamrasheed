@@ -41,6 +41,7 @@ class Weather extends React.Component {
   }
 
   addAction = currentWeather => {
+    // eslint-disable-next-line
     if (currentWeather == `Rain`) {
       return `curled up under blankets and wishing the sun was out`
     }

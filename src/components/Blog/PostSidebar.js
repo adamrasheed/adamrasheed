@@ -5,7 +5,8 @@ import { MediaScreen } from '../../utils/Styles'
 import SidebarPost from './PostSidebarPost'
 import StyledLink from '../Global/StyledLink'
 import PreviewTitle from '../Global/PreviewTitle'
-import ShopifyAd from '../ShopifyAd'
+import ShopifyAd from './ShopifyAd'
+import DigitalOceanAd from './DigitalOceanAd'
 
 const SideBar = styled.aside`
   padding: 0 1rem;
@@ -40,8 +41,32 @@ const SidebarPosts = styled.ul`
   }
 `
 class PostSidebar extends React.Component {
+  state = {
+    featuredTag: null,
+  }
+
+  componentDidMount() {
+    const { tags } = this.props
+    let featuredTag
+    tags.forEach(tag => {
+      switch (tag.name) {
+        case `shopify`:
+        case `Shopify`:
+          featuredTag = tag.name
+          break
+        case `Digital Ocean`:
+        case `DigitalOcean`:
+          featuredTag = tag.name
+          break
+        default:
+          return
+      }
+    })
+    console.log(featuredTag)
+    this.setState({ featuredTag })
+  }
   render() {
-    const { otherPosts, tags } = this.props
+    const { otherPosts } = this.props
 
     return (
       <SideBar>
@@ -58,12 +83,11 @@ class PostSidebar extends React.Component {
             </SidebarPost>
           ))}
         </SidebarPosts>
-        {tags
-          ? tags.map(
-              tag =>
-                tag.name === 'shopify' ? <ShopifyAd key={tag.id} /> : null
-            )
-          : null}
+        {this.state.featuredTag === `shopify` ||
+        this.state.featuredTag === `Shopify` ? (
+          <ShopifyAd />
+        ) : null}
+        {this.state.featuredTag === `Digital Ocean` ? <DigitalOceanAd /> : null}
       </SideBar>
     )
   }

@@ -19,7 +19,7 @@ const PostContainer = styled.main`
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 0 1rem;
   }
 `

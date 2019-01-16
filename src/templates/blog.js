@@ -55,7 +55,7 @@ export const query = graphql`
     wordpressPage(slug: { eq: "blog" }) {
       title
     }
-    allWordpressPost {
+    allWordpressPost(sort: { fields: [date], order: DESC }) {
       edges {
         node {
           title

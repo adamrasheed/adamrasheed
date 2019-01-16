@@ -10,7 +10,7 @@ const PostPreviewTitle = styled(H2)`
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     font-size: 1.75rem;
     line-height: 2.5rem;
-    margin-bottom: ${props => (props.Blog ? 'auto' : '0')};
+    margin-bottom: ${props => (props.Blog ? '0' : '0')};
   }
 
   & > a {

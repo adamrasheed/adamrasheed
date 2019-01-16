@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MediaScreen, Color } from '../../utils/Styles'
+import { MediaScreen } from '../../utils/Styles'
 import { H5, P, A } from '../../utils/Typography'
 
 const StyledAboutLink = styled.div`
