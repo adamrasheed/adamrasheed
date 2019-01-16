@@ -16,7 +16,8 @@ const Label = styled.label`
 
 const Input = styled.input`
   display: block;
-  box-shadow: inset 0 0 0 1px ${Color.textLight};
+  box-shadow: inset 0 0 0 1px
+    ${props => (props.status === `error` ? `red` : Color.textLight)};
   border: none;
   font-size: ${fontSize.base};
   line-height: 1;
@@ -76,8 +77,8 @@ const Msg = styled(P)`
 
 class Form extends Component {
   state = {
-    first_name: '',
-    email: '',
+    first_name: ``,
+    email: ``,
     endPoint: ``,
     formStatus: null,
     formMessage: null,
@@ -129,13 +130,8 @@ class Form extends Component {
   }
 
   handleChange = event => {
-    const { target } = event
-    const { value, name } = target
-    if (name === 'email') {
-      this.setState({ email: value })
-    } else if (name === 'name') {
-      this.setState({ first_name: value })
-    }
+    const { value, name } = event.target
+    this.setState({ [name]: value, formStatus: null })
   }
 
   render() {
@@ -146,12 +142,17 @@ class Form extends Component {
           value={this.state.first_name}
           type="text"
           id="nameInput"
-          name="name"
+          name="first_name"
           onChange={this.handleChange}
         />
-        <Label htmlFor="nameInput">Email</Label>
+        <Label htmlFor="nameInput">Email*</Label>
         <Input
           value={this.state.email}
+          status={
+            this.state.formStatus && this.state.formStatus === `error`
+              ? `error`
+              : null
+          }
           type="email"
           id="emailInput"
           name="email"

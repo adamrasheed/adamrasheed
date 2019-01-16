@@ -48,22 +48,25 @@ class PostSidebar extends React.Component {
   componentDidMount() {
     const { tags } = this.props
     let featuredTag
-    tags.forEach(tag => {
-      switch (tag.name) {
-        case `shopify`:
-        case `Shopify`:
-          featuredTag = tag.name
-          break
-        case `Digital Ocean`:
-        case `DigitalOcean`:
-          featuredTag = tag.name
-          break
-        default:
-          return
-      }
-    })
-    console.log(featuredTag)
-    this.setState({ featuredTag })
+
+    if (tags && tags.length) {
+      tags.forEach(tag => {
+        switch (tag.name) {
+          case `shopify`:
+          case `Shopify`:
+            featuredTag = tag.name
+            break
+          case `Digital Ocean`:
+          case `DigitalOcean`:
+            featuredTag = tag.name
+            break
+          default:
+            return
+        }
+      })
+      console.log(featuredTag)
+      this.setState({ featuredTag })
+    }
   }
   render() {
     const { otherPosts } = this.props

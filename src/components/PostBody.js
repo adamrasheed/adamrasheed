@@ -4,8 +4,8 @@ import { fontSize, font, lineHeight } from '../utils/Typography'
 
 const PostBody = styled.div`
   h2 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     margin-bottom: 0.25rem;
   }
 
