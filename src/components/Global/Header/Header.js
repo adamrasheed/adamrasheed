@@ -37,26 +37,19 @@ class Header extends React.Component {
   render() {
     const { siteTitle, jobTitle } = this.props
     return (
-      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
-        {props => (
-          <header className="header" style={props}>
-            <HeaderContainer>
-              <SiteLogo title={siteTitle} desc={jobTitle} />
-              <MobNavToggle
-                onClick={this.handleClick}
-                active={this.state.active}
-              >
-                <span className="span-1" />
-                <span className="span-2" />
-                <span className="span-3" />
-              </MobNavToggle>
+      <header className="header" style={props}>
+        <HeaderContainer>
+          <SiteLogo title={siteTitle} desc={jobTitle} />
+          <MobNavToggle onClick={this.handleClick} active={this.state.active}>
+            <span className="span-1" />
+            <span className="span-2" />
+            <span className="span-3" />
+          </MobNavToggle>
 
-              <Navigation />
-              <MobileNav active={this.state.active} />
-            </HeaderContainer>
-          </header>
-        )}
-      </Spring>
+          <Navigation />
+          <MobileNav active={this.state.active} />
+        </HeaderContainer>
+      </header>
     )
   }
 }
