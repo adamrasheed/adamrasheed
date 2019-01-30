@@ -8,7 +8,6 @@ import MobNavToggle from './MobNavToggle'
 import Container from '../../Container'
 
 import { font } from '../../../utils/Typography'
-import { Spring } from 'react-spring'
 
 const HeaderContainer = styled(Container)`
   display: flex;
@@ -37,7 +36,7 @@ class Header extends React.Component {
   render() {
     const { siteTitle, jobTitle } = this.props
     return (
-      <header className="header" style={props}>
+      <header className="header">
         <HeaderContainer>
           <SiteLogo title={siteTitle} desc={jobTitle} />
           <MobNavToggle onClick={this.handleClick} active={this.state.active}>
