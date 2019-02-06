@@ -3,7 +3,7 @@ import axios from 'axios'
 import { P } from '../../utils/Typography'
 import { kelvintoFarenheit } from '../../utils/helpers'
 
-const zip = `92109`
+const zip = `92618`
 const APIKey = `1e61d6bb275e9c08609c58e51ec0f728`
 const endpoint = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&APPID=${APIKey}`
 

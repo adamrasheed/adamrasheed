@@ -50,15 +50,13 @@ const Hero = ({ tagline, specialize, career, resume }) => (
               }}
             />
             <Weather />
-            {/*
-              {career ? (
-                <P
+            {career ? (
+              <P
                 dangerouslySetInnerHTML={{
                   __html: career,
                 }}
-                />
-                ) : null}
-              */}
+              />
+            ) : null}
             <P>
               I'm also taking on select freelance projects. Wanna see if we’d be
               a good fit? <br />
