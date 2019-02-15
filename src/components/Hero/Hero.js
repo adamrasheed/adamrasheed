@@ -12,7 +12,7 @@ import Weather from '../About/Weather'
 
 const HeroBody = styled.div`
   margin-bottom: 1rem;
-  max-width: 620px;
+  max-width: 680px;
   & > p {
     margin-bottom: 0.75rem;
   }
@@ -29,7 +29,7 @@ const HeroBody = styled.div`
   }
 `
 
-const Hero = ({ tagline, specialize, career, resume }) => (
+const Hero = ({ tagline, specialize, career, resume, hideCareer }) => (
   <Spring
     config={{ delay: 250 }}
     from={animationValues.fadeIn.start}
@@ -49,8 +49,8 @@ const Hero = ({ tagline, specialize, career, resume }) => (
                 __html: specialize,
               }}
             />
-            <Weather />
-            {career ? (
+            {/*<Weather />*/}
+            {!hideCareer && career ? (
               <P
                 dangerouslySetInnerHTML={{
                   __html: career,

@@ -9,25 +9,25 @@ const HeroTitle = styled(H1)`
   margin-bottom: 0.5rem;
   max-width: 620px;
   @media screen and (min-width: ${MediaScreen['screen-sm']}) {
-    font-size: 2rem;
+    font-size: 1.625rem;
     line-height: 2.25rem;
   }
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
-    font-size: 2rem;
+    font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
   @media screen and (min-width: ${MediaScreen['screen-lg']}) {
-    font-size: 3.5rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     margin-bottom: 1rem;
-    max-width: 640px;
+    max-width: 680px;
   }
 
   @media screen and (min-width: ${MediaScreen['screen-xl']}) {
-    font-size: 4rem;
-    line-height: 1.125;
-    margin-bottom: 1.5rem;
+    font-size: 2.75rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.25rem;
   }
 `
 

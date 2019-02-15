@@ -19,6 +19,7 @@ const IndexPage = ({ data }) => (
       specialize={data.wordpressAcfOptions.options.specialization}
       career={data.wordpressAcfOptions.options.career}
       resume={data.wordpressAcfOptions.options.resume}
+      hideCareer={data.wordpressAcfOptions.options.hide_career}
     />
 
     <Spring config={{ delay: 750 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
@@ -70,6 +71,7 @@ export const query = graphql`
         specialization
         career
         resume
+        hide_career
       }
     }
     allWordpressWpCaseStudies(limit: 2) {
