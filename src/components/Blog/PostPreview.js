@@ -4,11 +4,11 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
 
+import { MediaScreen, animationValues } from 'src/utils/styles'
 import PostPreviewTitle from './PostPreviewTitle'
 import PostMeta from './PostPreviewMeta'
 import PostPreviewExcerpt from './PostPreviewExcerpt'
 
-import { MediaScreen, animationValues } from '../../utils/styles'
 
 const Post = styled.div`
   padding: 0 1rem 2rem;

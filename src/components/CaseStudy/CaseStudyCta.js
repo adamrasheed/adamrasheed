@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Color, transition } from '../../utils/styles'
-import { fontSize } from '../../utils/Typography'
+import { Color, transition } from 'src/utils/styles'
+import { fontSize } from 'src/utils/Typography'
 
 const Btn = styled.a`
   font-size: ${fontSize.small};

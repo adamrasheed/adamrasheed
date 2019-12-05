@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
@@ -84,7 +85,6 @@ const PreviewTag = styled.li`
 `
 
 const CaseStudyPreview = ({
-  // eslint-disable-next-line react/prop-types
   image, title, slug, teaser, subtitle, tags,
 }) => (
   <Preview className="case-study-preview">
@@ -99,11 +99,11 @@ const CaseStudyPreview = ({
       </PreviewTitle>
       <ul className="case-study-preview__tags">
         {tags
-           && tags.map((tag, i) => (
-             <PreviewTag className="case-study-preview__tag" key={i}>
-               {tag.name}
-             </PreviewTag>
-           ))}
+          && tags.map((tag) => (
+            <PreviewTag className="case-study-preview__tag" key={tag.name}>
+              {tag.name}
+            </PreviewTag>
+          ))}
       </ul>
 
       <PreviewBody>
@@ -124,3 +124,20 @@ const CaseStudyPreview = ({
 )
 
 export default CaseStudyPreview
+
+CaseStudyPreview.defaultProps = {
+  tags: [],
+}
+
+CaseStudyPreview.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  image: PropTypes.object,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  teaser: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+  })),
+
+}

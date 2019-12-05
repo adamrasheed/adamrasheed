@@ -1,13 +1,14 @@
 import React from 'react'
-import { H4, P, A } from '../../utils/Typography'
+import { H4, P, A } from 'src/utils/Typography'
+import digitalOceanLogo from 'src/images/Digital-Ocean-Logo.png'
+import { DIGITAL_OCEAN_AFFILIATE_LINK } from 'src/constants/affiliateLinks'
 import ButtonALink from '../ButtonALink'
-import digitalOceanLogo from '../../images/Digital-Ocean-Logo.png'
 import AdContainer from './AdContainer'
-const affiliateLink = `https://m.do.co/c/73cb4550a3de`
+
 
 const DigitalOceanAd = props => (
   <AdContainer>
-    <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
+    <a href={DIGITAL_OCEAN_AFFILIATE_LINK} target="_blank" rel="noopener noreferrer">
       <img
         style={{
           maxWidth: `160px`,
@@ -19,16 +20,18 @@ const DigitalOceanAd = props => (
       />
     </a>
     <H4 style={{ marginBottom: `0.625rem` }}>
-      <A href={affiliateLink} target="_blank" rel="noopener noreferrer">
+      <A href={DIGITAL_OCEAN_AFFILIATE_LINK} target="_blank" rel="noopener noreferrer">
         Get a DigitalOcean starting at $5/Month!
       </A>
     </H4>
     <P small style={{ marginBottom: `1rem` }}>
       Host your WordPress backend on a lightning-fast SSD-based VPS hosting
-      solution. <strong>I only pay $5/mo. for mine!</strong>
+      solution.
+      {' '}
+      <strong>I only pay $5/mo. for mine!</strong>
     </P>
     <ButtonALink
-      href={affiliateLink}
+      href={DIGITAL_OCEAN_AFFILIATE_LINK}
       style={{
         background: '#0080FF',
         display: `block`,

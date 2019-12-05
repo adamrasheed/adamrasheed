@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import { MediaScreen, Spacer } from 'src/utils/styles'
 import Container from '../Container'
 import PreviewPost from './PreviewPost'
@@ -40,10 +39,10 @@ const BlogsPreview = ({ posts }) => (
 
 export default BlogsPreview
 
-BlogsPreview.propType = {
+BlogsPreview.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.shape(PropTypes.shape({
     title: PropTypes.string,
     slug: PropTypes.string,
     date: PropTypes.string,
-  })))
+  }))).isRequired,
 }
