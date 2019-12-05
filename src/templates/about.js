@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
+import { Spring } from 'react-spring'
 import Layout from '../components/layout'
 import BlogsPreview from '../components/Blog/BlogsPreview'
 import PageTitle from '../components/Global/PageTitle'
@@ -14,7 +15,6 @@ import { H2, fontSize } from '../utils/Typography'
 import { MediaScreen, animationValues } from '../utils/styles'
 import PreviewHeader from '../components/PreviewHeader'
 import Container from '../components/Container'
-import { Spring } from 'react-spring'
 
 const AboutTitle = styled(H2)`
   margin-bottom: 9px !important;

@@ -106,15 +106,17 @@ class Form extends Component {
     })
       .then(response => response.json())
       .then(data => {
-        data.error
+        const { message, subscription, error } = data
+        const name = subscription.subscriber.first_name
+        return error
           ? this.setState({
             formStatus: 'error',
-            formMessage: data.message,
+            formMessage: message,
           })
           : this.setState({
             formStatus: 'success',
             formMessage: `Thanks ${
-              data.subscription.subscriber.first_name
+              name
             }! Please check your email for confirmation.`,
           })
       })

@@ -24,30 +24,28 @@ const Btn = styled.a`
     background: ${props => (props.primary ? 'linear-gradient(10deg, #3fb0fc, #b2fdf2)' : 'none')};
   }
 `
-class CaseStudyCta extends React.Component {
-  render() {
-    return (
-      <div className="case-study__cta">
-        <h3 className="case-study__title">
-          {' '}
-          Looking for a Front-end Developer to create something rad like this?
-          Let’s Talk.
-{' '}
-        </h3>
-        <Btn
-          primary
-          href="mailto:adamrasheed91@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            margin: '1.5rem auto 0',
-          }}
-        >
+
+const CaseStudyCta = () => {
+  const message = `Looking for a Front-end Developer to create something rad like this?
+  Let’s Talk.`
+  return (
+    <div className="case-study__cta">
+      <h3 className="case-study__title">
+        {message}
+      </h3>
+      <Btn
+        primary
+        href="mailto:adamrasheed91@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          margin: '1.5rem auto 0',
+        }}
+      >
           Email Me
-        </Btn>
-      </div>
-    )
-  }
+      </Btn>
+    </div>
+  )
 }
 
 export default CaseStudyCta

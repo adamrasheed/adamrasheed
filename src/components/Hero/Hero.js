@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
-import { Color, animationValues } from '../../utils/styles'
-import { P, font } from '../../utils//Typography'
+import { Color, animationValues } from 'src/utils/styles'
+import { P, font } from 'src/utils//Typography'
 
 import Container from '../Container'
 import HeroTitle from './HeroTitle.js'
@@ -30,7 +30,7 @@ const HeroBody = styled.div`
 `
 
 const Hero = ({
- tagline, specialize, career, resume, hideCareer 
+  tagline, specialize, career, resume, hideCareer,
 }) => (
   <Spring
     config={{ delay: 250 }}
@@ -51,19 +51,18 @@ const Hero = ({
                 __html: specialize,
               }}
             />
-            {/*<Weather /> */}
-            {!hideCareer && career ? (
+            {/* <Weather /> */}
+            {!hideCareer && career && (
               <P
                 dangerouslySetInnerHTML={{
                   __html: career,
                 }}
               />
-            ) : null}
+            )}
             <P>
-              I'm also taking on select freelance projects. Wanna see if we’d be
-              a good fit? 
-{' '}
-<br />
+              I&lsquo;m also taking on select freelance projects. Wanna see if we’d be
+              a good fit?
+              <br />
               Learn more
               <span
                 className="ib"
@@ -71,7 +70,7 @@ const Hero = ({
               >
                 <Link to="/about">about me</Link>
 .
-</span>
+              </span>
             </P>
           </HeroBody>
         </Container>

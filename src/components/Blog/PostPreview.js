@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
@@ -27,38 +28,41 @@ const Post = styled.div`
   }
 `
 
-class PostPreview extends React.Component {
-  render() {
-    const {
- title, link, date, excerpt, delay 
-} = this.props
-    return (
-      <Spring
-        config={{ delay }}
-        from={animationValues.fadeIn.start}
-        to={animationValues.fadeIn.end}
-      >
-        {props => (
-          <Post Blog style={props}>
-            <PostPreviewTitle Blog>
-              <Link
-                className="post__link"
-                to={link}
-                dangerouslySetInnerHTML={{ __html: title }}
-              />
-            </PostPreviewTitle>
-            <div style={{ margin: '1rem 0' }}>
-              <PostMeta date={date} />
-            </div>
-            <PostPreviewExcerpt
-              className="paragraph"
-              dangerouslySetInnerHTML={{ __html: excerpt }}
-            />
-          </Post>
-        )}
-      </Spring>
-    )
-  }
-}
+const PostPreview = ({
+  title, link, date, excerpt, delay,
+}) => (
+  <Spring
+    config={{ delay }}
+    from={animationValues.fadeIn.start}
+    to={animationValues.fadeIn.end}
+  >
+    {props => (
+      <Post Blog style={props}>
+        <PostPreviewTitle Blog>
+          <Link
+            className="post__link"
+            to={link}
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        </PostPreviewTitle>
+        <div style={{ margin: '1rem 0' }}>
+          <PostMeta date={date} />
+        </div>
+        <PostPreviewExcerpt
+          className="paragraph"
+          dangerouslySetInnerHTML={{ __html: excerpt }}
+        />
+      </Post>
+    )}
+  </Spring>
+)
 
 export default PostPreview
+
+PostPreview.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  excerpt: PropTypes.string.isRequired,
+  delay: PropTypes.string.isRequired,
+}

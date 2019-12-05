@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout'
@@ -23,53 +24,60 @@ const PostContainer = styled.main`
     padding: 0 1rem;
   }
 `
-class PostPage extends React.Component {
-  render() {
-    const { data } = this.props
-    return (
-      <Layout>
-        <PostContainer>
-          <Post blog>
-            <PostTitle
-              dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }}
-            />
-            <PostMeta
-              date={data.wordpressPost.date}
-              style={{ display: 'block', paddingBottom: '1rem' }}
-            />
-            <PostBody
-              style={{ paddingTop: '1rem' }}
-              dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
-            />
-            <PostCta
-              title={
-                data.wordpressPost.acf.cta_title
-                  ? data.wordpressPost.acf.cta_title
-                  : null
-              }
-              subtitle={
-                data.wordpressPost.acf.cta_description
-                  ? data.wordpressPost.acf.cta_description
-                  : null
-              }
-              formId={
-                data.wordpressPost.acf.convertkit_form_id
-                  ? data.wordpressPost.acf.convertkit_form_id
-                  : null
-              }
-            />
-          </Post>
-          <PostSidebar
-            otherPosts={data.allWordpressPost.edges}
-            tags={data.wordpressPost.tags ? data.wordpressPost.tags : null}
+const PostPage = ({ data }) => {
+  const { wordpressPost, allWordpressPost } = data
+  return (
+    <Layout>
+      <PostContainer>
+        <Post blog>
+          <PostTitle
+            dangerouslySetInnerHTML={{ __html: wordpressPost.title }}
           />
-        </PostContainer>
-      </Layout>
-    )
-  }
+          <PostMeta
+            date={wordpressPost.date}
+            style={{ display: 'block', paddingBottom: '1rem' }}
+          />
+          <PostBody
+            style={{ paddingTop: '1rem' }}
+            dangerouslySetInnerHTML={{ __html: wordpressPost.content }}
+          />
+          <PostCta
+            title={
+                wordpressPost.acf.cta_title
+                  ? wordpressPost.acf.cta_title
+                  : null
+              }
+            subtitle={
+                wordpressPost.acf.cta_description
+                  ? wordpressPost.acf.cta_description
+                  : null
+              }
+            formId={
+                wordpressPost.acf.convertkit_form_id
+                  ? wordpressPost.acf.convertkit_form_id
+                  : null
+              }
+          />
+        </Post>
+        <PostSidebar
+          otherPosts={allWordpressPost.edges}
+          tags={wordpressPost.tags}
+        />
+      </PostContainer>
+    </Layout>
+  )
 }
 
 export default PostPage
+
+PostPage.propTypes = {
+  data: PropTypes.shape({
+    wordpressPost: PropTypes.shape,
+    allWordpressPost: PropTypes.shape(PropTypes.shape({
+      edges: PropTypes.array,
+    })),
+  }).isRequired,
+}
 
 export const query = graphql`
   query PostQuery($slug: String!) {

@@ -61,13 +61,12 @@ class PostSidebar extends React.Component {
             featuredTag = tag.name
             break
           default:
-            return
         }
       })
-      console.log(featuredTag)
       this.setState({ featuredTag })
     }
   }
+
   render() {
     const { otherPosts } = this.props
 
@@ -86,10 +85,10 @@ class PostSidebar extends React.Component {
             </SidebarPost>
           ))}
         </SidebarPosts>
-        {this.state.featuredTag === `shopify` ||
-        this.state.featuredTag === `Shopify` ? (
+        {this.state.featuredTag === `shopify`
+        || this.state.featuredTag === `Shopify` ? (
           <ShopifyAd />
-        ) : null}
+          ) : null}
         {this.state.featuredTag === `Digital Ocean` ? <DigitalOceanAd /> : null}
       </SideBar>
     )
