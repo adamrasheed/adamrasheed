@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H3 } from '../../../utils/Typography'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import { H3 } from '../../../utils/Typography'
 import StyledLink from '../../Global/StyledLink'
-import { MediaScreen, Spacer } from '../../../utils/Styles'
+import { MediaScreen, Spacer } from '../../../utils/styles'
 import { H4, P, fontSize } from '../../../utils/Typography'
 
 import ButtonLink from '../../ButtonLink'
@@ -96,10 +96,10 @@ const CaseStudyPreview = props => (
       <ul className="case-study-preview__tags">
         {props.tags != null
           ? props.tags.map((tag, i) => (
-              <PreviewTag className="case-study-preview__tag" key={i}>
+            <PreviewTag className="case-study-preview__tag" key={i}>
                 {tag.name}
               </PreviewTag>
-            ))
+          ))
           : null}
       </ul>
 

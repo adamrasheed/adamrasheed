@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import React from 'react'
-import { MediaScreen } from '../../utils/Styles'
+import { MediaScreen } from '../../utils/styles'
 
 const StyledAdContainer = styled.div`
   margin: 1rem 0;
@@ -24,15 +25,15 @@ const Disclaimer = styled.span`
   left: 0;
 `
 
-class AdContainer extends React.Component {
-  render() {
-    return (
-      <StyledAdContainer>
-        {this.props.children}
-        <Disclaimer>Dope AF Affiliate Link</Disclaimer>
-      </StyledAdContainer>
-    )
-  }
-}
+const AdContainer = ({ children }) => (
+  <StyledAdContainer>
+    {children}
+    <Disclaimer>Dope AF Affiliate Link</Disclaimer>
+  </StyledAdContainer>
+)
 
 export default AdContainer
+
+AdContainer.propTypes = {
+  children: PropTypes.node.isRequired,
+}

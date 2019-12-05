@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { H1 } from '../../utils/Typography'
-import { MediaScreen } from '../../utils/Styles'
+import { MediaScreen } from '../../utils/styles'
 
 const HeroTitle = styled(H1)`
   font-size: 1.5rem;

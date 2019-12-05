@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { ConvertKit } from '../API'
-import { Color, transition, MediaScreen } from '../utils/Styles'
-import { fontSize, P } from '../utils/Typography'
+import ConvertKit from 'src/constants/API'
+import { Color, transition, MediaScreen } from 'src/utils/styles'
+import { fontSize, P } from 'src/utils/Typography'
 
 const Label = styled.label`
   font-size: ${fontSize.extraSmall};
@@ -41,8 +41,7 @@ const Button = styled.button`
   letter-spacing: 0.05em;
   line-height: 1;
   font-variant-caps: all-small-caps;
-  background: ${props =>
-    props.cta ? Color.Btn.primary.regular : Color.Btn.secondary.regular};
+  background: ${props => (props.cta ? Color.Btn.primary.regular : Color.Btn.secondary.regular)};
   color: ${Color.text};
   text-decoration: none;
   padding: 0.5rem 2.5rem 0.6rem;
@@ -56,8 +55,7 @@ const Button = styled.button`
   &:hover,
   &:focus {
     outline: 0;
-    background: ${props =>
-      props.cta ? Color.Btn.primary.hover : Color.Btn.secondary.hover};
+    background: ${props => (props.cta ? Color.Btn.primary.hover : Color.Btn.secondary.hover)};
   }
 `
 
@@ -69,7 +67,7 @@ const Msg = styled(P)`
   ${({ messageState }) => {
     if (messageState === 'error') {
       return `color: red`
-    } else if (messageState === 'success') {
+    } if (messageState === 'success') {
       return `color: ${Color.text}`
     }
   }};
@@ -110,15 +108,15 @@ class Form extends Component {
       .then(data => {
         data.error
           ? this.setState({
-              formStatus: 'error',
-              formMessage: data.message,
-            })
+            formStatus: 'error',
+            formMessage: data.message,
+          })
           : this.setState({
-              formStatus: 'success',
-              formMessage: `Thanks ${
-                data.subscription.subscriber.first_name
-              }! Please check your email for confirmation.`,
-            })
+            formStatus: 'success',
+            formMessage: `Thanks ${
+              data.subscription.subscriber.first_name
+            }! Please check your email for confirmation.`,
+          })
       })
       .then(() => {
         this.setState({

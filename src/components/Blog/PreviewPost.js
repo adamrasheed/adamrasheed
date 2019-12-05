@@ -1,8 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
-import { H2, fontSize } from '../../utils/Typography'
-import StyledLink from '../../components/Global/StyledLink'
+import { MediaScreen } from 'src/utils/styles'
+import { H2, fontSize } from 'src/utils/Typography'
+import StyledLink from '../Global/StyledLink'
 
 const Preview = styled.div`
   margin-bottom: 25px;
@@ -38,18 +39,18 @@ const PostMeta = styled.div`
   text-transform: lowercase;
 `
 
-class PreviewPost extends React.Component {
-  render() {
-    const { title, link } = this.props
-    return (
-      <Preview>
-        <PreviewTitle>
-          <StyledLink to={link} dangerouslySetInnerHTML={{ __html: title }} />
-        </PreviewTitle>
-        <PostMeta />
-      </Preview>
-    )
-  }
-}
+const PreviewPost = ({ title, link }) => (
+  <Preview>
+    <PreviewTitle>
+      <StyledLink to={link} dangerouslySetInnerHTML={{ __html: title }} />
+    </PreviewTitle>
+    <PostMeta />
+  </Preview>
+)
 
 export default PreviewPost
+
+PreviewPost.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+}

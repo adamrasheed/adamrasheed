@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Form from '../Form'
-import { MediaScreen, ContainerSize } from '../../utils/Styles'
+import { MediaScreen, ContainerSize } from '../../utils/styles'
 import { H3, P } from '../../utils/Typography'
 
 const Cta = styled.div`
@@ -22,14 +22,12 @@ class PostCta extends Component {
     return (
       <Cta>
         <H3>
-          {title
-            ? title
-            : `Like this Post? Get helpful Articles like this in Your Inbox!`}
+          {title || `Like this Post? Get helpful Articles like this in Your Inbox!`}
         </H3>
         <P>
-          {subtitle ? subtitle : `Sign Up today to get Twice Monthly Articles`}
+          {subtitle || `Sign Up today to get Twice Monthly Articles`}
         </P>
-        <Form formId={formId ? formId : null} />
+        <Form formId={formId || null} />
       </Cta>
     )
   }

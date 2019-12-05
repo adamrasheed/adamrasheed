@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Color } from '../../utils/Styles'
+import { Color } from '../../utils/styles'
 import { font } from '../../utils/Typography'
 
 const StyledLink = styled(Link)`

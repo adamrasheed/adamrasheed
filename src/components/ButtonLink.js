@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { Color, transition } from '../utils/Styles'
+import { Color, transition } from '../utils/styles'
 import { fontSize } from '../utils/Typography'
 
 const ButtonLink = styled(Link)`

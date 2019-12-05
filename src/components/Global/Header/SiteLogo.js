@@ -1,11 +1,11 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import StyledLink from '../../Global/StyledLink'
+import { Color, MediaScreen } from 'src/utils/styles'
+import { H1, fontSize, font } from 'src/utils/Typography'
 
-import { Color, MediaScreen } from '../../../utils/Styles'
-import { H1, fontSize, font } from '../../../utils/Typography'
+import StyledLink from '../StyledLink'
 
 const SiteTitle = styled(H1)`
   font-size: ${fontSize.large};
@@ -43,16 +43,16 @@ const SiteDesc = styled.div`
     display: inline-block;
   }
 `
-class SiteLogo extends React.Component {
-  render() {
-    const { title, desc } = this.props
-    return (
-      <StyledLink to="/">
-        <SiteTitle>{title}</SiteTitle>
-        <SiteDesc>{desc}</SiteDesc>
-      </StyledLink>
-    )
-  }
-}
+const SiteLogo = ({ title, desc }) => (
+  <StyledLink to="/">
+    <SiteTitle>{title}</SiteTitle>
+    <SiteDesc>{desc}</SiteDesc>
+  </StyledLink>
+)
 
 export default SiteLogo
+
+SiteLogo.propTypes = {
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+}

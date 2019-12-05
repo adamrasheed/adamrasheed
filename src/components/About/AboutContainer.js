@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
+import { MediaScreen } from '../../utils/styles'
 import Container from '../Container'
 
 const AboutContainer = styled(Container)`

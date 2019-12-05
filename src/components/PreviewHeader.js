@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { fontSize, H4, font } from '../utils/Typography'
-import { Color, transition } from '../utils/Styles'
+import { Color, transition } from '../utils/styles'
 
 const PreviewHeaderContainer = styled.div`
   display: flex;
@@ -60,7 +60,11 @@ class PreviewHeader extends React.Component {
     return (
       <PreviewHeaderContainer>
         <PreviewHeaderTitle>{title}</PreviewHeaderTitle>
-        <PreviewHeaderLink to={link}>More {title}</PreviewHeaderLink>
+        <PreviewHeaderLink to={link}>
+More
+{' '}
+{title}
+</PreviewHeaderLink>
       </PreviewHeaderContainer>
     )
   }

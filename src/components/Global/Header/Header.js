@@ -1,13 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import SiteLogo from './SiteLogo'
-import Navigation from './Navigation'
-import MobileNav from './MobileNav'
-import MobNavToggle from './MobNavToggle'
-import Container from '../../Container'
+import SiteLogo from './SiteLogo';
+import Navigation from './Navigation';
+import MobileNav from './MobileNav';
+import MobNavToggle from './MobNavToggle';
+import Container from '../../Container';
 
-import { font } from '../../../utils/Typography'
+import { font } from '../../../utils/Typography';
 
 const HeaderContainer = styled(Container)`
   display: flex;
@@ -17,40 +18,34 @@ const HeaderContainer = styled(Container)`
   padding: 1.625rem 1rem 1.25rem;
   position: relative;
   font-family: ${font.body};
-`
+`;
 
-class Header extends React.Component {
-  state = { active: false }
+const Header = ({ siteTitle, jobTitle }) => {
+  const [active, setActive] = useState(false);
 
-  headerActive = () => {
-    const headerActive = this.state.active
-    this.setState({
-      active: headerActive,
-    })
-  }
+  const handleClick = () => {
+    setActive(!active);
+  };
+  return (
+    <header className="header">
+      <HeaderContainer>
+        <SiteLogo title={siteTitle} desc={jobTitle} />
+        <MobNavToggle onClick={handleClick} active={active}>
+          <span className="span-1" />
+          <span className="span-2" />
+          <span className="span-3" />
+        </MobNavToggle>
 
-  handleClick = () => {
-    this.setState({ active: !this.state.active })
-  }
+        <Navigation />
+        <MobileNav active={active} />
+      </HeaderContainer>
+    </header>
+  );
+};
 
-  render() {
-    const { siteTitle, jobTitle } = this.props
-    return (
-      <header className="header">
-        <HeaderContainer>
-          <SiteLogo title={siteTitle} desc={jobTitle} />
-          <MobNavToggle onClick={this.handleClick} active={this.state.active}>
-            <span className="span-1" />
-            <span className="span-2" />
-            <span className="span-3" />
-          </MobNavToggle>
+export default Header;
 
-          <Navigation />
-          <MobileNav active={this.state.active} />
-        </HeaderContainer>
-      </header>
-    )
-  }
-}
-
-export default Header
+Header.propTypes = {
+  siteTitle: PropTypes.string.isRequired,
+  jobTitle: PropTypes.string.isRequired,
+};

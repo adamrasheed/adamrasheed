@@ -1,11 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
 import Layout from '../components/layout'
 import PostPreview from '../components/Blog/PostPreview'
 import PageTitle from '../components/Global/PageTitle'
-import styled from 'styled-components'
 import Container from '../components/Container'
 
-import { MediaScreen } from '../utils/Styles'
+import { MediaScreen } from '../utils/styles'
 import { font, lineHeight } from '../utils/Typography'
 
 const Posts = styled.div`

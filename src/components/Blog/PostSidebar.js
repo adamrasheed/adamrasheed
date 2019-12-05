@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
+import { MediaScreen } from '../../utils/styles'
 
 import SidebarPost from './PostSidebarPost'
 import StyledLink from '../Global/StyledLink'

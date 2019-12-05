@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MediaScreen } from '../../../utils/Styles'
+import { MediaScreen } from 'src/utils/styles'
 
 const MenuItem = styled.li`
   display: inline-block;

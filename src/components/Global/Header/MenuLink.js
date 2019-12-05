@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Color, transition } from '../../../utils/Styles'
+import { Color, transition } from 'src/utils/styles'
 
 const MenuLink = styled(Link)`
   font-weight: 400;

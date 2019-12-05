@@ -51,9 +51,9 @@ export const transition = {
   large: 'all .3s ease-in-out',
 }
 
-export const Brands = {
+export const brandColors = {
   Twitter: '#1da1f2',
-  Linkedin: '#0077b5',
+  LinkedIn: '#0077b5',
   Github: '#333',
   Instagram: '#e1306c',
   Dribbble: '#ea4c89',

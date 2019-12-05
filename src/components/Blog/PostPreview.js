@@ -7,7 +7,7 @@ import PostPreviewTitle from './PostPreviewTitle'
 import PostMeta from './PostPreviewMeta'
 import PostPreviewExcerpt from './PostPreviewExcerpt'
 
-import { MediaScreen, animationValues } from '../../utils/Styles'
+import { MediaScreen, animationValues } from '../../utils/styles'
 
 const Post = styled.div`
   padding: 0 1rem 2rem;
@@ -29,10 +29,12 @@ const Post = styled.div`
 
 class PostPreview extends React.Component {
   render() {
-    const { title, link, date, excerpt, delay } = this.props
+    const {
+ title, link, date, excerpt, delay 
+} = this.props
     return (
       <Spring
-        config={{ delay: delay }}
+        config={{ delay }}
         from={animationValues.fadeIn.start}
         to={animationValues.fadeIn.end}
       >

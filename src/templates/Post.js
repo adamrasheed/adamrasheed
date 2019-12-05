@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
 import styled from 'styled-components'
+import Layout from '../components/layout'
 
 import PostSidebar from '../components/Blog/PostSidebar'
 import Post from '../components/Blog/Post'
@@ -9,7 +9,7 @@ import PostTitle from '../components/Blog/PostTitle'
 import PostMeta from '../components/Blog/PostPreviewMeta'
 import PostBody from '../components/PostBody'
 
-import { MediaScreen, ContainerSize } from '../utils/Styles'
+import { MediaScreen, ContainerSize } from '../utils/styles'
 import PostCta from '../components/Blog/PostCta'
 
 const PostContainer = styled.main`

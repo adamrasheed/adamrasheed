@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MediaScreen, Color } from '../../utils/Styles'
+import { MediaScreen, Color } from '../../utils/styles'
 import { fontSize, font } from '../../utils/Typography'
 
 const Source = styled.div`

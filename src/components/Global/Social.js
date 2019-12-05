@@ -1,10 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-import { MediaScreen, Color, transition, Brands } from '../../utils/Styles'
+import {
+  MediaScreen, Color, transition, brandColors,
+} from '../../utils/styles'
 import { fontSize } from '../../utils/Typography'
 
 library.add(fab)
@@ -28,40 +31,42 @@ const SocialIcon = styled(FontAwesomeIcon)`
   }
 
   &:hover {
-    color: ${props =>
-      props.color ? Brands[`${props.color}`] : Color.textLight};
+    color: ${props => (props.color ? brandColors[`${props.color}`] : Color.textLight)};
   }
 `
 
-class Social extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <ul>
-          {this.props.social
-            ? this.props.social.map((account, i) => {
-                const socialHandle = account.account.toLowerCase()
-                return (
-                  <SocialItem key={i}>
-                    <SocialLink
-                      href={account.url.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title={account.account}
-                    >
-                      <SocialIcon
-                        color={account.account}
-                        icon={['fab', socialHandle]}
-                      />
-                    </SocialLink>
-                  </SocialItem>
-                )
-              })
-            : null}
-        </ul>
-      </React.Fragment>
-    )
-  }
-}
+const Social = ({ social }) => (
+  <ul>
+    {social?.map((account, i) => {
+      const socialHandle = account.account.toLowerCase()
+      return (
+        <SocialItem key={i}>
+          <SocialLink
+            href={account.url.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={account.account}
+          >
+            <SocialIcon
+              color={account.account}
+              icon={['fab', socialHandle]}
+            />
+          </SocialLink>
+        </SocialItem>
+      )
+    })}
+  </ul>
+)
 
 export default Social
+
+Social.propTypes = {
+  social: PropTypes.arrayOf(
+    PropTypes.shape({
+      account: PropTypes.string,
+      url: PropTypes.shape({
+        url: PropTypes.string,
+      }),
+    }),
+  ).isRequired,
+}

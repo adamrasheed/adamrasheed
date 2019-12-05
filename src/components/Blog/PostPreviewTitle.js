@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { H2 } from '../../utils/Typography'
-import { MediaScreen } from '../../utils/Styles'
+import { MediaScreen } from '../../utils/styles'
 
 const PostPreviewTitle = styled(H2)`
   text-decoration: none;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MediaScreen, Color } from '../../utils/Styles'
+import { MediaScreen, Color } from '../../utils/styles'
 import { fontSize, font, lineHeight } from '../../utils/Typography'
 
 const AboutBody = styled.div`

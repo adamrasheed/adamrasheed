@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
+import { MediaScreen } from '../../utils/styles'
 import AboutLink from './AboutLink'
 import PreviewTitle from '../Global/PreviewTitle'
 
@@ -21,26 +22,29 @@ const LinkCategory = styled.div`
     }
   }
 `
-class AboutInfoCategory extends React.Component {
-  render() {
-    return (
-      <LinkCategory>
-        <PreviewTitle small flex100 style={{ marginBottom: '13px' }}>
-          {this.props.title}
-        </PreviewTitle>
-        {this.props.content
-          ? this.props.content.map((talk, i) => (
-              <AboutLink
-                key={i}
-                title={talk.title}
-                url={talk.url}
-                description={talk.description}
-              />
-            ))
-          : null}
-      </LinkCategory>
-    )
-  }
-}
+const AboutInfoCategory = ({ title, content }) => (
+  <LinkCategory>
+    <PreviewTitle small flex100 style={{ marginBottom: '13px' }}>
+      {title}
+    </PreviewTitle>
+    {content?.map((talk, i) => (
+      <AboutLink
+        key={i}
+        title={talk.title}
+        url={talk.url}
+        description={talk.description}
+      />
+    ))}
+  </LinkCategory>
+)
 
 export default AboutInfoCategory
+
+AboutInfoCategory.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    url: PropTypes.string,
+    description: PropTypes.string,
+  })).isRequired,
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
+import { kelvinToFahrenheit } from 'src/utils/helpers'
 import { P } from '../../utils/Typography'
-import { kelvintoFarenheit } from '../../utils/helpers'
 
 const zip = `92618`
 const APIKey = `1e61d6bb275e9c08609c58e51ec0f728`
@@ -14,6 +14,14 @@ class Weather extends React.Component {
     action: null,
     location: null,
   }
+
+  componentDidMount() {
+    this.getWeatherData()
+    setInterval(() => {
+      this.getWeatherData()
+    }, 60000)
+  }
+
   getWeatherData = () => {
     console.log('getting weather')
 
@@ -27,16 +35,16 @@ class Weather extends React.Component {
   }
 
   prettifyWeather = ({ data: { main, weather, name } }) => {
-    const temp = main.temp
+    const { temp } = main
     const currentWeather = weather[0].description
-    const farenheitTemp = `${kelvintoFarenheit(temp)}˚`
+    const fahrenheitTemp = `${kelvinToFahrenheit(temp)}˚`
     const action = this.addAction(weather[0].main)
 
     this.setState({
-      currentTemperature: farenheitTemp,
-      currentWeather: currentWeather,
+      currentTemperature: fahrenheitTemp,
+      currentWeather,
       location: name,
-      action: action,
+      action,
     })
   }
 
@@ -48,21 +56,16 @@ class Weather extends React.Component {
     return `enjoying the sun`
   }
 
-  componentDidMount() {
-    this.getWeatherData()
-    setInterval(() => {
-      this.getWeatherData()
-    }, 60000)
-  }
+
   render() {
+    const {
+      currentTemperature, action, currentWeather, location,
+    } = this.state
+    const message = `Currently ${action} because its ${currentTemperature} with ${currentWeather} in ${location}.`
     return (
       <>
-        {this.state.currentTemperature && (
-          <P className="Weather">
-            Currently {this.state.action} because its{' '}
-            {this.state.currentTemperature} with {this.state.currentWeather} in{' '}
-            {this.state.location}.
-          </P>
+        {currentTemperature && (
+          <P className="Weather">{message}</P>
         )}
       </>
     )

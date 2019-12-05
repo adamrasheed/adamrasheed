@@ -1,13 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { Spring } from 'react-spring'
 import Post from '../components/Blog/Post'
 
 import Layout from '../components/layout'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-import { animationValues } from '../utils/Styles'
-import { Spring } from 'react-spring'
+import { animationValues } from '../utils/styles'
 
 class FreelancePage extends React.Component {
   render() {

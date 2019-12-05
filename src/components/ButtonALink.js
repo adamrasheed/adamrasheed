@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Color, transition } from '../utils/Styles'
+import { Color, transition } from '../utils/styles'
 import { fontSize } from '../utils/Typography'
 
 const ButtonALink = styled.a`

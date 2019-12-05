@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Color, animationValues } from '../../utils/Styles'
-import { P, font } from '../../utils//Typography'
 import { Spring } from 'react-spring'
+import { Color, animationValues } from '../../utils/styles'
+import { P, font } from '../../utils//Typography'
 
 import Container from '../Container'
 import HeroTitle from './HeroTitle.js'
@@ -29,7 +29,9 @@ const HeroBody = styled.div`
   }
 `
 
-const Hero = ({ tagline, specialize, career, resume, hideCareer }) => (
+const Hero = ({
+ tagline, specialize, career, resume, hideCareer 
+}) => (
   <Spring
     config={{ delay: 250 }}
     from={animationValues.fadeIn.start}
@@ -49,7 +51,7 @@ const Hero = ({ tagline, specialize, career, resume, hideCareer }) => (
                 __html: specialize,
               }}
             />
-            {/*<Weather />*/}
+            {/*<Weather /> */}
             {!hideCareer && career ? (
               <P
                 dangerouslySetInnerHTML={{
@@ -59,14 +61,17 @@ const Hero = ({ tagline, specialize, career, resume, hideCareer }) => (
             ) : null}
             <P>
               I'm also taking on select freelance projects. Wanna see if we’d be
-              a good fit? <br />
+              a good fit? 
+{' '}
+<br />
               Learn more
               <span
                 className="ib"
                 style={{ marginLeft: '0.35rem', fontFamily: font.body }}
               >
-                <Link to="/about">about me</Link>.
-              </span>
+                <Link to="/about">about me</Link>
+.
+</span>
             </P>
           </HeroBody>
         </Container>

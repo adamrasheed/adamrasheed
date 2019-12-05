@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+},
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "semi": 0,
+    "template-curly-spacing": "warn",
+    "no-template-curly-in-string": "error",
+    "quotes": ["error", "single", {"allowTemplateLiterals": true}],
+    "quote-props": "off",
+    "arrow-parens": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
+}

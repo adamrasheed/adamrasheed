@@ -9,7 +9,7 @@ import CaseStudyCta from '../components/CaseStudy/CaseStudyCta'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-import { animationValues } from '../utils/Styles'
+import { animationValues } from '../utils/styles'
 import '../scss/02-pages/_case-study.scss'
 
 class CaseStudy extends React.Component {
