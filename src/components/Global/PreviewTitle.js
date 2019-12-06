@@ -9,17 +9,17 @@ const PreviewTitle = styled.div`
   letter-spacing: 0.08em;
   margin-bottom: ${(props) => (props.sidebar ? '1.25rem' : '0')};
   font-size: ${(props) => (props.extraSmall || props.small ? fontSize.small : fontSize.body)};
-  font-weight: ${(props) => (props.small | props.extraSmall ? '600' : '500')};
+  font-weight: ${(props) => (props.small || props.extraSmall ? '600' : '500')};
   flex: ${(props) => (props.flex100 ? '100%' : 'auto')};
 
   &:after {
     content: '';
     display: inline-block;
     width: 32px;
-    height: ${(props) => (props.small | props.extraSmall ? '1px' : '2px')};
+    height: ${(props) => (props.small || props.extraSmall ? '1px' : '2px')};
     background: ${Color.text};
     margin-bottom: ${(props) => (props.extraSmall ? '0.2rem' : '0.25rem')};
-    margin-left: ${(props) => (props.small | props.extraSmall ? '0.75rem' : '1rem')};
+    margin-left: ${(props) => (props.small || props.extraSmall ? '0.75rem' : '1rem')};
     font-variant: small-caps;
   }
 

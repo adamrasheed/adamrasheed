@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import PostPreview from '../components/Blog/PostPreview'
@@ -23,32 +25,34 @@ const Posts = styled.div`
   }
 `
 
-class BlogsPage extends React.Component {
-  render() {
-    const { data } = this.props
-    return (
-      <Layout>
-        <PageTitle title={data.wordpressPage.title} />
-        <Container noPadding>
-          <Posts>
-            {data.allWordpressPost.edges.map(({ node }, i) => (
-              <PostPreview
-                key={i}
-                title={node.title}
-                link={`blog/${node.slug}`}
-                excerpt={node.excerpt}
-                date={node.date}
-                delay={i * 250}
-              />
-            ))}
-          </Posts>
-        </Container>
-      </Layout>
-    )
-  }
-}
+const BlogsPage = ({ data: { wordpressPage, allWordpressPost } }) => (
+  <Layout>
+    <PageTitle title={wordpressPage.title} />
+    <Container noPadding>
+      <Posts>
+        {allWordpressPost.edges.map(({ node }, i) => (
+          <PostPreview
+            key={node.slug}
+            title={node.title}
+            link={`blog/${node.slug}`}
+            excerpt={node.excerpt}
+            date={node.date}
+            delay={i * 250}
+          />
+        ))}
+      </Posts>
+    </Container>
+  </Layout>
+)
 
 export default BlogsPage
+
+BlogsPage.propTypes = {
+  data: PropTypes.shape({
+    wordpressPage: PropTypes.object,
+    allWordpressPost: PropTypes.object,
+  }).isRequired,
+}
 
 export const query = graphql`
   query PostsPage {

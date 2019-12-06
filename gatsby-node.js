@@ -32,7 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-      `
+      `,
     ).then(result => {
       if (result.errors) {
         console.log(result.errors)
@@ -68,7 +68,7 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allWordpressPost.edges.forEach(({ node }) => {
         createPage({
           path: `blog/${node.slug}`,
-          component: path.resolve('./src/templates/Post.js'),
+          component: path.resolve('./src/templates/post.js'),
           context: {
             slug: node.slug,
           },

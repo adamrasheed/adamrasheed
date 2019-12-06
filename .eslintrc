@@ -20,7 +20,9 @@
     "quotes": ["error", "single", {"allowTemplateLiterals": true}],
     "quote-props": "off",
     "arrow-parens": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-danger": "off",
+    "react/state-in-constructor": "off"
   },
   "settings": {
     "import/resolver": {
@@ -30,5 +32,6 @@
         ]
       }
     }
-  }
+  },
+  "globals": {"gatsby"}
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { MediaScreen } from '../../utils/styles'
 
@@ -69,6 +70,7 @@ class PostSidebar extends React.Component {
 
   render() {
     const { otherPosts } = this.props
+    const { featuredTag } = this.state
 
     return (
       <SideBar>
@@ -76,8 +78,8 @@ class PostSidebar extends React.Component {
           Other Posts
         </PreviewTitle>
         <SidebarPosts>
-          {otherPosts.map(({ node }, i) => (
-            <SidebarPost key={i}>
+          {otherPosts.map(({ node }) => (
+            <SidebarPost key={node.slug}>
               <StyledLink
                 to={`blog/${node.slug}`}
                 dangerouslySetInnerHTML={{ __html: node.title }}
@@ -85,14 +87,25 @@ class PostSidebar extends React.Component {
             </SidebarPost>
           ))}
         </SidebarPosts>
-        {this.state.featuredTag === `shopify`
-        || this.state.featuredTag === `Shopify` ? (
+        {featuredTag === (`shopify` || `Shopify`) && (
           <ShopifyAd />
-          ) : null}
-        {this.state.featuredTag === `Digital Ocean` ? <DigitalOceanAd /> : null}
+        )}
+        {featuredTag === `Digital Ocean` && <DigitalOceanAd /> }
       </SideBar>
     )
   }
 }
 
 export default PostSidebar
+
+PostSidebar.propTypes = {
+  otherPosts: PropTypes.arrayOf(PropTypes.shape({
+    node: PropTypes.shape({
+      title: PropTypes.string,
+      slug: PropTypes.string,
+    }),
+  })).isRequired,
+  tags: PropTypes.arrayOf({
+    name: PropTypes.string,
+  }).isRequired,
+}

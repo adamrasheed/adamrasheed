@@ -127,6 +127,7 @@ export default CaseStudyPreview
 
 CaseStudyPreview.defaultProps = {
   tags: [],
+  image: {},
 }
 
 CaseStudyPreview.propTypes = {

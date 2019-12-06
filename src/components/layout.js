@@ -45,7 +45,10 @@ const Layout = ({ children, template = null }) => {
 
   const mainClass = template ? `main main--${template}` : 'main';
 
-  const { wordpressSiteMetadata: { name, description }, wordpressAcfOptions: { options: acfOptions } } = data;
+  const {
+    wordpressSiteMetadata: { name, description },
+    wordpressAcfOptions: { options: acfOptions },
+  } = data
 
   return (
     <>
@@ -75,6 +78,7 @@ const Layout = ({ children, template = null }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  // eslint-disable-next-line react/require-default-props
   template: PropTypes.string,
 };
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Spring } from 'react-spring'
 
@@ -12,68 +13,69 @@ import Container from '../components/Container'
 import { animationValues } from '../utils/styles'
 import '../scss/02-pages/_case-study.scss'
 
-class CaseStudy extends React.Component {
-  render() {
-    const { data } = this.props
-    return (
-      <Layout>
-        <main className="case-study">
-          <Post caseStudy>
-            <PageTitle>{data.wordpressWpCaseStudies.title}</PageTitle>
-            {data.wordpressWpCaseStudies.featured_media != null ? (
-              <Img
-                className="featured-img case-study__img"
-                fluid={
-                  data.wordpressWpCaseStudies.featured_media.localFile
+const CaseStudy = ({ data: { wordpressWpCaseStudies } }) => (
+  <Layout>
+    <main className="case-study">
+      <Post caseStudy>
+        <PageTitle>{wordpressWpCaseStudies.title}</PageTitle>
+        {wordpressWpCaseStudies.featured_media && (
+          <Img
+            className="featured-img case-study__img"
+            fluid={
+                  wordpressWpCaseStudies.featured_media.localFile
                     .childImageSharp.fluid
                 }
-              />
-            ) : null}
+          />
+        )}
 
-            {data.wordpressWpCaseStudies.acf.overview != null ? (
-              <Spring
-                config={{ delay: 250 }}
-                from={animationValues.fadeIn.start}
-                to={animationValues.fadeIn.end}
-              >
-                {styles => (
-                  <Container small style={styles}>
-                    <h2>Project Overview</h2>
-                    <ul>
-                      {data.wordpressWpCaseStudies.acf.overview.map(point => (
-                        <li>{point.overview_point}</li>
-                      ))}
-                    </ul>
-                  </Container>
-                )}
-              </Spring>
-            ) : null}
+        {wordpressWpCaseStudies?.acf?.overview && (
+          <Spring
+            config={{ delay: 250 }}
+            from={animationValues.fadeIn.start}
+            to={animationValues.fadeIn.end}
+          >
+            {styles => (
+              <Container small style={styles}>
+                <h2>Project Overview</h2>
+                <ul>
+                  {wordpressWpCaseStudies.acf.overview.map(point => (
+                    <li>{point.overview_point}</li>
+                  ))}
+                </ul>
+              </Container>
+            )}
+          </Spring>
+        )}
 
-            <Spring
-              config={{ delay: 375 }}
-              from={animationValues.fadeIn.start}
-              to={animationValues.fadeIn.end}
-            >
-              {styles => (
-                <Container
-                  small
-                  style={styles}
-                  dangerouslySetInnerHTML={{
-                    __html: data.wordpressWpCaseStudies.content,
-                  }}
-                />
-              )}
-            </Spring>
+        <Spring
+          config={{ delay: 375 }}
+          from={animationValues.fadeIn.start}
+          to={animationValues.fadeIn.end}
+        >
+          {styles => (
+            <Container
+              small
+              style={styles}
+              dangerouslySetInnerHTML={{
+                __html: wordpressWpCaseStudies.content,
+              }}
+            />
+          )}
+        </Spring>
 
-            <CaseStudyCta />
-          </Post>
-        </main>
-      </Layout>
-    )
-  }
-}
+        <CaseStudyCta />
+      </Post>
+    </main>
+  </Layout>
+)
 
 export default CaseStudy
+
+CaseStudy.propTypes = {
+  data: PropTypes.shape({
+    wordpressWpCaseStudies: PropTypes.object,
+  }).isRequired,
+}
 
 export const query = graphql`
   query CaseStudyQuery($slug: String!) {

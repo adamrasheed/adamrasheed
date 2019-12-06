@@ -1,14 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
 import { Color, animationValues } from 'src/utils/styles'
-import { P, font } from 'src/utils//Typography'
+import { P, font } from 'src/utils/Typography'
 
 import Container from '../Container'
-import HeroTitle from './HeroTitle.js'
+import HeroTitle from './HeroTitle'
 import HeroContainer from './HeroContainer'
-import Weather from '../About/Weather'
 
 const HeroBody = styled.div`
   margin-bottom: 1rem;
@@ -30,7 +30,10 @@ const HeroBody = styled.div`
 `
 
 const Hero = ({
-  tagline, specialize, career, resume, hideCareer,
+  tagline,
+  specialize,
+  career,
+  hideCareer,
 }) => (
   <Spring
     config={{ delay: 250 }}
@@ -51,7 +54,6 @@ const Hero = ({
                 __html: specialize,
               }}
             />
-            {/* <Weather /> */}
             {!hideCareer && career && (
               <P
                 dangerouslySetInnerHTML={{
@@ -80,3 +82,10 @@ const Hero = ({
 )
 
 export default Hero
+
+Hero.propTypes = {
+  tagline: PropTypes.string.isRequired,
+  specialize: PropTypes.string.isRequired,
+  career: PropTypes.string.isRequired,
+  hideCareer: PropTypes.string.isRequired,
+}

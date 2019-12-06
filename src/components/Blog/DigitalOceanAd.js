@@ -6,7 +6,7 @@ import ButtonALink from '../ButtonALink'
 import AdContainer from './AdContainer'
 
 
-const DigitalOceanAd = props => (
+const DigitalOceanAd = () => (
   <AdContainer>
     <a href={DIGITAL_OCEAN_AFFILIATE_LINK} target="_blank" rel="noopener noreferrer">
       <img

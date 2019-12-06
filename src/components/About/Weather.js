@@ -23,14 +23,14 @@ class Weather extends React.Component {
   }
 
   getWeatherData = () => {
-    console.log('getting weather')
-
     axios
       .get(endpoint)
       .then(resp => {
         this.prettifyWeather(resp)
+        // eslint-disable-next-line no-console
         console.log(resp.data)
       })
+      // eslint-disable-next-line no-console
       .catch(error => console.log(error))
   }
 
