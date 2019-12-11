@@ -45,7 +45,7 @@ const SidebarPosts = styled.ul`
 `
 
 const PostSidebar = ({ otherPosts, tags }) => {
-  const filteredTags = tags.map(tag => tag.name && kebabCase(tag.name))
+  const filteredTags = tags && tags.map(tag => tag.name && kebabCase(tag.name))
 
   return (
     <SideBar>
@@ -62,10 +62,14 @@ const PostSidebar = ({ otherPosts, tags }) => {
           </SidebarPost>
         ))}
       </SidebarPosts>
-      {filteredTags.includes(`shopify`) && (
-        <ShopifyAd />
-      )}
-      {filteredTags.includes(`digital-ocean`) && <DigitalOceanAd />}
+      {filteredTags
+        && filteredTags.includes(`shopify`)
+        && (
+          <ShopifyAd />
+        )}
+      {filteredTags
+        && filteredTags.includes(`digital-ocean`)
+        && <DigitalOceanAd />}
     </SideBar>
   )
 }
