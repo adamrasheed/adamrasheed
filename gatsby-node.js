@@ -4,7 +4,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        "src": path.resolve(__dirname, 'src')
+        "src": path.resolve(__dirname, './src')
       },
     },
   })
@@ -80,7 +80,7 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allWordpressPost.edges.forEach(({ node }) => {
         createPage({
           path: `blog/${node.slug}`,
-          component: path.resolve('./src/templates/post.js'),
+          component: 'src/templates/post.js',
           context: {
             slug: node.slug,
           },
