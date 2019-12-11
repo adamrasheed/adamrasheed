@@ -24,6 +24,13 @@
     "react/no-danger": "off",
     "react/state-in-constructor": "off"
   },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["src", "./src"]
+      ]
+    }
+  },
   "env": {
     "browser": true,
     "node": true

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { MediaScreen } from 'src/utils/Styles'
+import { kebabCase } from 'src/utils/helpers'
 
 import SidebarPost from './PostSidebarPost'
 import StyledLink from '../Global/StyledLink'
@@ -9,7 +10,6 @@ import PreviewTitle from '../Global/PreviewTitle'
 
 import ShopifyAd from './ShopifyAd'
 import DigitalOceanAd from './DigitalOceanAd'
-import { kebabCase } from 'src/utils/helpers'
 
 const SideBar = styled.aside`
   padding: 0 1rem;

@@ -3,6 +3,7 @@ module.exports = {
     title: 'Adam Rasheed',
     jobTitle: `Front-end Developer`,
     siteUrl: `https://adamrasheed.com`,
+    email: `adamrasheed91@gmail.com`
   },
   plugins: [
     `gatsby-plugin-sitemap`,
