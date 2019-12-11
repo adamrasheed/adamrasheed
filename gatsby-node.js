@@ -53,7 +53,6 @@ exports.createPages = ({ graphql, actions }) => {
 
       result.data.allWordpressPage.edges.forEach(({ node }) => {
         console.log('page')
-        debugger;
 
         if (node.template != '') {
           const templateSlug = node.slug
@@ -79,9 +78,8 @@ exports.createPages = ({ graphql, actions }) => {
       })
 
       result.data.allWordpressPost.edges.forEach(({ node }) => {
-        debugger;
         createPage({
-          path: `blog/${node.slug}`,
+          path: `/blog/${node.slug}`,
           component: path.resolve('./src/templates/post.js'),
           context: {
             slug: node.slug,

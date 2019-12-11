@@ -45,6 +45,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
+    "serve": "gatsby serve",
     "start": "npm run develop",
     "lint": "eslint .",
     "lint --fix": "eslint --fix",
