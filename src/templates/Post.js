@@ -2,16 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import Layout from '../components/layout'
 
-import PostSidebar from '../components/Blog/PostSidebar'
-import Post from '../components/Blog/Post'
-import PostTitle from '../components/Blog/PostTitle'
-import PostMeta from '../components/Blog/PostPreviewMeta'
-import PostBody from '../components/PostBody'
+import { MediaScreen, ContainerSize } from 'src/utils/Styles'
 
-import { MediaScreen, ContainerSize } from '../utils/Styles'
-import PostCta from '../components/Blog/PostCta'
+import Layout from 'src/components/layout'
+import PostSidebar from 'src/components/Blog/PostSidebar'
+import Post from 'src/components/Blog/Post'
+import PostTitle from 'src/components/Blog/PostTitle'
+import PostMeta from 'src/components/Blog/PostPreviewMeta'
+import PostBody from 'src/components/PostBody'
+import PostCta from 'src/components/Blog/PostCta'
+
 
 const PostContainer = styled.main`
   display: grid;
@@ -72,7 +73,15 @@ export default PostPage
 
 PostPage.propTypes = {
   data: PropTypes.shape({
-    wordpressPost: PropTypes.shape,
+    wordpressPost: PropTypes.shape({
+      id: PropTypes.string,
+      title: PropTypes.string,
+      date: PropTypes.string,
+      slug: PropTypes.string,
+      content: PropTypes.any,
+      acf: PropTypes.object,
+      tags: PropTypes.object,
+    }),
     allWordpressPost: PropTypes.shape(PropTypes.shape({
       edges: PropTypes.array,
     })),
