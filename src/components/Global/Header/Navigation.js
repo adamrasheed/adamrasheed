@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import { Color, MediaScreen } from 'src/utils/styles'
+
+import { Color, MediaScreen } from 'src/utils/Styles'
 import MenuItem from './MenuItem'
 import MenuLink from './MenuLink'
 
@@ -40,13 +41,14 @@ const Navigation = () => {
     }
   }
 `)
+
   return (
     <SiteMenu>
       <ul className="site-menu__list">
         {wpMenus.items.map(item => (
           <MenuItem key={item.wordpress_id}>
             <MenuLink
-              to={item.object_slug}
+              to={`/${item.object_slug}`}
               activeStyle={{ color: Color.text }}
             >
               {item.title}

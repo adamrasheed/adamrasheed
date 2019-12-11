@@ -40,7 +40,7 @@ const IndexPage = ({
                 noAnimation
                 title={node.title}
                 key={node.slug}
-                slug={`case-studies/${node.slug}`}
+                slug={`/case-studies/${node.slug}`}
                 tags={node.tags}
                 subtitle={node.acf.subtitle}
                 teaser={node.acf.teaser}

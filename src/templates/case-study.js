@@ -10,7 +10,7 @@ import CaseStudyCta from '../components/CaseStudy/CaseStudyCta'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-import { animationValues } from '../utils/styles'
+import { animationValues } from '../utils/Styles'
 import '../scss/02-pages/_case-study.scss'
 
 const CaseStudy = ({ data: { wordpressWpCaseStudies } }) => (

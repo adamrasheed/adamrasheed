@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { transition, MediaScreen } from '../../../utils/styles'
+import { transition, MediaScreen } from '../../../utils/Styles'
 
 const MobileMenu = styled.nav`
   position: fixed;

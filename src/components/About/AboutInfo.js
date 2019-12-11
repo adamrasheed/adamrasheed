@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/styles'
+import { MediaScreen } from 'src/utils/Styles'
+import PreviewTitle from 'src/components/Global/PreviewTitle'
 import AboutLink from './AboutLink'
-import PreviewTitle from '../Global/PreviewTitle'
 
 const LinkCategory = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const AboutInfoCategory = ({ title, content }) => (
     <PreviewTitle small flex100 style={{ marginBottom: '13px' }}>
       {title}
     </PreviewTitle>
-    {content?.map((talk, i) => (
+    {content ?.map((talk, i) => (
       <AboutLink
         key={i}
         title={talk.title}

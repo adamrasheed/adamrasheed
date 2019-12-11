@@ -7,8 +7,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
   MediaScreen, Color, transition, brandColors,
-} from '../../utils/styles'
-import { fontSize } from '../../utils/Typography'
+} from 'src/utils/Styles'
+import { fontSize } from 'src/utils/Typography'
 
 library.add(fab)
 
@@ -58,15 +58,17 @@ const Social = ({ social }) => (
   </ul>
 )
 
-export default Social
+export const SocialTypes = PropTypes.shape({
+  account: PropTypes.string,
+  url: PropTypes.shape({
+    url: PropTypes.string,
+  }),
+})
 
 Social.propTypes = {
   social: PropTypes.arrayOf(
-    PropTypes.shape({
-      account: PropTypes.string,
-      url: PropTypes.shape({
-        url: PropTypes.string,
-      }),
-    }),
+    SocialTypes,
   ).isRequired,
 }
+
+export default Social

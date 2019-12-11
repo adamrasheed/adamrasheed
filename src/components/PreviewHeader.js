@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { fontSize, H4, font } from '../utils/Typography'
-import { Color, transition } from '../utils/styles'
+import { fontSize, H4, font } from 'src/utils/Typography'
+import { Color, transition } from 'src/utils/Styles'
 
 const PreviewHeaderContainer = styled.div`
   display: flex;

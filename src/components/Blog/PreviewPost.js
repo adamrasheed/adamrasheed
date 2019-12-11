@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen } from 'src/utils/styles'
+import { MediaScreen } from 'src/utils/Styles'
 import { H2, fontSize } from 'src/utils/Typography'
 import StyledLink from '../Global/StyledLink'
 

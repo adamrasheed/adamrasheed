@@ -5,10 +5,10 @@ import styled from 'styled-components';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-import Container from '../Container';
+import Social, { SocialTypes } from 'src/components/Global/Social';
+import Container from 'src/components/Container';
 import FooterCredit from './FooterCredit';
 import FooterSource from './FooterSource';
-import Social from '../Global/Social';
 
 library.add(fab);
 
@@ -17,7 +17,7 @@ const FooterWrapper = styled.footer`
 `;
 
 const Footer = ({ title, social }) => {
-  const credit = `${title} &copy; ${new Date().getFullYear()}`;
+  const credit = `${title} ©${new Date().getFullYear()}`;
   return (
     <FooterWrapper className="footer">
       <Container footer split style={{ padding: '1.7rem 1rem' }}>
@@ -35,4 +35,5 @@ export default Footer;
 
 Footer.propTypes = {
   title: PropTypes.string.isRequired,
+  social: PropTypes.arrayOf(SocialTypes).isRequired,
 };

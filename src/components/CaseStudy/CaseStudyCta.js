@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Color, transition } from 'src/utils/styles'
+import { Color, transition } from 'src/utils/Styles'
 import { fontSize } from 'src/utils/Typography'
 
 const Btn = styled.a`
@@ -28,6 +28,7 @@ const Btn = styled.a`
 const CaseStudyCta = () => {
   const message = `Looking for a Front-end Developer to create something rad like this?
   Let’s Talk.`
+  const cta = `Email Me`
   return (
     <div className="case-study__cta">
       <h3 className="case-study__title">
@@ -42,7 +43,7 @@ const CaseStudyCta = () => {
           margin: '1.5rem auto 0',
         }}
       >
-          Email Me
+        {cta}
       </Btn>
     </div>
   )

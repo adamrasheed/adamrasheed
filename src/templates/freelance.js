@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-import { animationValues } from '../utils/styles'
+import { animationValues } from '../utils/Styles'
 
 const FreelancePage = ({ data: { wordpressPage } }) => (
   <Layout>

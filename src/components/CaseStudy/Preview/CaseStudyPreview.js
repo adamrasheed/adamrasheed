@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
-import { MediaScreen, Spacer } from 'src/utils/styles'
+import { MediaScreen, Spacer } from 'src/utils/Styles'
 import {
   H3, H4, P, fontSize,
 } from 'src/utils/Typography'

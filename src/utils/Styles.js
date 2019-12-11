@@ -25,6 +25,7 @@ export const animationValues = {
 }
 
 export const Spacer = {
+  gridGap: `2rem`,
   small: '6rem',
   medium: '7rem',
   large: '8rem',

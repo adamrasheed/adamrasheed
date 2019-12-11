@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
-import { Color, animationValues } from 'src/utils/styles'
+import { Color, animationValues } from 'src/utils/Styles'
 import { P, font } from 'src/utils/Typography'
 
 import Container from '../Container'
@@ -87,5 +87,5 @@ Hero.propTypes = {
   tagline: PropTypes.string.isRequired,
   specialize: PropTypes.string.isRequired,
   career: PropTypes.string.isRequired,
-  hideCareer: PropTypes.string.isRequired,
+  hideCareer: PropTypes.bool.isRequired,
 }

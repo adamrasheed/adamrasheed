@@ -1,5 +1,13 @@
 const path = require('path')
 
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, "src"), "node_modules"],
+    },
+  })
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return new Promise((resolve, reject) => {
@@ -35,12 +43,15 @@ exports.createPages = ({ graphql, actions }) => {
       `,
     ).then(result => {
       if (result.errors) {
+        console.log('there are some errors')
+        debugger;
         console.log(result.errors)
         reject(result.errors)
       }
 
       result.data.allWordpressPage.edges.forEach(({ node }) => {
         console.log('page')
+        debugger;
 
         if (node.template != '') {
           const templateSlug = node.slug
@@ -66,6 +77,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
 
       result.data.allWordpressPost.edges.forEach(({ node }) => {
+        debugger;
         createPage({
           path: `blog/${node.slug}`,
           component: path.resolve('./src/templates/post.js'),
@@ -76,6 +88,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
 
       result.data.allWordpressWpCaseStudies.edges.forEach(({ node }) => {
+        debugger;
         createPage({
           path: `case-studies/${node.slug}`,
           component: path.resolve('./src/templates/case-study.js'),

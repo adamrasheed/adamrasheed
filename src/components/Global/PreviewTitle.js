@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { fontSize, font } from '../../utils/Typography'
-import { Color, MediaScreen } from '../../utils/styles'
+import { fontSize, font } from 'src/utils/Typography'
+import { Color, MediaScreen } from 'src/utils/Styles'
 
 const PreviewTitle = styled.div`
   font-family: ${font.body};

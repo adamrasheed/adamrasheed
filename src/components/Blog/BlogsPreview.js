@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen, Spacer } from 'src/utils/styles'
+import { MediaScreen, Spacer } from 'src/utils/Styles'
 import Container from '../Container'
 import PreviewPost from './PreviewPost'
 
@@ -24,14 +24,16 @@ const BlogsPreview = ({ posts }) => (
   <BlogPreviewSection>
     <Container noPadding>
       <PreviewPosts>
-        {posts?.map(({ node }, i) => (
-          <PreviewPost
-            key={i}
-            title={node.title}
-            link={`blog/${node.slug}`}
-            date={node.date}
-          />
-        ))}
+        {posts ?.map((post, i) => (
+          post.node ? (
+            <PreviewPost
+              key={i}
+              title={post.node.title}
+              link={`/blog/${post.node.slug}`}
+              date={post.node.date}
+            />
+          ) : <p key={i}>loading</p>)
+        )}
       </PreviewPosts>
     </Container>
   </BlogPreviewSection>
@@ -39,10 +41,14 @@ const BlogsPreview = ({ posts }) => (
 
 export default BlogsPreview
 
+export const PostType = PropTypes.shape({
+  title: PropTypes.string,
+  slug: PropTypes.string,
+  date: PropTypes.string,
+})
+
 BlogsPreview.propTypes = {
-  posts: PropTypes.arrayOf(PropTypes.shape(PropTypes.shape({
-    title: PropTypes.string,
-    slug: PropTypes.string,
-    date: PropTypes.string,
-  }))).isRequired,
+  posts: PropTypes.arrayOf(
+    PostType,
+  ).isRequired,
 }

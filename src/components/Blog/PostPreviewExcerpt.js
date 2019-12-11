@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MediaScreen } from 'src/utils/styles'
+import { MediaScreen } from 'src/utils/Styles'
 
 const PostPreviewExcerpt = styled.div`
   height: auto;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { H1 } from 'src/utils/Typography'
-import { MediaScreen } from 'src/utils/styles'
+import { MediaScreen } from 'src/utils/Styles'
 
 const PostTitle = styled(H1)`
   font-size: 1.75rem;

@@ -13,7 +13,7 @@ import AboutImg from '../components/About/AboutImg'
 import AboutContainer from '../components/About/AboutContainer'
 
 import { H2 } from '../utils/Typography'
-import { MediaScreen, animationValues } from '../utils/styles'
+import { MediaScreen, animationValues } from '../utils/Styles'
 import PreviewHeader from '../components/PreviewHeader'
 import Container from '../components/Container'
 

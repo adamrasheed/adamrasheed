@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/styles'
-import Container from '../Container'
+import Container from 'src/components/Container'
+import { MediaScreen, Spacer } from 'src/utils/Styles'
 
 const AboutContainer = styled(Container)`
+  display: grid;
+  grid-gap: ${Spacer.gridGap};
   @media (min-width: ${MediaScreen['screen-sm-med']}) {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    grid-template-columns: 3fr 2fr;
     margin-bottom: 4rem;
   }
 `

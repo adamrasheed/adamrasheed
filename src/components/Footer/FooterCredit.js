@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { MediaScreen } from '../../utils/styles';
-import { fontSize, font } from '../../utils/Typography';
+import { MediaScreen } from 'src/utils/Styles';
+import { fontSize, font } from 'src/utils/Typography';
 
 const FooterCredit = styled.div`
   margin-bottom: 1rem;

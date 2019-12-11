@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import Container from 'src/components/Container';
+import { font } from 'src/utils/Typography';
 import SiteLogo from './SiteLogo';
 import Navigation from './Navigation';
 import MobileNav from './MobileNav';
 import MobNavToggle from './MobNavToggle';
-import Container from '../../Container';
 
-import { font } from '../../../utils/Typography';
 
 const HeaderContainer = styled(Container)`
   display: flex;

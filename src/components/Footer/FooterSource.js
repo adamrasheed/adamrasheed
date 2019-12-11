@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MediaScreen, Color } from '../../utils/styles'
-import { fontSize, font } from '../../utils/Typography'
+import { MediaScreen, Color } from 'src/utils/Styles'
+import { fontSize, font } from 'src/utils/Typography'
 
 const Source = styled.div`
   font-family: ${font.body};

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ContainerSize, Color, MediaScreen } from '../utils/styles'
+import { ContainerSize, Color, MediaScreen } from 'src/utils/Styles'
 
 const Container = styled.div`
   max-width: ${props => (props.small

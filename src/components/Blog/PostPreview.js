@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
 
-import { MediaScreen, animationValues } from 'src/utils/styles'
+import { MediaScreen, animationValues } from 'src/utils/Styles'
 import PostPreviewTitle from './PostPreviewTitle'
 import PostMeta from './PostPreviewMeta'
 import PostPreviewExcerpt from './PostPreviewExcerpt'

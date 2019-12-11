@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { MediaScreen, Color } from '../../utils/styles'
-import { fontSize, font, lineHeight } from '../../utils/Typography'
+import { MediaScreen, Color } from 'src/utils/Styles'
+import { fontSize, font, lineHeight } from 'src/utils/Typography'
 
 const Post = styled.article`
   margin-bottom: 1rem;

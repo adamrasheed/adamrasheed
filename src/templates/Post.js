@@ -10,17 +10,17 @@ import PostTitle from '../components/Blog/PostTitle'
 import PostMeta from '../components/Blog/PostPreviewMeta'
 import PostBody from '../components/PostBody'
 
-import { MediaScreen, ContainerSize } from '../utils/styles'
+import { MediaScreen, ContainerSize } from '../utils/Styles'
 import PostCta from '../components/Blog/PostCta'
 
 const PostContainer = styled.main`
+  display: grid;
+  grid-gap: 2rem;
   max-width: ${ContainerSize['container-size']};
   margin: 0 auto;
 
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
+    grid-template-columns: 1fr auto;
     padding: 0 1rem;
   }
 `

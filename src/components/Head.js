@@ -7,16 +7,14 @@ const fallbackMeta = {
   description: `Adam Rasheed is a front-end developer who specializes in custom Shopify theme development and custom WordPress theme development, and GatsbyJS Development`,
 }
 
-const Head = ({ title, description, photo }) => (
+const Head = ({ title = fallbackMeta.title, description = fallbackMeta.description, photo }) => (
   <Helmet>
     <html lang="en" />
-    <title>{title || fallbackMeta.title}</title>
+    <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content={
-            description || 'Adam Rasheed is a front-end developer based in San Diego, California who specializes in custom Shopify theme development and custom WordPress theme development'
-          }
+      content={description}
     />
 
     <meta
@@ -26,7 +24,7 @@ const Head = ({ title, description, photo }) => (
 
     <meta
       property="og:title"
-      content={title || fallbackMeta.title}
+      content={title}
     />
     {/* <!-- Twitter --> */}
     <meta name="twitter:card" content="summary_large_image" />
@@ -41,16 +39,16 @@ const Head = ({ title, description, photo }) => (
     <meta name="twitter:creator" content="@arasheedphoto" />
     <meta
       name="twitter:description"
-      content={description || ''}
+      content={description}
     />
     {photo ? <meta name="twitter:image:src" content={photo} /> : null}
 
     {/* <!-- Open Graph general (Facebook, Pinterest & Google+) --> */}
-    <meta name="og:title" content={title || fallbackMeta.title} />
-    {photo ? <meta name="og:image" content={photo} /> : null}
+    <meta name="og:title" content={title} />
+    {photo && <meta name="og:image" content={photo} />}
     <meta
       name="og:description"
-      content={description || fallbackMeta.description}
+      content={description}
     />
     <meta name="og:url" content="https://adamrasheed.com" />
     <meta name="og:site_name" content="Adam Rasheed" />

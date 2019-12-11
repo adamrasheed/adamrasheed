@@ -7,7 +7,7 @@ import PostPreview from '../components/Blog/PostPreview'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-import { MediaScreen } from '../utils/styles'
+import { MediaScreen } from '../utils/Styles'
 import { font, lineHeight } from '../utils/Typography'
 
 const Posts = styled.div`

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import ConvertKit from 'src/constants/API'
-import { Color, transition, MediaScreen } from 'src/utils/styles'
+import { Color, transition, MediaScreen } from 'src/utils/Styles'
 import { fontSize, P } from 'src/utils/Typography'
 
 const Label = styled.label`
@@ -67,9 +68,8 @@ const Msg = styled(P)`
   ${({ messageState }) => {
     if (messageState === 'error') {
       return `color: red`
-    } if (messageState === 'success') {
-      return `color: ${Color.text}`
     }
+    return `color: ${Color.text}`
   }};
 `
 
@@ -97,6 +97,7 @@ class Form extends Component {
     event.preventDefault()
   }
 
+  // eslint-disable-next-line camelcase
   submitToCk = ({ first_name, email, endPoint }) => {
     fetch(endPoint, {
       method: 'POST',
@@ -127,7 +128,7 @@ class Form extends Component {
           email: ``,
         })
       })
-      .catch(err => console.log(err.message))
+      .catch(err => console.error(err.message))
   }
 
   handleChange = event => {
@@ -178,3 +179,7 @@ class Form extends Component {
 }
 
 export default Form
+
+Form.propTypes = {
+  formId: PropTypes.string.isRequired,
+}

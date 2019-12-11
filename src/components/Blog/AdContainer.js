@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { MediaScreen } from '../../utils/styles'
+import { MediaScreen } from 'src/utils/Styles'
 
 const StyledAdContainer = styled.div`
   margin: 1rem 0;

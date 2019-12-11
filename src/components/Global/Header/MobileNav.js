@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import EMAIL from 'src/constants/contact'
+import { Color } from 'src/utils/Styles'
 import PreviewTitle from '../PreviewTitle'
 import MenuLink, { MenuLinkNative } from './MenuLink'
 import MobileMenu from './MobMenu'
-import { Color } from '../../../utils/styles'
 
 const MobileNav = ({ active }) => {
   const { wordpressWpApiMenusMenusItems: menuItems } = useStaticQuery(graphql`
@@ -38,7 +38,7 @@ const MobileNav = ({ active }) => {
             key={item.wordpress_id}
           >
             <MenuLink
-              to={item.object_slug}
+              to={`/${item.object_slug}`}
               activeStyle={{
                 color: Color.text,
               }}

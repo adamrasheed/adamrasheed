@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { fontSize, font, lineHeight } from '../utils/Typography'
-import { Color } from '../utils/styles'
+import { fontSize, font, lineHeight } from 'src/utils/Typography'
+import { Color } from 'src/utils/Styles'
 
 const PostBody = styled.div`
   h2 {

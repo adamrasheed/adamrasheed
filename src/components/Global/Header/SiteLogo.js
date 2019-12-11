@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Color, MediaScreen } from 'src/utils/styles'
+import { Color, MediaScreen } from 'src/utils/Styles'
 import { H1, fontSize, font } from 'src/utils/Typography'
 
 import StyledLink from '../StyledLink'

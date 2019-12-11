@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/styles'
-import { H5, P, A } from '../../utils/Typography'
+import { MediaScreen } from 'src/utils/Styles'
+import { H5, P, A } from 'src/utils/Typography'
 
 const StyledAboutLink = styled.div`
   flex: 100% 1;

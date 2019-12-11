@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MediaScreen, transition, Color } from '../../../utils/styles'
+import { MediaScreen, transition, Color } from '../../../utils/Styles'
 
 const MobileNavToggle = styled.button`
   background: none;
