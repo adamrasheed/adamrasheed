@@ -1,10 +1,9 @@
 import React from 'react'
-import Container from '../Container'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen, Spacer } from '../../utils/Styles'
+import { MediaScreen, Spacer } from 'src/utils/Styles'
+import Container from '../Container'
 import PreviewPost from './PreviewPost'
-
-// import '../../scss/01-modules/preview-posts.scss'
 
 const BlogPreviewSection = styled.section`
   margin-bottom: ${Spacer.small};
@@ -21,25 +20,35 @@ const PreviewPosts = styled.div`
   }
 `
 
-class BlogsPreview extends React.Component {
-  render() {
-    return (
-      <BlogPreviewSection>
-        <Container noPadding>
-          <PreviewPosts>
-            {this.props.posts.map(({ node }, i) => (
-              <PreviewPost
-                key={i}
-                title={node.title}
-                link={`blog/${node.slug}`}
-                date={node.date}
-              />
-            ))}
-          </PreviewPosts>
-        </Container>
-      </BlogPreviewSection>
-    )
-  }
-}
+const BlogsPreview = ({ posts }) => (
+  <BlogPreviewSection>
+    <Container noPadding>
+      <PreviewPosts>
+        {posts ?.map((post, i) => (
+          post.node ? (
+            <PreviewPost
+              key={i}
+              title={post.node.title}
+              link={`/blog/${post.node.slug}`}
+              date={post.node.date}
+            />
+          ) : <p key={i}>loading</p>)
+        )}
+      </PreviewPosts>
+    </Container>
+  </BlogPreviewSection>
+)
 
 export default BlogsPreview
+
+export const PostType = PropTypes.shape({
+  title: PropTypes.string,
+  slug: PropTypes.string,
+  date: PropTypes.string,
+})
+
+BlogsPreview.propTypes = {
+  posts: PropTypes.arrayOf(
+    PostType,
+  ).isRequired,
+}

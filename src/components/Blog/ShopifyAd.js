@@ -1,12 +1,11 @@
 import React from 'react'
-import { H4, P, A } from '../../utils/Typography'
+import { SHOPIFY_AFFILIATE_LINK } from 'src/constants/affiliateLinks'
+import { H4, P, A } from 'src/utils/Typography'
+import shopifyImg from 'src/images/shopify_logo_whitebg.svg'
 import ButtonALink from '../ButtonALink'
 import AdContainer from './AdContainer'
-import shopifyImg from '../../images/shopify_logo_whitebg.svg'
 
-const affiliateLink = `https://www.shopify.com/?ref=creatix-online-marketing&utm_campaign=Personal%20Site%20Ad&utm_medium=Blog&utm_source=adamrasheed.com`
-
-const ShopifyAd = props => (
+const ShopifyAd = () => (
   <AdContainer>
     <img
       style={{
@@ -18,7 +17,7 @@ const ShopifyAd = props => (
       alt=""
     />
     <H4 style={{ marginBottom: `0.625rem` }}>
-      <A href={affiliateLink} target="_blank" rel="noopener noreferrer">
+      <A href={SHOPIFY_AFFILIATE_LINK} target="_blank" rel="noopener noreferrer">
         Get Started With Shopify Today!
       </A>
     </H4>
@@ -27,7 +26,7 @@ const ShopifyAd = props => (
       free trial today.
     </P>
     <ButtonALink
-      href={affiliateLink}
+      href={SHOPIFY_AFFILIATE_LINK}
       style={{
         background: '#96bf48',
         display: `block`,

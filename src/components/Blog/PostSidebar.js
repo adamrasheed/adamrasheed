@@ -1,10 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
+import { MediaScreen } from 'src/utils/Styles'
+import { kebabCase } from 'src/utils/helpers'
 
 import SidebarPost from './PostSidebarPost'
 import StyledLink from '../Global/StyledLink'
 import PreviewTitle from '../Global/PreviewTitle'
+
 import ShopifyAd from './ShopifyAd'
 import DigitalOceanAd from './DigitalOceanAd'
 
@@ -28,7 +31,7 @@ const SideBar = styled.aside`
   }
 
   @media screen and (min-width: ${MediaScreen['screen-lg']}) {
-    margin: 2rem 0 0 9rem;
+    margin: 2rem 0 0;
   }
 `
 
@@ -40,60 +43,47 @@ const SidebarPosts = styled.ul`
     margin-bottom: 4rem;
   }
 `
-class PostSidebar extends React.Component {
-  state = {
-    featuredTag: null,
-  }
 
-  componentDidMount() {
-    const { tags } = this.props
-    let featuredTag
+const PostSidebar = ({ otherPosts, tags }) => {
+  const filteredTags = tags && tags.map(tag => tag.name && kebabCase(tag.name))
 
-    if (tags && tags.length) {
-      tags.forEach(tag => {
-        switch (tag.name) {
-          case `shopify`:
-          case `Shopify`:
-            featuredTag = tag.name
-            break
-          case `Digital Ocean`:
-          case `DigitalOcean`:
-            featuredTag = tag.name
-            break
-          default:
-            return
-        }
-      })
-      console.log(featuredTag)
-      this.setState({ featuredTag })
-    }
-  }
-  render() {
-    const { otherPosts } = this.props
-
-    return (
-      <SideBar>
-        <PreviewTitle extraSmall sidebar>
-          Other Posts
-        </PreviewTitle>
-        <SidebarPosts>
-          {otherPosts.map(({ node }, i) => (
-            <SidebarPost key={i}>
-              <StyledLink
-                to={`blog/${node.slug}`}
-                dangerouslySetInnerHTML={{ __html: node.title }}
-              />
-            </SidebarPost>
-          ))}
-        </SidebarPosts>
-        {this.state.featuredTag === `shopify` ||
-        this.state.featuredTag === `Shopify` ? (
+  return (
+    <SideBar>
+      <PreviewTitle extraSmall sidebar>
+        Other Posts
+      </PreviewTitle>
+      <SidebarPosts>
+        {otherPosts.map(({ node }) => (
+          <SidebarPost key={node.slug}>
+            <StyledLink
+              to={`blog/${node.slug}`}
+              dangerouslySetInnerHTML={{ __html: node.title }}
+            />
+          </SidebarPost>
+        ))}
+      </SidebarPosts>
+      {filteredTags
+        && filteredTags.includes(`shopify`)
+        && (
           <ShopifyAd />
-        ) : null}
-        {this.state.featuredTag === `Digital Ocean` ? <DigitalOceanAd /> : null}
-      </SideBar>
-    )
-  }
+        )}
+      {filteredTags
+        && filteredTags.includes(`digital-ocean`)
+        && <DigitalOceanAd />}
+    </SideBar>
+  )
 }
 
 export default PostSidebar
+
+PostSidebar.propTypes = {
+  otherPosts: PropTypes.arrayOf(PropTypes.shape({
+    node: PropTypes.shape({
+      title: PropTypes.string,
+      slug: PropTypes.string,
+    }),
+  })).isRequired,
+  tags: PropTypes.arrayOf({
+    name: PropTypes.string,
+  }).isRequired,
+}

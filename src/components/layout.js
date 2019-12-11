@@ -1,76 +1,85 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Head from './Head'
-import Header from './Global/Header/Header'
-import Footer from './Footer/Footer'
+import { useStaticQuery, graphql } from 'gatsby';
 
-import '../scss/00-global/_reset.scss'
-import '../scss/00-global/_global.scss'
+import Head from './Head';
+import Header from './Global/Header/Header';
+import Footer from './Footer/Footer';
 
-const Layout = ({ children, template }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        wordpressSiteMetadata {
-          name
-          description
-        }
-        wordpressAcfOptions {
-          options {
-            title
-            tagline
-            social_accounts {
-              account
-              url {
-                url
-              }
-            }
+import '../scss/00-global/_reset.scss';
+import '../scss/00-global/_global.scss';
+
+const Layout = ({ children, template = null }) => {
+  const data = useStaticQuery(graphql`
+  query SiteTitleQuery {
+    wordpressSiteMetadata {
+      name
+      description
+    }
+    wordpressAcfOptions {
+      options {
+        title
+        tagline
+        social_accounts {
+          account
+          url {
+            url
           }
         }
-        wordpressPage(slug: { eq: "about" }) {
-          featured_media {
-            localFile {
-              childImageSharp {
-                fixed(width: 1200) {
-                  src
-                }
-              }
+      }
+    }
+    wordpressPage(slug: { eq: "about" }) {
+      featured_media {
+        localFile {
+          childImageSharp {
+            fixed(width: 1200) {
+              src
             }
           }
         }
       }
-    `}
-    render={data => (
-      <>
-        <Head
-          title={data.wordpressSiteMetadata.name}
-          description={data.wordpressSiteMetadata.description}
-          tagline={data.wordpressAcfOptions.options.tagline}
-          photo={
-            data.wordpressPage.featured_media.localFile.childImageSharp.fixed
-              .src
-          }
-        />
-        <Header
-          siteTitle={data.wordpressSiteMetadata.name}
-          jobTitle={data.wordpressAcfOptions.options.title}
-        />
-        <div className={`main${template ? ` main--${template}` : ``}`}>
-          {children}
-        </div>
-        <Footer
-          title={data.wordpressSiteMetadata.name}
-          social={data.wordpressAcfOptions.options.social_accounts}
-        />
-      </>
-    )}
-  />
-)
+    }
+  }
+`);
+
+  const mainClass = template ? `main main--${template}` : 'main';
+
+  const {
+    wordpressSiteMetadata: { name, description },
+    wordpressAcfOptions: { options: acfOptions },
+  } = data
+
+  return (
+    <>
+      <Head
+        title={name}
+        description={description}
+        tagline={acfOptions.tagline}
+        photo={
+          data.wordpressPage.featured_media.localFile.childImageSharp.fixed
+            .src
+        }
+      />
+      <Header
+        siteTitle={name}
+        jobTitle={acfOptions.title}
+      />
+      <div className={mainClass}>
+        {children}
+      </div>
+      <Footer
+        title={name}
+        social={acfOptions.social_accounts}
+      />
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+  // eslint-disable-next-line react/require-default-props
+  template: PropTypes.string,
+};
 
-export default Layout
+export default Layout;

@@ -1,14 +1,12 @@
 import styled from 'styled-components'
-import { MediaScreen, Color } from '../../utils/Styles'
-import { fontSize, font, lineHeight } from '../../utils/Typography'
+import { MediaScreen, Color } from 'src/utils/Styles'
+import { fontSize, font, lineHeight } from 'src/utils/Typography'
 
 const Post = styled.article`
   margin-bottom: 1rem;
   padding: 0;
-  padding: ${props =>
-    props.freelance || props.caseStudy ? `0` : `0 1rem 1rem`};
-  max-width: ${props =>
-    props.freelance || props.caseStudy ? `unset` : `32rem`};
+  padding: ${props => (props.freelance || props.caseStudy ? `0` : `0 1rem 1rem`)};
+  max-width: ${props => (props.freelance || props.caseStudy ? `unset` : `32rem`)};
   font-family: ${font.body};
   line-height: ${lineHeight.body};
 

@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Color } from '../../utils/Styles'
-import { font } from '../../utils/Typography'
+import { Color } from 'src/utils/Styles'
+import { font } from 'src/utils/Typography'
 
 const StyledLink = styled(Link)`
   color: ${Color.text};

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
@@ -6,39 +7,40 @@ import CaseStudyPreview from '../components/CaseStudy/Preview/CaseStudyPreview'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-class FreelancePage extends React.Component {
-  render() {
-    const { data } = this.props
-    console.log(data.allWordpressWpCaseStudies.edges)
-    return (
-      <Layout>
-        <PageTitle title={data.wordpressPage.title} />
-        <section className="section-case-studies">
-          <Container>
-            {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
-              <CaseStudyPreview
-                title={node.title}
-                key={i}
-                slug={`case-studies/${node.slug}`}
-                imgIdSlug={node.slug}
-                tags={node.tags}
-                subtitle={node.acf.subtitle}
-                teaser={node.acf.teaser}
-                image={
+const FreelancePage = ({ data: { wordpressPage, allWordpressWpCaseStudies } }) => (
+  <Layout>
+    <PageTitle title={wordpressPage.title} />
+    <section className="section-case-studies">
+      <Container>
+        {allWordpressWpCaseStudies?.edges?.map(({ node }, i) => (
+          <CaseStudyPreview
+            title={node.title}
+            key={i}
+            slug={`case-studies/${node.slug}`}
+            imgIdSlug={node.slug}
+            tags={node.tags}
+            subtitle={node.acf.subtitle}
+            teaser={node.acf.teaser}
+            image={
                   node.featured_media != null
                     ? node.featured_media.localFile.childImageSharp.fluid
                     : null
                 }
-              />
-            ))}
-          </Container>
-        </section>
-      </Layout>
-    )
-  }
-}
+          />
+        ))}
+      </Container>
+    </section>
+  </Layout>
+)
 
 export default FreelancePage
+
+FreelancePage.propTypes = {
+  data: PropTypes.shape({
+    allWordpressWpCaseStudies: PropTypes.object,
+    wordpressPage: PropTypes.object,
+  }).isRequired,
+}
 
 export const query = graphql`
   query CaseStudiesPage {

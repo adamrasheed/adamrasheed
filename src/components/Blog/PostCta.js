@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Form from '../Form'
-import { MediaScreen, ContainerSize } from '../../utils/Styles'
-import { H3, P } from '../../utils/Typography'
+import Form from 'src/components/Form'
+import { MediaScreen, ContainerSize } from 'src/utils/Styles'
+import { H3, P } from 'src/utils/Typography'
 
 const Cta = styled.div`
   background: hsla(219, 100%, 15%, 0.025);
@@ -16,23 +17,23 @@ const Cta = styled.div`
     margin: 0 auto 3rem;
   }
 `
-class PostCta extends Component {
-  render() {
-    const { title, subtitle, formId } = this.props
-    return (
-      <Cta>
-        <H3>
-          {title
-            ? title
-            : `Like this Post? Get helpful Articles like this in Your Inbox!`}
-        </H3>
-        <P>
-          {subtitle ? subtitle : `Sign Up today to get Twice Monthly Articles`}
-        </P>
-        <Form formId={formId ? formId : null} />
-      </Cta>
-    )
-  }
-}
+const PostCta = ({ title, subtitle, formId }) => (
+  <Cta>
+    <H3>{title}</H3>
+    <P>{subtitle}</P>
+    <Form formId={formId || null} />
+  </Cta>
+)
 
 export default PostCta
+
+PostCta.defaultProps = {
+  title: `Like this Post? Get helpful Articles like this in Your Inbox!`,
+  subtitle: `Sign Up today to get Twice Monthly Articles`,
+}
+
+PostCta.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  formId: PropTypes.string.isRequired,
+}

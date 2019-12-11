@@ -3,6 +3,7 @@ module.exports = {
     title: 'Adam Rasheed',
     jobTitle: `Front-end Developer`,
     siteUrl: `https://adamrasheed.com`,
+    email: `adamrasheed91@gmail.com`
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -19,6 +20,14 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          'src': `${__dirname}/src`,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Adam Rasheed',
@@ -32,7 +41,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-wordpress`,
       options: {

@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
-import { H5, P, A } from '../../utils/Typography'
+import { MediaScreen } from 'src/utils/Styles'
+import { H5, P, A } from 'src/utils/Typography'
 
 const StyledAboutLink = styled.div`
   flex: 100% 1;
@@ -29,21 +30,22 @@ const AboutLinkTitle = styled(H5)`
   line-height: 1.25;
   margin-bottom: 0.375rem;
 `
-class AboutLink extends React.Component {
-  render() {
-    const { url, title, description } = this.props
 
-    return (
-      <StyledAboutLink>
-        <AboutLinkTitle>
-          <A href={url} target="_blank" rel="noopener noreferrer">
-            {title}
-          </A>
-        </AboutLinkTitle>
-        <P small>{description}</P>
-      </StyledAboutLink>
-    )
-  }
-}
+const AboutLink = ({ url, title, description }) => (
+  <StyledAboutLink>
+    <AboutLinkTitle>
+      <A href={url} target="_blank" rel="noopener noreferrer">
+        {title}
+      </A>
+    </AboutLinkTitle>
+    <P small>{description}</P>
+  </StyledAboutLink>
+)
 
 export default AboutLink
+
+AboutLink.propTypes = {
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}

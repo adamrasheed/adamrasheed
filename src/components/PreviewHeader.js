@@ -1,8 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { fontSize, H4, font } from '../utils/Typography'
-import { Color, transition } from '../utils/Styles'
+import { fontSize, H4, font } from 'src/utils/Typography'
+import { Color, transition } from 'src/utils/Styles'
 
 const PreviewHeaderContainer = styled.div`
   display: flex;
@@ -54,16 +55,21 @@ const PreviewHeaderLink = styled(Link)`
   }
 `
 
-class PreviewHeader extends React.Component {
-  render() {
-    const { title, link } = this.props
-    return (
-      <PreviewHeaderContainer>
-        <PreviewHeaderTitle>{title}</PreviewHeaderTitle>
-        <PreviewHeaderLink to={link}>More {title}</PreviewHeaderLink>
-      </PreviewHeaderContainer>
-    )
-  }
+const PreviewHeader = ({ title, link }) => {
+  const text = `More ${title}`
+  return (
+    <PreviewHeaderContainer>
+      <PreviewHeaderTitle>{title}</PreviewHeaderTitle>
+      <PreviewHeaderLink to={link}>
+        {text}
+      </PreviewHeaderLink>
+    </PreviewHeaderContainer>
+  )
 }
 
 export default PreviewHeader
+
+PreviewHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+}

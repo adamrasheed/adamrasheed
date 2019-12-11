@@ -1,10 +1,10 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
+import { Color, MediaScreen } from 'src/utils/Styles'
 import MenuItem from './MenuItem'
 import MenuLink from './MenuLink'
-import { Color, MediaScreen } from '../../../utils/Styles'
 
 const SiteMenu = styled.nav`
   display: none;
@@ -25,40 +25,39 @@ const SiteMenu = styled.nav`
   }
 `
 
-const Navigation = ({ data }) => (
-  <StaticQuery
-    query={graphql`
-      query NavigationQuery {
-        wordpressWpApiMenusMenusItems(slug: { eq: "main-menu" }) {
-          items {
-            wordpress_id
-            title
-            url
-            object_id
-            object
-            object_slug
-            type_label
-          }
-        }
+const Navigation = () => {
+  const { wordpressWpApiMenusMenusItems: wpMenus } = useStaticQuery(graphql`
+  query NavigationQuery {
+    wordpressWpApiMenusMenusItems(slug: { eq: "main-menu" }) {
+      items {
+        wordpress_id
+        title
+        url
+        object_id
+        object
+        object_slug
+        type_label
       }
-    `}
-    render={data => (
-      <SiteMenu>
-        <ul className="site-menu__list">
-          {data.wordpressWpApiMenusMenusItems.items.map(item => (
-            <MenuItem key={item.wordpress_id}>
-              <MenuLink
-                to={item.object_slug}
-                activeStyle={{ color: Color.text }}
-              >
-                {item.title}
-              </MenuLink>
-            </MenuItem>
-          ))}
-        </ul>
-      </SiteMenu>
-    )}
-  />
-)
+    }
+  }
+`)
+
+  return (
+    <SiteMenu>
+      <ul className="site-menu__list">
+        {wpMenus.items.map(item => (
+          <MenuItem key={item.wordpress_id}>
+            <MenuLink
+              to={`/${item.object_slug}`}
+              activeStyle={{ color: Color.text }}
+            >
+              {item.title}
+            </MenuLink>
+          </MenuItem>
+        ))}
+      </ul>
+    </SiteMenu>
+  )
+}
 
 export default Navigation

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { MediaScreen, Color } from '../../utils/Styles'
-import { fontSize, font, lineHeight } from '../../utils/Typography'
+import { MediaScreen, Color } from 'src/utils/Styles'
+import { fontSize, font, lineHeight } from 'src/utils/Typography'
 
 const AboutBody = styled.div`
   font-family: ${font.body};
@@ -93,8 +93,6 @@ const AboutBody = styled.div`
     margin: 2rem auto 2rem;
   }
   @media (min-width: ${MediaScreen['screen-sm-med']}) {
-    flex: 50% 1;
-    max-width: 50%;
     margin-bottom: 0;
     h2 {
       line-height: 1.75rem;

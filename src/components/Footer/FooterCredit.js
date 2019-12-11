@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { MediaScreen } from '../../utils/Styles'
-import { fontSize, font } from '../../utils/Typography'
+import styled from 'styled-components';
+import { MediaScreen } from 'src/utils/Styles';
+import { fontSize, font } from 'src/utils/Typography';
 
 const FooterCredit = styled.div`
   margin-bottom: 1rem;
@@ -10,6 +10,6 @@ const FooterCredit = styled.div`
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     margin-bottom: 0;
   }
-`
+`;
 
-export default FooterCredit
+export default FooterCredit;

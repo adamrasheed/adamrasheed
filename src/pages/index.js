@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-
+import { Spring } from 'react-spring'
 import Layout from '../components/layout'
 import Hero from '../components/Hero/Hero'
 import CaseStudyPreview from '../components/CaseStudy/Preview/CaseStudyPreview'
@@ -8,18 +9,23 @@ import BlogsPreview from '../components/Blog/BlogsPreview'
 import Contact from '../components/Contact'
 import Container from '../components/Container'
 import PreviewHeader from '../components/PreviewHeader'
-import { Spring } from 'react-spring'
 
 import { font } from '../utils/Typography'
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({
+  data: {
+    wordpressAcfOptions,
+    allWordpressWpCaseStudies,
+    allWordpressPost,
+  },
+}) => (
   <Layout>
     <Hero
-      tagline={data.wordpressAcfOptions.options.tagline}
-      specialize={data.wordpressAcfOptions.options.specialization}
-      career={data.wordpressAcfOptions.options.career}
-      resume={data.wordpressAcfOptions.options.resume}
-      hideCareer={data.wordpressAcfOptions.options.hide_career}
+      tagline={wordpressAcfOptions.options.tagline}
+      specialize={wordpressAcfOptions.options.specialization}
+      career={wordpressAcfOptions.options.career}
+      resume={wordpressAcfOptions.options.resume}
+      hideCareer={wordpressAcfOptions.options.hide_career}
     />
 
     <Spring config={{ delay: 750 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
@@ -29,19 +35,19 @@ const IndexPage = ({ data }) => (
         >
           <Container>
             <PreviewHeader title="Case Studies" link="/case-studies" />
-            {data.allWordpressWpCaseStudies.edges.map(({ node }, i) => (
+            {allWordpressWpCaseStudies?.edges?.map(({ node }) => (
               <CaseStudyPreview
-                noAnimation={true}
+                noAnimation
                 title={node.title}
-                key={i}
-                slug={`case-studies/${node.slug}`}
+                key={node.slug}
+                slug={`/case-studies/${node.slug}`}
                 tags={node.tags}
                 subtitle={node.acf.subtitle}
                 teaser={node.acf.teaser}
                 image={
-                  node.featured_media != null
-                    ? node.featured_media.localFile.childImageSharp.fluid
-                    : null
+                  // eslint-disable-next-line camelcase
+                  node?.featured_media?.localFile.childImageSharp.fluid
+
                 }
               />
             ))}
@@ -50,17 +56,26 @@ const IndexPage = ({ data }) => (
       )}
     </Spring>
 
+    {allWordpressPost?.edges && (
     <section className="preview blog-preview">
       <Container>
         <PreviewHeader title="Blog Articles" link="/blog" />
-        <BlogsPreview posts={data.allWordpressPost.edges} />
+        <BlogsPreview posts={allWordpressPost.edges} />
       </Container>
     </section>
-
+    )}
     <Contact />
   </Layout>
 )
 export default IndexPage
+
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    wordpressAcfOptions: PropTypes.object,
+    allWordpressPost: PropTypes.object,
+    allWordpressWpCaseStudies: PropTypes.object,
+  }).isRequired,
+}
 
 export const query = graphql`
   query HeroQuery {

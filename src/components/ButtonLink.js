@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { Color, transition } from '../utils/Styles'
-import { fontSize } from '../utils/Typography'
+import { Color, transition } from 'src/utils/Styles'
+import { fontSize } from 'src/utils/Typography'
 
 const ButtonLink = styled(Link)`
   font-size: ${fontSize.small};

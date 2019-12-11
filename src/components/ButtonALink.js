@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import { Color, transition } from '../utils/Styles'
-import { fontSize } from '../utils/Typography'
+import { Color, transition } from 'src/utils/Styles'
+import { fontSize } from 'src/utils/Typography'
 
 const ButtonALink = styled.a`
   font-size: ${fontSize.small};

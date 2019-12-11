@@ -1,11 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { H3 } from '../../../utils/Typography'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import { MediaScreen, Spacer } from 'src/utils/Styles'
+import {
+  H3, H4, P, fontSize,
+} from 'src/utils/Typography'
 import StyledLink from '../../Global/StyledLink'
-import { MediaScreen, Spacer } from '../../../utils/Styles'
-import { H4, P, fontSize } from '../../../utils/Typography'
 
 import ButtonLink from '../../ButtonLink'
 
@@ -82,36 +84,37 @@ const PreviewTag = styled.li`
   }
 `
 
-const CaseStudyPreview = props => (
+const CaseStudyPreview = ({
+  image, title, slug, teaser, subtitle, tags,
+}) => (
   <Preview className="case-study-preview">
-    {props.image != null ? (
-      <Link to={props.slug}>
-        <PreviewImg fluid={props.image} className="case-study-preview__img" />
+    {image != null ? (
+      <Link to={slug}>
+        <PreviewImg fluid={image} className="case-study-preview__img" />
       </Link>
     ) : null}
     <PreviewContent className="case-study-preview__content">
       <PreviewTitle>
-        <StyledLink to={props.slug}>{props.title}</StyledLink>
+        <StyledLink to={slug}>{title}</StyledLink>
       </PreviewTitle>
       <ul className="case-study-preview__tags">
-        {props.tags != null
-          ? props.tags.map((tag, i) => (
-              <PreviewTag className="case-study-preview__tag" key={i}>
-                {tag.name}
-              </PreviewTag>
-            ))
-          : null}
+        {tags
+          && tags.map((tag) => (
+            <PreviewTag className="case-study-preview__tag" key={tag.name}>
+              {tag.name}
+            </PreviewTag>
+          ))}
       </ul>
 
       <PreviewBody>
         <H4 style={{ marginBottom: '0.125rem', lineHeight: '1.25' }}>
-          {props.subtitle}
+          {subtitle}
         </H4>
-        <P style={{ marginBottom: '1rem' }}>{props.teaser}</P>
+        <P style={{ marginBottom: '1rem' }}>{teaser}</P>
       </PreviewBody>
 
       <PreviewCta
-        to={props.slug}
+        to={slug}
         className="btn btn--secondary case-study-preview__cta"
       >
         View Case Study
@@ -121,3 +124,21 @@ const CaseStudyPreview = props => (
 )
 
 export default CaseStudyPreview
+
+CaseStudyPreview.defaultProps = {
+  tags: [],
+  image: {},
+}
+
+CaseStudyPreview.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  image: PropTypes.object,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  teaser: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+  })),
+
+}

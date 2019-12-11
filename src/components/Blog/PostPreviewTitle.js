@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { H2 } from '../../utils/Typography'
-import { MediaScreen } from '../../utils/Styles'
+import { H2 } from 'src/utils/Typography'
+import { MediaScreen } from 'src/utils/Styles'
 
 const PostPreviewTitle = styled(H2)`
   text-decoration: none;
@@ -10,7 +10,7 @@ const PostPreviewTitle = styled(H2)`
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
     font-size: 1.75rem;
     line-height: 2.5rem;
-    margin-bottom: ${props => (props.Blog ? '0' : '0')};
+    margin-bottom: 0;
   }
 
   & > a {

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { fontSize, font } from '../../utils/Typography'
 
@@ -11,6 +12,10 @@ const StyledPostMeta = styled.span`
   text-transform: lowercase;
 `
 
-const PostMeta = props => <StyledPostMeta>{props.date}</StyledPostMeta>
+const PostMeta = ({ date }) => <StyledPostMeta>{date}</StyledPostMeta>
 
 export default PostMeta
+
+PostMeta.propTypes = {
+  date: PropTypes.string.isRequired,
+}

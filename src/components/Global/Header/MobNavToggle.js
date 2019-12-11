@@ -46,24 +46,22 @@ const MobileNavToggle = styled.button`
   }
 
   & .span-1 {
-    top: ${props => (props.active && props.active === true ? `8px` : `0px`)};
+    top: ${props => (props.active ? `8px` : `0px`)};
     transform: rotate(
-      ${props => (props.active && props.active === true ? `45deg` : `0deg`)}
+      ${props => (props.active ? `45deg` : `0deg`)}
     );
   }
   & .span-2 {
     top: calc(50% - 1px);
     position: relative;
     width: 1rem;
-    transform: ${props =>
-      props.active && props.active === true ? 'scale(0)' : 'scale(1)'};
+    transform: ${props => (props.active ? 'scale(0)' : 'scale(1)')};
   }
 
   & .span-3 {
-    bottom: ${props =>
-      props.active && props.active === true ? `10px` : `0px`};
+    bottom: ${props => (props.active ? `10px` : `0px`)};
     transform: rotate(
-      ${props => (props.active && props.active === true ? `-45deg` : `0deg`)}
+      ${props => (props.active ? `-45deg` : `0deg`)}
     );
   }
 `
