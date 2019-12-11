@@ -45,7 +45,7 @@ const SidebarPosts = styled.ul`
 `
 
 const PostSidebar = ({ otherPosts, tags }) => {
-  const filteredTags = tags.map(tag => kebabCase(tag.name))
+  const filteredTags = tags.map(tag => tag.name && kebabCase(tag.name))
 
   return (
     <SideBar>
