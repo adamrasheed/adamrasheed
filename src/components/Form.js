@@ -92,6 +92,7 @@ class Form extends Component {
   }
 
   handleSubmit = event => {
+    // eslint-disable-next-line no-console
     console.log('form submitted')
     this.submitToCk(this.state)
     event.preventDefault()
@@ -128,6 +129,7 @@ class Form extends Component {
           email: ``,
         })
       })
+      // eslint-disable-next-line no-console
       .catch(err => console.error(err.message))
   }
 
