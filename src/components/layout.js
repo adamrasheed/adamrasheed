@@ -10,7 +10,7 @@ import Footer from './Footer/Footer';
 import '../scss/00-global/_reset.scss';
 import '../scss/00-global/_global.scss';
 
-const Layout = ({ children, template = null }) => {
+const Layout = ({ children, template }) => {
   const data = useStaticQuery(graphql`
   query SiteTitleQuery {
     wordpressSiteMetadata {
@@ -51,7 +51,7 @@ const Layout = ({ children, template = null }) => {
   } = data
 
   return (
-    <>
+    <div className="body">
       <Head
         title={name}
         description={description}
@@ -72,7 +72,7 @@ const Layout = ({ children, template = null }) => {
         title={name}
         social={acfOptions.social_accounts}
       />
-    </>
+    </div>
   );
 };
 

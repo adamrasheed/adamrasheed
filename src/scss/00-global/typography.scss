@@ -12,6 +12,11 @@ h4,
 h5 {
   font-weight: 700;
   font: $font-family-heading;
+
+  a {
+    font-size: inherit;
+    color: inherit;
+  }
 }
 
 .mega {
@@ -32,12 +37,22 @@ h2 {
   font-size: 1.5rem;
   line-height: 2rem;
   font: $font-family-subheading;
+
+  & > a {
+    font-size: inherit;
+    color: $color-text;
+  }
 }
 
 h3 {
   font-size: 1.125rem;
   line-height: 1.25rem;
   font: $font-family-subheading;
+
+  & > a {
+    font-size: inherit;
+    color: $color-text;
+  }
 }
 
 p {

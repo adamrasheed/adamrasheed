@@ -15,7 +15,6 @@ const LinkCategory = styled.div`
   @media (min-width: ${MediaScreen['screen-sm-med']}) {
     display: block;
     margin: 0 auto;
-    max-width: 16rem;
 
     &:first-of-type {
       margin-top: 0.5rem;
