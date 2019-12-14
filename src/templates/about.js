@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
+import { updateInternalLinks } from 'src/utils/helpers'
 import Layout from '../components/layout'
 import BlogsPreview from '../components/Blog/BlogsPreview'
 import PageTitle from '../components/Global/PageTitle'
@@ -35,6 +36,10 @@ const AboutTitle = styled(H2)`
 
 const AboutPage = ({ data }) => {
   const { wordpressPage, allWordpressPost, wordpressAcfOptions } = data
+
+  console.log(updateInternalLinks(wordpressPage.content))
+
+
   return (
     <Layout>
       <PageTitle title={wordpressPage.title} />

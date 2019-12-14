@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { MediaScreen, Spacer, Color } from 'src/utils/Styles'
 import { H2, P, fontSize } from 'src/utils/Typography'
-import EMAIL from 'src/constants/contact'
+import { EMAIL } from 'src/constants/contact'
 import Container from './Container'
 
 const ContactSection = styled.section`

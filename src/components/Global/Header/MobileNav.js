@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import EMAIL from 'src/constants/contact'
+import { EMAIL } from 'src/constants/contact'
 import { Color } from 'src/utils/Styles'
 import PreviewTitle from '../PreviewTitle'
 import MenuLink, { MenuLinkNative } from './MenuLink'
@@ -63,7 +63,7 @@ const MobileNav = ({ active }) => {
               textAlign: 'left',
             }}
           >
-              Email Me
+            Email Me
           </MenuLinkNative>
         </li>
       </ul>
