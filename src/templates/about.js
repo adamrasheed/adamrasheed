@@ -37,9 +37,6 @@ const AboutTitle = styled(H2)`
 const AboutPage = ({ data }) => {
   const { wordpressPage, allWordpressPost, wordpressAcfOptions } = data
 
-  console.log(updateInternalLinks(wordpressPage.content))
-
-
   return (
     <Layout>
       <PageTitle title={wordpressPage.title} />
@@ -79,7 +76,7 @@ const AboutPage = ({ data }) => {
               <div
                 className="about__bio"
                 dangerouslySetInnerHTML={{
-                  __html: wordpressPage.content,
+                  __html: updateInternalLinks(wordpressPage.content),
                 }}
               />
             </AboutBody>
