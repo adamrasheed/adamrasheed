@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import { MediaScreen, ContainerSize } from 'src/utils/Styles'
+import { updateInternalLinks } from 'src/utils/helpers';
 
 import Layout from 'src/components/layout'
 import PostSidebar from 'src/components/Blog/PostSidebar'
@@ -40,7 +41,7 @@ const PostPage = ({ data }) => {
           />
           <PostBody
             style={{ paddingTop: '1rem' }}
-            dangerouslySetInnerHTML={{ __html: wordpressPost.content }}
+            dangerouslySetInnerHTML={{ __html: updateInternalLinks(wordpressPost.content) }}
           />
           <PostCta
             title={
