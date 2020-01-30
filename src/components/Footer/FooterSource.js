@@ -8,14 +8,13 @@ const Source = styled.div`
   font-size: ${fontSize.body};
   flex: 100%;
   text-align: center;
-  margin: 0 0 1.5rem;
+  align-self: center;
   & > a {
     color: ${Color.text};
   }
 
   @media screen and (min-width: ${MediaScreen['screen-med']}) {
-    margin: 0 auto 0 1rem;
-    flex: 0 1 auto;
+    flex: auto 0;
   }
 `
 

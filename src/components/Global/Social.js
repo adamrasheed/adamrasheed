@@ -6,14 +6,22 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
-  MediaScreen, Color, transition, brandColors,
+  Color, transition, brandColors,
 } from 'src/utils/Styles'
 import { fontSize } from 'src/utils/Typography'
 
 library.add(fab)
 
+const StyledSocial = styled.ul`
+  display: grid;
+  grid-gap: 2rem;
+  width: fit-content;
+  margin: 0 auto;
+  align-self: center;
+`
+
 const SocialItem = styled.li`
-  display: inline-block;
+  display: block;
 `
 
 const SocialLink = styled.a`
@@ -23,12 +31,7 @@ const SocialLink = styled.a`
 const SocialIcon = styled(FontAwesomeIcon)`
   color: ${Color.text};
   font-size: ${fontSize.large};
-  margin: 0 1rem;
   transition: ${transition.short};
-
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
-    margin: 0 0 0 2rem;
-  }
 
   &:hover {
     color: ${props => (props.color ? brandColors[`${props.color}`] : Color.textLight)};
@@ -36,11 +39,15 @@ const SocialIcon = styled(FontAwesomeIcon)`
 `
 
 const Social = ({ social }) => (
-  <ul>
-    {social?.map((account, i) => {
+  <StyledSocial
+    style={{
+      gridTemplateColumns: `repeat(${social ?.length}, auto)`,
+    }}
+  >
+    {social ?.map(account => {
       const socialHandle = account.account.toLowerCase()
       return (
-        <SocialItem key={i}>
+        <SocialItem key={account.url.url}>
           <SocialLink
             href={account.url.url}
             target="_blank"
@@ -55,8 +62,10 @@ const Social = ({ social }) => (
         </SocialItem>
       )
     })}
-  </ul>
+  </StyledSocial>
 )
+
+export default Social
 
 export const SocialTypes = PropTypes.shape({
   account: PropTypes.string,
@@ -70,5 +79,3 @@ Social.propTypes = {
     SocialTypes,
   ).isRequired,
 }
-
-export default Social

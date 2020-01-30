@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
 import { updateInternalLinks } from 'src/utils/helpers'
+import ButtonALink from 'src/components/ButtonALink'
 import Layout from '../components/layout'
 import BlogsPreview from '../components/Blog/BlogsPreview'
 import PageTitle from '../components/Global/PageTitle'
@@ -35,7 +36,13 @@ const AboutTitle = styled(H2)`
 `
 
 const AboutPage = ({ data }) => {
-  const { wordpressPage, allWordpressPost, wordpressAcfOptions } = data
+  const {
+    wordpressPage,
+    allWordpressPost,
+    wordpressAcfOptions: {
+      options,
+    },
+  } = data
 
   return (
     <Layout>
@@ -51,9 +58,9 @@ const AboutPage = ({ data }) => {
             <AboutImg
               style={props}
               fluid={
-                  wordpressPage.featured_media.localFile.childImageSharp
-                    .fluid
-                }
+                wordpressPage.featured_media.localFile.childImageSharp
+                  .fluid
+              }
             />
           )}
         </Spring>
@@ -69,7 +76,7 @@ const AboutPage = ({ data }) => {
             <AboutBody>
               <AboutTitle
                 dangerouslySetInnerHTML={{
-                  __html: wordpressAcfOptions.options.tagline,
+                  __html: options.tagline,
                 }}
               />
 
@@ -79,6 +86,17 @@ const AboutPage = ({ data }) => {
                   __html: updateInternalLinks(wordpressPage.content),
                 }}
               />
+
+              <ButtonALink
+                href={options.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  margin: `2rem 0 0`,
+                }}
+              >
+                View Resume
+              </ButtonALink>
             </AboutBody>
 
             <div style={{ flex: 1 }}>
@@ -120,6 +138,7 @@ export const query = graphql`
     wordpressAcfOptions {
       options {
         tagline
+        resume
       }
     }
     allWordpressPost(limit: 2) {
