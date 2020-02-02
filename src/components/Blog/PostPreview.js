@@ -31,30 +31,30 @@ const Post = styled.div`
 const PostPreview = ({
   title, link, date, excerpt, delay,
 }) => (
-  <Spring
-    config={{ delay }}
-    from={animationValues.fadeIn.start}
-    to={animationValues.fadeIn.end}
-  >
-    {props => (
-      <Post Blog style={props}>
-        <PostPreviewTitle Blog>
-          <Link
-            className="post__link"
-            to={link}
-            dangerouslySetInnerHTML={{ __html: title }}
+    <Spring
+      config={{ delay }}
+      from={animationValues.fadeIn.start}
+      to={animationValues.fadeIn.end}
+    >
+      {props => (
+        <Post Blog style={props}>
+          <PostPreviewTitle Blog>
+            <Link
+              className="post__link"
+              to={link}
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
+          </PostPreviewTitle>
+          <div style={{ margin: '1rem 0' }}>
+            <PostMeta date={date} />
+          </div>
+          <PostPreviewExcerpt
+            className="paragraph"
+            dangerouslySetInnerHTML={{ __html: excerpt }}
           />
-        </PostPreviewTitle>
-        <div style={{ margin: '1rem 0' }}>
-          <PostMeta date={date} />
-        </div>
-        <PostPreviewExcerpt
-          className="paragraph"
-          dangerouslySetInnerHTML={{ __html: excerpt }}
-        />
-      </Post>
-    )}
-  </Spring>
+        </Post>
+      )}
+    </Spring>
 )
 
 export default PostPreview
@@ -64,5 +64,7 @@ PostPreview.propTypes = {
   link: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
-  delay: PropTypes.string.isRequired,
+  delay: PropTypes.oneOfType(
+    [PropTypes.string, PropTypes.number],
+  ).isRequired,
 }

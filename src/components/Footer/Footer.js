@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -43,6 +44,20 @@ const FooterSocial = styled(Social)`
 `
 
 const Footer = ({ title, social }) => {
+  const {
+    wordpressAcfOptions: {
+      options,
+    },
+  } = useStaticQuery(graphql`
+  query FooterResumeQuery {
+    wordpressAcfOptions {
+      options {
+        resume
+      }
+    }
+  }
+  `)
+
   const credit = `${title} ©${new Date().getFullYear()}`;
   return (
     <FooterWrapper className="footer">
@@ -52,7 +67,7 @@ const Footer = ({ title, social }) => {
         </FooterCredit>
         <FooterSource />
         <ResumeLink
-          href="/"
+          href={options.resume}
           target="_blank"
           rel="noopener noreferrer"
         >

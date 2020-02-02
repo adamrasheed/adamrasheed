@@ -45,20 +45,20 @@ const PostPage = ({ data }) => {
           />
           <PostCta
             title={
-                wordpressPost.acf.cta_title
-                  ? wordpressPost.acf.cta_title
-                  : null
-              }
+              wordpressPost.acf.cta_title
+                ? wordpressPost.acf.cta_title
+                : null
+            }
             subtitle={
-                wordpressPost.acf.cta_description
-                  ? wordpressPost.acf.cta_description
-                  : null
-              }
+              wordpressPost.acf.cta_description
+                ? wordpressPost.acf.cta_description
+                : null
+            }
             formId={
-                wordpressPost.acf.convertkit_form_id
-                  ? wordpressPost.acf.convertkit_form_id
-                  : null
-              }
+              wordpressPost.acf.convertkit_form_id
+                ? wordpressPost.acf.convertkit_form_id
+                : null
+            }
           />
         </Post>
         <PostSidebar
@@ -71,6 +71,17 @@ const PostPage = ({ data }) => {
 }
 
 export default PostPage
+
+PostPage.defaultProps = {
+  data: PropTypes.shape({
+    wordpressPost: PropTypes.shape({
+      id: null,
+    }),
+    allWordpressPost: PropTypes.shape({
+      edges: [],
+    }),
+  }),
+}
 
 PostPage.propTypes = {
   data: PropTypes.shape({
@@ -86,7 +97,7 @@ PostPage.propTypes = {
     allWordpressPost: PropTypes.shape(PropTypes.shape({
       edges: PropTypes.array,
     })),
-  }).isRequired,
+  }),
 }
 
 export const query = graphql`

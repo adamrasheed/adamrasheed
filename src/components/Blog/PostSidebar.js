@@ -56,7 +56,7 @@ const PostSidebar = ({ otherPosts, tags }) => {
         {otherPosts.map(({ node }) => (
           <SidebarPost key={node.slug}>
             <StyledLink
-              to={`blog/${node.slug}`}
+              to={`/blog/${node.slug}`}
               dangerouslySetInnerHTML={{ __html: node.title }}
             />
           </SidebarPost>

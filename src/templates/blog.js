@@ -34,7 +34,7 @@ const BlogsPage = ({ data: { wordpressPage, allWordpressPost } }) => (
           <PostPreview
             key={node.slug}
             title={node.title}
-            link={`blog/${node.slug}`}
+            link={`/blog/${node.slug}`}
             excerpt={node.excerpt}
             date={node.date}
             delay={i * 250}
