@@ -5,11 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-import {
-  Color, transition, brandColors,
-} from 'src/utils/Styles'
-import { fontSize } from 'src/utils/Typography'
-
 library.add(fab)
 
 const StyledSocial = styled.ul`
@@ -29,12 +24,17 @@ const SocialLink = styled.a`
 `
 
 const SocialIcon = styled(FontAwesomeIcon)`
-  color: ${Color.text};
-  font-size: ${fontSize.large};
-  transition: ${transition.short};
+  color: ${({ theme }) => theme.color.text};
+  font-size: ${({ theme }) => theme.fontSize.large};
+  transition: ${({ theme }) => theme.transition.short};
 
   &:hover {
-    color: ${props => (props.color ? brandColors[`${props.color}`] : Color.textLight)};
+    color: ${props => (
+    props.color
+      ? props.theme.brandColors[`${props.color}`]
+      : props.theme.color.textLight
+  )
+};
   }
 `
 

@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import { fontSize, font, lineHeight } from 'src/utils/Typography'
-import { Color } from 'src/utils/Styles'
 
 const PostBody = styled.div`
   h2 {
@@ -32,8 +30,8 @@ const PostBody = styled.div`
 
   p {
     margin-bottom: 1rem;
-    font-family: ${font.body};
-    line-height: ${lineHeight.paragraph};
+    font-family: ${({ theme }) => theme.font.body};
+    line-height: ${({ theme }) => theme.lineHeight.paragraph};
   }
 
   h1 + code,
@@ -70,7 +68,7 @@ const PostBody = styled.div`
 
   ul > li {
     margin-bottom: 1rem;
-    font-size: ${fontSize.small};
+    font-size: ${({ theme }) => theme.fontSize.small};
     position: relative;
     line-height: ${props => (props.freelance ? '1.25rem' : 'inherit')};
     margin: ${props => (props.freelance ? '1rem 0' : '1.5rem 0')};
@@ -93,7 +91,7 @@ const PostBody = styled.div`
     display: block;
     max-width: 4rem;
     height: 1px;
-    background: ${Color.text};
+    background: ${({ theme }) => theme.color.text};
     margin: 2rem auto;
   }
 

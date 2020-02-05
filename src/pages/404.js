@@ -1,11 +1,10 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components'
 import Layout from 'src/components/layout';
 import { SiteContext } from 'src/context/SiteProvider'
-import { ContainerSize, Color } from 'src/utils/Styles';
 
 const FourOhFour = styled.div`
-  max-width: ${ContainerSize['container-size']};
+  max-width: ${({ theme }) => theme.containerSize['container-size']};
   margin: 2rem auto;
   padding: 0 1rem;
   text-align: center;
@@ -20,13 +19,13 @@ const Button = styled.button`
   margin: 4rem auto;
   padding: 1rem 2rem;
   border: none;
-  background: ${Color.Btn.primary.regular};
+  background: ${({ theme }) => theme.color.btn.primary.regular};
   cursor: pointer;
 
   &:hover,
   &:focus {
     outline: 0;
-    background: ${Color.Btn.primary.hover}
+    background: ${({ theme }) => theme.color.btn.primary.hover}
   }
 `
 

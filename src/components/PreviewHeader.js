@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { fontSize, H4, font } from 'src/utils/Typography'
-import { Color, transition } from 'src/utils/Styles'
+import { H4 } from 'src/components/Global/Typography'
 
 const PreviewHeaderContainer = styled.div`
   display: flex;
@@ -16,14 +15,14 @@ const PreviewHeaderTitle = styled(H4)`
   font-variant: small-caps;
   font-variant-caps: all-small-caps;
   letter-spacing: 0.08em;
-  font-size: ${fontSize.small};
+  font-size: ${({ theme }) => theme.fontSize.small};
 
   &:after {
     content: '';
     display: inline-block;
     width: 32px;
     height: 2px;
-    background: ${Color.text};
+    background: ${({ theme }) => theme.color.text};
     margin-bottom: 0.25rem;
     margin-left: 1rem;
     font-variant: small-caps;
@@ -32,15 +31,15 @@ const PreviewHeaderTitle = styled(H4)`
 `
 
 const PreviewHeaderLink = styled(Link)`
-  color: ${Color.textLight};
-  font-family: ${font.body};
-  font-size: ${fontSize.extraSmall};
+  color: ${({ theme }) => theme.color.textLight};
+  font-family: ${({ theme }) => theme.font.body};
+  font-size: ${({ theme }) => theme.fontSize.extraSmall};
   font-weight: 600;
   text-transform: uppercase;
   font-variant-caps: all-small-caps;
   letter-spacing: 0.1em;
-  transition: ${transition.short};
-  color: ${Color.text};
+  transition: ${({ theme }) => theme.transition.short};
+  color: ${({ theme }) => theme.color.text};
   text-decoration: none;
 
   &:after {
@@ -51,7 +50,7 @@ const PreviewHeaderLink = styled(Link)`
 
   &:hover,
   &:focus {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
   }
 `
 

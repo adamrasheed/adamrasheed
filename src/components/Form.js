@@ -2,15 +2,14 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import ConvertKit from 'src/constants/API'
-import { Color, transition, MediaScreen } from 'src/utils/Styles'
-import { fontSize, P } from 'src/utils/Typography'
+import { P } from 'src/components/Global/Typography'
 
 const Label = styled.label`
-  font-size: ${fontSize.extraSmall};
+  font-size: ${({ theme }) => theme.fontSize.extraSmall};
   line-height: 1;
   font-variant-caps: all-small-caps;
   letter-spacing: 0.05em;
-  color: ${Color.text};
+  color: ${({ theme }) => theme.color.text};
   display: block;
   margin-bottom: 0.35rem;
 `
@@ -18,45 +17,57 @@ const Label = styled.label`
 const Input = styled.input`
   display: block;
   box-shadow: inset 0 0 0 1px
-    ${props => (props.status === `error` ? `red` : Color.textLight)};
+    ${props => (
+    props.status === `error`
+      ? `red`
+      : props.theme.color.textLight
+  )};
   border: none;
-  font-size: ${fontSize.base};
+  font-size: ${({ theme }) => theme.fontSize.base};
   line-height: 1;
   padding: 6px 10px;
   margin-bottom: 1rem;
   width: 100%;
 
   &:focus {
-    box-shadow: inset 0 0 0 1px ${Color.text};
+    box-shadow: inset 0 0 0 1px ${({ theme }) => theme.Color.text};
     outline: 0;
   }
 
-  @media screen and (min-width: ${MediaScreen['screen-med-lg']}) {
+  @media screen and (min-width: ${({ theme }) => theme.MediaScreen['screen-med-lg']}) {
     max-width: 16rem;
   }
 `
 
 const Button = styled.button`
-  font-size: ${fontSize.base};
+  font-size: ${({ theme }) => theme.fontSize.base};
   font-weight: 600;
   letter-spacing: 0.05em;
   line-height: 1;
   font-variant-caps: all-small-caps;
-  background: ${props => (props.cta ? Color.Btn.primary.regular : Color.Btn.secondary.regular)};
-  color: ${Color.text};
+  background: ${props => (
+    props.cta
+      ? props.theme.color.btn.primary.regular
+      : props.theme.color.btn.secondary.regular
+  )};
+  color: ${({ theme }) => theme.color.text};
   text-decoration: none;
   padding: 0.5rem 2.5rem 0.6rem;
   text-align: center;
   display: block;
   border: none;
-  transition: ${transition.medium};
+  transition: ${({ theme }) => theme.transition.medium};
   margin: 1.5rem 0 1rem;
   cursor: pointer;
 
   &:hover,
   &:focus {
     outline: 0;
-    background: ${props => (props.cta ? Color.Btn.primary.hover : Color.Btn.secondary.hover)};
+    background: ${props => (
+    props.cta
+      ? props.theme.color.btn.primary.hover
+      : props.theme.color.btn.secondary.hover
+  )};
   }
 `
 
@@ -69,7 +80,7 @@ const Msg = styled(P)`
     if (messageState === 'error') {
       return `color: red`
     }
-    return `color: ${Color.text}`
+    return `color: ${({ theme }) => theme.color.text}`
   }};
 `
 
@@ -161,7 +172,7 @@ class Form extends Component {
           value={email}
           status={
             formStatus && formStatus === `error`
-              && `error`
+            && `error`
           }
           type="email"
           id="emailInput"

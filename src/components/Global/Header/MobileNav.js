@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import { EMAIL } from 'src/constants/contact'
-import { Color } from 'src/utils/Styles'
+import { theme as styles } from 'src/utils/Styles'
 import PreviewTitle from '../PreviewTitle'
 import MenuLink, { MenuLinkNative } from './MenuLink'
 import MobileMenu from './MobMenu'
@@ -33,14 +33,14 @@ const MobileNav = ({ active }) => {
         {menuItems.items.map(item => (
           <li
             style={{
-              borderBottom: `1px solid ${Color.borderLight}`,
+              borderBottom: `1px solid ${styles.color.borderLight}`,
             }}
             key={item.wordpress_id}
           >
             <MenuLink
               to={`/${item.object_slug}`}
               activeStyle={{
-                color: Color.text,
+                color: styles.color.text,
               }}
               style={{
                 display: 'block',

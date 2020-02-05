@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Form from 'src/components/Form'
 import { MediaScreen, ContainerSize } from 'src/utils/Styles'
-import { H3, P } from 'src/utils/Typography'
+import { H3, P } from 'src/components/Global/Typography'
 
 const Cta = styled.div`
   background: hsla(219, 100%, 15%, 0.025);

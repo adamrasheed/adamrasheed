@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import { Spring } from 'react-spring'
 
@@ -11,7 +12,10 @@ import Contact from '../components/Contact'
 import Container from '../components/Container'
 import PreviewHeader from '../components/PreviewHeader'
 
-import { font } from '../utils/Typography'
+const Section = styled.section`
+  margin-bottom: 4rem;
+  font-family: ${({ theme }) => theme.font.body};
+`
 
 const IndexPage = ({
   data: {
@@ -19,7 +23,7 @@ const IndexPage = ({
     allWordpressPost,
   },
 }) => (
-  <Layout>
+    <Layout>
       <HomeHero />
 
       <Spring
@@ -27,10 +31,8 @@ const IndexPage = ({
         from={{ opacity: 0 }}
         to={{ opacity: 1 }}
       >
-        {props => (
-          <section
-            style={{ marginBottom: '4rem', fontFamily: font.body, ...props }}
-          >
+        {() => (
+          <Section>
             <Container>
               <PreviewHeader title="Case Studies" link="/case-studies" />
               {allWordpressWpCaseStudies ?.edges ?.map(({ node }) => (
@@ -50,7 +52,7 @@ const IndexPage = ({
                 />
               ))}
             </Container>
-          </section>
+          </Section>
         )}
       </Spring>
 

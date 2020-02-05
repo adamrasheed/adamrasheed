@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
-import { Color, MediaScreen } from 'src/utils/Styles'
+import { theme } from 'src/utils/Styles'
 import MenuItem from './MenuItem'
 import MenuLink from './MenuLink'
 
@@ -12,9 +12,9 @@ const SiteMenu = styled.nav`
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  border-left: 1px solid ${Color.textLight};
-  border-right: 1px solid ${Color.textLight};
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  border-left: 1px solid ${({ theme }) => theme.color.textLight};
+  border-right: 1px solid ${({ theme }) => theme.color.textLight};
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     display: block;
     flex: 1 0 auto;
     border: none;
@@ -49,7 +49,7 @@ const Navigation = () => {
           <MenuItem key={item.wordpress_id}>
             <MenuLink
               to={`/${item.object_slug}`}
-              activeStyle={{ color: Color.text }}
+              activeStyle={theme.color.text}
             >
               {item.title}
             </MenuLink>

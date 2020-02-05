@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Container from 'src/components/Container';
-import { font } from 'src/utils/Typography';
 import SiteLogo from './SiteLogo';
 import Navigation from './Navigation';
 import MobileNav from './MobileNav';
@@ -17,7 +16,7 @@ const HeaderContainer = styled(Container)`
   align-items: center;
   padding: 1.625rem 1rem 1.25rem;
   position: relative;
-  font-family: ${font.body};
+  font-family: ${({ theme }) => theme.font.body};
 `;
 
 const Header = ({ siteTitle, jobTitle }) => {

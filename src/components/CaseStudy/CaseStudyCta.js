@@ -1,23 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Color, transition } from 'src/utils/Styles'
-import { fontSize } from 'src/utils/Typography'
-
 const Btn = styled.a`
-  font-size: ${fontSize.small};
+  font-size: ${({ theme }) => theme.fontSize.small};
   font-weight: ${props => (props.primary ? '600' : '500')};
   letter-spacing: 0.05em;
   line-height: 1;
   font-variant-caps: all-small-caps;
   background: ${props => (props.primary ? 'linear-gradient(10deg, #1fa2ff, #a6fff3)' : 'none')};
-  color: ${Color.text};
+  color: ${({ theme }) => theme.color.text};
   text-decoration: none;
   padding: 0.5rem 1rem 0.6rem;
   text-align: center;
   display: block;
   max-width: 10rem;
-  transition: ${transition.short};
+  transition: ${({ theme }) => theme.transition.short};
 
   &:hover,
   &:focus {

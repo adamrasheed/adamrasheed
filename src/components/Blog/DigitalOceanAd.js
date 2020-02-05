@@ -1,5 +1,5 @@
 import React from 'react'
-import { H4, P, A } from 'src/utils/Typography'
+import { H4, P, A } from 'src/components/Global/Typography'
 import digitalOceanLogo from 'src/images/Digital-Ocean-Logo.png'
 import { DIGITAL_OCEAN_AFFILIATE_LINK } from 'src/constants/affiliateLinks'
 import ButtonALink from '../ButtonALink'

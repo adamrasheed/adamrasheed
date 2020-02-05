@@ -1,15 +1,13 @@
 import styled from 'styled-components'
-import { MediaScreen, Color } from 'src/utils/Styles'
-import { fontSize, font, lineHeight } from 'src/utils/Typography'
 
 const AboutBody = styled.div`
-  font-family: ${font.body};
+  font-family: ${({ theme }) => theme.font.body};
   margin-bottom: 2rem;
 
   p {
     margin-bottom: 1rem;
-    font-size: ${fontSize.body};
-    line-height: ${lineHeight.body};
+    font-size: ${({ theme }) => theme.fontSize.body};
+    line-height: ${({ theme }) => theme.lineHeight.body};
 
     a {
       position: relative;
@@ -22,7 +20,7 @@ const AboutBody = styled.div`
         top: 60%;
         left: -5%;
         z-index: -1;
-        background: ${Color.accent};
+        background: ${({ theme }) => theme.color.accent};
         opacity: 0;
         clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
         transition: all 0.15s ease-in-out;
@@ -39,7 +37,7 @@ const AboutBody = styled.div`
   }
 
   a {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
     font-weight: 600;
     text-decoration: none;
   }
@@ -67,7 +65,7 @@ const AboutBody = styled.div`
 
   ul > li {
     margin-bottom: 1rem;
-    font-size: ${fontSize.small};
+    font-size: ${({ theme }) => theme.fontSize.small};
     position: relative;
     margin: 1.5rem 0 1.5rem;
 
@@ -85,14 +83,14 @@ const AboutBody = styled.div`
     display: block;
     max-width: 4rem;
     height: 1px;
-    background: ${Color.text};
+    background: ${({ theme }) => theme.color.text};
     margin: 2rem auto;
   }
 
   p + hr {
     margin: 2rem auto 2rem;
   }
-  @media (min-width: ${MediaScreen['screen-sm-med']}) {
+  @media (min-width: ${({ theme }) => theme.mediaScreen['screen-sm-med']}) {
     margin-bottom: 0;
     h2 {
       line-height: 1.75rem;
