@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
@@ -8,19 +9,29 @@ import PreviewTitle from '../PreviewTitle'
 import MenuLink, { MenuLinkNative } from './MenuLink'
 import MobileMenu from './MobMenu'
 
+const Item = styled.li`
+  border-bottom: 1px solid ${({ theme }) => theme.color.borderLight};
+`
+
+const Link = styled(MenuLinkNative)`
+  display: 'block';
+  padding: '1rem 2rem';
+  textAlign: 'left';
+`
+
 const MobileNav = ({ active }) => {
   const { wordpressWpApiMenusMenusItems: menuItems } = useStaticQuery(graphql`
-  query MobileNavigationQuery {
-    wordpressWpApiMenusMenusItems(slug: { eq: "main-menu" }) {
-      items {
-        wordpress_id
-        title
-        object_id
-        object
-        object_slug
-      }
+query MobileNavigationQuery {
+  wordpressWpApiMenusMenusItems(slug: { eq: "main-menu" }) {
+    items {
+      wordpress_id
+      title
+      object_id
+      object
+      object_slug
     }
   }
+}
 `)
   return (
     <MobileMenu active={active}>
@@ -31,14 +42,11 @@ const MobileNav = ({ active }) => {
         }}
       >
         {menuItems.items.map(item => (
-          <li
-            style={{
-              borderBottom: `1px solid ${styles.color.borderLight}`,
-            }}
+          <Item
             key={item.wordpress_id}
           >
             <MenuLink
-              to={`/${item.object_slug}`}
+              to={`/ ${item.object_slug} `}
               activeStyle={{
                 color: styles.color.text,
               }}
@@ -50,21 +58,16 @@ const MobileNav = ({ active }) => {
             >
               {item.title}
             </MenuLink>
-          </li>
+          </Item>
         ))}
         <li className="mobile-menu__item">
-          <MenuLinkNative
-            href={`mailto:${EMAIL}`}
+          <Link
+            href={`mailto: ${EMAIL} `}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              display: 'block',
-              padding: '1rem 2rem',
-              textAlign: 'left',
-            }}
           >
             Email Me
-          </MenuLinkNative>
+          </Link>
         </li>
       </ul>
     </MobileMenu>

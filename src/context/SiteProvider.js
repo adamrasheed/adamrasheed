@@ -1,6 +1,7 @@
 import React, {
   createContext,
   useState,
+  useEffect,
 } from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
@@ -14,16 +15,25 @@ const initialState = {
 export const SiteContext = createContext(initialState)
 
 // Todo - enable automatic dark mode.
-// const supportsDarkMode = () => window.matchMedia('(prefers-color-scheme: dark)').matches === true
+const supportsDarkMode = () => window.matchMedia('(prefers-color-scheme: dark)').matches === true
 
 
 const SiteProvider = ({ children }) => {
-  const [dark, setDark] = useState(false)
+  const initState = document.window.localStorage.getItem('dark') || false
+  const [dark, setDark] = useState(initState)
 
 
   const toggleDark = () => {
     setDark(!dark)
   }
+
+  useEffect(() => {
+    if (supportsDarkMode()) {
+      setDark(true)
+    } else {
+      setDark(false)
+    }
+  }, [])
 
   return (
     <SiteContext.Provider value={{

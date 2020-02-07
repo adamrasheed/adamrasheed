@@ -25,7 +25,6 @@ const IndexPage = ({
 }) => (
     <Layout>
       <HomeHero />
-
       <Spring
         config={{ delay: 750 }}
         from={{ opacity: 0 }}

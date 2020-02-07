@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
 
-import { MediaScreen, animationValues } from 'src/utils/Styles'
+import { theme as styles } from 'src/utils/Styles'
 import PostPreviewTitle from './PostPreviewTitle'
 import PostMeta from './PostPreviewMeta'
 import PostPreviewExcerpt from './PostPreviewExcerpt'
@@ -12,7 +12,7 @@ import PostPreviewExcerpt from './PostPreviewExcerpt'
 
 const Post = styled.div`
   padding: 0 1rem 2rem;
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     flex: 50%;
     max-width: 50%;
     display: flex;
@@ -23,9 +23,13 @@ const Post = styled.div`
     padding: 0 1rem 2rem;
   }
 
-  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-lg']}) {
     margin-bottom: 2rem;
   }
+`
+
+const MetaContainer = styled.div`
+  margin: 1rem 0;
 `
 
 const PostPreview = ({
@@ -33,8 +37,8 @@ const PostPreview = ({
 }) => (
     <Spring
       config={{ delay }}
-      from={animationValues.fadeIn.start}
-      to={animationValues.fadeIn.end}
+      from={styles.animationValues.fadeIn.start}
+      to={styles.animationValues.fadeIn.end}
     >
       {props => (
         <Post Blog style={props}>
@@ -45,9 +49,9 @@ const PostPreview = ({
               dangerouslySetInnerHTML={{ __html: title }}
             />
           </PostPreviewTitle>
-          <div style={{ margin: '1rem 0' }}>
+          <MetaContainer>
             <PostMeta date={date} />
-          </div>
+          </MetaContainer>
           <PostPreviewExcerpt
             className="paragraph"
             dangerouslySetInnerHTML={{ __html: excerpt }}

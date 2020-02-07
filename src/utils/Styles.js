@@ -20,6 +20,7 @@ export const theme = {
   },
   color: {
     background: `#fff`,
+    backgroundLight: `rgba(199, 213, 237, 0.14)`,
     text: `#000000`,
     textLight: `#757575`,
     textExtraLight: `hsl(220, 13%, 91%)`,
@@ -43,7 +44,10 @@ export const theme = {
         opacity: 0,
         transform: `translateY(-5vh)`,
       },
-      end: { opacity: 1, transform: `translateY(0)` },
+      end: {
+        opacity: 1,
+        transform: `translateY(0)`,
+      },
     },
   },
   spacer: {
@@ -84,6 +88,7 @@ export const themeDark = {
   ...theme,
   color: {
     background: `#000`,
+    backgroundLight: `rgba(199, 213, 237, 0.14)`,
     text: `#eaeff2`,
     textLight: `#ccd5d9`,
     textExtraLight: `hsl(220, 13%, 91%)`,

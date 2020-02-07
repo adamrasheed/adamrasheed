@@ -1,5 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import { H3 } from 'src/components/Global/Typography'
+
+const Cta = styled.div`
+  max-width: ${({ theme }) => theme.containerSize['container-size-small']};
+    margin: 2rem auto 4rem;
+    text-align: center;
+    background: ${({ theme }) => theme.color.backgroundLight};
+    padding: 1.5rem 1.5rem 1.75rem;
+
+    a {
+      margin: 1rem auto 0;
+    }
+`
 
 const Btn = styled.a`
   font-size: ${({ theme }) => theme.fontSize.small};
@@ -27,22 +40,19 @@ const CaseStudyCta = () => {
   Let’s Talk.`
   const cta = `Email Me`
   return (
-    <div className="case-study__cta">
-      <h3 className="case-study__title">
+    <Cta>
+      <H3>
         {message}
-      </h3>
+      </H3>
       <Btn
         primary
         href="mailto:adamrasheed91@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          margin: '1.5rem auto 0',
-        }}
       >
         {cta}
       </Btn>
-    </div>
+    </Cta>
   )
 }
 

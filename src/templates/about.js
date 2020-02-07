@@ -57,7 +57,7 @@ const AboutPage = ({ data }) => {
         >
           {props => (
             <AboutImg
-              style={props}
+              style={{ ...props }}
               fluid={
                 wordpressPage.featured_media.localFile.childImageSharp
                   .fluid
