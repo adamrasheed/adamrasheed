@@ -21,6 +21,17 @@ const SocialItem = styled.li`
 
 const SocialLink = styled.a`
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: ${props => (
+    props.color
+      ? props.theme.brandColors[`${props.color}`]
+      : props.theme.color.textLight
+  )
+};
+  }
 `
 
 const SocialIcon = styled(FontAwesomeIcon)`
@@ -53,6 +64,7 @@ const Social = ({ social }) => (
             target="_blank"
             rel="noopener noreferrer"
             title={account.account}
+            color={account.account}
           >
             <SocialIcon
               color={account.account}

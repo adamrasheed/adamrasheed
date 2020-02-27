@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
-import { theme } from 'src/utils/Styles'
+import { theme as themeStyle, themeDark } from 'src/utils/Styles'
+import { SiteContext } from 'src/context/SiteProvider'
 import MenuItem from './MenuItem'
 import MenuLink from './MenuLink'
 
@@ -26,6 +27,7 @@ const SiteMenu = styled.nav`
 `
 
 const Navigation = () => {
+  const { dark } = useContext(SiteContext)
   const { wordpressWpApiMenusMenusItems: wpMenus } = useStaticQuery(graphql`
   query NavigationQuery {
     wordpressWpApiMenusMenusItems(slug: { eq: "main-menu" }) {
@@ -49,7 +51,7 @@ const Navigation = () => {
           <MenuItem key={item.wordpress_id}>
             <MenuLink
               to={`/${item.object_slug}`}
-              activeStyle={theme.color.text}
+              activeStyle={{ color: dark ? themeDark.color.text : themeStyle.color.text }}
             >
               {item.title}
             </MenuLink>

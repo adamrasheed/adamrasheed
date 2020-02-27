@@ -6,6 +6,7 @@ import React, {
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 import { theme, themeDark } from 'src/utils/Styles'
+import { loadState, saveState } from 'src/utils/helpers'
 
 const initialState = {
   dark: false,
@@ -19,7 +20,7 @@ const supportsDarkMode = () => window.matchMedia('(prefers-color-scheme: dark)')
 
 
 const SiteProvider = ({ children }) => {
-  const initState = document.window.localStorage.getItem('dark') || false
+  const initState = loadState() || false
   const [dark, setDark] = useState(initState)
 
 
@@ -34,6 +35,10 @@ const SiteProvider = ({ children }) => {
       setDark(false)
     }
   }, [])
+
+  useEffect(() => {
+    saveState(dark)
+  }, [dark])
 
   return (
     <SiteContext.Provider value={{

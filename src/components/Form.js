@@ -30,11 +30,11 @@ const Input = styled.input`
   width: 100%;
 
   &:focus {
-    box-shadow: inset 0 0 0 1px ${({ theme }) => theme.Color.text};
+    box-shadow: inset 0 0 0 1px ${({ theme }) => theme.color.text};
     outline: 0;
   }
 
-  @media screen and (min-width: ${({ theme }) => theme.MediaScreen['screen-med-lg']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med-lg']}) {
     max-width: 16rem;
   }
 `
@@ -131,7 +131,7 @@ class Form extends Component {
             formStatus: 'success',
             formMessage: `Thanks ${
               name
-            }! Please check your email for confirmation.`,
+              }! Please check your email for confirmation.`,
           })
       })
       .then(() => {

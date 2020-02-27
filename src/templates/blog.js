@@ -8,7 +8,7 @@ import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
 const Posts = styled.div`
-  @media screen and (min-width: ${({ theme }) => theme.MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;

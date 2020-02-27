@@ -14,7 +14,7 @@ const PostPreviewTitle = styled(H2)`
   }
 
   & > a {
-    color: #000;
+    color: ${({ theme }) => theme.color.text};
     text-decoration: none;
     font-weight: 600;
   }

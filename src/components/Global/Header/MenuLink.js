@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { transition } from 'src/utils/Styles'
 
 const MenuLink = styled(Link)`
   font-weight: 400;
@@ -11,9 +10,11 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => theme.color.textLight};
   transition: ${({ theme }) => theme.transition.short};
+
   &:hover {
     color: ${({ theme }) => theme.color.text};
   }
+
   &:focus {
     color: ${({ theme }) => theme.color.text};
   }

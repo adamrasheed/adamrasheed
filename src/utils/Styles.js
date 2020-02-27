@@ -80,7 +80,7 @@ export const theme = {
     Github: '#333',
     Instagram: '#e1306c',
     Dribbble: '#ea4c89',
-    YouTube: '#ff0000',
+    Youtube: '#ff0000',
   },
 }
 
