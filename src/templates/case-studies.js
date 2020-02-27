@@ -12,20 +12,20 @@ const FreelancePage = ({ data: { wordpressPage, allWordpressWpCaseStudies } }) =
     <PageTitle title={wordpressPage.title} />
     <section className="section-case-studies">
       <Container>
-        {allWordpressWpCaseStudies?.edges?.map(({ node }, i) => (
+        {allWordpressWpCaseStudies ?.edges ?.map(({ node }, i) => (
           <CaseStudyPreview
             title={node.title}
             key={i}
-            slug={`case-studies/${node.slug}`}
+            slug={`/case-studies/${node.slug}`}
             imgIdSlug={node.slug}
             tags={node.tags}
             subtitle={node.acf.subtitle}
             teaser={node.acf.teaser}
             image={
-                  node.featured_media != null
-                    ? node.featured_media.localFile.childImageSharp.fluid
-                    : null
-                }
+              node.featured_media != null
+                ? node.featured_media.localFile.childImageSharp.fluid
+                : null
+            }
           />
         ))}
       </Container>

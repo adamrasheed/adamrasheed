@@ -8,28 +8,30 @@ import Layout from '../components/layout'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-import { animationValues } from '../utils/Styles'
+import { theme } from '../utils/Styles'
 
-const FreelancePage = ({ data: { wordpressPage } }) => (
-  <Layout>
-    <PageTitle title={wordpressPage.title} />
-    <Spring
-      config={{ delay: 250 }}
-      from={animationValues.fadeIn.start}
-      to={animationValues.fadeIn.end}
-    >
-      {props => (
-        <Container accent style={props}>
-          <Post
-            freelance
-            dangerouslySetInnerHTML={{
-              __html: wordpressPage.content,
-            }}
-          />
-        </Container>
-      )}
-    </Spring>
-  </Layout>
+const FreelancePage = ({
+  data: { wordpressPage },
+}) => (
+    <Layout>
+      <PageTitle title={wordpressPage.title} />
+      <Spring
+        config={{ delay: 250 }}
+        from={theme.animationValues.fadeIn.start}
+        to={theme.animationValues.fadeIn.end}
+      >
+        {() => (
+          <Container accent>
+            <Post
+              freelance
+              dangerouslySetInnerHTML={{
+                __html: wordpressPage.content,
+              }}
+            />
+          </Container>
+        )}
+      </Spring>
+    </Layout>
 )
 
 export default FreelancePage

@@ -13,3 +13,21 @@ export const updateInternalLinks = (content) => {
   const newContent = content.replace(originalLink, '')
   return newContent
 }
+
+export const saveState = (state) => {
+  if (localStorage !== undefined) {
+    localStorage.setItem('dark', state)
+  }
+}
+
+export const loadState = () => {
+  try {
+    const state = localStorage.getItem('dark');
+    if (state === null) {
+      return undefined;
+    }
+    return state;
+  } catch (err) {
+    return undefined;
+  }
+}

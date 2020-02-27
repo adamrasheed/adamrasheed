@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
-import { Color, animationValues } from 'src/utils/Styles'
-import { P, font } from 'src/utils/Typography'
+import { P } from 'src/components/Global/Typography'
+import { theme as styles } from 'src/utils/Styles'
 
 import Container from '../Container'
 import HeroTitle from './HeroTitle'
@@ -18,7 +18,7 @@ const HeroBody = styled.div`
   }
 
   a {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
     text-decoration: none;
     font-weight: 600;
 
@@ -35,50 +35,53 @@ const Hero = ({
   career,
   hideCareer,
 }) => (
-  <Spring
-    config={{ delay: 250 }}
-    from={animationValues.fadeIn.start}
-    to={animationValues.fadeIn.end}
-  >
-    {props => (
-      <HeroContainer style={props} className="hero">
-        <Container className="container hero__container">
-          <HeroTitle
-            dangerouslySetInnerHTML={{
-              __html: tagline,
-            }}
-          />
-          <HeroBody className="hero__body">
-            <P
+    <Spring
+      config={{ delay: 250 }}
+      from={styles.animationValues.fadeIn.start}
+      to={styles.animationValues.fadeIn.end}
+    >
+      {props => (
+        <HeroContainer style={props} className="hero">
+          <Container className="container hero__container">
+            <HeroTitle
               dangerouslySetInnerHTML={{
-                __html: specialize,
+                __html: tagline,
               }}
             />
-            {!hideCareer && career && (
+            <HeroBody className="hero__body">
               <P
                 dangerouslySetInnerHTML={{
-                  __html: career,
+                  __html: specialize,
                 }}
               />
-            )}
-            <P>
-              I&lsquo;m also taking on select freelance projects. Wanna see if we’d be
-              a good fit?
+              {!hideCareer && career && (
+                <P
+                  dangerouslySetInnerHTML={{
+                    __html: career,
+                  }}
+                />
+              )}
+              <P>
+                I&lsquo;m also taking on select freelance projects. Wanna see if we’d be
+                a good fit?
               <br />
-              Learn more
+                Learn more
               <span
                 className="ib"
-                style={{ marginLeft: '0.35rem', fontFamily: font.body }}
+                style={{
+                    marginLeft: '0.35rem',
+                    fontFamily: styles.font.body,
+                  }}
               >
-                <Link to="/about">about me</Link>
-.
+                  <Link to="/about">about me</Link>
+                  .
               </span>
-            </P>
-          </HeroBody>
-        </Container>
-      </HeroContainer>
-    )}
-  </Spring>
+              </P>
+            </HeroBody>
+          </Container>
+        </HeroContainer>
+      )}
+    </Spring>
 )
 
 export default Hero

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { MediaScreen, transition, Color } from '../../../utils/Styles'
 
 const MobileNavToggle = styled.button`
   background: none;
@@ -9,7 +8,7 @@ const MobileNavToggle = styled.button`
   display: block;
   cursor: pointer;
   border: none;
-  transition: ${transition.short};
+  transition: ${({ theme }) => theme.transition.short};
   position: fixed;
   top: 1.875rem;
   right: 1rem;
@@ -25,15 +24,15 @@ const MobileNavToggle = styled.button`
     outline: 0;
   }
 
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     display: none;
   }
 
   & > span {
     display: block;
     height: 2px;
-    background: ${Color.text};
-    transition: ${transition.short};
+    background: ${({ theme }) => theme.color.text};
+    transition: ${({ theme }) => theme.transition.short};
     cursor: pointer;
   }
 

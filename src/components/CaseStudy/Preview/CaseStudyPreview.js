@@ -3,10 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
-import { MediaScreen, Spacer } from 'src/utils/Styles'
-import {
-  H3, H4, P, fontSize,
-} from 'src/utils/Typography'
+import { H3, H4, P } from 'src/components/Global/Typography'
 import StyledLink from '../../Global/StyledLink'
 
 import ButtonLink from '../../ButtonLink'
@@ -14,7 +11,7 @@ import ButtonLink from '../../ButtonLink'
 const PreviewTitle = styled(H3)`
   margin-bottom: 1rem;
 
-  @media (min-width: ${MediaScreen['screen-med']}) {
+  @media (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     grid-area: main;
     align-self: start;
     font-size: 1.5rem;
@@ -25,9 +22,9 @@ const PreviewTitle = styled(H3)`
 const Preview = styled.div`
   margin-bottom: 3rem;
 
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     margin-bottom: 0rem;
-    margin-bottom: ${Spacer.small};
+    margin-bottom: ${({ theme }) => theme.spacer.small};
   }
 `
 
@@ -36,7 +33,7 @@ const PreviewImg = styled(Img)`
 `
 
 const PreviewContent = styled.div`
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     @supports (display: grid) and (not (display: -ms-grid)) {
       & {
         display: grid;
@@ -52,14 +49,14 @@ const PreviewContent = styled.div`
 `
 
 const PreviewCta = styled(ButtonLink)`
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     grid-area: cta;
     align-self: start;
   }
 `
 
 const PreviewBody = styled.div`
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     @supports (display: grid) and (not (display: -ms-grid)) {
       & {
         grid-area: side;
@@ -71,7 +68,7 @@ const PreviewBody = styled.div`
 `
 
 const PreviewTag = styled.li`
-  font-size: ${fontSize.small};
+  font-size: ${({ theme }) => theme.fontSize.small};
   line-height: 1rem;
   font-variant-caps: all-small-caps;
   font-weight: 400;
@@ -85,42 +82,47 @@ const PreviewTag = styled.li`
 `
 
 const CaseStudyPreview = ({
-  image, title, slug, teaser, subtitle, tags,
+  image,
+  title,
+  slug,
+  teaser,
+  subtitle,
+  tags,
 }) => (
-  <Preview className="case-study-preview">
-    {image != null ? (
-      <Link to={slug}>
-        <PreviewImg fluid={image} className="case-study-preview__img" />
-      </Link>
-    ) : null}
-    <PreviewContent className="case-study-preview__content">
-      <PreviewTitle>
-        <StyledLink to={slug}>{title}</StyledLink>
-      </PreviewTitle>
-      <ul className="case-study-preview__tags">
-        {tags
-          && tags.map((tag) => (
-            <PreviewTag className="case-study-preview__tag" key={tag.name}>
-              {tag.name}
-            </PreviewTag>
-          ))}
-      </ul>
+    <Preview className="case-study-preview">
+      {image != null ? (
+        <Link to={slug}>
+          <PreviewImg fluid={image} className="case-study-preview__img" />
+        </Link>
+      ) : null}
+      <PreviewContent className="case-study-preview__content">
+        <PreviewTitle>
+          <StyledLink to={slug}>{title}</StyledLink>
+        </PreviewTitle>
+        <ul className="case-study-preview__tags">
+          {tags
+            && tags.map((tag) => (
+              <PreviewTag className="case-study-preview__tag" key={tag.name}>
+                {tag.name}
+              </PreviewTag>
+            ))}
+        </ul>
 
-      <PreviewBody>
-        <H4 style={{ marginBottom: '0.125rem', lineHeight: '1.25' }}>
-          {subtitle}
-        </H4>
-        <P style={{ marginBottom: '1rem' }}>{teaser}</P>
-      </PreviewBody>
+        <PreviewBody>
+          <H4 style={{ marginBottom: '0.125rem', lineHeight: '1.25' }}>
+            {subtitle}
+          </H4>
+          <P style={{ marginBottom: '1rem' }}>{teaser}</P>
+        </PreviewBody>
 
-      <PreviewCta
-        to={slug}
-        className="btn btn--secondary case-study-preview__cta"
-      >
-        View Case Study
-      </PreviewCta>
-    </PreviewContent>
-  </Preview>
+        <PreviewCta
+          to={slug}
+          className="btn btn--secondary case-study-preview__cta"
+        >
+          View Case Study
+        </PreviewCta>
+      </PreviewContent>
+    </Preview>
 )
 
 export default CaseStudyPreview

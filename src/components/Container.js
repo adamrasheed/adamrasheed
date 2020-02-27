@@ -1,13 +1,12 @@
 import styled from 'styled-components'
-import { ContainerSize, Color, MediaScreen } from 'src/utils/Styles'
 
 const Container = styled.div`
   max-width: ${props => (props.small
-    ? ContainerSize['container-size-small']
-    : ContainerSize['container-size'])};
+    ? props.theme.containerSize['container-size-small']
+    : props.theme.containerSize['container-size'])};
   margin: 0 auto;
   padding: ${props => (props.noPadding ? '0' : '0 1rem')};
-  box-shadow: ${props => (props.footer ? `inset 0 1px 0 0 ${Color.text}` : `none`)};
+  box-shadow: ${props => (props.footer ? `inset 0 1px 0 0 ${props.theme.color.text}` : `none`)};
 
   ${props => (props.split
     ? `
@@ -17,7 +16,7 @@ const Container = styled.div`
     align-items: flex-start;
     padding: 0 1rem;
 
-    @media screen and (min-width: ${MediaScreen['screen-med']}){
+    @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}){
         justify-content: space-between;
         flex-flow: row nowrap;
         align-items: center;
@@ -29,11 +28,6 @@ const Container = styled.div`
     max-width: 100%;
     height: auto;
     display: block;
-  }
-
-  a {
-    color: ${Color.text};
-    text-decoration: none;
   }
 `
 

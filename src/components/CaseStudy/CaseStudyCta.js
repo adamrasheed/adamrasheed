@@ -1,23 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
+import { H3 } from 'src/components/Global/Typography'
 
-import { Color, transition } from 'src/utils/Styles'
-import { fontSize } from 'src/utils/Typography'
+const Cta = styled.div`
+  max-width: ${({ theme }) => theme.containerSize['container-size-small']};
+    margin: 2rem auto 4rem;
+    text-align: center;
+    background: ${({ theme }) => theme.color.backgroundLight};
+    padding: 1.5rem 1.5rem 1.75rem;
+
+    a {
+      margin: 1rem auto 0;
+    }
+`
 
 const Btn = styled.a`
-  font-size: ${fontSize.small};
+  font-size: ${({ theme }) => theme.fontSize.small};
   font-weight: ${props => (props.primary ? '600' : '500')};
   letter-spacing: 0.05em;
   line-height: 1;
   font-variant-caps: all-small-caps;
   background: ${props => (props.primary ? 'linear-gradient(10deg, #1fa2ff, #a6fff3)' : 'none')};
-  color: ${Color.text};
+  color: ${({ theme }) => theme.color.text};
   text-decoration: none;
   padding: 0.5rem 1rem 0.6rem;
   text-align: center;
   display: block;
   max-width: 10rem;
-  transition: ${transition.short};
+  transition: ${({ theme }) => theme.transition.short};
 
   &:hover,
   &:focus {
@@ -30,22 +40,19 @@ const CaseStudyCta = () => {
   Let’s Talk.`
   const cta = `Email Me`
   return (
-    <div className="case-study__cta">
-      <h3 className="case-study__title">
+    <Cta>
+      <H3>
         {message}
-      </h3>
+      </H3>
       <Btn
         primary
         href="mailto:adamrasheed91@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          margin: '1.5rem auto 0',
-        }}
       >
         {cta}
       </Btn>
-    </div>
+    </Cta>
   )
 }
 

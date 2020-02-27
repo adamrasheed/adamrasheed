@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Spring } from 'react-spring';
 import { MediaScreen, ContainerSize } from 'src/utils/Styles';
-import { H1 } from 'src/utils/Typography';
+import { H1 } from 'src/components/Global/Typography';
 
 const StyledPageTitle = styled(H1)`
   padding: 0 ${(props) => (props.noPadding ? '0' : '1rem')};

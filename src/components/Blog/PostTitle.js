@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { H1 } from 'src/utils/Typography'
+import { H1 } from 'src/components/Global/Typography'
 import { MediaScreen } from 'src/utils/Styles'
 
 const PostTitle = styled(H1)`

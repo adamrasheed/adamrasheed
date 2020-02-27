@@ -4,7 +4,10 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
 import { updateInternalLinks } from 'src/utils/helpers'
+
 import ButtonALink from 'src/components/ButtonALink'
+import { theme as styles } from 'src/utils/Styles'
+import { H2 } from 'src/components/Global/Typography'
 import Layout from '../components/layout'
 import BlogsPreview from '../components/Blog/BlogsPreview'
 import PageTitle from '../components/Global/PageTitle'
@@ -14,8 +17,6 @@ import AboutInfoCategory from '../components/About/AboutInfo'
 import AboutImg from '../components/About/AboutImg'
 import AboutContainer from '../components/About/AboutContainer'
 
-import { H2 } from '../utils/Typography'
-import { MediaScreen, animationValues } from '../utils/Styles'
 import PreviewHeader from '../components/PreviewHeader'
 import Container from '../components/Container'
 
@@ -26,7 +27,7 @@ const AboutTitle = styled(H2)`
   br {
     display: contents;
   }
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: 640px) {
     line-height: 1.25 !important;
     font-weight: 700;
           br {
@@ -51,12 +52,12 @@ const AboutPage = ({ data }) => {
       {wordpressPage.featured_media ? (
         <Spring
           config={{ delay: 250 }}
-          from={animationValues.fadeIn.start}
-          to={animationValues.fadeIn.end}
+          from={styles.animationValues.fadeIn.start}
+          to={styles.animationValues.fadeIn.end}
         >
           {props => (
             <AboutImg
-              style={props}
+              style={{ ...props }}
               fluid={
                 wordpressPage.featured_media.localFile.childImageSharp
                   .fluid

@@ -1,15 +1,13 @@
 import styled from 'styled-components';
-import { MediaScreen } from 'src/utils/Styles';
-import { fontSize, font } from 'src/utils/Typography';
 
 const FooterCredit = styled.div`
   margin-bottom: 1rem;
-  font-family: ${font.body};
-  font-size: ${fontSize.small};
+  font-family: ${({ theme }) => theme.font.body};
+  font-size: ${({ theme }) => theme.fontSize.small};
   text-align: center;
   align-self: center;
 
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     margin-bottom: 0;
   }
 `;

@@ -7,26 +7,27 @@
 
 html,
 body {
-  font-family: $font-family;
-  font-size: $font-size-base;
-  line-height: $line-height-body;
+  // font-family: $font-family;
+  // font-size: $font-size-base;
+  // line-height: $line-height-body;
 
-  color: $color-text;
+  // color: $color-text;
   padding: 0;
   margin: 0;
-  display: flex;
+  // display: flex;
 
-  min-height: 100vh;
-  flex-direction: column;
+  // min-height: 100vh;
+  // flex-direction: column;
 
-  position: relative;
+  // position: relative;
 }
 
-.body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
+// .body {
+//   display: flex;
+//   min-height: 100vh;
+//   flex-direction: column;
+//   position: relative;
+// }
 
 header,
 footer {

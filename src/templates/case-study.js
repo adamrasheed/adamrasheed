@@ -10,7 +10,7 @@ import CaseStudyCta from '../components/CaseStudy/CaseStudyCta'
 import PageTitle from '../components/Global/PageTitle'
 import Container from '../components/Container'
 
-import { animationValues } from '../utils/Styles'
+import { theme as style } from '../utils/Styles'
 import '../scss/02-pages/_case-study.scss'
 
 const CaseStudy = ({ data: { wordpressWpCaseStudies } }) => (
@@ -22,17 +22,17 @@ const CaseStudy = ({ data: { wordpressWpCaseStudies } }) => (
           <Img
             className="featured-img case-study__img"
             fluid={
-                  wordpressWpCaseStudies.featured_media.localFile
-                    .childImageSharp.fluid
-                }
+              wordpressWpCaseStudies.featured_media.localFile
+                .childImageSharp.fluid
+            }
           />
         )}
 
-        {wordpressWpCaseStudies?.acf?.overview && (
+        {wordpressWpCaseStudies ?.acf ?.overview && (
           <Spring
             config={{ delay: 250 }}
-            from={animationValues.fadeIn.start}
-            to={animationValues.fadeIn.end}
+            from={style.animationValues.fadeIn.start}
+            to={style.animationValues.fadeIn.end}
           >
             {styles => (
               <Container small style={styles}>
@@ -49,8 +49,8 @@ const CaseStudy = ({ data: { wordpressWpCaseStudies } }) => (
 
         <Spring
           config={{ delay: 375 }}
-          from={animationValues.fadeIn.start}
-          to={animationValues.fadeIn.end}
+          from={style.animationValues.fadeIn.start}
+          to={style.animationValues.fadeIn.end}
         >
           {styles => (
             <Container
