@@ -4,17 +4,17 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
-
+import { ContainerSize } from '../utils/Styles'
 
 const PageTitle = styled.h1`
-  max-width: ${({ theme }) => theme.ContainerSize['container-size']};
+  max-width: ${ContainerSize['container-size']};
   margin: 0 auto;
   padding: 0 1rem;
 `
 
 const PageContent = styled.div`
-  max-width: ${({ theme }) => theme.ContainerSize['container-size']};
-  margin: 1rem auto 1.45rem; 
+  max-width: ${ContainerSize['container-size']};
+  margin: 1rem auto 1.45rem;
   padding: 0 1rem;
 
   h1 {
@@ -36,7 +36,7 @@ const PageContent = styled.div`
   }
 
   a {
-    color: red;
+    color: ${({ theme }) => theme.color.text};
     text-decoration: none;
     font-weight: 600;
 
@@ -128,7 +128,9 @@ const Page = ({ data }) => {
   const { wordpressPage } = data
   return (
     <Layout template={templateSlug}>
-      <PageTitle className="page-title">{wordpressPage.title}</PageTitle>
+      <PageTitle className="page-title">
+        {wordpressPage.title}
+      </PageTitle>
       {wordpressPage.featured_media && (
         <Img
           className="page-image page__image"
