@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Color, transition } from 'src/utils/Styles'
 
 const MenuLink = styled(Link)`
   font-weight: 400;
@@ -9,14 +8,15 @@ const MenuLink = styled(Link)`
   text-transform: lowercase;
   text-align: center;
   text-decoration: none;
-  color: ${Color.textLight};
-  text-decoration: none;
-  transition: ${transition.short};
+  color: ${({ theme }) => theme.color.textLight};
+  transition: ${({ theme }) => theme.transition.short};
+
   &:hover {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
   }
+
   &:focus {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
   }
 `
 
@@ -27,14 +27,13 @@ export const MenuLinkNative = styled.a`
   text-transform: lowercase;
   text-align: center;
   text-decoration: none;
-  color: ${Color.textLight};
-  text-decoration: none;
-  transition: ${transition.short};
+  color: ${({ theme }) => theme.color.textLight};
+  transition: ${({ theme }) => theme.transition.short};
   &:hover {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
   }
   &:focus {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
   }
 `
 

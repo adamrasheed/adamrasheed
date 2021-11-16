@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { H2 } from 'src/utils/Typography'
+import { H2 } from 'src/components/Global/Typography'
 import { MediaScreen } from 'src/utils/Styles'
 
 const PostPreviewTitle = styled(H2)`
@@ -14,7 +14,7 @@ const PostPreviewTitle = styled(H2)`
   }
 
   & > a {
-    color: #000;
+    color: ${({ theme }) => theme.color.text};
     text-decoration: none;
     font-weight: 600;
   }

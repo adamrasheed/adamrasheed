@@ -1,10 +1,11 @@
 //  VARS
 
 // Text
-$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family-heading: -apple-system-headline, BlinkMacSystemFont, 'Segoe UI',
-  Roboto, Helvetica, Arial, sans-serif;
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
+$font-family-heading: -apple-system-headline, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 $font-family-subheading: -apple-system-subheadline, BlinkMacSystemFont,
   'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 $font-family-small-subheading: -apple-system-short-subheadline,
@@ -22,7 +23,7 @@ $color-btn-secondary: hsl(204, 10%, 96%);
 $color-btn-secondary-hover: hsl(204, 10%, 92%);
 
 $color-bg-light: rgba(239, 240, 241, 0.57);
-$color-bg-extra-light: rgba(245, 246, 248, 0.6);
+$color-bg-extra-light: rgba(245, 246, 248, 0.25);
 
 $font-size-base: 16px;
 $font-size-body: 14px;

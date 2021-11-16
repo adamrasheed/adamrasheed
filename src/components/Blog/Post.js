@@ -1,14 +1,12 @@
 import styled from 'styled-components'
-import { MediaScreen, Color } from 'src/utils/Styles'
-import { fontSize, font, lineHeight } from 'src/utils/Typography'
 
 const Post = styled.article`
   margin-bottom: 1rem;
   padding: 0;
   padding: ${props => (props.freelance || props.caseStudy ? `0` : `0 1rem 1rem`)};
   max-width: ${props => (props.freelance || props.caseStudy ? `unset` : `32rem`)};
-  font-family: ${font.body};
-  line-height: ${lineHeight.body};
+  font-family: ${({ theme }) => theme.font.body};
+  line-height: ${({ theme }) => theme.lineHeight.body};
 
   h1 {
     font-weight: 700;
@@ -29,7 +27,7 @@ const Post = styled.article`
   }
 
   a {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
     text-decoration: none;
     font-weight: 600;
 
@@ -57,8 +55,8 @@ const Post = styled.article`
 
   p {
     margin-bottom: 1rem;
-    font-size: ${fontSize.body};
-    line-height: ${lineHeight.paragraph};
+    font-size: ${({ theme }) => theme.fontSize.body};
+    line-height: ${({ theme }) => theme.lineHeight.paragraph};
   }
   h1 + code,
   h2 + code,
@@ -83,7 +81,7 @@ const Post = styled.article`
 
   ul > li {
     margin-bottom: 1rem;
-    font-size: ${fontSize.small};
+    font-size: ${({ theme }) => theme.fontSize.small};
     position: relative;
     line-height: ${props => (props.freelance ? '1.25rem' : 'inherit')};
     margin: ${props => (props.freelance ? '1rem 0' : '1.5rem 0')};
@@ -106,7 +104,7 @@ const Post = styled.article`
     display: block;
     max-width: 4rem;
     height: 1px;
-    background: ${Color.text};
+    background: ${({ theme }) => theme.color.text};
     margin: 2rem auto;
   }
 
@@ -117,10 +115,10 @@ const Post = styled.article`
   strong {
     font-weight: 700;
   }
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     /* padding: 1rem; */
   }
-  @media screen and (min-width: ${MediaScreen['screen-lg']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-lg']}) {
     padding: ${props => (props.blog ? '2rem 0' : '0')};
   }
 `

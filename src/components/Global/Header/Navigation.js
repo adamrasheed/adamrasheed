@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
-import { Color, MediaScreen } from 'src/utils/Styles'
+import { theme as themeStyle, themeDark } from 'src/utils/Styles'
+import { SiteContext } from 'src/context/SiteProvider'
 import MenuItem from './MenuItem'
 import MenuLink from './MenuLink'
 
@@ -12,9 +13,9 @@ const SiteMenu = styled.nav`
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  border-left: 1px solid ${Color.textLight};
-  border-right: 1px solid ${Color.textLight};
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
+  border-left: 1px solid ${({ theme }) => theme.color.textLight};
+  border-right: 1px solid ${({ theme }) => theme.color.textLight};
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
     display: block;
     flex: 1 0 auto;
     border: none;
@@ -26,6 +27,7 @@ const SiteMenu = styled.nav`
 `
 
 const Navigation = () => {
+  const { dark } = useContext(SiteContext)
   const { wordpressWpApiMenusMenusItems: wpMenus } = useStaticQuery(graphql`
   query NavigationQuery {
     wordpressWpApiMenusMenusItems(slug: { eq: "main-menu" }) {
@@ -49,7 +51,7 @@ const Navigation = () => {
           <MenuItem key={item.wordpress_id}>
             <MenuLink
               to={`/${item.object_slug}`}
-              activeStyle={{ color: Color.text }}
+              activeStyle={{ color: dark ? themeDark.color.text : themeStyle.color.text }}
             >
               {item.title}
             </MenuLink>

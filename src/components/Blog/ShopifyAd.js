@@ -1,6 +1,6 @@
 import React from 'react'
 import { SHOPIFY_AFFILIATE_LINK } from 'src/constants/affiliateLinks'
-import { H4, P, A } from 'src/utils/Typography'
+import { H4, P, A } from 'src/components/Global/Typography'
 import shopifyImg from 'src/images/shopify_logo_whitebg.svg'
 import ButtonALink from '../ButtonALink'
 import AdContainer from './AdContainer'

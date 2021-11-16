@@ -2,26 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Color, MediaScreen } from 'src/utils/Styles'
-import { H1, fontSize, font } from 'src/utils/Typography'
+import { H1 } from 'src/components/Global/Typography'
 
 import StyledLink from '../StyledLink'
 
 const SiteTitle = styled(H1)`
-  font-size: ${fontSize.large};
+  font-size: ${({ theme }) => theme.fontSize.large};
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 0.05em;
-  color: ${Color.text};
+  color: ${({ theme }) => theme ?.color.text};
   display: inline-block;
 
-  @media screen and (min-width: ${MediaScreen['screen-sm-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-sm-med']}) {
     &::after {
       content: '';
       height: 1rem;
       width: 1px;
       display: inline-block;
-      background: ${Color.text};
+      background: ${({ theme }) => theme.color.text};
       margin: 0 4px 0 6px;
     }
   }
@@ -30,16 +29,16 @@ const SiteTitle = styled(H1)`
 const SiteDesc = styled.div`
   display: none;
   transform: translateY(-2px);
-  color: ${Color.text};
-  font-family: ${font.body};
+  color: ${({ theme }) => theme.color.text};
+  font-family: ${({ theme }) => theme.font.body};
   line-height: 1.5;
-  font-size: ${fontSize.extraSmall};
+  font-size: ${({ theme }) => theme.fontSize.extraSmall};
   text-align: left;
 
   margin: 0.25rem auto 0;
   text-decoration: none;
 
-  @media screen and (min-width: ${MediaScreen['screen-sm-med']}) {
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-sm-med']}) {
     display: inline-block;
   }
 `

@@ -1,14 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import {
-  ContainerSize, Color, MediaScreen,
-} from 'src/utils/Styles'
-import { fontSize, lineHeight } from 'src/utils/Typography'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
-
+import { ContainerSize } from '../utils/Styles'
 
 const PageTitle = styled.h1`
   max-width: ${ContainerSize['container-size']};
@@ -18,7 +14,7 @@ const PageTitle = styled.h1`
 
 const PageContent = styled.div`
   max-width: ${ContainerSize['container-size']};
-  margin: 1rem auto 1.45rem; 
+  margin: 1rem auto 1.45rem;
   padding: 0 1rem;
 
   h1 {
@@ -40,7 +36,7 @@ const PageContent = styled.div`
   }
 
   a {
-    color: ${Color.text};
+    color: ${({ theme }) => theme.color.text};
     text-decoration: none;
     font-weight: 600;
 
@@ -68,8 +64,8 @@ const PageContent = styled.div`
 
   p {
     margin-bottom: 1rem;
-    font-size: ${fontSize.body};
-    line-height: ${lineHeight.paragraph};
+    font-size: ${({ theme }) => theme.fontSize.body};
+    line-height: ${({ theme }) => theme.lineHeight.paragraph};
   }
   h1 + code,
   h2 + code,
@@ -94,7 +90,7 @@ const PageContent = styled.div`
 
   ul > li {
     margin-bottom: 1rem;
-    font-size: ${fontSize.small};
+    font-size: ${({ theme }) => theme.fontSize.small};
     position: relative;
 
     &:before {
@@ -111,7 +107,7 @@ const PageContent = styled.div`
     display: block;
     max-width: 4rem;
     height: 1px;
-    background: ${Color.text};
+    background: ${({ theme }) => theme.color.text};
     margin: 2rem auto;
   }
 
@@ -132,13 +128,15 @@ const Page = ({ data }) => {
   const { wordpressPage } = data
   return (
     <Layout template={templateSlug}>
-      <PageTitle className="page-title">{wordpressPage.title}</PageTitle>
+      <PageTitle className="page-title">
+        {wordpressPage.title}
+      </PageTitle>
       {wordpressPage.featured_media && (
         <Img
           className="page-image page__image"
           fluid={
-              wordpressPage.featured_media.localFile.childImageSharp.fluid
-            }
+            wordpressPage.featured_media.localFile.childImageSharp.fluid
+          }
         />
       )}
 

@@ -1,25 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
-import { MediaScreen, Spacer, Color } from 'src/utils/Styles'
-import { H2, P, fontSize } from 'src/utils/Typography'
+import { H2, P } from 'src/components/Global/Typography'
 import { EMAIL } from 'src/constants/contact'
 import Container from './Container'
 import ButtonALink from './ButtonALink'
 
 const ContactSection = styled.section`
-  margin-bottom: ${Spacer.small};
-  @media screen and (min-width: ${MediaScreen['screen-med']}) {
-    margin-bottom: ${Spacer.medium};
+  margin-bottom: ${({ theme }) => theme.spacer.small};
+  @media screen and (min-width: ${({ theme }) => theme.mediaScreen['screen-med']}) {
+    margin-bottom: ${({ theme }) => theme.spacer.medium};
   }
 `
 const ContactBody = styled.div`
-  font-size: ${fontSize.small};
+  font-size: ${({ theme }) => theme.fontSize.small};
   line-height: 20.16px;
   p {
     margin-bottom: 7px;
     a {
-      color: ${Color.text};
+      color: ${({ theme }) => theme.color.text};
       text-decoration: none;
       font-weight: 600;
     }
